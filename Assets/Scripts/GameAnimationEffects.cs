@@ -99,12 +99,6 @@ namespace SkeletonDefender
             return clip == null ? age : Mathf.Clamp01(age / Mathf.Max(.001f, lifetime)) * clip.Duration;
         }
 
-        private static AnimationClipData DeerAnimationClip(Vector2 motion, bool facingLeft)
-        {
-            Direction8 direction = AnimatedActors.DirectionFor(motion, facingLeft ? Direction8.West : Direction8.East);
-            return AnimationLibrary.GetDirectional("circe", "deer_run", direction, facingLeft);
-        }
-
         private static Vector2[] StormScreenStrikePath(Vector2 screenTarget, int strike)
         {
             const int segments = 12;

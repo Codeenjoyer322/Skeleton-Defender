@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "changedPixels": 1817,
+  "actualChangedBounds": {
+    "x": 215,
+    "y": 256,
+    "width": 61,
+    "height": 48
+  },
+  "runtimeMatchesExport": true,
+  "lightRegionsUnchanged": true,
+  "runtimeSha256": "e16f5c221ce51e303f7e8c7caed1a01cc7da9ca48f263793cfef87440f5adc53",
+  "baselineSha256": "6de0765fba7525e17e682183de448b53a5dba32a0bb5b34ed8618319bf148e59",
+  "nativeEditable": "source/environment/cemetery_battlefield.aseprite",
+  "method": "Aseprite native nearby grass copy, separate layer",
+  "newPaidGenerations": 0
+}

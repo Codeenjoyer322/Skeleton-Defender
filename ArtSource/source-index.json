@@ -1,6 +1,6 @@
 {
-  "files": 3521,
-  "bytes": 53673255,
+  "files": 3581,
+  "bytes": 61518548,
   "missingReferencedFiles": [],
   "records": [
     {
@@ -21128,6 +21128,366 @@
       "purpose": "offline review gallery",
       "bytes": 375352,
       "sha256": "35899b051ff44c4051862f8d111a118d1c9cfc22079cc73680856d269589092b"
+    },
+    {
+      "path": "NeonGothic/v082/exports/tower-provenance.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 6411,
+      "sha256": "939475a643072acd5dff0508f35751f9feede230b0092d73a3c96b4be526f900"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/battlefield_emission.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 1596,
+      "sha256": "d70d99d435ecc2fdd4610eb3727fbe4eae69f61c36d858ec5cc3031bbfc9b075"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/cemetery_battlefield.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 252115,
+      "sha256": "e16f5c221ce51e303f7e8c7caed1a01cc7da9ca48f263793cfef87440f5adc53"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower-sockets.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 3827,
+      "sha256": "a5abe9e5fbda472468cd975fd1a3bb73b4fa5a069f694782807782f13b6b3a4b"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_0_1.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 11813,
+      "sha256": "ce861464f1a6b4b5f1b605bf48c5b6169c969abf7471d23ee6e103e2b799c954"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_0_2.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12179,
+      "sha256": "93d717b03a991858cb3bb48ce6dd90cd05dba923cc36d023a2f3ff59da7dfd5d"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_0_3.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 15253,
+      "sha256": "171a7cb62f6167bf8a733b30f0a5b5a065d35a7a018e97071d140b90f4806814"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_1_1.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12098,
+      "sha256": "529bd03c5fa7cb88563cb336f3ababe6156bde10f1ad973f64acb39d05bd7ee3"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_1_2.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12128,
+      "sha256": "5bea90a2fbc73d3328bb0b217352f66a1c0cf9c92a832deacf92ee2d4169e8b6"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_1_3.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12493,
+      "sha256": "d8915e655d89c86835a6a94909cbc618e455ac6c2109a5b84a8d0ef1eb334581"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_2_1.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12074,
+      "sha256": "1976b2074d3be9a9aac1c38bef4a15a3bafa3b4c32de124a9d4d19bdcc0f1897"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_2_2.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12505,
+      "sha256": "54fc7a9d14408baf008a914bd5ec8c0df8078fd7199af194810fd53f7179e79b"
+    },
+    {
+      "path": "NeonGothic/v082/exports/environment/tower_2_3.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 13220,
+      "sha256": "77bf3c85171758a6b5321638ff36e3418d5590edff0832f32aca7e5183b21dba"
+    },
+    {
+      "path": "NeonGothic/v082/source/fix_tower_seating.lua",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 5447,
+      "sha256": "52726d5c6ceb02ffeb7b71a367fa63de70dec07e75da7624f0930b987ab557eb"
+    },
+    {
+      "path": "NeonGothic/v082/source/inspect_tower_bases.lua",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 840,
+      "sha256": "b0deb88009ae1a1c6d215720c62ab6e113d01bdd412b5751af04ab60e16ddf62"
+    },
+    {
+      "path": "NeonGothic/v082/source/review_tower_placement.lua",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 1682,
+      "sha256": "73c1688d38ff228437c0c80c81fa496abab069cad018d35e818b4922c0782514"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/battlefield_emission.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 230544,
+      "sha256": "c394e8b49f5a65edc6877c168ee9307ffdb08ca10184ac2f5a5c0396e47ebfde"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/battlefield_lights.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 1000,
+      "sha256": "7356c3cff47763e91a3414e02547ff91d3ef6d4481db76d97a65c8a0f20f3a3d"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/build_battlefield_lights.lua",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 5630,
+      "sha256": "770e0f4fe40c442a5a430d85e2965200196c1937c6dc1c73db494a34748aa6f8"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/cemetery_battlefield.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 254764,
+      "sha256": "70e5721f139448783afd8609a99a620a7e6e20017fadd6474fc56e975eaf1d70"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/removed_site6_provenance.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 329,
+      "sha256": "687f462af03fefc7265049aa6430d26575a8289b5ccf99c3ddbb74b358f147f3"
+    },
+    {
+      "path": "NeonGothic/v082/source/environment/repair_removed_site_grass.lua",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 3174,
+      "sha256": "d760b6b483a3910c754e904f74bc6aec566b1048b00b3ae8523b1f4e2ef55148"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/registration.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 3827,
+      "sha256": "a5abe9e5fbda472468cd975fd1a3bb73b4fa5a069f694782807782f13b6b3a4b"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_0_1.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 8017,
+      "sha256": "1dec4c6a340b560bcd646e0bc8bee2ae18c76c30e49c37a8c14e443c75df183b"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_0_2.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 14898,
+      "sha256": "cf927c453b15e5cc46197becf49e656918993c659b7c822b100cd3aa7f035852"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_0_3.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 10502,
+      "sha256": "20f2342a17603d6f14aa6436fdad459681d4124be3a2f7eeb02a3fc88c698aba"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_1_1.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7439,
+      "sha256": "4055b6081236659c221268c88c04681f64daf303ac290f588f60d5c1c4db76f5"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_1_2.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7825,
+      "sha256": "bf27d76df896aab47d37ba29e6a0d35a61356853b99f67b1bbcfcfd9ca340c15"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_1_3.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7738,
+      "sha256": "58b4af2c5c159adddf03d276b84f800c05d6a8f48b50c729827b6889a18c186c"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_2_1.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7518,
+      "sha256": "1d4e2b64f8f90ba36a0ef6eb38a4171fb6b9c0679c81a8864082c6cbdf11f014"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_2_2.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7816,
+      "sha256": "688bf8f65917c8ec0e924538b94d5fda7c59e8a3f9229af07e6a77601b4803d0"
+    },
+    {
+      "path": "NeonGothic/v082/source/towers/tower_2_3.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 8218,
+      "sha256": "fa54c9ddbf26e85c6dad058a7ec931c76468a3b2b72ac636fcd418e7113b2a3c"
+    },
+    {
+      "path": "NeonGothic/v082/review/archer-II-before-4x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 21496,
+      "sha256": "ffe1282a0844e4848deb1b64e4265b59608445975a316e4d0734846049828084"
+    },
+    {
+      "path": "NeonGothic/v082/review/battlefield-lights-mask-4x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 43597,
+      "sha256": "bc025236e93bc2321844c54f3c0032ce66904507170058e17f17976047b9d780"
+    },
+    {
+      "path": "NeonGothic/v082/review/battlefield-lights-preview.aseprite",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 5505807,
+      "sha256": "c55b9935783d90504792d0351288a458e90f23a8628b44fcd0134af2bee49bba"
+    },
+    {
+      "path": "NeonGothic/v082/review/battlefield-lights-preview.gif",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 205331,
+      "sha256": "45fbcd6208cde1b7b7febd5fc17a5714e72502a493a72aaab473a9bcbf6e64ec"
+    },
+    {
+      "path": "NeonGothic/v082/review/battlefield-lights-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 255981,
+      "sha256": "3debe1dc4cb523c79811c226828ffc432de3f98ead5affadac4efee9c550f0b4"
+    },
+    {
+      "path": "NeonGothic/v082/review/battlefield-lights-verification.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 2200,
+      "sha256": "d7646af30acd04be24142da3da265b97ae9b5a7fccf5daaf864f62118cac9d12"
+    },
+    {
+      "path": "NeonGothic/v082/review/old-site6-after-6x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 33201,
+      "sha256": "2ade0496f468fbcac12cf4e746f2f50a901534e73bba2cb5703b9c3c615d5826"
+    },
+    {
+      "path": "NeonGothic/v082/review/old-site6-after.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 18614,
+      "sha256": "2c1c9966f3639a3f67319549c13fafb915a77b5ce22f9d85573d45ab8e5f648b"
+    },
+    {
+      "path": "NeonGothic/v082/review/old-site6-before-6x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 31536,
+      "sha256": "d8bb56912d5791055f52bbb75564fcd23525173c1220074f965ded5f5911d6bb"
+    },
+    {
+      "path": "NeonGothic/v082/review/old-site6-before.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 18735,
+      "sha256": "f476c645d510c8614451b5ba531c2e5d5b6395de3e357c6b6521c1df040c2ece"
+    },
+    {
+      "path": "NeonGothic/v082/review/removed-site6-verification.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 563,
+      "sha256": "85db2e7e4c91eb753dc1cac68d11aa3bce1908eee03c775c50608f151b186181"
+    },
+    {
+      "path": "NeonGothic/v082/review/tower-bases-before-3x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 57569,
+      "sha256": "b3ef3416a81ffc160b7ed318a98fd6531e4bde46cf059caed9f32f4a78cbce0f"
+    },
+    {
+      "path": "NeonGothic/v082/review/tower-registration-native.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 2047,
+      "sha256": "ead0686196011f0c98df22d8116b5191a17f861433bfc870a6997c0eb16adedf"
+    },
+    {
+      "path": "NeonGothic/v082/review/tower-seating-verification.json",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 7122,
+      "sha256": "94384ffae15e808d6bdf9b4a363c5cdfa7cb3c3a135464f1c5d4503566c7c533"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/archer-II-placement-before-after-2x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 87562,
+      "sha256": "d87abe5220033a78ab9d8ed5527707b1769abfea408c55592fc0b84b469e0a52"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/archer-II-placement-before-after.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 70081,
+      "sha256": "67f9a1040c735ff47cddd9c4590058aebff7ce298d28e10e4f46cefcd0109733"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower-family-seated-2x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 142921,
+      "sha256": "42d11e99e3ac50a108d8f26392dbd980ffb745392e18b2061b096569d65a3ad6"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower-family-seated.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 114715,
+      "sha256": "8900bb343f9d7c3164fc5493e0d72aa86822dc8603dbbb9ead8a6ffe8c86cbb3"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower-foundation-and-sockets-2x.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 144638,
+      "sha256": "27a23c9973717f1824dd53f10ac90c94bb0b87b262e22c7f132b22659e8bb4dd"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_0_1-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12773,
+      "sha256": "faff3baff5de588eebc282ee1f85c46b09571b1f65b9888a6671b6d2ce23d8e9"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_0_2-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 13124,
+      "sha256": "c7684c5187045ae3d0c72fa2df8b1e455b0fab73b826a216816c3385afcedcbd"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_0_3-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 16242,
+      "sha256": "2ccc24c0dba1d5ff15e51008573433bc297b372f6ee177eaa8ae3d62239696e8"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_1_1-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12098,
+      "sha256": "529bd03c5fa7cb88563cb336f3ababe6156bde10f1ad973f64acb39d05bd7ee3"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_1_2-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12128,
+      "sha256": "5bea90a2fbc73d3328bb0b217352f66a1c0cf9c92a832deacf92ee2d4169e8b6"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_1_3-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12493,
+      "sha256": "d8915e655d89c86835a6a94909cbc618e455ac6c2109a5b84a8d0ef1eb334581"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_2_1-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12074,
+      "sha256": "1976b2074d3be9a9aac1c38bef4a15a3bafa3b4c32de124a9d4d19bdcc0f1897"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_2_2-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 12505,
+      "sha256": "54fc7a9d14408baf008a914bd5ec8c0df8078fd7199af194810fd53f7179e79b"
+    },
+    {
+      "path": "NeonGothic/v082/review/towers/tower_2_3-preview.png",
+      "purpose": "Neon Gothic delivered art",
+      "bytes": 13220,
+      "sha256": "77bf3c85171758a6b5321638ff36e3418d5590edff0832f32aca7e5183b21dba"
     }
   ]
 }

@@ -46,9 +46,10 @@ namespace SkeletonDefender.Editor
             }
             check(model.Position(-100)==path[0],"negative distance clamp");
             check(model.Position(model.PathLength+100)==path[path.Length-1],"exit distance clamp");
-            check(GameModel.Sites.Length==10,"number of build locations changed");
+            check(GameModel.Sites.Length==9,"the marked lower build location was not removed");
             foreach (Vector2 site in GameModel.Sites)
             {
+                check(Vector2.Distance(site, new Vector2(489,559)) > 1, "removed lower location is still buildable");
                 float clearance=float.PositiveInfinity;
                 for (int i=0;i<path.Length-1;i++)
                 {

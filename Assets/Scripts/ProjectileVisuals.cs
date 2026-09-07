@@ -65,6 +65,7 @@ namespace SkeletonDefender
             public int kind, level, width, height;
             public float groundPivotX, groundPivotY, drawWidth, drawHeight;
             public float opaqueX, opaqueY, opaqueWidth, opaqueHeight;
+            public float footprintX, footprintY, footprintWidth, footprintHeight;
             public TowerMuzzle[] sockets;
             public TowerArcherAnchor[] archers;
         }
@@ -252,6 +253,18 @@ namespace SkeletonDefender
             Vector2 scale = new Vector2(tower.drawWidth / tower.width, tower.drawHeight / tower.height);
             return new Rect(ground.x - tower.groundPivotX * scale.x, ground.y - tower.groundPivotY * scale.y,
                 tower.drawWidth, tower.drawHeight);
+        }
+        // The site is the centre of the foundation, not its foremost bottom pixel.
+        // The artwork, bow platforms, emitters and selection all share TowerBounds.
+        public static Rect TowerFootprintBounds(Vector2 ground, TowerKind kind, int level)
+        {
+            var tower = TowerGeometry(kind, level);
+            if (tower == null || tower.footprintWidth <= 0 || tower.footprintHeight <= 0)
+                return new Rect(ground.x - 40, ground.y - 20, 80, 40);
+            Rect bounds = TowerBounds(ground, kind, level);
+            Vector2 scale = new Vector2(bounds.width / tower.width, bounds.height / tower.height);
+            return new Rect(bounds.position + Vector2.Scale(new Vector2(tower.footprintX, tower.footprintY), scale),
+                Vector2.Scale(new Vector2(tower.footprintWidth, tower.footprintHeight), scale));
         }
         public static Vector2 TowerSocket(Vector2 anchor, TowerKind kind, int level, int archerIndex = 0)
         {

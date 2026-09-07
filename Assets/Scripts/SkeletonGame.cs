@@ -268,6 +268,7 @@ namespace SkeletonDefender
             Outline(new Rect(mapRect.x - 2, mapRect.y - 2, mapRect.width + 4, mapRect.height + 4), Edge, 2);
             GUI.BeginGroup(mapRect);
             Texture(new Rect(0, 0, 1056, 640), map);
+            DrawGothicBattlefieldLights();
             DrawRange();
             for (int i = 0; i < GameModel.Sites.Length; i++)
             {
@@ -325,8 +326,8 @@ namespace SkeletonDefender
                 Txt(popup.Text, popup.Position.x - 30, popup.Position.y - 65 - (1.2f - popup.Life) * 23, 70, 30, 18, popup.Damage ? Red : Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
             DrawEnemyTooltip();
             DrawAimMarker();
-            Fill(new Rect(14, 15, 402, 31), new Color(.025f, .035f, .075f, .86f));
-            Txt(BalanceData.Current.mapName.ToUpperInvariant(), 27, 23, 390, 25, 13, Text, FontStyle.Bold);
+            Fill(new Rect(96, 12, 263, 28), new Color(.025f, .035f, .075f, .78f));
+            Txt(BalanceData.Current.mapName.ToUpperInvariant(), 107, 16, 244, 23, 12, Text, FontStyle.Bold);
             if (bannerLife > 0)
             {
                 Fill(new Rect(230, 580, 625, 42), new Color(.025f, .035f, .075f, .94f));
@@ -387,7 +388,7 @@ namespace SkeletonDefender
         private void HandleSites()
         {
             if (paused || Finished || Event.current.type != EventType.MouseDown || Event.current.button != 0 || !mapRect.Contains(mouse)) return;
-            if (HandleAimClick() || SkillBarContains(mouse)) return;
+            if (BattleHudContains(mouse) || HandleAimClick()) return;
             Vector2 local = mouse - mapRect.position;
             if (game.Clone != null && game.Clone.Alive && AnimatedActors.HeroBounds(game.Clone).Contains(AnimatedActors.HeroPose(game.Clone).inverse.MultiplyPoint3x4(local)))
             { SelectBattleHero(true); Event.current.Use(); return; }
@@ -476,53 +477,53 @@ namespace SkeletonDefender
         }
         private void DrawBottom()
         {
-            DrawHeroCard();
-            Box(new Rect(438, 788, 642, 88));
+            Rect panel = BattleHudLayout.WaveStatus;
+            Box(panel);
             int upcoming = Mathf.Min(game.Wave + (game.State == RunState.Preparing ? 1 : 0), GameModel.TotalWaves);
             string status = game.Wave == 0 ? "ПОДГОТОВКА К ОБОРОНЕ" : "ВРАГОВ ОСТАЛОСЬ: " + game.PlannedRemaining;
-            Txt(status, 454, 800, 350, 25, 14, Gold, FontStyle.Bold);
+            Txt(status, panel.x + 14, panel.y + 10, panel.width - 28, 23, 14, Gold, FontStyle.Bold);
             string waveInfo = "Волна " + upcoming + ": " + BalanceData.Current.Wave(upcoming).count + (upcoming == GameModel.TotalWaves ? " босс" : " врагов") + " · Отражено: " + game.WavesCompleted + " / " + GameModel.TotalWaves;
-            if (game.SummonedRemaining > 0) waveInfo = "Ещё призванных: " + game.SummonedRemaining + " · " + waveInfo;
-            Txt(waveInfo, 454, 839, 610, 30, 13, Dim);
+            if (game.SummonedRemaining > 0) waveInfo = "Призванных: " + game.SummonedRemaining + " · " + waveInfo;
+            Txt(waveInfo, panel.x + 14, panel.y + 37, panel.width - 28, 22, 12, Dim);
             for (int i = 0; i < GameModel.TotalWaves; i++)
             {
                 Color c = i < game.Wave ? Gold : Edge;
                 if (i < game.WaveRuns.Count && game.WaveRuns[i].Completed) c = Green;
-                Fill(new Rect(807 + i * 12, 813, 8, 14), c);
+                Fill(new Rect(panel.x + 14 + i * 26, panel.y + 68, 20, 6), c);
             }
+            Rect r = BattleHudLayout.WaveButton;
             bool ready = game.Wave == 0 && game.State == RunState.Preparing && !paused && !Finished;
             if (ready)
             {
-                if (Button(new Rect(1104, 788, 312, 62), "НАЧАТЬ ОБОРОНУ", true, true, 18)) NextWave();
+                if (Button(r, "НАЧАТЬ ОБОРОНУ", true, true, 17)) NextWave();
             }
             else if (game.CanCallNextWave && !paused && !Finished) DrawEarlyWaveButton();
             else
             {
-                Box(new Rect(1104, 788, 312, 62));
+                Box(r);
                 string title = game.Wave >= GameModel.TotalWaves ? "ФИНАЛЬНАЯ ВОЛНА" : game.State == RunState.Preparing ? "АВТОСТАРТ " + ClockText(game.NextWaveIn) : "ВОЛНА ИДЁТ";
-                Txt(title, 1112, 796, 296, 24, 16, Dim, FontStyle.Bold, TextAnchor.MiddleCenter);
+                Txt(title, r.x + 8, r.y + 7, r.width - 16, 24, 15, Dim, FontStyle.Bold, TextAnchor.MiddleCenter);
                 string hint = game.Wave >= GameModel.TotalWaves ? "Босс уязвим к физическому урону" : "Для вызова вышло: " + game.EarlyWaveSpawned + " / " + game.EarlyWaveRequiredSpawned;
-                Txt(hint, 1112, 824, 296, 21, 12, Dim, align: TextAnchor.MiddleCenter);
+                Txt(hint, r.x + 8, r.y + 35, r.width - 16, 21, 11, Dim, align: TextAnchor.MiddleCenter);
             }
-            Txt("2 / ПРОБЕЛ — ГЕРОЙ  ·  3 — КОПИЯ", 1104, 861, 312, 20, 10, Dim, align: TextAnchor.MiddleCenter);
+            Txt("2 / ПРОБЕЛ — ГЕРОЙ  ·  3 — КОПИЯ", r.x, 864, r.width, 18, 10, Dim, align: TextAnchor.MiddleCenter);
         }
         private void DrawEarlyWaveButton()
         {
-            Rect r = new Rect(1104, 788, 312, 62);
+            Rect r = BattleHudLayout.WaveButton;
             bool hover = r.Contains(mouse);
             Fill(new Rect(r.x, r.y + 4, r.width, r.height), PixelArt.C("0a151b"));
             Fill(r, hover ? PixelArt.C("264858") : PixelArt.C("1b3449"));
             Outline(r, Gold, 2);
             float pulse = .55f + .15f * Mathf.Sin(game.Elapsed * 3);
             Fill(new Rect(r.x + 3, r.y + 3, r.width - 6, 2), new Color(Gold.r, Gold.g, Gold.b, pulse));
-            // A small pixel horn makes the call-to-arms control distinct from building buttons.
-            Fill(new Rect(1119, 821, 14, 5), Gold);
-            Fill(new Rect(1129, 814, 8, 12), Gold);
-            Fill(new Rect(1135, 806, 8, 19), Gold);
-            Fill(new Rect(1142, 801, 5, 27), Gold);
-            Fill(new Rect(1123, 826, 5, 6), Gold);
-            Txt("ВЫЗВАТЬ ВОЛНУ " + (game.Wave + 1), 1154, 794, 252, 29, 17, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
-            Txt("+" + game.EarlyWaveBonus + " золота · враги останутся", 1154, 825, 252, 20, 12, Text, align: TextAnchor.MiddleCenter);
+            Fill(new Rect(r.x + 15, r.y + 33, 14, 5), Gold);
+            Fill(new Rect(r.x + 25, r.y + 26, 8, 12), Gold);
+            Fill(new Rect(r.x + 31, r.y + 18, 8, 19), Gold);
+            Fill(new Rect(r.x + 38, r.y + 13, 5, 27), Gold);
+            Fill(new Rect(r.x + 19, r.y + 38, 5, 6), Gold);
+            Txt("ВЫЗВАТЬ ВОЛНУ " + (game.Wave + 1), r.x + 50, r.y + 6, r.width - 60, 29, 16, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
+            Txt("+" + game.EarlyWaveBonus + " золота · враги останутся", r.x + 50, r.y + 37, r.width - 60, 20, 11, Text, align: TextAnchor.MiddleCenter);
             if (GUI.Button(r, GUIContent.none, GUIStyle.none)) { GUI.FocusControl(null); CallEarlyWave(); }
         }
         private static string ClockText(float seconds)

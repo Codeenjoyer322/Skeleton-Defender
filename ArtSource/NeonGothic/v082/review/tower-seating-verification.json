@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "towers": 9,
+  "nativeCanvas": [
+    144,
+    192
+  ],
+  "worldShiftAllGeometry": [
+    0,
+    21
+  ],
+  "archerIICanopyRemoved": true,
+  "otherEightPngPixelsUnchanged": true,
+  "archerIILowerMasonryUnchanged": true,
+  "commonFoundationCentre": [
+    72,
+    161
+  ],
+  "socketsShareArtworkTransform": true,
+  "records": [
+    {
+      "kind": 0,
+      "level": 1,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_0_1.png",
+      "sourceSha256": "ce861464f1a6b4b5f1b605bf48c5b6169c969abf7471d23ee6e103e2b799c954",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_0_1.png",
+      "registeredSha256": "ce861464f1a6b4b5f1b605bf48c5b6169c969abf7471d23ee6e103e2b799c954",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_0_1.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": true
+    },
+    {
+      "kind": 0,
+      "level": 2,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_0_2.png",
+      "sourceSha256": "4ebfc2272d71e0d971375f6837cdb17bab5a15861545d77400a701b02fd2fc00",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_0_2.png",
+      "registeredSha256": "93d717b03a991858cb3bb48ce6dd90cd05dba923cc36d023a2f3ff59da7dfd5d",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_0_2.aseprite",
+      "changedPixels": 8202,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": true
+    },
+    {
+      "kind": 0,
+      "level": 3,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_0_3.png",
+      "sourceSha256": "171a7cb62f6167bf8a733b30f0a5b5a065d35a7a018e97071d140b90f4806814",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_0_3.png",
+      "registeredSha256": "171a7cb62f6167bf8a733b30f0a5b5a065d35a7a018e97071d140b90f4806814",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_0_3.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": true
+    },
+    {
+      "kind": 1,
+      "level": 1,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_1_1.png",
+      "sourceSha256": "529bd03c5fa7cb88563cb336f3ababe6156bde10f1ad973f64acb39d05bd7ee3",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_1_1.png",
+      "registeredSha256": "529bd03c5fa7cb88563cb336f3ababe6156bde10f1ad973f64acb39d05bd7ee3",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_1_1.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    },
+    {
+      "kind": 1,
+      "level": 2,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_1_2.png",
+      "sourceSha256": "5bea90a2fbc73d3328bb0b217352f66a1c0cf9c92a832deacf92ee2d4169e8b6",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_1_2.png",
+      "registeredSha256": "5bea90a2fbc73d3328bb0b217352f66a1c0cf9c92a832deacf92ee2d4169e8b6",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_1_2.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    },
+    {
+      "kind": 1,
+      "level": 3,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_1_3.png",
+      "sourceSha256": "d8915e655d89c86835a6a94909cbc618e455ac6c2109a5b84a8d0ef1eb334581",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_1_3.png",
+      "registeredSha256": "d8915e655d89c86835a6a94909cbc618e455ac6c2109a5b84a8d0ef1eb334581",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_1_3.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    },
+    {
+      "kind": 2,
+      "level": 1,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_2_1.png",
+      "sourceSha256": "1976b2074d3be9a9aac1c38bef4a15a3bafa3b4c32de124a9d4d19bdcc0f1897",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_2_1.png",
+      "registeredSha256": "1976b2074d3be9a9aac1c38bef4a15a3bafa3b4c32de124a9d4d19bdcc0f1897",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_2_1.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    },
+    {
+      "kind": 2,
+      "level": 2,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_2_2.png",
+      "sourceSha256": "54fc7a9d14408baf008a914bd5ec8c0df8078fd7199af194810fd53f7179e79b",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_2_2.png",
+      "registeredSha256": "54fc7a9d14408baf008a914bd5ec8c0df8078fd7199af194810fd53f7179e79b",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_2_2.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    },
+    {
+      "kind": 2,
+      "level": 3,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\environment\\tower_2_3.png",
+      "sourceSha256": "77bf3c85171758a6b5321638ff36e3418d5590edff0832f32aca7e5183b21dba",
+      "registeredPng": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\exports\\environment\\tower_2_3.png",
+      "registeredSha256": "77bf3c85171758a6b5321638ff36e3418d5590edff0832f32aca7e5183b21dba",
+      "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v082\\source\\towers\\tower_2_3.aseprite",
+      "changedPixels": 0,
+      "groundPivot": [
+        72,
+        161
+      ],
+      "worldShift": [
+        0,
+        21
+      ],
+      "archersSeparate": false
+    }
+  ]
+}

@@ -186,6 +186,7 @@ namespace SkeletonDefender.Editor
         {
             public int kind, level, width, height;
             public float groundPivotX, groundPivotY, drawWidth, drawHeight;
+            public float footprintX, footprintY, footprintWidth, footprintHeight;
             public int opaqueX, opaqueY, opaqueWidth, opaqueHeight;
             public TowerSocketFixture[] sockets;
             public TowerArcherFixture[] archers;
@@ -212,6 +213,11 @@ namespace SkeletonDefender.Editor
                 Vector2 scale = new Vector2(tower.drawWidth / tower.width, tower.drawHeight / tower.height);
                 Check(Near(bounds.position, ground - Vector2.Scale(new Vector2(tower.groundPivotX, tower.groundPivotY), scale)) &&
                     Near(bounds.size, new Vector2(tower.drawWidth, tower.drawHeight)), "Tower placement disagrees with authored ground pivot: " + key);
+                Rect footprint = ProjectileVisuals.TowerFootprintBounds(ground, (TowerKind)tower.kind, tower.level);
+                Check(tower.footprintWidth > 0 && tower.footprintHeight > 0 && Near(footprint.center, ground),
+                    "Tower foundation is not centred on its construction site: " + key);
+                Check(Near(footprint.size, Vector2.Scale(new Vector2(tower.footprintWidth, tower.footprintHeight), scale)),
+                    "Foundation selection and actual building scale disagree: " + key);
                 var decoded = new Texture2D(2, 2, TextureFormat.RGBA32, false);
                 try
                 {
@@ -221,6 +227,20 @@ namespace SkeletonDefender.Editor
                         if(decoded.GetPixel(x,decoded.height-1-y).a > 0) { x0=Math.Min(x0,x); x1=Math.Max(x1,x); y0=Math.Min(y0,y); y1=Math.Max(y1,y); }
                     Check(x0==tower.opaqueX && y0==tower.opaqueY && x1-x0+1==tower.opaqueWidth && y1-y0+1==tower.opaqueHeight,
                         "Selection geometry does not cover the actual opaque tower pixels: " + key);
+                    // Native front edge is y181 in this family. A bottom-edge pivot (the
+                    // original bug) puts the entire visible foundation above the site.
+                    Check(y1-tower.groundPivotY >= 18 && y1-tower.groundPivotY <= 22 &&
+                        Near(footprint.yMax, bounds.y+(y1*scale.y)),
+                        "Site anchor is on the front rim instead of the foundation centre: " + key);
+                    if(tower.kind==0 && tower.level==2)
+                    {
+                        bool canopyRemoved = true;
+                        for(int y=0;y<39;y++) for(int x=0;x<decoded.width;x++)
+                            canopyRemoved &= decoded.GetPixel(x,decoded.height-1-y).a==0;
+                        Check(canopyRemoved, "Archer II canopy remains above the open platform");
+                        Check(decoded.GetPixel(72,decoded.height-1-62).a>.99f,
+                            "Archer II standing anchor is not on its visible wooden platform");
+                    }
                     Rect selection = ProjectileVisuals.TowerSelectionBounds(ground,(TowerKind)tower.kind,tower.level);
                     Rect baseOpaque = new Rect(bounds.position+Vector2.Scale(new Vector2(x0,y0),scale),Vector2.Scale(new Vector2(x1-x0+1,y1-y0+1),scale));
                     Check(ContainsBounds(selection,baseOpaque), "Tower selection misses the displayed base silhouette: " + key);

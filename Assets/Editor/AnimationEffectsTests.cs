@@ -47,6 +47,7 @@ namespace SkeletonDefender.Editor
             EnemyDirectionalReleaseSocket();
             StormTickContact();
             DeerDirectionalCoverage();
+            DeerVisualTests.Validate();
             StormScreenGeometry();
             var path = Path.Combine(Path.GetDirectoryName(Application.dataPath), "work", "animation-effects-results.json");
             Directory.CreateDirectory(Path.GetDirectoryName(path));
@@ -269,7 +270,7 @@ namespace SkeletonDefender.Editor
                     "Missing authored deer gallop " + direction);
                 Check(!clip.FlipX && ids.Add(clip.Id), "Deer direction is mirrored or aliases another direction " + direction);
                 Vector2 delta = new Vector2(Mathf.Cos(index * Mathf.PI / 4), Mathf.Sin(index * Mathf.PI / 4));
-                Check((AnimationClipData)Call("DeerAnimationClip", delta, delta.x < 0) == clip,
+                Check(DeerVisuals.Clip(new AbilityEffect { FacingDirection = direction, FacingLeft = delta.x < 0 }) == clip,
                     "Road tangent selects the wrong deer body " + direction);
                 Check(clip.Texture.width == clip.SheetWidth && clip.Texture.height == clip.SheetHeight && clip.Texture.filterMode == FilterMode.Point,
                     "Deer atlas was resized or filtered " + direction);

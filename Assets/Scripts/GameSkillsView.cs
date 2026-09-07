@@ -48,29 +48,86 @@ namespace SkeletonDefender
             if (game.TryCastSkill(aimingSkill, point, aimingClone)) { CancelSkillAim(); Sound(buildSound); }
             Event.current.Use(); return true;
         }
-        private bool SkillBarContains(Vector2 p) => new Rect(438, 136, 630, 66).Contains(p);
+        private bool SkillBarContains(Vector2 p) => BattleHudLayout.ContainsSkills(p);
+        private bool BattleHudContains(Vector2 p) => SkillBarContains(p) ||
+            BattleHudLayout.ContainsActor(p, game.Clone != null);
+        private static string CompactSkillName(HeroKind hero, int index) => hero == HeroKind.Circe
+            ? index == 0 ? "ОЛЕНИ" : "ГРОЗА" : index == 0 ? "КОПЬЁ" : "ДОЖДЬ СТРЕЛ";
         private void DrawSkillsBar()
         {
+            DrawBattleHeroHud(game.Hero, BattleHudLayout.Hero, false);
+            if (game.Clone != null) DrawBattleHeroHud(game.Clone, BattleHudLayout.Clone, true);
             HeroCombatState actor = SelectedActor;
-            Txt((cloneSelected ? "НАВЫКИ КОПИИ" : "НАВЫКИ ГЕРОЯ") + " · " + actor.Mana.ToString("0") + "/" + actor.MaxMana.ToString("0") + " МАНЫ", 39, 181, 390, 22, 12, ManaBlue, FontStyle.Bold);
             int hovered = -1;
             for (int i = 0; i < 2; i++)
             {
-                Rect r = new Rect(438 + i * 209, 136, 201, 66);
+                Rect r = BattleHudLayout.Skill(i);
                 bool enabled = !paused && !Finished && game.CanCastSkill(i, cloneSelected);
                 bool aiming = aimingSkill == i && aimingClone == cloneSelected;
-                Fill(r, aiming ? PixelArt.C("483653") : PixelArt.C("111b2e")); Outline(r, aiming ? Gold : enabled ? ManaBlue : Edge, aiming ? 2 : 1);
-                Txt((i == 0 ? "Q  " : "E  ") + ManualSkillName(actor.Kind, i), r.x + 8, r.y + 8, 185, 22, 11, enabled || aiming ? Text : Dim, FontStyle.Bold);
+                Color accent = aiming ? Gold : ManaBlue;
+                Fill(r, aiming ? PixelArt.C("2d263c") : PixelArt.C("111b2e"));
+                Outline(r, aiming || enabled ? accent : Edge);
+                Fill(new Rect(r.x + 1, r.y + 1, r.width - 2, 2), new Color(accent.r, accent.g, accent.b, enabled || aiming ? .8f : .22f));
+                Fill(new Rect(r.x + 8, r.y + 10, 24, 25), PixelArt.C("263449"));
+                Txt(i == 0 ? "Q" : "E", r.x + 8, r.y + 10, 24, 25, 15, accent, FontStyle.Bold, TextAnchor.MiddleCenter);
+                Txt(CompactSkillName(actor.Kind, i), r.x + 40, r.y + 9, r.width - 46, 29, 11, enabled || aiming ? Text : Dim, FontStyle.Bold, TextAnchor.MiddleLeft);
                 float cd = game.SkillCooldownRemaining(i, cloneSelected), cost = game.SkillManaCost(i, cloneSelected);
-                string status = aiming ? "ВЫБЕРИ ТОЧКУ" : !actor.Alive ? "Герой пал" : actor.KnockdownRemaining > 0 ? "Нокдаун" : !game.HasStarted ? "Начни оборону" : cd > 0 ? "Откат " + ClockText(cd) : actor.Mana < cost ? "Маны не хватает" : "Готово";
-                Txt(cost.ToString("0.###") + " маны · " + status, r.x + 8, r.y + 37, 185, 22, 11, aiming ? Gold : ManaBlue);
+                string status = aiming ? "Выбери цель" : !actor.Alive ? "Возрождение" : actor.KnockdownRemaining > 0 ? "Нокдаун" : !game.HasStarted ? "До начала боя" : cd > 0 ? ClockText(cd) : actor.Mana < cost ? "Нет маны" : "Готово";
+                Txt(cost.ToString("0.#") + " MP · " + status, r.x + 8, r.y + 40, r.width - 16, 17, 10, aiming ? Gold : ManaBlue);
+                if (cd > 0)
+                {
+                    float total = BalanceData.Current.heroSystems.Skill(actor.Kind, i).cooldown;
+                    Fill(new Rect(r.x + 1, r.yMax - 3, (r.width - 2) * Mathf.Clamp01(1 - cd / Mathf.Max(.01f, total)), 2), ManaBlue);
+                }
                 if (enabled && GUI.Button(r, GUIContent.none, GUIStyle.none)) { RequestManualSkill(i); GUI.FocusControl(null); }
                 if (r.Contains(mouse)) hovered = i;
             }
-            DrawArtifactButton(new Rect(856, 136, 212, 66));
+            DrawArtifactButton(BattleHudLayout.Skill(2));
             if (aimingSkill >= 0)
-                Txt("ПРИЦЕЛИВАНИЕ · ЛКМ — бросок · ESC / ПКМ — отмена", 448, 207, 610, 24, 12, Gold, FontStyle.Bold, TextAnchor.MiddleRight);
+                Txt("ЛКМ — бросок · ESC / ПКМ — отмена", 922, 865, 494, 18, 11, Gold, FontStyle.Bold, TextAnchor.MiddleRight);
             else if (hovered >= 0 && !paused && !Finished) DrawSkillTooltip(actor, hovered);
+        }
+        private void DrawBattleHeroHud(HeroCombatState actor, Rect r, bool clone)
+        {
+            bool chosen = heroSelected && cloneSelected == clone;
+            Fill(r, new Color(.035f, .06f, .11f, .95f));
+            Outline(r, chosen ? HeroAccent(actor.Kind) : Edge, chosen ? 2 : 1);
+            float iconSize = Mathf.Min(r.width - 12, r.height - 35);
+            Rect icon = new Rect(r.center.x - iconSize * .5f, r.y + 5, iconSize, iconSize);
+            Texture2D portrait = HeroPortraits.Texture(actor.Kind);
+            if (portrait != null)
+            {
+                Rect bounds = HeroPortraits.Bounds(actor.Kind);
+                // Use one fixed front-facing head/shoulders crop; never sample an idle animation.
+                float side = Mathf.Min(bounds.width + 8, bounds.height * .55f);
+                Rect crop = new Rect(bounds.center.x - side * .5f, bounds.yMin, side, side);
+                Rect uv = new Rect(crop.x / portrait.width, 1 - crop.yMax / portrait.height,
+                    crop.width / portrait.width, crop.height / portrait.height);
+                Color before = GUI.color;
+                GUI.color = actor.Alive ? clone ? new Color(.75f, .9f, 1) : Color.white : Dim;
+                GUI.DrawTextureWithTexCoords(icon, portrait, uv, true);
+                GUI.color = before;
+            }
+            Color hp = PixelArt.C("67d886"), mp = PixelArt.C("49a9f3");
+            Rect health = new Rect(r.x + 5, r.yMax - 25, r.width - 10, 9);
+            Rect mana = new Rect(r.x + 5, r.yMax - 12, r.width - 10, 7);
+            Fill(health, PixelArt.C("18352b"));
+            Fill(new Rect(health.x, health.y, health.width * Mathf.Clamp01(actor.Hp / Mathf.Max(1, actor.MaxHp)), health.height), hp);
+            Fill(mana, PixelArt.C("162c49"));
+            Fill(new Rect(mana.x, mana.y, mana.width * Mathf.Clamp01(actor.Mana / Mathf.Max(1, actor.MaxMana)), mana.height), mp);
+            if (!actor.Alive)
+                Txt(clone ? "×" : Mathf.CeilToInt(actor.RespawnRemaining) + "с", icon.x, icon.center.y - 13, icon.width, 26, 16, Text, FontStyle.Bold, TextAnchor.MiddleCenter);
+            if (!paused && !Finished && (!clone || actor.Alive) && GUI.Button(r, GUIContent.none, GUIStyle.none))
+            { SelectBattleHero(clone); Sound(clickSound); GUI.FocusControl(null); }
+            if (r.Contains(mouse) && !paused)
+            {
+                Rect tip = new Rect(r.xMax + 8, r.y + 39, 230, 53);
+                Box(tip); Outline(tip, Edge);
+                Txt((clone ? "Копия · 3" : HeroName(actor.Kind) + " · 2 / Пробел") + "\n" +
+                    actor.Hp.ToString("0") + "/" + actor.MaxHp.ToString("0") + " HP · " +
+                    actor.Mana.ToString("0") + "/" + actor.MaxMana.ToString("0") + " MP",
+                    tip.x + 8, tip.y + 6, tip.width - 16, 42, 12, Text);
+            }
         }
         private void DrawSkillTooltip(HeroCombatState actor, int index)
         {
@@ -84,30 +141,40 @@ namespace SkeletonDefender
             else if (index == 0)
                 text = "Укажи точку: " + damage.ToString("0.###") + " физического урона в радиусе " + skill.areaRadius.ToString("0.#") + ". Отбрасывает на половину пути за последние 2с. Босса не отбрасывает. ESC / ПКМ — отмена без расхода маны.";
             else text = damage.ToString("0.###") + " физического урона каждому врагу, который был на карте при нажатии. Замедление " + skill.slowFraction.ToString("0%") + " на " + skill.slowDuration.ToString("0.#") + "с. Босса не замедляет.";
-            float x = index == 0 ? 438 : 646;
-            Box(new Rect(x, 213, 414, 194)); Outline(new Rect(x, 213, 414, 194), ManaBlue);
-            Txt(ManualSkillName(actor.Kind, index), x + 14, 225, 386, 26, 16, ManaBlue, FontStyle.Bold);
-            Txt(text, x + 14, 262, 386, 105, 14, Text);
-            Txt("Мана " + game.SkillManaCost(index, cloneSelected).ToString("0.###") + " · Перезарядка " + ClockText(skill.cooldown), x + 14, 376, 386, 23, 13, Dim);
+            Rect r = BattleHudLayout.Tooltip;
+            Box(r); Outline(r, ManaBlue);
+            Txt(ManualSkillName(actor.Kind, index), r.x + 14, r.y + 12, r.width - 28, 27, 16, ManaBlue, FontStyle.Bold);
+            Txt(text, r.x + 14, r.y + 51, r.width - 28, 127, 14, Text);
+            Txt("Мана " + game.SkillManaCost(index, cloneSelected).ToString("0.###") + " · Перезарядка " + ClockText(skill.cooldown), r.x + 14, r.yMax - 34, r.width - 28, 23, 13, Dim);
         }
         private void DrawArtifactButton(Rect r)
         {
             InventoryItem artifact = profile.EquippedItem(profile.SelectedHero, 7);
             bool passive = artifact != null && artifact.Artifact == ArtifactKind.AegisOfDawn;
             bool enabled = !paused && !Finished && !cloneSelected && game.CanUseArtifact;
-            Fill(r, PixelArt.C("241c32")); Outline(r, enabled || game.RageRemaining > 0 ? Gold : Edge);
-            string name = artifact == null ? "АРТЕФАКТ НЕ НАДЕТ" : artifact.Name;
-            Txt((passive ? "" : "R  ") + name, r.x + 8, r.y + 7, r.width - 16, 28, 11, Gold, FontStyle.Bold);
-            string state = artifact == null ? "Надень в главном меню" : passive ? "Пассивно · возрождение 3с" : game.RageRemaining > 0 ? "ЯРОСТЬ " + ClockText(game.RageRemaining)
-                : game.CloneRemaining > 0 ? "КОПИЯ " + ClockText(game.CloneRemaining) : cloneSelected ? "Использует только основной герой" : game.CanUseArtifact ? "Один раз за карту · 5 минут" : "Использован / недоступен";
-            Txt(state, r.x + 8, r.y + 40, r.width - 16, 20, 10, Dim);
+            Fill(r, PixelArt.C("211c30")); Outline(r, enabled || game.RageRemaining > 0 ? Gold : Edge);
+            Fill(new Rect(r.x + 1, r.y + 1, r.width - 2, 2), new Color(Gold.r, Gold.g, Gold.b, enabled ? .8f : .22f));
+            Fill(new Rect(r.x + 8, r.y + 10, 24, 25), PixelArt.C("393041"));
+            Txt(passive ? "◆" : "R", r.x + 8, r.y + 10, 24, 25, 15, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
+            Txt("АРТЕФАКТ", r.x + 40, r.y + 9, r.width - 46, 29, 11, artifact == null ? Dim : Gold, FontStyle.Bold, TextAnchor.MiddleLeft);
+            string state = artifact == null ? "Не надет" : passive ? "Пассивный" : game.RageRemaining > 0 ? ClockText(game.RageRemaining)
+                : game.CloneRemaining > 0 ? ClockText(game.CloneRemaining) : cloneSelected ? "Только герой" : game.CanUseArtifact ? "Готово · 1 раз" : "Недоступен";
+            Txt(state, r.x + 8, r.y + 40, r.width - 16, 17, 10, Dim);
             if (enabled && GUI.Button(r, GUIContent.none, GUIStyle.none) && game.TryUseArtifact()) { CancelSkillAim(); Sound(buildSound); }
+            if (r.Contains(mouse) && !paused && !Finished)
+            {
+                Rect tip = new Rect(BattleHudLayout.Tooltip.x, 652, BattleHudLayout.Tooltip.width, 126);
+                Box(tip); Outline(tip, Gold);
+                Txt(artifact == null ? "АРТЕФАКТ НЕ НАДЕТ" : artifact.Name, tip.x + 14, tip.y + 12, tip.width - 28, 29, 16, Gold, FontStyle.Bold);
+                string detail = artifact == null ? "Артефакт можно надеть в инвентаре главного меню." : passive ? "Возрождение через 3 секунды. Работает автоматически." : "Одно применение за карту. Длительность — 5 минут.";
+                Txt(detail, tip.x + 14, tip.y + 52, tip.width - 28, 62, 14, Text);
+            }
         }
         private void DrawAimMarker()
         {
             if (aimingSkill < 0 || !mapRect.Contains(mouse)) return;
             Vector2 p = mouse - mapRect.position;
-            if (SkillBarContains(mouse)) return;
+            if (BattleHudContains(mouse)) return;
             HeroCombatState actor = game.GetControlledHero(aimingClone);
             if (actor == null) return;
             Vector2 hand = ProjectileVisuals.SpearHand(actor.Position, p.x < actor.Position.x);
@@ -164,24 +231,8 @@ namespace SkeletonDefender
             {
                 float t = effect.Lifetime <= 0 ? 1 : Mathf.Clamp01(effect.Age / effect.Lifetime);
                 Vector2 start = effect.Start, end = effect.End;
-                if (effect.Kind == "deer")
-                {
-                    Vector2 direction = effect.Direction;
-                    // Keep the logical road position and the native four-leg gallop together;
-                    // an independent bob or rotation would move hooves away from the path.
-                    var deerClip = DeerAnimationClip(direction, effect.FacingLeft);
-                    if (deerClip != null && deerClip.Texture != null)
-                    {
-                        DrawAnimationFrame(deerClip, end, deerClip.GroundPivot,
-                            effect.Age * .7f + (effect.LaneOffset > 0 ? deerClip.Duration * .5f : 0),
-                            .6f, Color.white, true);
-                        continue;
-                    }
-                    DrawLine(end - direction.normalized * 55, end, 12, new Color(.6f, .9f, .73f, .18f));
-                    Matrix4x4 previous = GUI.matrix;
-                    if (effect.FacingLeft) GUIUtility.ScaleAroundPivot(new Vector2(-1, 1), end);
-                    Texture(new Rect(end.x - 29, end.y - 42 - Mathf.Abs(Mathf.Sin(effect.Age * 16)) * 7, 58, 48), deerArt, PixelArt.C("b5d6af")); GUI.matrix = previous;
-                }
+                // Deer are solid actors in DrawBattleLayers, not overlay effects.
+                if (effect.Kind == "deer") continue;
                 else if (effect.Kind == "storm")
                 {
                     // DrawStormScreenEffects runs outside the map clip so its bolts can
@@ -230,6 +281,21 @@ namespace SkeletonDefender
                         effect.Kind == "rage" ? new Color(1, .65f, .25f, 1 - t) : new Color(.5f, .8f, 1, 1 - t));
                 }
             }
+        }
+        private void DrawDeer(AbilityEffect effect)
+        {
+            Vector2 ground = DeerVisuals.Ground(effect);
+            var clip = DeerVisuals.Clip(effect);
+            if (clip != null && clip.Texture != null)
+            {
+                DrawAnimationFrame(clip, ground, clip.GroundPivot, DeerVisuals.SampleAge(effect, clip),
+                    DeerVisuals.PixelScale, Color.white, true);
+                return;
+            }
+            Matrix4x4 previous = GUI.matrix;
+            if (effect.FacingLeft) GUIUtility.ScaleAroundPivot(new Vector2(-1, 1), ground);
+            Texture(new Rect(ground.x - 29, ground.y - 48, 58, 48), deerArt, PixelArt.C("b5d6af"));
+            GUI.matrix = previous;
         }
         private void DrawProjectileImpacts()
         {

@@ -18,6 +18,10 @@ namespace SkeletonDefender
         public Vector2 LaunchPoint;
         public bool HasLaunchPoint;
         public bool FacingLeft;
+        public Direction8 FacingDirection = Direction8.East;
+        public Vector2 VisualGround;
+        public bool HasVisualGround;
+        public float VisualCycleOffset;
         public float Age, Lifetime;
         public float VisualPlaybackRate = 1;
         public float DamageDuration, LastDamageTickAge = -1;
@@ -272,14 +276,19 @@ namespace SkeletonDefender
             float length = 0;
             for (int i = 1; i < route.Length; i++) length += Vector2.Distance(route[i - 1], route[i]);
             for (int i = 0; i < skill.projectiles; i++)
-                AbilityEffects.Add(new AbilityEffect {
+            {
+                var effect = new AbilityEffect {
                     Kind = "deer", Start = origin, End = origin, Source = actor, FacingLeft = true,
                     Lifetime = Mathf.Max(.01f, skill.duration), Damage = skill.damage * (damageMultiplier >= 0 ? damageMultiplier : actor.MagicDamageMultiplier),
                     SlowFraction = skill.slowFraction, SlowDuration = skill.slowDuration,
                     KnockbackDistance = Mathf.Max(0, skill.knockbackDistance),
                     Route = route, RouteLength = length,
-                    LaneOffset = (i - (skill.projectiles - 1) * .5f) * Systems.deerLaneOffset * 2
-                });
+                    LaneOffset = (i - (skill.projectiles - 1) * .5f) * Systems.deerLaneOffset * 2,
+                    VisualPlaybackRate = .7f, VisualCycleOffset = i * .5f
+                };
+                DeerVisuals.Update(effect);
+                AbilityEffects.Add(effect);
+            }
         }
         private void UpdateAbilityEffects(float dt)
         {
@@ -365,6 +374,9 @@ namespace SkeletonDefender
                 }
                 startDistance = endDistance;
             }
+            // Collisions retain the original swept segments. Only the drawn lane
+            // interpolates its normal through the joins of the road polyline.
+            DeerVisuals.Update(effect);
         }
         private static float DistanceToSegment(Vector2 point, Vector2 a, Vector2 b)
         {

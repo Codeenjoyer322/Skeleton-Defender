@@ -8,12 +8,13 @@ namespace SkeletonDefender
         private struct BattleLayer
         {
             public float Y;
-            public int Order;
+            public int Order, Sequence;
             public Enemy Enemy;
             public EnemyCorpse Corpse;
             public HeroCombatState Hero;
             public HeroCorpse HeroCorpse;
             public Tower Tower;
+            public AbilityEffect Deer;
         }
         private readonly List<BattleLayer> battleLayers = new List<BattleLayer>(256);
 
@@ -99,34 +100,59 @@ namespace SkeletonDefender
 
         private void DrawBattleLayers()
         {
-            battleLayers.Clear();
-            foreach (EnemyCorpse corpse in game.EnemyCorpses)
-                battleLayers.Add(new BattleLayer { Y = corpse.Position.y, Order = 0, Corpse = corpse });
-            foreach (HeroCorpse corpse in game.HeroCorpses)
-                battleLayers.Add(new BattleLayer { Y = corpse.Position.y, Order = 0, HeroCorpse = corpse });
-            foreach (Enemy enemy in game.Enemies)
-                if (!enemy.Dead && enemy.AppearanceDelay <= 0) battleLayers.Add(new BattleLayer { Y = game.Position(enemy.Distance).y, Order = 1, Enemy = enemy });
-            foreach (Tower tower in game.Towers)
-                battleLayers.Add(new BattleLayer { Y = GameModel.Sites[tower.Site].y, Order = 2, Tower = tower });
-            battleLayers.Add(new BattleLayer { Y = game.Hero.Position.y, Order = 3, Hero = game.Hero });
-            if (game.Clone != null && game.Clone.Alive)
-                battleLayers.Add(new BattleLayer { Y = game.Clone.Position.y, Order = 3, Hero = game.Clone });
-            battleLayers.Sort((a, b) => { int y = a.Y.CompareTo(b.Y); return y != 0 ? y : a.Order.CompareTo(b.Order); });
+            FillBattleLayers(game, battleLayers);
             foreach (BattleLayer layer in battleLayers)
             {
                 if (layer.Corpse != null) DrawEnemyCorpse(layer.Corpse);
                 else if (layer.HeroCorpse != null) DrawHeroCorpse(layer.HeroCorpse);
                 else if (layer.Enemy != null) DrawAnimatedEnemy(layer.Enemy);
                 else if (layer.Hero != null) DrawActor(layer.Hero, heroSelected && cloneSelected == layer.Hero.IsClone);
+                else if (layer.Deer != null) DrawDeer(layer.Deer);
                 else DrawBattleTower(layer.Tower);
             }
+        }
+
+        private static void FillBattleLayers(GameModel model, List<BattleLayer> layers)
+        {
+            layers.Clear();
+            foreach (EnemyCorpse corpse in model.EnemyCorpses)
+                layers.Add(new BattleLayer { Y = corpse.Position.y, Order = 0, Corpse = corpse });
+            foreach (HeroCorpse corpse in model.HeroCorpses)
+                layers.Add(new BattleLayer { Y = corpse.Position.y, Order = 0, HeroCorpse = corpse });
+            foreach (Enemy enemy in model.Enemies)
+                if (!enemy.Dead && enemy.AppearanceDelay <= 0) layers.Add(new BattleLayer { Y = model.Position(enemy.Distance).y, Order = 1, Enemy = enemy });
+            foreach (Tower tower in model.Towers)
+                layers.Add(new BattleLayer { Y = GameModel.Sites[tower.Site].y, Order = 2, Tower = tower });
+            layers.Add(new BattleLayer { Y = model.Hero.Position.y, Order = 3, Hero = model.Hero });
+            if (model.Clone != null && model.Clone.Alive)
+                layers.Add(new BattleLayer { Y = model.Clone.Position.y, Order = 3, Hero = model.Clone });
+            foreach (AbilityEffect effect in model.AbilityEffects)
+                if (effect.Kind == "deer") layers.Add(new BattleLayer { Y = DeerVisuals.Ground(effect).y, Order = 1, Deer = effect });
+            // List.Sort is not stable. A deterministic last key prevents silhouettes
+            // at equal ground Y from swapping which one covers the other each frame.
+            for (int i = 0; i < layers.Count; i++) { var layer = layers[i]; layer.Sequence = i; layers[i] = layer; }
+            layers.Sort((a, b) => {
+                int y = a.Y.CompareTo(b.Y); if (y != 0) return y;
+                int order = a.Order.CompareTo(b.Order); return order != 0 ? order : a.Sequence.CompareTo(b.Sequence);
+            });
         }
 
         private void DrawBattleTower(Tower tower)
         {
             Vector2 p = GameModel.Sites[tower.Site];
             Rect bounds = ProjectileVisuals.TowerBounds(p, tower.Kind, tower.Level);
-            if (tower.Site == selected) Outline(new Rect(p.x - 54, p.y - 16, 108, 24), Gold, 2);
+            if (tower.Site == selected)
+            {
+                Rect footprint = ProjectileVisuals.TowerFootprintBounds(p, tower.Kind, tower.Level);
+                footprint.xMin -= 3; footprint.xMax += 3;
+                footprint.yMin -= 2; footprint.yMax += 2;
+                Vector2 top = new Vector2(footprint.center.x, footprint.yMin);
+                Vector2 right = new Vector2(footprint.xMax, footprint.center.y);
+                Vector2 bottom = new Vector2(footprint.center.x, footprint.yMax);
+                Vector2 left = new Vector2(footprint.xMin, footprint.center.y);
+                DrawLine(top, right, 1.5f, Gold); DrawLine(right, bottom, 1.5f, Gold);
+                DrawLine(bottom, left, 1.5f, Gold); DrawLine(left, top, 1.5f, Gold);
+            }
             Texture(bounds, towers[(int)tower.Kind, tower.Level - 1]);
             if (tower.Kind == TowerKind.Archer)
             {

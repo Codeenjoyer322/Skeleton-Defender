@@ -20,7 +20,7 @@ namespace SkeletonDefender
             var source = Resources.Load<TextAsset>("NeonGothic/battlefield-layout");
             if (source == null) throw new InvalidOperationException("Missing battlefield layout.");
             var data = JsonUtility.FromJson<LayoutData>(source.text);
-            if (data.path == null || data.path.Length < 2 || data.sites == null || data.sites.Length != 10)
+            if (data.path == null || data.path.Length < 2 || data.sites == null || data.sites.Length != 9)
                 throw new InvalidOperationException("Invalid battlefield route or tower sites.");
             return data;
         }

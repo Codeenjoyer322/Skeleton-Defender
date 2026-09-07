@@ -902,10 +902,11 @@ namespace SkeletonDefender.Editor
         public static void RunStrategySearch()
         {
             BalanceData.Reload();
-            int[] front = { 0, 1, 3, 4, 2, 5, 7, 6, 9, 8 };
-            var fire = new TowerKind[10];
+            // 0.8.2 removed old site 6; keep the order and tower kind of each surviving place.
+            int[] front = { 0, 1, 3, 4, 2, 5, 6, 8, 7 };
+            var fire = new TowerKind[front.Length];
             for (int i = 0; i < fire.Length; i++) fire[i] = TowerKind.Ember;
-            var mixed = (TowerKind[])fire.Clone(); mixed[2] = TowerKind.Archer; mixed[3] = TowerKind.Frost; mixed[5] = TowerKind.Archer; mixed[8] = TowerKind.Archer;
+            var mixed = (TowerKind[])fire.Clone(); mixed[2] = TowerKind.Archer; mixed[3] = TowerKind.Frost; mixed[5] = TowerKind.Archer; mixed[7] = TowerKind.Archer;
             var strategies = new[] {
                 new StrategyDefinition { Name = "Fire coverage then physical boss defence", Sites = front, Kinds = fire, ConvertToArchers = true, RetreatAndRecover = true },
                 new StrategyDefinition { Name = "Control: front fire with recovering front hero", Sites = front, Kinds = fire, LevelBeforeExpansion = 2, Rally = new Vector2(150, 280), ConvertToArchers = true, RetreatAndRecover = true },
@@ -1039,8 +1040,8 @@ namespace SkeletonDefender.Editor
         {
             const int seed = 14257;
             const int maximumTicks = 60 * 60 * 60;
-            int[] sites = { 1, 3, 0, 5, 2, 7, 8, 4, 6, 9 };
-            TowerKind[] kinds = { TowerKind.Archer, TowerKind.Ember, TowerKind.Archer, TowerKind.Frost, TowerKind.Ember, TowerKind.Ember, TowerKind.Archer, TowerKind.Archer, TowerKind.Frost, TowerKind.Archer };
+            int[] sites = { 1, 3, 0, 5, 2, 6, 7, 4, 8 };
+            TowerKind[] kinds = { TowerKind.Archer, TowerKind.Ember, TowerKind.Archer, TowerKind.Frost, TowerKind.Ember, TowerKind.Ember, TowerKind.Archer, TowerKind.Archer, TowerKind.Archer };
             var runs = new System.Collections.Generic.List<PlayabilityRun>();
             var report = new PlayabilityReport {
                 generatedUtc = DateTime.UtcNow.ToString("O"),

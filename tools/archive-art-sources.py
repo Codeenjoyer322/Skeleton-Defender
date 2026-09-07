@@ -41,8 +41,9 @@ for entry in legacy['sources']:
             if isinstance(files.get(key),str):
                 src=Path(files[key]);copy(src if src.is_absolute() else metadata.parent/src,'legacy editable source')
 
-for version in (DESKTOP/'NeonGothic',DESKTOP/'NeonGothic/v081'):
-    for category in ('exports','source/environment','source/icons','source/towers'):
+for version in (DESKTOP/'NeonGothic',DESKTOP/'NeonGothic/v081',DESKTOP/'NeonGothic/v082'):
+    categories = ('exports','source','review') if version.name == 'v082' else ('exports','source/environment','source/icons','source/towers')
+    for category in categories:
         directory=version/category
         if directory.is_dir():
             for file in directory.rglob('*'):
