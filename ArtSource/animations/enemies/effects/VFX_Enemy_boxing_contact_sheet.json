@@ -1,0 +1,273 @@
+{
+  "frames": [
+    {
+      "duration": 40,
+      "filename": "VFX_Enemy_boxing_contact_frames/01.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 40,
+      "phase": "TOUCH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "VFX_Enemy_boxing_contact_frames/02.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 0
+      },
+      "gifDuration": 40,
+      "phase": "FLASH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "VFX_Enemy_boxing_contact_frames/03.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "BURST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_boxing_contact_frames/04.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "BREAK",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_boxing_contact_frames/05.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 48
+      },
+      "gifDuration": 70,
+      "phase": "FRAGMENTS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "VFX_Enemy_boxing_contact_frames/06.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 48,
+        "y": 48
+      },
+      "gifDuration": 80,
+      "phase": "DUST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "VFX_Enemy_boxing_contact_frames/07.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 96,
+        "y": 48
+      },
+      "gifDuration": 90,
+      "phase": "LAST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "VFX_Enemy_boxing_contact_frames/08.png",
+      "frame": {
+        "h": 48,
+        "w": 48,
+        "x": 144,
+        "y": 48
+      },
+      "gifDuration": 100,
+      "phase": "CLEAR",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "confirmed_victim_contact",
+      "x": 24,
+      "y": 24
+    },
+    "anchors": {
+      "direction": "none",
+      "origin": {
+        "type": "confirmed_victim_contact",
+        "x": 24,
+        "y": 24
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 48,
+      "w": 48
+    },
+    "columns": 4,
+    "componentNameRu": "Боксёр · контакт перчатки",
+    "componentOnly": true,
+    "contact": {
+      "h": 158,
+      "w": 560
+    },
+    "durationMs": 530,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_boxing_contact_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "boxing_contact",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gifDurationMs": 530,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Enemy_boxing_contact_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Place at confirmed glove/victim contact. Knockdown is a victim state, not a second ability.",
+      "Never replay this detached impact at every frame of the actor attack. Last frame is fully transparent."
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Original independent pixel VFX authored in native Aseprite Lua; no generated actor edits.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "review_label": "Подготовлено для просмотра",
+    "size": {
+      "h": 96,
+      "w": 192
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\effects\\_build_sources\\VFX_Enemy_boxing_contact.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "rootApproved": true,
+    "integratedIntoGame": false,
+    "displayScale": 1.1
+  }
+}

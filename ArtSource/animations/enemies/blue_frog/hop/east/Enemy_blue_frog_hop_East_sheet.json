@@ -1,0 +1,478 @@
+{
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "Enemy_blue_frog_hop_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "CROUCH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_blue_frog_hop_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_blue_frog_hop_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "TAKEOFF",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_blue_frog_hop_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RISE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_blue_frog_hop_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "APEX",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_blue_frog_hop_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "FLIGHT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_blue_frog_hop_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "FALL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_blue_frog_hop_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "REACH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_blue_frog_hop_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "LAND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_blue_frog_hop_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "COMPRESS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_blue_frog_hop_East_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 80,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 130,
+      "filename": "Enemy_blue_frog_hop_East_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 130,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "hop",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "blue_frog",
+    "cleanup": [
+      {
+        "raw": 1,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "raw": 2,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -5,
+          "y": 0
+        }
+      },
+      {
+        "raw": 3,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -10,
+          "y": 0
+        }
+      },
+      {
+        "raw": 4,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -23,
+          "y": 0
+        }
+      },
+      {
+        "raw": 5,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -21,
+          "y": 0
+        }
+      },
+      {
+        "raw": 6,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -17,
+          "y": 0
+        }
+      },
+      {
+        "raw": 7,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -14,
+          "y": 0
+        }
+      },
+      {
+        "raw": 8,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -13,
+          "y": 0
+        }
+      },
+      {
+        "raw": 9,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -7,
+          "y": 0
+        }
+      },
+      {
+        "raw": 10,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": -2,
+          "y": 0
+        }
+      },
+      {
+        "raw": 11,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "raw": 12,
+        "reason": "Remove horizontal root travel; retain limb animation and jump height",
+        "translation": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 1,
+    "durationMs": 860,
+    "events": [],
+    "facingNormalizedBeforeExport": false,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "hop",
+        "to": 11
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 860,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_blue_frog_hop_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "loop",
+    "notes": [
+      "Actual quadruped leap with extended hind legs; native per-frame horizontal alignment removes generated travel. Jump height and anatomy retained. Move world position along the road independently."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "previewOnlyLoop": false,
+    "provenance": "PixelLab enemy_blue_frog_hop_v2; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rawJob": "enemy_blue_frog_hop_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFacing": "east",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_blue_frog_hop_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

@@ -11,13 +11,24 @@ namespace SkeletonDefender
 
     public sealed class AbilityEffect
     {
+        internal float InitialAdvance = -1;
         public string Kind;
         public Vector2 Start, End;
+        public Vector2 HitPoint, Direction;
+        public Vector2 LaunchPoint;
+        public bool HasLaunchPoint;
+        public bool FacingLeft;
         public float Age, Lifetime;
+        public float VisualPlaybackRate = 1;
+        public float DamageDuration, LastDamageTickAge = -1;
+        public int DamageTickCount, DamageTicksResolved;
         public HeroCombatState Source;
         public Vector2[] Targets;
+        public int[] TargetIds;
+        public int[] LastDamageTickTargetIds;
+        public Vector2[] LastDamageTickPoints;
         internal int TargetId = -1;
-        internal float Damage, Radius, SlowFraction, SlowDuration, LaneOffset;
+        internal float Damage, Radius, SlowFraction, SlowDuration, LaneOffset, KnockbackDistance;
         internal bool Resolved;
         internal Vector2[] Route;
         internal float RouteLength;
@@ -26,9 +37,14 @@ namespace SkeletonDefender
 
     public sealed class TowerProjectile
     {
+        public float Age;
+        internal float InitialAdvance = -1;
+        public readonly ProjectileVisualState Visual = new ProjectileVisualState();
         public Vector2 Start, Position, Impact;
         public int TargetId;
         public TowerKind Kind;
+        public int Level;
+        public int VisualSocketIndex;
         public float Damage, SplashRadius;
     }
 
@@ -75,7 +91,7 @@ namespace SkeletonDefender
         public bool CanCastSkill(int index, bool clone = false)
         {
             HeroCombatState actor = GetControlledHero(clone);
-            return index >= 0 && index < 2 && CanAct(actor) && actor.ManualCooldowns[index] <= 0 && actor.Mana + .00001f >= SkillManaCost(index, clone);
+            return index >= 0 && index < 2 && CanAct(actor) && !(actor.Animation.IsBusy && actor.Animation.ManualCast) && actor.ManualCooldowns[index] <= 0 && actor.Mana + .00001f >= SkillManaCost(index, clone);
         }
 
         // Selecting or cancelling a target is UI-only. Only a valid confirmed cast spends resources.
@@ -84,21 +100,38 @@ namespace SkeletonDefender
             if (!CanCastSkill(index, clone)) return false;
             if (RequiresSkillTarget(index, clone) && (!target.HasValue || !ValidSkillPoint(target.Value))) return false;
             HeroCombatState actor = GetControlledHero(clone);
+            CancelAutomaticAction(actor);
             ManualSkillDefinition skill = Systems.Skill(actor.Kind, index);
             actor.Mana = Mathf.Max(0, actor.Mana - SkillManaCost(index, clone));
             actor.ManualCooldowns[index] = skill.cooldown;
             actor.PreciseManualCooldowns[index] = skill.cooldown;
-            actor.LastCastName = skill.name; actor.CastPoseRemaining = .7f;
+            actor.LastCastName = skill.name;
             ActorActivity(actor, true);
-            if (actor.Kind == HeroKind.Circe && index == 0) CastDeer(actor, skill);
-            else if (actor.Kind == HeroKind.Circe) CastStorm(actor, skill);
-            else if (index == 0)
-                AbilityEffects.Add(new AbilityEffect {
-                    Kind = "spear", Start = actor.Position, End = target.Value, Source = actor,
-                    Lifetime = Mathf.Max(.01f, skill.visualDelay), Damage = skill.damage * actor.DamageMultiplier,
-                    Radius = skill.areaRadius
-                });
-            else CastArrowRain(actor, skill);
+            if (target.HasValue) ProjectileVisuals.Face(actor, target.Value);
+            bool circe = actor.Kind == HeroKind.Circe;
+            string action = circe ? (index == 0 ? "deer_cast" : "storm_cast") : (index == 0 ? "divine_spear" : "heel_arrow");
+            float release = AnimateHero(actor, action, circe ? 1.4f : 1.8f,
+                circe ? (index == 0 ? .3f : .34f) : (index == 0 ? .72f : 1.18f), 0, true, skill.animationSpeed);
+            var targetIds = new List<int>();
+            if (index == 1)
+                foreach (Enemy enemy in Enemies) if (enemy.Targetable) targetIds.Add(enemy.Id);
+            float damageMultiplier = circe ? actor.MagicDamageMultiplier : actor.DamageMultiplier;
+            Vector2 selectedPoint = target ?? actor.Position;
+            QueueContact(actor, release, () => {
+                if (circe && index == 0) CastDeer(actor, skill, damageMultiplier);
+                else if (circe) CastStorm(actor, skill, targetIds.ToArray(), damageMultiplier);
+                else if (index == 0)
+                {
+                    Vector2 launchPoint = ProjectileVisuals.SkillReleasePoint(actor, "divine_spear");
+                    AbilityEffects.Add(new AbilityEffect {
+                        Kind = "spear", Start = actor.Position, End = selectedPoint, Source = actor,
+                        FacingLeft = actor.FacingLeft, LaunchPoint = launchPoint, HasLaunchPoint = true,
+                        Lifetime = ProjectileVisuals.SpearFlightDuration(launchPoint, selectedPoint), Damage = skill.damage * damageMultiplier,
+                        Radius = skill.areaRadius
+                    });
+                }
+                else CastArrowRain(actor, skill, targetIds.ToArray(), damageMultiplier);
+            });
             return true;
         }
         private static bool ValidSkillPoint(Vector2 point) => Finite(point.x) && Finite(point.y) && point.x >= 0 && point.x <= 1056 && point.y >= 0 && point.y <= 640;
@@ -162,79 +195,122 @@ namespace SkeletonDefender
         private void FinishCombat()
         {
             Projectiles.Clear(); EnemyProjectiles.Clear(); TowerProjectiles.Clear(); AbilityEffects.Clear();
+            ProjectileImpacts.Clear(); animationContacts.Clear();
             Hero.Regeneration.Reset();
             if (Clone != null) Clone.Regeneration.Reset();
         }
 
-        private void CastStorm(HeroCombatState actor, ManualSkillDefinition skill)
+        private void CastStorm(HeroCombatState actor, ManualSkillDefinition skill, int[] targetIds = null, float damageMultiplier = -1)
         {
             var points = new List<Vector2>();
+            var ids = new List<int>();
+            // Preserve the input snapshot, including temporarily untargetable original
+            // actors. Each damage tick independently checks whether that actor still exists.
             foreach (Enemy enemy in Enemies)
             {
-                if (!enemy.Targetable) continue;
-                points.Add(Position(enemy.Distance));
-                ApplyHit(enemy, skill.damage * actor.MagicDamageMultiplier, true, false);
+                if (enemy.Dead || (targetIds != null && Array.IndexOf(targetIds, enemy.Id) < 0) || ids.Contains(enemy.Id)) continue;
+                points.Add(ProjectileVisuals.EnemyHitPoint(enemy, Position(enemy.Distance)));
+                ids.Add(enemy.Id);
             }
+            float duration = Mathf.Max(.01f, skill.duration);
             AbilityEffects.Add(new AbilityEffect { Kind = "storm", Start = actor.Position, End = actor.Position,
-                Source = actor, Lifetime = .9f, Targets = points.ToArray() });
+                Source = actor, Lifetime = duration + .34f, DamageDuration = duration, DamageTickCount = Mathf.Max(1, skill.damageTicks),
+                Damage = skill.damage * (damageMultiplier >= 0 ? damageMultiplier : actor.MagicDamageMultiplier),
+                Targets = points.ToArray(), TargetIds = ids.ToArray() });
         }
-        private void CastArrowRain(HeroCombatState actor, ManualSkillDefinition skill)
+        private void AdvanceStorm(AbilityEffect effect)
         {
+            int count = Mathf.Max(1, effect.DamageTickCount);
+            float duration = Mathf.Max(.01f, effect.DamageDuration);
+            int due = Mathf.Clamp(Mathf.FloorToInt((effect.Age + .00001f) * count / duration), 0, count);
+            while (effect.DamageTicksResolved < due)
+            {
+                int tick = ++effect.DamageTicksResolved;
+                float damage = effect.Damage * tick / count - effect.Damage * (tick - 1) / count;
+                effect.LastDamageTickAge = duration * tick / count;
+                var hitIds = new List<int>();
+                var hitPoints = new List<Vector2>();
+                effect.LastDamageTickTargetIds = Array.Empty<int>();
+                effect.LastDamageTickPoints = Array.Empty<Vector2>();
+                if (effect.TargetIds == null) continue;
+                for (int i = 0; i < effect.TargetIds.Length; i++)
+                {
+                    int id = effect.TargetIds[i];
+                    Enemy enemy = Enemies.Find(candidate => candidate.Id == id && candidate.Targetable);
+                    if (enemy == null) continue;
+                    Vector2 point = ProjectileVisuals.EnemyHitPoint(enemy, Position(enemy.Distance));
+                    if (effect.Targets != null && i < effect.Targets.Length) effect.Targets[i] = point;
+                    hitIds.Add(id); hitPoints.Add(point);
+                    ApplyHit(enemy, damage, true, false);
+                }
+                effect.LastDamageTickTargetIds = hitIds.ToArray();
+                effect.LastDamageTickPoints = hitPoints.ToArray();
+            }
+        }
+        private void CastArrowRain(HeroCombatState actor, ManualSkillDefinition skill, int[] targetIds = null, float damageMultiplier = -1)
+        {
+            float rate = Mathf.Max(.01f, skill.animationSpeed);
+            AbilityEffects.Add(new AbilityEffect { Kind = "arrow_rise", Start = actor.Position, End = actor.Position, Source = actor,
+                FacingLeft = actor.FacingLeft, LaunchPoint = ProjectileVisuals.SkillReleasePoint(actor, "heel_arrow"), HasLaunchPoint = true,
+                Lifetime = .45f / rate, VisualPlaybackRate = rate });
             foreach (Enemy enemy in Enemies)
             {
-                if (!enemy.Targetable) continue;
+                if (!enemy.Targetable || (targetIds != null && Array.IndexOf(targetIds, enemy.Id) < 0)) continue;
                 AbilityEffects.Add(new AbilityEffect {
                     Kind = "arrow_rain", Start = actor.Position, End = Position(enemy.Distance), Source = actor,
-                    Lifetime = Mathf.Max(.01f, skill.visualDelay), TargetId = enemy.Id,
-                    Damage = skill.damage * actor.DamageMultiplier, SlowFraction = skill.slowFraction, SlowDuration = skill.slowDuration
+                    HitPoint = ProjectileVisuals.EnemyHitPoint(enemy, Position(enemy.Distance)),
+                    Lifetime = Mathf.Max(.01f, skill.visualDelay) / rate, TargetId = enemy.Id, VisualPlaybackRate = rate,
+                    Damage = skill.damage * (damageMultiplier >= 0 ? damageMultiplier : actor.DamageMultiplier), SlowFraction = skill.slowFraction, SlowDuration = skill.slowDuration
                 });
             }
         }
-        private void CastDeer(HeroCombatState actor, ManualSkillDefinition skill)
+        private void CastDeer(HeroCombatState actor, ManualSkillDefinition skill, float damageMultiplier = -1)
         {
-            Vector2[] route = UpstreamRoute(actor.Position);
+            Vector2[] route = new Vector2[Path.Length];
+            for (int i = 0; i < Path.Length; i++) route[i] = Path[Path.Length - 1 - i];
+            Vector2 origin = route[0];
             float length = 0;
             for (int i = 1; i < route.Length; i++) length += Vector2.Distance(route[i - 1], route[i]);
             for (int i = 0; i < skill.projectiles; i++)
                 AbilityEffects.Add(new AbilityEffect {
-                    Kind = "deer", Start = actor.Position, End = actor.Position, Source = actor,
-                    Lifetime = Mathf.Max(.01f, skill.duration), Damage = skill.damage * actor.MagicDamageMultiplier,
+                    Kind = "deer", Start = origin, End = origin, Source = actor, FacingLeft = true,
+                    Lifetime = Mathf.Max(.01f, skill.duration), Damage = skill.damage * (damageMultiplier >= 0 ? damageMultiplier : actor.MagicDamageMultiplier),
                     SlowFraction = skill.slowFraction, SlowDuration = skill.slowDuration,
+                    KnockbackDistance = Mathf.Max(0, skill.knockbackDistance),
                     Route = route, RouteLength = length,
                     LaneOffset = (i - (skill.projectiles - 1) * .5f) * Systems.deerLaneOffset * 2
                 });
         }
-        private Vector2[] UpstreamRoute(Vector2 origin)
-        {
-            int segment = 0; Vector2 projection = Path[0]; float closest = float.PositiveInfinity;
-            for (int i = 0; i < Path.Length - 1; i++)
-            {
-                Vector2 delta = Path[i + 1] - Path[i];
-                float t = Mathf.Clamp01(Vector2.Dot(origin - Path[i], delta) / delta.sqrMagnitude);
-                Vector2 point = Path[i] + delta * t;
-                float distance = (origin - point).sqrMagnitude;
-                if (distance < closest) { closest = distance; projection = point; segment = i; }
-            }
-            var route = new List<Vector2> { origin };
-            if (Vector2.Distance(origin, projection) > .001f) route.Add(projection);
-            for (int i = segment; i >= 0; i--) if (Vector2.Distance(route[route.Count - 1], Path[i]) > .001f) route.Add(Path[i]);
-            if (route.Count == 1) route.Add(origin + Vector2.left);
-            return route.ToArray();
-        }
-
         private void UpdateAbilityEffects(float dt)
         {
             for (int i = AbilityEffects.Count - 1; i >= 0; i--)
             {
                 AbilityEffect effect = AbilityEffects[i];
                 float previousAge = effect.Age;
-                effect.Age = Mathf.Min(effect.Lifetime, effect.Age + dt);
-                if (effect.Kind == "deer") AdvanceDeer(effect, previousAge);
+                float step = effect.InitialAdvance >= 0 ? Mathf.Min(dt, effect.InitialAdvance) : dt; effect.InitialAdvance = -1;
+                effect.Age = Mathf.Min(effect.Lifetime, effect.Age + step);
+                Enemy arrowTarget = null;
+                if (effect.Kind == "arrow_rain")
+                {
+                    arrowTarget = Enemies.Find(enemy => enemy.Id == effect.TargetId && enemy.Targetable);
+                    if (arrowTarget == null) { AbilityEffects.RemoveAt(i); continue; }
+                    Vector2 previousTip = ProjectileVisuals.RainTip(effect.Start, effect.HitPoint,
+                        (previousAge / effect.Lifetime - .38f) / .62f);
+                    effect.End = Position(arrowTarget.Distance);
+                    effect.HitPoint = ProjectileVisuals.EnemyHitPoint(arrowTarget, effect.End);
+                    Vector2 tip = ProjectileVisuals.RainTip(effect.Start, effect.HitPoint,
+                        (effect.Age / effect.Lifetime - .38f) / .62f);
+                    effect.Direction = ProjectileVisuals.Direction(tip - previousTip, effect.HitPoint - ProjectileVisuals.ArrowSky(effect.Start));
+                }
+                if (effect.Kind == "storm") AdvanceStorm(effect);
+                else if (effect.Kind == "deer") AdvanceDeer(effect, previousAge);
                 else if (!effect.Resolved && effect.Age >= effect.Lifetime)
                 {
                     effect.Resolved = true;
                     if (effect.Kind == "spear")
                     {
+                        ProjectileImpacts.Add(new ProjectileImpact { Position = effect.End,
+                            Direction = ProjectileVisuals.Direction(effect.End - (effect.HasLaunchPoint ? effect.LaunchPoint : ProjectileVisuals.SpearHand(effect.Start, effect.FacingLeft))), Kind = "spear", Landed = true });
                         foreach (Enemy enemy in Enemies)
                         {
                             if (!enemy.Targetable || Vector2.Distance(Position(enemy.Distance), effect.End) > effect.Radius) continue;
@@ -245,15 +321,10 @@ namespace SkeletonDefender
                     }
                     else if (effect.Kind == "arrow_rain")
                     {
-                        Enemy target = Enemies.Find(enemy => enemy.Id == effect.TargetId && enemy.Targetable);
-                        if (target != null && ApplyHit(target, effect.Damage, false, false))
-                            ApplySkillSlow(target, effect.SlowFraction, effect.SlowDuration);
+                        bool landed = ApplyHit(arrowTarget, effect.Damage, false, false);
+                        if (landed) ApplySkillSlow(arrowTarget, effect.SlowFraction, effect.SlowDuration);
+                        ProjectileImpacts.Add(new ProjectileImpact { Position = effect.HitPoint, Direction = effect.Direction, Kind = "arrow", Landed = landed });
                     }
-                }
-                if (effect.Kind == "arrow_rain")
-                {
-                    Enemy target = Enemies.Find(enemy => enemy.Id == effect.TargetId && enemy.Targetable);
-                    if (target != null) effect.End = Position(target.Distance);
                 }
                 if (effect.Age >= effect.Lifetime) AbilityEffects.RemoveAt(i);
             }
@@ -275,11 +346,21 @@ namespace SkeletonDefender
                     Vector2 a = start + delta * Mathf.Clamp01((fromDistance - startDistance) / length) + lateral;
                     Vector2 b = start + delta * Mathf.Clamp01((toDistance - startDistance) / length) + lateral;
                     effect.End = b;
+                    effect.Direction = ProjectileVisuals.Direction(delta);
+                    if (Mathf.Abs(delta.x) > .001f) effect.FacingLeft = delta.x < 0;
                     foreach (Enemy enemy in Enemies)
                     {
                         if (!enemy.Targetable || effect.HitIds.Contains(enemy.Id) || DistanceToSegment(Position(enemy.Distance), a, b) > Systems.deerHitRadius) continue;
                         effect.HitIds.Add(enemy.Id);
-                        if (ApplyHit(enemy, effect.Damage, true, false)) ApplySkillSlow(enemy, effect.SlowFraction, effect.SlowDuration);
+                        Vector2 contactPoint = ProjectileVisuals.EnemyHitPoint(enemy, Position(enemy.Distance));
+                        if (ApplyHit(enemy, effect.Damage, true, false))
+                        {
+                            ApplySkillSlow(enemy, effect.SlowFraction, effect.SlowDuration);
+                            if (!enemy.Dead && !enemy.IsBoss)
+                                enemy.Distance = Mathf.Max(0, enemy.Distance - effect.KnockbackDistance);
+                            ProjectileImpacts.Add(new ProjectileImpact { Kind = "deer", Position = contactPoint,
+                                Direction = effect.Direction, Landed = true });
+                        }
                     }
                 }
                 startDistance = endDistance;
@@ -321,22 +402,36 @@ namespace SkeletonDefender
             for (int i = TowerProjectiles.Count - 1; i >= 0; i--)
             {
                 TowerProjectile projectile = TowerProjectiles[i];
+                float step = projectile.InitialAdvance >= 0 ? Mathf.Min(dt, projectile.InitialAdvance) : dt;
+                projectile.InitialAdvance = -1; projectile.Age += step;
                 Enemy target = Enemies.Find(enemy => enemy.Id == projectile.TargetId && enemy.Targetable);
                 if (target == null) { TowerProjectiles.RemoveAt(i); continue; }
                 projectile.Impact = Position(target.Distance);
-                float travel = Systems.towerProjectileSpeed * dt;
+                Vector2 hitPoint = ProjectileVisuals.EnemyHitPoint(target, projectile.Impact);
+                if (!projectile.Visual.Initialized)
+                    projectile.Visual.Begin(projectile.Position, ProjectileVisuals.TowerSocket(projectile.Start, projectile.Kind, projectile.Level, projectile.VisualSocketIndex), hitPoint);
+                float travel = Systems.towerProjectileSpeed * step;
                 if (Vector2.Distance(projectile.Position, projectile.Impact) <= travel)
                 {
+                    projectile.Visual.Advance(projectile.Position, projectile.Impact, projectile.Impact, hitPoint, true);
+                    bool landed = false;
                     if (projectile.Kind == TowerKind.Ember)
                     {
                         foreach (Enemy enemy in Enemies)
                             if (enemy.Targetable && Vector2.Distance(Position(enemy.Distance), projectile.Impact) <= projectile.SplashRadius)
-                                ApplyHit(enemy, projectile.Damage, true, false);
+                                landed |= ApplyHit(enemy, projectile.Damage, true, false);
                     }
-                    else Hit(target, projectile.Damage, false);
+                    else landed = Hit(target, projectile.Damage, false);
+                    ProjectileImpacts.Add(new ProjectileImpact { Position = hitPoint, Direction = projectile.Visual.Direction,
+                        Kind = projectile.Kind == TowerKind.Ember ? "fireball" : "arrow", Landed = landed });
                     TowerProjectiles.RemoveAt(i);
                 }
-                else projectile.Position = Vector2.MoveTowards(projectile.Position, projectile.Impact, travel);
+                else
+                {
+                    Vector2 previous = projectile.Position;
+                    projectile.Position = Vector2.MoveTowards(previous, projectile.Impact, travel);
+                    projectile.Visual.Advance(previous, projectile.Position, projectile.Impact, hitPoint, false);
+                }
             }
         }
     }

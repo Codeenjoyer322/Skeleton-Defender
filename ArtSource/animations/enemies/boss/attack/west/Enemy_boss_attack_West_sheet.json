@@ -1,0 +1,386 @@
+{
+  "frames": [
+    {
+      "duration": 120,
+      "filename": "Enemy_boss_attack_West_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 120,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_boss_attack_West_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "SHIFT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_boss_attack_West_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "DRAW BACK",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Enemy_boss_attack_West_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 90,
+      "phase": "WINDUP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Enemy_boss_attack_West_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 90,
+      "phase": "BRACE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_boss_attack_West_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "DRIVE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_boss_attack_West_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_boss_attack_West_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_boss_attack_West_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 80,
+      "phase": "HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_boss_attack_West_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 100,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 120,
+      "filename": "Enemy_boss_attack_West_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 120,
+      "phase": "SETTLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 140,
+      "filename": "Enemy_boss_attack_West_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 740,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "boss",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "west",
+    "displayScale": 2.1,
+    "durationMs": 1110,
+    "events": [
+      {
+        "frameIndex": 6,
+        "kind": "art cue; bind to existing gameplay action without altering balance",
+        "name": "contact_cue",
+        "timeMs": 550
+      }
+    ],
+    "facingNormalizedBeforeExport": true,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/boss/attack/west/Enemy_boss_attack_West_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack",
+        "to": 11
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1710,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_boss_attack_West_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 79,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 600,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab enemy_boss_attack_v1; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rawJob": "enemy_boss_attack_v1",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFacing": "west",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_boss_attack_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

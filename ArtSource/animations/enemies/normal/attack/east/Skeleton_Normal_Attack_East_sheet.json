@@ -1,0 +1,385 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "Skeleton_Normal_Attack_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Normal_Attack_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "PREPARE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Normal_Attack_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Normal_Attack_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Skeleton_Normal_Attack_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "DRIVE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Skeleton_Normal_Attack_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "EXTEND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Normal_Attack_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Normal_Attack_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CONTACT HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Skeleton_Normal_Attack_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 80,
+      "phase": "RETRACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Skeleton_Normal_Attack_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 100,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "normal",
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "east",
+    "durationMs": 590,
+    "events": [
+      {
+        "gameplayDamageNotAuthored": true,
+        "index": 6,
+        "name": "visual_contact",
+        "timeMs": 290
+      }
+    ],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.png"
+    },
+    "frameCount": 10,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack_east",
+        "to": 9
+      }
+    ],
+    "gameplayPlayback": "once",
+    "gifDurationMs": 590,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "groundAnchor": {
+      "x": 80,
+      "y": 128
+    },
+    "image": "Skeleton_Normal_Attack_East_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Raw014 has a visibly extended arm; held in two60ms timeline frames",
+      "Long raw006..012 near-static windup condensed; genuine source poses preserved",
+      "590ms once; visual contact marker290ms is not a new gameplay attack-speed or hit rule"
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Visually inspected enemy_normal_attack_v2; Aseprite native finishing, RAW unchanged",
+    "rawFrameIndices": [
+      1,
+      4,
+      5,
+      6,
+      12,
+      13,
+      14,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "enemy_normal_attack_v2",
+    "rawTransforms": [
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 1
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 4
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 5
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 6
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 12
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 13
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 14
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 14
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 15
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 16
+      }
+    ],
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\normal_ninja_deer_v2_candidates\\normal\\attack\\Skeleton_Normal_Attack_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

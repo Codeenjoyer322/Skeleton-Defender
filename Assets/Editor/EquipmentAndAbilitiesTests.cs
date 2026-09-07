@@ -65,6 +65,13 @@ namespace SkeletonDefender.Editor
             for (int i = 0; i < count; i++) model.Step(GameModel.Tick);
         }
 
+        private static void AdvanceThroughEnemyContact(GameModel model, Enemy enemy)
+        {
+            model.Step(GameModel.Tick);
+            float contact = AnimationLibrary.Get(CombatAnimationRoles.Enemy(enemy), "attack", enemy.Animation.FacingLeft).ContactTime / enemy.Animation.PlaybackRate;
+            Advance(model, contact + .001f);
+        }
+
         private static void ManaAndGuards()
         {
             var model = new GameModel(1, HeroKind.Circe, new EquipmentStats(), 1);
@@ -97,14 +104,14 @@ namespace SkeletonDefender.Editor
             Enemy ordinary = Target(storm, 200), boss = Target(storm, 400, true, 10000);
             Check(storm.TryCastSkill(1), "Storm rejected");
             Enemy later = Target(storm, 600);
-            Advance(storm, .8f);
+            Advance(storm, 3.4f);
             Check(Near(ordinary.Hp, 990) && Near(boss.Hp, 10000) && Near(later.Hp, 1000), "Storm damage/snapshot/boss magic immunity failed");
 
             var rain = Fixture(HeroKind.Achilles);
             Enemy snapshot = Target(rain, 200), physicalBoss = Target(rain, 400, true, 10000);
             Check(rain.TryCastSkill(1) && Near(rain.SkillCooldownRemaining(1), 480), "Arrow rain cooldown differs from eight minutes");
             Enemy newcomer = Target(rain, 600);
-            Advance(rain, 1.5f);
+            Advance(rain, 2.7f);
             Check(Near(snapshot.Hp, 990) && Near(newcomer.Hp, 1000) && Near(physicalBoss.Hp, 9990), "Arrow rain did not hit exactly its original target snapshot");
             Check(snapshot.SkillSlowRemaining > 0 && Near(snapshot.SkillSlowMultiplier, .5f) &&
                 Near(physicalBoss.SkillSlowRemaining, 0), "Arrow rain slow or boss control immunity failed");
@@ -112,22 +119,30 @@ namespace SkeletonDefender.Editor
             var deer = Fixture(HeroKind.Circe);
             Enemy crossed = Target(deer, deer.PathLength - BalanceData.Current.heroRules.spawnDistanceFromExit - 100);
             Check(deer.TryCastSkill(0), "Deer cast rejected");
-            Advance(deer, 3.2f);
+            Advance(deer, 3.4f);
             Check(Near(crossed.Hp, 980), "Two deer did not each damage a crossed enemy exactly once");
         }
 
+        private static float ClosestRoad(GameModel model, Vector2 point)
+        {
+            float nearest=0,best=float.MaxValue;
+            for(float distance=0;distance<=model.PathLength;distance++)
+            { float d=(model.Position(distance)-point).sqrMagnitude;if(d<best){best=d;nearest=distance;} }
+            return nearest;
+        }
         private static void ProjectilesAndNinja()
         {
             var arrows = Fixture(HeroKind.Circe);
             Check(arrows.Build(0, TowerKind.Archer), "Arrow tower fixture cannot build");
-            Enemy victim = Target(arrows, 247);
+            Enemy victim = Target(arrows, ClosestRoad(arrows,GameModel.Sites[0]));
             arrows.Step(GameModel.Tick);
-            Check(Near(victim.Hp, 1000) && arrows.TowerProjectiles.Count > 0, "Arrow dealt damage before flight");
-            Advance(arrows, .45f);
+            Check(Near(victim.Hp, 1000) && arrows.PendingAnimationContacts > 0 && arrows.TowerProjectiles.Count == 0, "Arrow skipped bow preparation or dealt damage before flight");
+            Advance(arrows, .21f+Vector2.Distance(GameModel.Sites[0],arrows.Position(victim.Distance))/BalanceData.Current.heroSystems.towerProjectileSpeed);
             Check(Near(victim.Hp, 1000 - new Tower { Kind = TowerKind.Archer }.Damage), "Arrow failed to damage at arrival");
 
             var fire = Fixture(HeroKind.Circe); Check(fire.Build(0, TowerKind.Ember), "Fire fixture cannot build");
-            Enemy blastA = Target(fire, 247), blastB = Target(fire, 249);
+            float near=ClosestRoad(fire,GameModel.Sites[0]);
+            Enemy blastA = Target(fire, near), blastB = Target(fire, near+2);
             fire.Step(GameModel.Tick);
             Check(Near(blastA.Hp, 1000) && Near(blastB.Hp, 1000), "Fireball exploded before arrival");
             Advance(fire, .5f);
@@ -137,7 +152,7 @@ namespace SkeletonDefender.Editor
             Enemy ninja = ninjaFight.CreateEnemy(SkeletonKind.Ninja, 247); ninja.DodgeReady = true;
             ninjaFight.Enemies.Add(ninja);
             Check(ninjaFight.TryCastSkill(1), "Ninja storm fixture rejected");
-            Advance(ninjaFight, .1f);
+            Advance(ninjaFight, 3.4f);
             Check(Near(ninja.Hp, ninja.MaxHp - 10) && ninja.DodgeReady, "Manual magic consumed or was blocked by ninja physical dodge");
         }
 
@@ -149,8 +164,9 @@ namespace SkeletonDefender.Editor
             Check(Near(model.RecentForwardDistance(walker), walker.Speed * 2, .05f), "Spear history does not cover two seconds of actual travel");
             float before = walker.Distance;
             Check(model.TryCastSkill(0, model.Position(before)), "Moving-target spear was rejected");
-            model.Step(.36f);
-            Check(Near(walker.Hp, 985) && Near(walker.Distance, before + walker.Speed * .36f - walker.Speed, .1f), "Spear knockback is not half the last two seconds of travel");
+            float releaseAndFlight = AnimationLibrary.Get("achilles", "divine_spear").ContactTime + ProjectileVisuals.SpearFlightDuration(model.Hero.Position, model.Position(before), model.Hero.FacingLeft) + .01f;
+            model.Step(releaseAndFlight);
+            Check(Near(walker.Hp, 985) && Near(walker.Distance, before + walker.Speed * releaseAndFlight - walker.Speed, .1f), "Spear knockback is not half the last two seconds of travel");
             model.Hero.Position = model.Hero.Destination = model.Position(walker.Distance);
             Advance(model, 2.1f);
             Check(Near(model.RecentForwardDistance(walker), 0, .05f), "Stationary enemy retained stale movement history");
@@ -167,7 +183,7 @@ namespace SkeletonDefender.Editor
                 Near(mage.Hero.ManaRegen, .55f) && Near(mage.SkillManaCost(0), 90), "Gear or base-mana penalty aggregation failed");
             Check(Near(mage.Hero.AttackInterval, 2 / 1.2f) && Near(mage.Hero.WalkSpeed, 54 * .25f), "Gear attack frequency or walk speed is incorrect");
             Enemy victim = Target(mage, 200); Check(mage.TryCastSkill(1), "Geared storm rejected");
-            Advance(mage, .2f);
+            Advance(mage, 3.4f);
             Check(Near(victim.Hp, 995f), "Sword magic penalty was omitted or applied twice to a skill");
         }
 
@@ -177,11 +193,11 @@ namespace SkeletonDefender.Editor
             Enemy stormVictim = Target(rage, 200);
             Check(rage.TryUseArtifact() && !rage.TryUseArtifact() && Near(rage.RageRemaining, 300), "Rage use limit or duration failed");
             Check(Near(rage.Hero.Damage, 10) && Near(rage.Hero.AttackInterval, 1), "Rage did not double basic damage/frequency");
-            Check(rage.TryCastSkill(1), "Raging storm rejected"); Advance(rage, .1f);
+            Check(rage.TryCastSkill(1), "Raging storm rejected"); Advance(rage, 3.4f);
             Check(Near(stormVictim.Hp, 980), "Rage did not double skill damage");
             Enemy rageAttacker = Target(rage, rage.PathLength - BalanceData.Current.heroRules.spawnDistanceFromExit);
             rageAttacker.AttackCooldown = 0; float rageHp = rage.Hero.Hp;
-            rage.Step(GameModel.Tick);
+            AdvanceThroughEnemyContact(rage, rageAttacker);
             Check(Near(rage.Hero.Hp, rageHp - 1.75f), "Rage did not halve incoming damage after armor");
             float rageBefore = rage.RageRemaining; rage.SetPaused(true); Advance(rage, 1);
             Check(Near(rage.RageRemaining, rageBefore), "Pause consumed rage duration");
@@ -193,14 +209,14 @@ namespace SkeletonDefender.Editor
             Enemy target = Target(mirror, 200);
             Check(mirror.TryCastSkill(1, null, true) && Near(mirror.Hero.Mana, 100) && Near(mirror.Clone.Mana, 0) &&
                 Near(mirror.SkillCooldownRemaining(1), 0), "Clone shared mana or skill cooldown with the original");
-            Check(mirror.TryCastSkill(1), "Original could not cast after clone's cast"); Advance(mirror, .1f);
+            Check(mirror.TryCastSkill(1), "Original could not cast after clone's cast"); Advance(mirror, 3.4f);
             Check(Near(target.Hp, 980), "Original and clone could not use the skill independently");
             Vector2 originalDestination = mirror.Hero.Destination;
             Check(mirror.MoveHero(new Vector2(200, 300), true) && mirror.Hero.Destination == originalDestination, "Clone movement changed original destination");
             mirror.Clone.Position = mirror.Clone.Destination = mirror.Position(400);
             Enemy cloneAttacker = Target(mirror, 400); cloneAttacker.AttackCooldown = 0;
             float originalHp = mirror.Hero.Hp, copyHp = mirror.Clone.Hp;
-            mirror.Step(GameModel.Tick);
+            AdvanceThroughEnemyContact(mirror, cloneAttacker);
             Check(Near(mirror.Clone.Hp, copyHp - 6) && Near(mirror.Hero.Hp, originalHp), "Enemy did not target clone or apply its 50% extra damage");
             float copyTime = mirror.CloneRemaining; mirror.SetPaused(true); Advance(mirror, 1);
             Check(Near(mirror.CloneRemaining, copyTime), "Pause consumed clone duration");
@@ -217,7 +233,7 @@ namespace SkeletonDefender.Editor
             var aegis = Fixture(HeroKind.Circe, new EquipmentStats { Artifact = ArtifactKind.AegisOfDawn });
             Enemy killer = Target(aegis, aegis.PathLength - BalanceData.Current.heroRules.spawnDistanceFromExit);
             killer.AttackCooldown = 0; aegis.Hero.Hp = 1;
-            aegis.Step(GameModel.Tick);
+            AdvanceThroughEnemyContact(aegis, killer);
             Check(!aegis.Hero.Alive && Near(aegis.Hero.RespawnRemaining, 3), "Aegis did not set three-second resurrection");
             killer.Distance = 0; killer.AttackCooldown = 9999;
             Advance(aegis, 2.8f); Check(!aegis.Hero.Alive, "Aegis resurrected too early");

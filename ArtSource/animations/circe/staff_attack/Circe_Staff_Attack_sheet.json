@@ -1,0 +1,653 @@
+{
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "Circe_Staff_Attack_frames/01.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Staff_Attack_frames/02.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Staff_Attack_frames/03.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Staff_Attack_frames/04.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Staff_Attack_frames/05.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "gifDuration": 70,
+      "phase": "AIM",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Staff_Attack_frames/06.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "gifDuration": 70,
+      "phase": "AIM",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Staff_Attack_frames/07.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "gifDuration": 60,
+      "phase": "EXTEND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Staff_Attack_frames/08.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "gifDuration": 50,
+      "phase": "HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Circe_Staff_Attack_frames/09.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 256
+      },
+      "gifDuration": 40,
+      "phase": "RELEASE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Staff_Attack_frames/10.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 256
+      },
+      "gifDuration": 50,
+      "phase": "RECOIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Staff_Attack_frames/11.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 256
+      },
+      "gifDuration": 60,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Staff_Attack_frames/12.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 256
+      },
+      "gifDuration": 60,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Staff_Attack_frames/13.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 384
+      },
+      "gifDuration": 70,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Circe_Staff_Attack_frames/14.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 384
+      },
+      "gifDuration": 90,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Circe_Staff_Attack_frames/15.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 384
+      },
+      "gifDuration": 100,
+      "phase": "SETTLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 140,
+      "filename": "Circe_Staff_Attack_frames/16.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 384
+      },
+      "gifDuration": 140,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchors": {
+      "frameCenter": {
+        "x": 64,
+        "y": 64
+      },
+      "groundPivot": {
+        "x": 64,
+        "y": 100
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 128,
+      "w": 128
+    },
+    "columns": 4,
+    "contact": {
+      "h": 636,
+      "w": 560
+    },
+    "durationMs": 1160,
+    "emitterTrack": [
+      {
+        "durationMs": 100,
+        "frameIndex": 0,
+        "frameNumber": 1,
+        "rawIndex": 1,
+        "staffTip": {
+          "x": 88,
+          "y": 47
+        },
+        "timeMs": 0
+      },
+      {
+        "durationMs": 70,
+        "frameIndex": 1,
+        "frameNumber": 2,
+        "rawIndex": 2,
+        "staffTip": {
+          "x": 88,
+          "y": 47
+        },
+        "timeMs": 100
+      },
+      {
+        "durationMs": 70,
+        "frameIndex": 2,
+        "frameNumber": 3,
+        "rawIndex": 3,
+        "staffTip": {
+          "x": 87,
+          "y": 46
+        },
+        "timeMs": 170
+      },
+      {
+        "durationMs": 60,
+        "frameIndex": 3,
+        "frameNumber": 4,
+        "rawIndex": 4,
+        "staffTip": {
+          "x": 88,
+          "y": 47
+        },
+        "timeMs": 240
+      },
+      {
+        "durationMs": 70,
+        "frameIndex": 4,
+        "frameNumber": 5,
+        "rawIndex": 5,
+        "staffTip": {
+          "x": 91,
+          "y": 48
+        },
+        "timeMs": 300
+      },
+      {
+        "durationMs": 70,
+        "frameIndex": 5,
+        "frameNumber": 6,
+        "rawIndex": 6,
+        "staffTip": {
+          "x": 94,
+          "y": 51
+        },
+        "timeMs": 370
+      },
+      {
+        "durationMs": 60,
+        "frameIndex": 6,
+        "frameNumber": 7,
+        "rawIndex": 7,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 440
+      },
+      {
+        "durationMs": 50,
+        "frameIndex": 7,
+        "frameNumber": 8,
+        "rawIndex": 8,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 500
+      },
+      {
+        "durationMs": 40,
+        "event": "staff_release",
+        "frameIndex": 8,
+        "frameNumber": 9,
+        "rawIndex": 9,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 550
+      },
+      {
+        "durationMs": 50,
+        "frameIndex": 9,
+        "frameNumber": 10,
+        "rawIndex": 10,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 590
+      },
+      {
+        "durationMs": 60,
+        "frameIndex": 10,
+        "frameNumber": 11,
+        "rawIndex": 11,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 640
+      },
+      {
+        "durationMs": 60,
+        "frameIndex": 11,
+        "frameNumber": 12,
+        "rawIndex": 12,
+        "staffTip": {
+          "x": 102,
+          "y": 58
+        },
+        "timeMs": 700
+      },
+      {
+        "durationMs": 70,
+        "frameIndex": 12,
+        "frameNumber": 13,
+        "rawIndex": 13,
+        "staffTip": {
+          "x": 94,
+          "y": 49
+        },
+        "timeMs": 760
+      },
+      {
+        "durationMs": 90,
+        "frameIndex": 13,
+        "frameNumber": 14,
+        "rawIndex": 14,
+        "staffTip": {
+          "x": 89,
+          "y": 47
+        },
+        "timeMs": 830
+      },
+      {
+        "durationMs": 100,
+        "frameIndex": 14,
+        "frameNumber": 15,
+        "rawIndex": 15,
+        "staffTip": {
+          "x": 88,
+          "y": 47
+        },
+        "timeMs": 920
+      },
+      {
+        "durationMs": 140,
+        "frameIndex": 15,
+        "frameNumber": 16,
+        "rawIndex": 16,
+        "staffTip": {
+          "x": 88,
+          "y": 47
+        },
+        "timeMs": 1020
+      }
+    ],
+    "events": [
+      {
+        "emitter": "staffTip",
+        "frameIndex": 8,
+        "frameNumber": 9,
+        "name": "staff_release",
+        "timeMs": 550
+      }
+    ],
+    "facing": "east",
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/staff_attack/Circe_Staff_Attack_sheet.png"
+    },
+    "frameCount": 16,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "staff_attack_east",
+        "to": 15
+      }
+    ],
+    "gifDurationMs": 1160,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Circe_Staff_Attack_sheet.png",
+    "layers": {
+      "actor": "01 Actor and staff shaft",
+      "crystal": "02 Cyan crystal",
+      "releaseFX": "03 Local release flash"
+    },
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Review-ready component, parent approval pending. No baked projectile flight in actor sheet.",
+      "Release output index8 (frame9), raw009, at550ms. Spawn separate projectile from measured staffTip.",
+      "Raw009..012 head/upper staff restored from clean raw008 outside protected body/grip; raw013/014 fire particles removed.",
+      "Sun and passive triple fireballs are explicit aliases, not extra unique generated casts."
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "PixelLab staff_attack_v2 generated raw 001..016, native Aseprite fire cleanup, cyan head restoration, authored timing and exact west mirror.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "size": {
+      "h": 512,
+      "w": 512
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\circe\\staff_attack\\_build_sources\\Circe_Staff_Attack_Source.aseprite",
+    "sourceSpriteModified": false,
+    "status": "review_ready_not_approved",
+    "version": 1,
+    "rootApproved": true,
+    "stage": "prepared_for_user_review",
+    "integratedIntoGame": false
+  }
+}

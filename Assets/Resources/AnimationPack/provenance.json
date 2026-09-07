@@ -1,0 +1,2275 @@
+{
+  "schemaVersion": 1,
+  "artworkModified": false,
+  "sources": [
+    {
+      "id": "achilles-walk-east",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/walk/Achilles_Walk_sheet.png",
+      "sourceMetadata": "animations/walk/Achilles_Walk_sheet.json",
+      "sourceSheetSha256": "fb6f4fa6c430e9f9e9a066afd5a9bfe29c4a46ff98d4ea756baa15e395d7ccc8",
+      "sourceMetadataSha256": "472ca6b4aacc6463b45953b75c69e4b01710df8c09e1d2e3929b2893d6bea9d0",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_fb6f4fa6c430e9f9e9a0.png"
+    },
+    {
+      "id": "achilles-sword-east",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "pixellab/Achilles_Sword_Attack_PixelLab_sheet.png",
+      "sourceMetadata": "pixellab/Achilles_Sword_Attack_PixelLab_sheet.json",
+      "sourceSheetSha256": "c749e3b43b48c1b3ef73736de9a9b3f2f04a62d76abaf07f213bbdc7b3ec0686",
+      "sourceMetadataSha256": "8a788751cb6eff4ba8b6d4fcddaf5d1fcfc8f56ecc2ed83259d47f0032a6bb73",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c749e3b43b48c1b3ef73.png"
+    },
+    {
+      "id": "achilles-death-east",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/death/Achilles_Death_sheet.png",
+      "sourceMetadata": "animations/death/Achilles_Death_sheet.json",
+      "sourceSheetSha256": "00923db2e14eb800e9f7ba0309456151c0d94f608e377c437a7ae549221a9af0",
+      "sourceMetadataSha256": "95d31e801084bfae281ab733799ae34682bc7b035188af94cda4d16884e8bf04",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_00923db2e14eb800e9f7.png"
+    },
+    {
+      "id": "achilles-spear-east",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/divine_spear/Achilles_Divine_Spear_sheet.png",
+      "sourceMetadata": "animations/divine_spear/Achilles_Divine_Spear_sheet.json",
+      "sourceSheetSha256": "1e0f5cec8aad6691722592819f0d6739dd7f443ac94d1ea0104d632d3ac5ddf8",
+      "sourceMetadataSha256": "c1266f142cd1c1783f7a07f7e9fcff6b0b4724c600e216d97c08c42a15ab4317",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1e0f5cec8aad66917225.png"
+    },
+    {
+      "id": "achilles-heel-east",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/heel_arrow/Achilles_Heel_Arrow_sheet.png",
+      "sourceMetadata": "animations/heel_arrow/Achilles_Heel_Arrow_sheet.json",
+      "sourceSheetSha256": "77f372b5968ef91557df2e7f2680ee0a00bf6d6046b0698c5c29a67718350190",
+      "sourceMetadataSha256": "3958df83f8067aee838764f00228e47651d2ef07ad41125459782c74fee4673f",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_77f372b5968ef91557df.png"
+    },
+    {
+      "id": "achilles-walk-west",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/achilles_left/walk/Achilles_Walk_Left_sheet.png",
+      "sourceMetadata": "animations/achilles_left/walk/Achilles_Walk_Left_sheet.json",
+      "sourceSheetSha256": "797d6c9d069be94e5cbcb0f1ab1194d9fa86786def9970ff7db470d9ec935668",
+      "sourceMetadataSha256": "3dc909b0cdd807a98f75bd36898dcaaa8d3380e4a1016420af51688376d64c6f",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_797d6c9d069be94e5cbc.png"
+    },
+    {
+      "id": "achilles-sword-west",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/achilles_left/sword_attack/Achilles_Sword_Attack_Left_sheet.png",
+      "sourceMetadata": "animations/achilles_left/sword_attack/Achilles_Sword_Attack_Left_sheet.json",
+      "sourceSheetSha256": "d7d3b621ad1143cd0c937c941e904cc2ebaa86be2ddbf02ada1569687b4ffb06",
+      "sourceMetadataSha256": "459c4caf62faee95784828bb6e8a32533aa3ee1305fdd5dd9c83ae1741f8dc03",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d7d3b621ad1143cd0c93.png"
+    },
+    {
+      "id": "achilles-death-west",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/achilles_left/death/Achilles_Death_Left_sheet.png",
+      "sourceMetadata": "animations/achilles_left/death/Achilles_Death_Left_sheet.json",
+      "sourceSheetSha256": "2f9e93f4a48543fd350d0cf3d22606288d06bc8a93210bbfa25699f671d9a761",
+      "sourceMetadataSha256": "f6378118568c108ea269c6ec32ea21db24c6ac1f13e29431cfaac91973b81912",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2f9e93f4a48543fd350d.png"
+    },
+    {
+      "id": "achilles-spear-west",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/achilles_left/divine_spear/Achilles_Divine_Spear_Left_sheet.png",
+      "sourceMetadata": "animations/achilles_left/divine_spear/Achilles_Divine_Spear_Left_sheet.json",
+      "sourceSheetSha256": "8c81f61299c1c3d6bf7baba09ce39e0e59c3d7f0841208cbb5b3206b5f341482",
+      "sourceMetadataSha256": "86c15c4f984922d2e340c02d17306e064b8e8f133c8a10b24192e64a4f7ff53f",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8c81f61299c1c3d6bf7b.png"
+    },
+    {
+      "id": "achilles-heel-west",
+      "approvalSource": "source/review_catalog.json",
+      "sourceSheet": "animations/achilles_left/heel_arrow/Achilles_Heel_Arrow_Left_sheet.png",
+      "sourceMetadata": "animations/achilles_left/heel_arrow/Achilles_Heel_Arrow_Left_sheet.json",
+      "sourceSheetSha256": "6062723ac6f9f3f733e95f3008fe53df45066977781271b64c952bfaba1012a3",
+      "sourceMetadataSha256": "451147f6ebc8ad757cfb4eea9eeb240e4088ccf10d1617d052c6602ca037966a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6062723ac6f9f3f733e9.png"
+    },
+    {
+      "id": "circe-walk-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/walk/east/Circe_Walk_East_sheet.png",
+      "sourceMetadata": "animations/circe/walk/east/Circe_Walk_East_sheet.json",
+      "sourceSheetSha256": "d6d87e025173efc8f35e12f7873358d4ebcc6d2bb5cab919d7d0f6c3dc6e2fc9",
+      "sourceMetadataSha256": "db9c7a55d800a1058998307105d46bb38e1821ba08fef45a458a404f56c07fa9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d6d87e025173efc8f35e.png"
+    },
+    {
+      "id": "circe-walk-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/walk/west/Circe_Walk_West_sheet.png",
+      "sourceMetadata": "animations/circe/walk/west/Circe_Walk_West_sheet.json",
+      "sourceSheetSha256": "b24b77bd7c4ed6e4bb7146c334e1de4379f44dd3797dbd44f8e9ae32615570b4",
+      "sourceMetadataSha256": "0b13c7e286945a37456a674dc71f56ba9829b314505bccb90d3e9bed234a2362",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b24b77bd7c4ed6e4bb71.png"
+    },
+    {
+      "id": "circe-idle-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/idle/east/Circe_Idle_East_sheet.png",
+      "sourceMetadata": "animations/circe/idle/east/Circe_Idle_East_sheet.json",
+      "sourceSheetSha256": "2c0b7b667be0407a4ddbddc944af2dae48748f8d5142ff8aab01cfac3b8c3f18",
+      "sourceMetadataSha256": "4a65c53ddad402bfb34dc17332a4491c14964b420d10d9438a1ab09986b7b473",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2c0b7b667be0407a4ddb.png"
+    },
+    {
+      "id": "circe-idle-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/idle/west/Circe_Idle_West_sheet.png",
+      "sourceMetadata": "animations/circe/idle/west/Circe_Idle_West_sheet.json",
+      "sourceSheetSha256": "be11367ae7953da4ecf74533ba3f54996e108ae841f2c6834312cd54b71076a7",
+      "sourceMetadataSha256": "cc921accdacedfa948d84a38a9a5a62147aa5ef449c324fe6bfd1903a2c0b426",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_be11367ae7953da4ecf7.png"
+    },
+    {
+      "id": "circe-hurt-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/hurt/east/Circe_Hurt_East_sheet.png",
+      "sourceMetadata": "animations/circe/hurt/east/Circe_Hurt_East_sheet.json",
+      "sourceSheetSha256": "dc51c9afa5bdd693d16b123bb2539a146895c85ca338c1a7654c91e5df91af88",
+      "sourceMetadataSha256": "3edae8b1aa4994eaa05d1726c372590bb2dd3d1e9efbd969e71515259d51d798",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_dc51c9afa5bdd693d16b.png"
+    },
+    {
+      "id": "circe-hurt-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/hurt/west/Circe_Hurt_West_sheet.png",
+      "sourceMetadata": "animations/circe/hurt/west/Circe_Hurt_West_sheet.json",
+      "sourceSheetSha256": "30552fb5eb377be01ac5519cbb4259c1dadf109e4ea8f04f436c95da606d6a0d",
+      "sourceMetadataSha256": "628bea9d1d1d88850c9ac0af3121148a061821d5718763b2697bdc6a02a866cf",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_30552fb5eb377be01ac5.png"
+    },
+    {
+      "id": "circe-death-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/death/east/Circe_Death_East_sheet.png",
+      "sourceMetadata": "animations/circe/death/east/Circe_Death_East_sheet.json",
+      "sourceSheetSha256": "f9b8681c58677f75f408944e64652992cc43212518cab02a28ffb95f2207ad47",
+      "sourceMetadataSha256": "34674a05321f511f7f40f7f2d97face238f9f1f1119b727ec9147a11e7f1225c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f9b8681c58677f75f408.png"
+    },
+    {
+      "id": "circe-death-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/death/west/Circe_Death_West_sheet.png",
+      "sourceMetadata": "animations/circe/death/west/Circe_Death_West_sheet.json",
+      "sourceSheetSha256": "e4264866d27723d86dc1772d33f6045cdd872b4b03706bc340fbd7e2cd0a74e2",
+      "sourceMetadataSha256": "047dcf643785a5b6dbe5c1839446ae736bec0ac93562eec6bf5288430a44e06b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_e4264866d27723d86dc1.png"
+    },
+    {
+      "id": "circe-staff_attack-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/staff_attack/Circe_Staff_Attack_sheet.png",
+      "sourceMetadata": "animations/circe/staff_attack/Circe_Staff_Attack_sheet.json",
+      "sourceSheetSha256": "4a02abdb8e4eda5a53cb78edcfbc509e65488ead3f0614d50ee522dcc0f5c033",
+      "sourceMetadataSha256": "0c83fb4b3c5eab70d8fd5fae70f57dcc19fb82d7dae3565c177e2e85444e8d83",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_4a02abdb8e4eda5a53cb.png"
+    },
+    {
+      "id": "circe-staff_attack-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/staff_attack/Circe_Staff_Attack_West_sheet.png",
+      "sourceMetadata": "animations/circe/staff_attack/Circe_Staff_Attack_West_sheet.json",
+      "sourceSheetSha256": "d698e0fd517d92c445b558dff1d4ee9193f296457e5f4cd864dc71d36b49804d",
+      "sourceMetadataSha256": "bce555ac1c4c756b0cfa71598b7e15805073e8c279e245e6649c0c1e841c3b83",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d698e0fd517d92c445b5.png"
+    },
+    {
+      "id": "circe-fx-Lightning_Segment",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Lightning_Segment_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Lightning_Segment_sheet.json",
+      "sourceSheetSha256": "f8dbd05bda01d6b005b0c52b9d429d2df040b9576d7f147c85effca3c8ee77c9",
+      "sourceMetadataSha256": "7cbc43925b9f739c40880bfc86a541c29169acb1887fcc88e79dfc77f4fbd770",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f8dbd05bda01d6b005b0.png"
+    },
+    {
+      "id": "circe-fx-Fire_Impact",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Fire_Impact_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Fire_Impact_sheet.json",
+      "sourceSheetSha256": "eb0b3579907153b6cf33c99463fc29eff0067ec8a18af35c8744ead53c9c9014",
+      "sourceMetadataSha256": "f681dc36890f6a967d98d3dccad9da68ed75b76b34d5220b3f4803701b829fa8",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_eb0b3579907153b6cf33.png"
+    },
+    {
+      "id": "circe-fx-Lightning_Impact",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Lightning_Impact_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Lightning_Impact_sheet.json",
+      "sourceSheetSha256": "588a2d00bf275481da5f0ea0b5709f806df74f39429940761544d3c31095a1da",
+      "sourceMetadataSha256": "bcad57f739e7325c1cec94c4e2daf8e30a355caacb7d9e6d383e1c4dbaad4783",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_588a2d00bf275481da5f.png"
+    },
+    {
+      "id": "circe-fx-Sun_Impact",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Sun_Impact_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Sun_Impact_sheet.json",
+      "sourceSheetSha256": "772be86bc72dddeac962fd3916fa337b0d586e22e2f3955de8102a9c9ac62d73",
+      "sourceMetadataSha256": "8633392fa7d26fc3df58a385c2036236c46d590fe87aa25cb0974d22739cbc08",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_772be86bc72dddeac962.png"
+    },
+    {
+      "id": "circe-fx-Fireball",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Fireball_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Fireball_sheet.json",
+      "sourceSheetSha256": "60823c2175d70fc392770b65b26a4c53c3d4410f7c0c3caae08dcdc9b7ecd37e",
+      "sourceMetadataSha256": "8f1d8ed24b87c1f895b1c1f16ac1192e4192f716973da708f2f7e66b0490f066",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_60823c2175d70fc39277.png"
+    },
+    {
+      "id": "circe-fx-Hex_Pulse",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Hex_Pulse_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Hex_Pulse_sheet.json",
+      "sourceSheetSha256": "d3eae14e3d5b450d2af247f77ef558a5e5befde8a916a5608a3aefefe19e3437",
+      "sourceMetadataSha256": "981ba85dea53fe6ef3847f0d90c34278fa58904d89bd82cec0e96b0d8db8e716",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d3eae14e3d5b450d2af2.png"
+    },
+    {
+      "id": "circe-fx-Sun_Segment",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Sun_Segment_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Sun_Segment_sheet.json",
+      "sourceSheetSha256": "c17791ef612516ad3901c188c31ffcc433239fc0a9edcd3a27aad4dcee10d053",
+      "sourceMetadataSha256": "490ad5c5e3038cad69ca68abf65aa16d861caa81a4613ffe13adf10de3f9e1f9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c17791ef612516ad3901.png"
+    },
+    {
+      "id": "circe-deer_cast-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/deer_cast/east/Circe_Deer_Cast_East_sheet.png",
+      "sourceMetadata": "animations/circe/deer_cast/east/Circe_Deer_Cast_East_sheet.json",
+      "sourceSheetSha256": "8946b57a84bba207b2ae23c22ab4262d7467cf3dadee63f71e1640d46d5e0db2",
+      "sourceMetadataSha256": "7dfab752bb8661889abec86e31a8ae698ae6e88031b96aea44bef909bbc2bec6",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8946b57a84bba207b2ae.png"
+    },
+    {
+      "id": "circe-deer_cast-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/deer_cast/west/Circe_Deer_Cast_West_sheet.png",
+      "sourceMetadata": "animations/circe/deer_cast/west/Circe_Deer_Cast_West_sheet.json",
+      "sourceSheetSha256": "29149bb6a11406ded804cc15d2b9a2fad7b56b2301b351835d4867225e88f82a",
+      "sourceMetadataSha256": "9445d9882455bba681ec3c5186eea67778ef1902600cba639c1d45e785454889",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_29149bb6a11406ded804.png"
+    },
+    {
+      "id": "circe-storm_cast-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/storm_cast/east/Circe_Storm_Cast_East_sheet.png",
+      "sourceMetadata": "animations/circe/storm_cast/east/Circe_Storm_Cast_East_sheet.json",
+      "sourceSheetSha256": "d5d6541110902db241efd50ad8a77b52a97618ae6a220507d3258bef235bf3fa",
+      "sourceMetadataSha256": "a3aad37c412ea3c8f12ad85f6a9001dc2b263e701280a4f5b9abbf94bcc7e3c7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d5d6541110902db241ef.png"
+    },
+    {
+      "id": "circe-storm_cast-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/storm_cast/west/Circe_Storm_Cast_West_sheet.png",
+      "sourceMetadata": "animations/circe/storm_cast/west/Circe_Storm_Cast_West_sheet.json",
+      "sourceSheetSha256": "ab94fcad3c902b611b811d26c70d1265cf8ee52e8cfa3cd3c5b2db971850d930",
+      "sourceMetadataSha256": "4ae2f42052817ae0f166deb890d56d036eed1d054cbd8895ca47fca1045b6dbf",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ab94fcad3c902b611b81.png"
+    },
+    {
+      "id": "circe-hex_cast-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/hex_cast/east/Circe_Hex_Cast_East_sheet.png",
+      "sourceMetadata": "animations/circe/hex_cast/east/Circe_Hex_Cast_East_sheet.json",
+      "sourceSheetSha256": "b3fcf43cb51eaa9fc8dbd551ca875067ec1c7fbf5e116793c65bb9b753456639",
+      "sourceMetadataSha256": "6a378176d505e60055f16ebab6376c74825da27b264cf13f44297acfd983d5cd",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b3fcf43cb51eaa9fc8db.png"
+    },
+    {
+      "id": "circe-hex_cast-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/hex_cast/west/Circe_Hex_Cast_West_sheet.png",
+      "sourceMetadata": "animations/circe/hex_cast/west/Circe_Hex_Cast_West_sheet.json",
+      "sourceSheetSha256": "1607db9e25112359b9f673670c2bac5ad61ead7d7d8cce13f4b29e79503cfac6",
+      "sourceMetadataSha256": "e1b485b5f6706cce8a1ffffc2c633aa8258e060d27c42a457ed6422d30fad7f3",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1607db9e25112359b9f6.png"
+    },
+    {
+      "id": "circe-circe_deer-run-east",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/deer/run/east/Circe_Deer_Run_East_sheet.png",
+      "sourceMetadata": "animations/circe/deer/run/east/Circe_Deer_Run_East_sheet.json",
+      "sourceSheetSha256": "b27961e060acc6114398331ea009598fe27723d5ed0df7ff13eeb2f7f3b323e0",
+      "sourceMetadataSha256": "e01849f15842ed865aad6e3b14c4f971d58e9bf9f12fa9c7c4ca3d106009007a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b27961e060acc6114398.png"
+    },
+    {
+      "id": "circe-circe_deer-run-west",
+      "approvalSource": "animations/circe/delivery-approved.json",
+      "sourceSheet": "animations/circe/deer/run/west/Circe_Deer_Run_West_sheet.png",
+      "sourceMetadata": "animations/circe/deer/run/west/Circe_Deer_Run_West_sheet.json",
+      "sourceSheetSha256": "2ee33d07bafb2fd676553e8246b35a55e768a67083dfc7d4c245191993441c78",
+      "sourceMetadataSha256": "93b4f162f1d1d4193ae24aa92b9a0203f221618a47b199e399821c46386f59e9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2ee33d07bafb2fd67655.png"
+    },
+    {
+      "id": "enemy-normal-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/idle/Enemy_normal_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/idle/Enemy_normal_Idle_sheet.json",
+      "sourceSheetSha256": "995f546e064fa37e8dda28d436d43d1b93ffe49deeb2bc721e02b647ba0f2d61",
+      "sourceMetadataSha256": "c7fdc4b837d6275dfd68c68f072f8a5c2915e7870481732350e4ec78be34f706",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_995f546e064fa37e8dda.png"
+    },
+    {
+      "id": "enemy-ninja-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/idle/Enemy_ninja_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/idle/Enemy_ninja_Idle_sheet.json",
+      "sourceSheetSha256": "a09e3efd22dd4820286a9a560333ec19ff4251b644d9557ed14baa70f2923750",
+      "sourceMetadataSha256": "b9f52e45982134ecbd13cc7239afc0628a6c050c2d407e5959b7c58a13c42985",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a09e3efd22dd4820286a.png"
+    },
+    {
+      "id": "enemy-tutankhamun-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/idle/Enemy_tutankhamun_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/idle/Enemy_tutankhamun_Idle_sheet.json",
+      "sourceSheetSha256": "a5ce6b1c981e9b3d6a2fb85ff545206d46f1d12c3938dcbf975a2226e15c4547",
+      "sourceMetadataSha256": "5e9a375efcd64933b1f86b0093818482409f30b3885c36ea6a738789acfd4e93",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a5ce6b1c981e9b3d6a2f.png"
+    },
+    {
+      "id": "enemy-crawler-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/idle/Enemy_crawler_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/idle/Enemy_crawler_Idle_sheet.json",
+      "sourceSheetSha256": "b73b63b89ab53d20bf119865cc4b10805ff775079989d9bbb8cda457cf23509a",
+      "sourceMetadataSha256": "8745e4235092db83d05a707ecc3fd187f7c983f3185ca7fa2de5da284ce2f60d",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b73b63b89ab53d20bf11.png"
+    },
+    {
+      "id": "enemy-pirate-idle-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/idle/Enemy_pirate_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/idle/Enemy_pirate_Idle_sheet.json",
+      "sourceSheetSha256": "d8aa64f4c39e478c7b4ef1cbe8b40fb256f5c80e17203833da3854768eb5cf3a",
+      "sourceMetadataSha256": "0282dc96d6729d570bb1b9e30ee21967208ec95d02df8a0f1fc74e32efc206f0",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d8aa64f4c39e478c7b4e.png"
+    },
+    {
+      "id": "enemy-samurai-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/idle/Enemy_samurai_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/idle/Enemy_samurai_Idle_sheet.json",
+      "sourceSheetSha256": "8a929721dbf055535a5daf1e1af4f8956237219b71ea48b0f83b9be2909b779f",
+      "sourceMetadataSha256": "34185f40a8ff2415fa862dcd5f634cab728bbfe317b62625746e155f03b143c2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8a929721dbf055535a5d.png"
+    },
+    {
+      "id": "enemy-sarcophagus-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/idle/Enemy_sarcophagus_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/idle/Enemy_sarcophagus_Idle_sheet.json",
+      "sourceSheetSha256": "8668770656960fa458c73c4bb50f70fe914e59ec4c55039bc745b837641569c2",
+      "sourceMetadataSha256": "f297bb3dfaf476edb7a9d8406db9799196380d24a1d68f190e7b875b885a771b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8668770656960fa458c7.png"
+    },
+    {
+      "id": "enemy-trex-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/idle/Enemy_trex_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/idle/Enemy_trex_Idle_sheet.json",
+      "sourceSheetSha256": "2bb9aee083023b23fac5d39fb9643c86354f13657db3951994ebd29334135ec3",
+      "sourceMetadataSha256": "e669b3ef4ccac75709b4aa7ac42259e21033082712d7179291c2b595b76f8960",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2bb9aee083023b23fac5.png"
+    },
+    {
+      "id": "enemy-knight-idle-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/idle/Enemy_knight_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/idle/Enemy_knight_Idle_sheet.json",
+      "sourceSheetSha256": "2f3186408e6d180103f013dcd89a0f2782f365555136a2a1ea132f2dc43da224",
+      "sourceMetadataSha256": "3fbe5cee2528e3db2cdce7a1c0da2f7db2c23cc7fec0f87274aeb529c3a6d16b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2f3186408e6d180103f0.png"
+    },
+    {
+      "id": "enemy-warlock-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/idle/Enemy_warlock_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/idle/Enemy_warlock_Idle_sheet.json",
+      "sourceSheetSha256": "75ede35ccc591c2e754ba52ee799260e7b443ad1df86901fd4c9764c536e15a2",
+      "sourceMetadataSha256": "98c7faa5a642bd8dbfec18dd7f7e4cc24a1d607fc3e0c71028de3a4a05da8add",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_75ede35ccc591c2e754b.png"
+    },
+    {
+      "id": "enemy-mad-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/idle/Enemy_mad_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/idle/Enemy_mad_Idle_sheet.json",
+      "sourceSheetSha256": "f26e418e9e4f118eeebb6c24c4989b1238b7eb8ae2b9c7eb043b8b72a1af631e",
+      "sourceMetadataSha256": "e40f7dda456b803f2ada0b0796b09698c48aad00837125f7126ca424c5f9397b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f26e418e9e4f118eeebb.png"
+    },
+    {
+      "id": "enemy-boxer-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/idle/Enemy_boxer_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/idle/Enemy_boxer_Idle_sheet.json",
+      "sourceSheetSha256": "8a9a6d6534554148f692e250cb9a9dc4e802699cc943c88dc0b7d8e868b4b470",
+      "sourceMetadataSha256": "c73b8e6427cc35f21007fe8b5929166f62d5a1802336dff402a6f0637a33463d",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8a9a6d6534554148f692.png"
+    },
+    {
+      "id": "enemy-boss-idle-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/idle/Enemy_boss_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/idle/Enemy_boss_Idle_sheet.json",
+      "sourceSheetSha256": "015d6a8bbcbd661878ac97e37892e374c6e5cca66c4a1e218d84026afe4ec23e",
+      "sourceMetadataSha256": "2f1caee1320f5968ba1d5088e50bbe1adb507df64cb6ce6e08d570ec2f376778",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_015d6a8bbcbd661878ac.png"
+    },
+    {
+      "id": "enemy-mini_mummy-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/idle/Enemy_mini_mummy_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/idle/Enemy_mini_mummy_Idle_sheet.json",
+      "sourceSheetSha256": "8eb047210e5682e123d4c92b29a91a059b36b42bd6019793ba9c5b7bd8ea7338",
+      "sourceMetadataSha256": "af7487bfc19dff2e155a7e0f103d024aa6ad073580e0ce6c6434ac3944825127",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8eb047210e5682e123d4.png"
+    },
+    {
+      "id": "enemy-blue_frog-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/idle/Enemy_blue_frog_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/idle/Enemy_blue_frog_Idle_sheet.json",
+      "sourceSheetSha256": "1986ce975cf6e5b1752e53402ddc9ce8689809fc814717df2777bc1242d41ca0",
+      "sourceMetadataSha256": "1d5ef45fbcc3b8886e4091dfb487f39626d4c6c7d4643dc69c3fc3ad83333e27",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1986ce975cf6e5b1752e.png"
+    },
+    {
+      "id": "enemy-tutankhamun-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/walk/east/Enemy_tutankhamun_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/walk/east/Enemy_tutankhamun_walk_East_sheet.json",
+      "sourceSheetSha256": "8c4ccde11848a9a12d83e4237773b1bd7705c64e542b817342236a9136020fa8",
+      "sourceMetadataSha256": "fc6fe742c1d6c38a821228fbea3ad4ae29a18c83648eaa213a03556fadad7b52",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8c4ccde11848a9a12d83.png"
+    },
+    {
+      "id": "enemy-tutankhamun-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_sheet.json",
+      "sourceSheetSha256": "263275d2e1281cf62c2ec981b2706b82f5cc21a4675b909e0cb1f8ca265d03be",
+      "sourceMetadataSha256": "e3bd90e71ceeb0586877b8cb642fd9296c720258f83514fa0d222b5d61aeeded",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_263275d2e1281cf62c2e.png"
+    },
+    {
+      "id": "enemy-tutankhamun-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/attack/east/Enemy_tutankhamun_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/attack/east/Enemy_tutankhamun_attack_East_sheet.json",
+      "sourceSheetSha256": "53bfea1b30567dcf3b9fac05d0d4d0d7ef0aee6f28245c3d491db0d605f9b9e4",
+      "sourceMetadataSha256": "20504bf64f2036cf7450dffd952e49eabc317cbe331a519af89f82ed0dc7b9db",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_53bfea1b30567dcf3b9f.png"
+    },
+    {
+      "id": "enemy-tutankhamun-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/attack/west/Enemy_tutankhamun_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/attack/west/Enemy_tutankhamun_attack_West_sheet.json",
+      "sourceSheetSha256": "153e0a9bd8e13f5b3cf449703152f9af60d44d882ceed18aac6a9510e3274e65",
+      "sourceMetadataSha256": "51539bbcea45b5745773ce6c2def70f909e72ba1814e96dd2ead7b0636815441",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_153e0a9bd8e13f5b3cf4.png"
+    },
+    {
+      "id": "enemy-tutankhamun-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/hurt/east/Enemy_tutankhamun_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/hurt/east/Enemy_tutankhamun_hurt_East_sheet.json",
+      "sourceSheetSha256": "934785c917d1606b55ff9cd700ec38b4d115d2c78c2d1d9d6128da3df22a7ef7",
+      "sourceMetadataSha256": "68f46b278bb35ade0d019743680cdf2aea7380e8e9f8988ebe60ed75507ed718",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_934785c917d1606b55ff.png"
+    },
+    {
+      "id": "enemy-tutankhamun-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/hurt/west/Enemy_tutankhamun_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/hurt/west/Enemy_tutankhamun_hurt_West_sheet.json",
+      "sourceSheetSha256": "c042201c1c1439c3e4454fb37f54e3fbec6dda254376a6743cce92c7e1df292b",
+      "sourceMetadataSha256": "ceaff0b99276d191de0a623801f2df8edabc461ec1dc08f6509e559732f35328",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c042201c1c1439c3e445.png"
+    },
+    {
+      "id": "enemy-tutankhamun-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/death/east/Enemy_tutankhamun_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/death/east/Enemy_tutankhamun_death_East_sheet.json",
+      "sourceSheetSha256": "b26aa053ee569ffd07a79d8185accdfdbbc3b00cf032aefc6348d11eb84b31b8",
+      "sourceMetadataSha256": "9de8ae51179df14c1076f71cd02b682a2fd2c4fab4edf6caa416ef066f3123ab",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b26aa053ee569ffd07a7.png"
+    },
+    {
+      "id": "enemy-tutankhamun-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/death/west/Enemy_tutankhamun_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/death/west/Enemy_tutankhamun_death_West_sheet.json",
+      "sourceSheetSha256": "8e991efd14767482b3138006fc106aee4a91dc78f7250367dcfd0ee16e2f60ad",
+      "sourceMetadataSha256": "b0684f28816ed517a5cb65c50653f08a149d6f70215fbdde80f674388395eb0b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8e991efd14767482b313.png"
+    },
+    {
+      "id": "enemy-tutankhamun-summon-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/summon/east/Enemy_tutankhamun_summon_East_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/summon/east/Enemy_tutankhamun_summon_East_sheet.json",
+      "sourceSheetSha256": "130b0b8116a2e045bbba5bde1057dc15b8042037d1b96a4a860f3d8752e64dd5",
+      "sourceMetadataSha256": "14bdd7f5455e04ecf6a95f103d6331221027ef1178eb8bdada2498426a146b1d",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_130b0b8116a2e045bbba.png"
+    },
+    {
+      "id": "enemy-tutankhamun-summon-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/tutankhamun/summon/west/Enemy_tutankhamun_summon_West_sheet.png",
+      "sourceMetadata": "animations/enemies/tutankhamun/summon/west/Enemy_tutankhamun_summon_West_sheet.json",
+      "sourceSheetSha256": "1e29de64ca8e38a11d894104717e0354d7e31750cc95e56dc5c4ad81c65724d5",
+      "sourceMetadataSha256": "182153411d0f694e33d09326d7fbc4e751356ce7f42c6350478a980c5ac6f58c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1e29de64ca8e38a11d89.png"
+    },
+    {
+      "id": "enemy-giant-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/walk/east/Enemy_giant_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/walk/east/Enemy_giant_walk_East_sheet.json",
+      "sourceSheetSha256": "7150645e47fe08826e34b4d1c3c050e404f43699698e715e0df8fdb7215199c0",
+      "sourceMetadataSha256": "018a00524ad9f407f3469ec18d79399a17dfffba56c21892671e2ae7fb2a2c35",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7150645e47fe08826e34.png"
+    },
+    {
+      "id": "enemy-giant-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/walk/west/Enemy_giant_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/walk/west/Enemy_giant_walk_West_sheet.json",
+      "sourceSheetSha256": "40b5e0741d49b151c37d8dbdb4c1ee891d8084d3089b569be8d08d1563f093f5",
+      "sourceMetadataSha256": "4fff659febe5eb8f0149e4ce86a82a07d0686f9dcd213a1927402383bf981ede",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_40b5e0741d49b151c37d.png"
+    },
+    {
+      "id": "enemy-giant-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/attack/east/Enemy_giant_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/attack/east/Enemy_giant_attack_East_sheet.json",
+      "sourceSheetSha256": "97b379a6e450a5962d6937860352b439710ab75ec7a0cba7effb6226bffb2043",
+      "sourceMetadataSha256": "1b8b2c7bd004e94797fab6110a761481382a57023c8d03ef5722cf66ceb3de0c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_97b379a6e450a5962d69.png"
+    },
+    {
+      "id": "enemy-giant-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/attack/west/Enemy_giant_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/attack/west/Enemy_giant_attack_West_sheet.json",
+      "sourceSheetSha256": "3847d1c6515f823a53370f0e6008eff52b405d80e2c12076bddb0ec181ad0f5b",
+      "sourceMetadataSha256": "205631c8efad9c475c5ba48ef942484a5ce89184c84af00cb78fa5f812e22ca9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_3847d1c6515f823a5337.png"
+    },
+    {
+      "id": "enemy-giant-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_sheet.json",
+      "sourceSheetSha256": "448404f4f4f5ac54d2b236e2347f4ec87c366cac2adb967a9ededb99eb9a7560",
+      "sourceMetadataSha256": "09b425a18e57e7b9d87bfbea5c87acc13d374c83b0dfb372339bd3c27c1d78e8",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_448404f4f4f5ac54d2b2.png"
+    },
+    {
+      "id": "enemy-giant-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/hurt/west/Enemy_giant_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/hurt/west/Enemy_giant_hurt_West_sheet.json",
+      "sourceSheetSha256": "edddefca138ebb63cdd0ce047eade50a959abb9a7926e10515d305dfa5c2e35f",
+      "sourceMetadataSha256": "e6a06c0ec512a3142886d6f652c37964b78bfee1024fa29e9508549d6992b6b7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_edddefca138ebb63cdd0.png"
+    },
+    {
+      "id": "enemy-giant-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/death/east/Enemy_giant_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/death/east/Enemy_giant_death_East_sheet.json",
+      "sourceSheetSha256": "92d21f778c8ff0d3b16aa440689366050a38911bc71747862e71fe872fb3b8b4",
+      "sourceMetadataSha256": "603c07eb8094a8cd9d744df2a0c1ca525936365878b39bab1af84519761bbff6",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_92d21f778c8ff0d3b16a.png"
+    },
+    {
+      "id": "enemy-giant-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/giant/death/west/Enemy_giant_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/giant/death/west/Enemy_giant_death_West_sheet.json",
+      "sourceSheetSha256": "a30afb7df7aaea08dec863b0b348cde03e307cfa82ffdc09c049a70baab05957",
+      "sourceMetadataSha256": "a2452b7359e3c48681ddbf8a63305f83c3b2b03cf31697655f51e876c5bdd45e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a30afb7df7aaea08dec8.png"
+    },
+    {
+      "id": "enemy-crawler-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/walk/east/Enemy_crawler_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/walk/east/Enemy_crawler_walk_East_sheet.json",
+      "sourceSheetSha256": "a35332ad95e11bb6b7d26be948c876f8abc0f5f7e423f98f3bb0ab05f2a67468",
+      "sourceMetadataSha256": "456249158498bf13319c20a650f97974ffd1b6f43796663a78452dd483b75cdb",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a35332ad95e11bb6b7d2.png"
+    },
+    {
+      "id": "enemy-crawler-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/walk/west/Enemy_crawler_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/walk/west/Enemy_crawler_walk_West_sheet.json",
+      "sourceSheetSha256": "8acb86b74dcdbbadadbfea1f4896ff113935483600f186807969c9cbe6dbbf10",
+      "sourceMetadataSha256": "5a315529dba53d6f7471f6642e96217973ff723e1cbcfda81bc7b5809ec44891",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8acb86b74dcdbbadadbf.png"
+    },
+    {
+      "id": "enemy-crawler-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/hurt/east/Enemy_crawler_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/hurt/east/Enemy_crawler_hurt_East_sheet.json",
+      "sourceSheetSha256": "33bed746eb6a585b82f7de52505533fcab573d9787142a2d6a416e114b0e1f2b",
+      "sourceMetadataSha256": "ef38dd46cf56c2fa1ba34b0ae2dc08d4e18a4c1674e4b95e9b7346e566afa814",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_33bed746eb6a585b82f7.png"
+    },
+    {
+      "id": "enemy-crawler-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/hurt/west/Enemy_crawler_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/hurt/west/Enemy_crawler_hurt_West_sheet.json",
+      "sourceSheetSha256": "6be7d1295f6453fcbf1d088a54b7fcf8efb1c07e9c4a5e8d9e58c09074147b4c",
+      "sourceMetadataSha256": "bdc0fd5b4b29de4b89705cbe9baac60b0360a1d71de056fe67ac1a545c794efd",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6be7d1295f6453fcbf1d.png"
+    },
+    {
+      "id": "enemy-crawler-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/death/east/Enemy_crawler_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/death/east/Enemy_crawler_death_East_sheet.json",
+      "sourceSheetSha256": "22334d02a8bd60d887a34f0ca6135c51fcebfef4c0357f5e6a8e0cb149946c7e",
+      "sourceMetadataSha256": "0824c5788fd71b4693bf7bd338623388a2df1b9772084d93ac436d16ebdc7e59",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_22334d02a8bd60d887a3.png"
+    },
+    {
+      "id": "enemy-crawler-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/death/west/Enemy_crawler_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/death/west/Enemy_crawler_death_West_sheet.json",
+      "sourceSheetSha256": "85247c9695391191f5ee01d84364ec9dcc8f41ccb482177250ef2db7d0633960",
+      "sourceMetadataSha256": "59941cd974df775ebbeaca17463966fc5c78f525407f936d1afc2bfbe97d2020",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_85247c9695391191f5ee.png"
+    },
+    {
+      "id": "enemy-samurai-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/walk/east/Enemy_samurai_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/walk/east/Enemy_samurai_walk_East_sheet.json",
+      "sourceSheetSha256": "3188454a3cb2bb2c18ad1978436171dbc822da1c7ec2993e226039c1b49c1ee3",
+      "sourceMetadataSha256": "40c23b1f6f3efee7d10a3f2890682d2f133c94f6d1786abb30d816379eb6ca8e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_3188454a3cb2bb2c18ad.png"
+    },
+    {
+      "id": "enemy-samurai-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/walk/west/Enemy_samurai_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/walk/west/Enemy_samurai_walk_West_sheet.json",
+      "sourceSheetSha256": "6603abeac935ec309c0ff76dded2cbb0ad99bfa3a35a652b61ece6501df8d5d3",
+      "sourceMetadataSha256": "a541a7408224776858e503c4e9f0719a03f8b88a8c43324983fb8fe28d8d5181",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6603abeac935ec309c0f.png"
+    },
+    {
+      "id": "enemy-samurai-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/hurt/east/Enemy_samurai_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/hurt/east/Enemy_samurai_hurt_East_sheet.json",
+      "sourceSheetSha256": "4362d4c6f360d0d7f6120292f0d0f09eab5ae93aa833e450516b04f2b5b6ca61",
+      "sourceMetadataSha256": "48ec909e9aaecba8317c0c01acc9fb02cd515942e36a8f53dfd97cf4814759ae",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_4362d4c6f360d0d7f612.png"
+    },
+    {
+      "id": "enemy-samurai-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/hurt/west/Enemy_samurai_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/hurt/west/Enemy_samurai_hurt_West_sheet.json",
+      "sourceSheetSha256": "5ef4848aa1698a491913477d752474faf798607d2dac102a5616f693916a63b4",
+      "sourceMetadataSha256": "dd0cb9ad9f19afb2c215c5d41eb073e8b4cba76738e514a89e69b0f22f9b397c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_5ef4848aa1698a491913.png"
+    },
+    {
+      "id": "enemy-samurai-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/death/east/Enemy_samurai_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/death/east/Enemy_samurai_death_East_sheet.json",
+      "sourceSheetSha256": "eb2a2c3095436e6f54aeda635f952e5b69c8004d15c74406a6414e1bf0d2cb33",
+      "sourceMetadataSha256": "dbc4a6ae26a49240eef40ce5e0858bb1039920cfbddd6a0774194653a66d8fd8",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_eb2a2c3095436e6f54ae.png"
+    },
+    {
+      "id": "enemy-samurai-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/death/west/Enemy_samurai_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/death/west/Enemy_samurai_death_West_sheet.json",
+      "sourceSheetSha256": "458a86ce6fc7c6800f65c8ccb29ab02be0d884a71380c7244a5660b07ad77cab",
+      "sourceMetadataSha256": "3e56e728bd648d71330c0e8c75ef396b9170122ef28d3b5ac96d8faefafc3afa",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_458a86ce6fc7c6800f65.png"
+    },
+    {
+      "id": "enemy-pirate-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/walk/east/Enemy_pirate_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/walk/east/Enemy_pirate_walk_East_sheet.json",
+      "sourceSheetSha256": "4c49ecd63f9b76c5a948c861363d6338fa85cc865bb9fe298f348f18911cd6e3",
+      "sourceMetadataSha256": "549ae10928e1a559096862056ad246b6bdcea4522c0d271280add6b0676b2c60",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_4c49ecd63f9b76c5a948.png"
+    },
+    {
+      "id": "enemy-pirate-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/walk/west/Enemy_pirate_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/walk/west/Enemy_pirate_walk_West_sheet.json",
+      "sourceSheetSha256": "49d2e7e304705588668bafadc48d224685f357baaf4e436ffd43108de6610035",
+      "sourceMetadataSha256": "d05c6e07e8e0e8f345df6b2c0a89bb908af77e4a5c0436e61500e62cf94b3a84",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_49d2e7e304705588668b.png"
+    },
+    {
+      "id": "enemy-pirate-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/attack/east/Enemy_pirate_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/attack/east/Enemy_pirate_attack_East_sheet.json",
+      "sourceSheetSha256": "404a432ad8e4213c4f3f3121fd65425da20b16c93c0f4c1f3183a220e5a0f2fb",
+      "sourceMetadataSha256": "94fb4bddcdb6359e3c56196e8f8e833cfa332a259d81c954f6d3728b8b5eaee1",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_404a432ad8e4213c4f3f.png"
+    },
+    {
+      "id": "enemy-pirate-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/attack/west/Enemy_pirate_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/attack/west/Enemy_pirate_attack_West_sheet.json",
+      "sourceSheetSha256": "a56ca1f8ee3aa598f0ad9cf8cde9e5f1992ffc2cd512069faa1d3b425cae1fc3",
+      "sourceMetadataSha256": "f465b6e950981743107f00ae2d95f96a54217304ebff4fcb9b08d9b6b841d1dc",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a56ca1f8ee3aa598f0ad.png"
+    },
+    {
+      "id": "enemy-pirate-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/hurt/east/Enemy_pirate_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/hurt/east/Enemy_pirate_hurt_East_sheet.json",
+      "sourceSheetSha256": "ae0dd340b19369d894bf31e254df5ef96d953c4037a8b3128f5c8f3c2e3662d0",
+      "sourceMetadataSha256": "424e4b96f760152315e6d61bb3718a0b6c32a802bf85d32604999e6693eadc76",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ae0dd340b19369d894bf.png"
+    },
+    {
+      "id": "enemy-pirate-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/hurt/west/Enemy_pirate_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/hurt/west/Enemy_pirate_hurt_West_sheet.json",
+      "sourceSheetSha256": "d70ea4264f7b421ef9fd747f9ffd75d69262617f9807a460e82701bc91013180",
+      "sourceMetadataSha256": "f382ea691edd01a1970d5699d48b8b5b70baa40c489c12600cd4d7425d3c7055",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d70ea4264f7b421ef9fd.png"
+    },
+    {
+      "id": "enemy-pirate-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/death/east/Enemy_pirate_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/death/east/Enemy_pirate_death_East_sheet.json",
+      "sourceSheetSha256": "20ee13382b582d15527222099f22397918c2ea48612e15fc1df0723b30f52f37",
+      "sourceMetadataSha256": "6f6f2306f2251036c224ee5c5b8291b28ad646c85db097ff99141eb1a79f9389",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_20ee13382b582d155272.png"
+    },
+    {
+      "id": "enemy-pirate-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/death/west/Enemy_pirate_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/death/west/Enemy_pirate_death_West_sheet.json",
+      "sourceSheetSha256": "e6b2bfb274d3df42d03d02574f740ed9c5dd85e18896223aafa36772bff36a22",
+      "sourceMetadataSha256": "40538f0e27368e6d5e9b3fc0e150d2d64e6a2f88ac69cacb49e852015f9b4f1e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_e6b2bfb274d3df42d03d.png"
+    },
+    {
+      "id": "enemy-pirate-pistol_shot-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/pistol_shot/east/Enemy_pirate_pistol_shot_East_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/pistol_shot/east/Enemy_pirate_pistol_shot_East_sheet.json",
+      "sourceSheetSha256": "84b031d903f2ca362d8c6feec91e24943aa58a5725af8ee3ea0c35fd38a96b51",
+      "sourceMetadataSha256": "2e4ca91ee1b5871a245bd042cb9b140aabdc0b937b8012fec5f395fce3028b14",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_84b031d903f2ca362d8c.png"
+    },
+    {
+      "id": "enemy-pirate-pistol_shot-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/pirate/pistol_shot/west/Enemy_pirate_pistol_shot_West_sheet.png",
+      "sourceMetadata": "animations/enemies/pirate/pistol_shot/west/Enemy_pirate_pistol_shot_West_sheet.json",
+      "sourceSheetSha256": "348efe01b9bfcf140fc9a8ae3bb94af48b9ee134f7a57afd6438dcf46498a793",
+      "sourceMetadataSha256": "f4010c69f383dbb38a0a3543355837922e6af2a737c4bfd257d758ac71a99f22",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_348efe01b9bfcf140fc9.png"
+    },
+    {
+      "id": "enemy-normal-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/walk/east/Skeleton_Normal_Walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/walk/east/Skeleton_Normal_Walk_East_sheet.json",
+      "sourceSheetSha256": "caaf3c14cefbe7aa778f88502bf033047b8593b433e3184eae788a4406d3d1c0",
+      "sourceMetadataSha256": "dd9a4e7d4badbc777f0821666006f107a6ca7a189ab5d3b1695773106f6e12b2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_caaf3c14cefbe7aa778f.png"
+    },
+    {
+      "id": "enemy-normal-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/walk/west/Skeleton_Normal_Walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/walk/west/Skeleton_Normal_Walk_West_sheet.json",
+      "sourceSheetSha256": "c479fb342d0db99bee3293d69fa91400cef137ab4e6f436e3fb4bc6ca884f809",
+      "sourceMetadataSha256": "4e97b6cd846deb43d03c20478f2ab236e33d823455dfa3f9520bbffce15418d9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c479fb342d0db99bee32.png"
+    },
+    {
+      "id": "enemy-normal-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/hurt/east/Skeleton_Normal_Hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/hurt/east/Skeleton_Normal_Hurt_East_sheet.json",
+      "sourceSheetSha256": "d1fa6ee60db9e60c8c4d9f0ccfc849682c4fdeadacf755d997c7d537e921813e",
+      "sourceMetadataSha256": "9d448f18e6dafca6f0e2aa17299443480e8e2a3ba44df3d3857cbb0e258c6979",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d1fa6ee60db9e60c8c4d.png"
+    },
+    {
+      "id": "enemy-normal-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/hurt/west/Skeleton_Normal_Hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/hurt/west/Skeleton_Normal_Hurt_West_sheet.json",
+      "sourceSheetSha256": "93124390942f4651cc6949234d81eda960e86b73fd6c74da2de617666732d7d0",
+      "sourceMetadataSha256": "a226d0caf56cc75deeda622ca2ea7ac69f0db61e8dd2874e1a25b3414919ba0a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_93124390942f4651cc69.png"
+    },
+    {
+      "id": "enemy-normal-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/death/east/Skeleton_Normal_Death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/death/east/Skeleton_Normal_Death_East_sheet.json",
+      "sourceSheetSha256": "75eabfc8e6b67c4e0ac3102c7c0bde8a6ae649b664e79e768cce2da04bdfbd16",
+      "sourceMetadataSha256": "121068e07954cff0e847a1a2d35da8ea8b302803e3f23b771c5ac3674824be3e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_75eabfc8e6b67c4e0ac3.png"
+    },
+    {
+      "id": "enemy-normal-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/death/west/Skeleton_Normal_Death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/death/west/Skeleton_Normal_Death_West_sheet.json",
+      "sourceSheetSha256": "ee9c8ba5ab3fee141062d66cde70eb492ae8a67ad5eb2bac517881f7b2cc865c",
+      "sourceMetadataSha256": "d82740e828163ed1d1b3f098cfe99fbf006c4edde45038c77a76c4475df69992",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ee9c8ba5ab3fee141062.png"
+    },
+    {
+      "id": "enemy-ninja-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_sheet.json",
+      "sourceSheetSha256": "5a67113c483c5bd9fa936d85ea1e1c0890a3004ed736fdd4d45152a35aff1a95",
+      "sourceMetadataSha256": "226dc9b494a104b516b63baf019f05e789b6450e0309a1b6d10fafc7cf64f52a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_5a67113c483c5bd9fa93.png"
+    },
+    {
+      "id": "enemy-ninja-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/death/west/Skeleton_Ninja_Death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/death/west/Skeleton_Ninja_Death_West_sheet.json",
+      "sourceSheetSha256": "b5780d19123bf84ace86e2d9e8a1833d21aa7c9a0d2b6175ef698e53334ee9ce",
+      "sourceMetadataSha256": "157076b1525b5421531401c47ed803e75cf213da905703616abd0f94322e00b6",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b5780d19123bf84ace86.png"
+    },
+    {
+      "id": "enemy-sarcophagus-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/walk/east/Enemy_sarcophagus_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/walk/east/Enemy_sarcophagus_walk_East_sheet.json",
+      "sourceSheetSha256": "139fc048aa8c2ec527b91ba8be03f7d02ca8e10bd0ba7bf1fc3d0191f2042ebe",
+      "sourceMetadataSha256": "233a628686ddbc53604b14fe7d4fc1eb41fbb4e3947a3b85015df85206d3b429",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_139fc048aa8c2ec527b9.png"
+    },
+    {
+      "id": "enemy-sarcophagus-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/walk/west/Enemy_sarcophagus_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/walk/west/Enemy_sarcophagus_walk_West_sheet.json",
+      "sourceSheetSha256": "24d24eb435089ddb22f3e7bb4143096b7ec4ed6de654042523784c84e8036a94",
+      "sourceMetadataSha256": "f57dca3961e58502628c71443b0aff88a71ae42ab4d7c8d556ea0b8aca1f51e2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_24d24eb435089ddb22f3.png"
+    },
+    {
+      "id": "enemy-sarcophagus-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/hurt/east/Enemy_sarcophagus_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/hurt/east/Enemy_sarcophagus_hurt_East_sheet.json",
+      "sourceSheetSha256": "7fc43fd4bd75ab62e08ce8769d901d4a9abb997d992f0e680b535de70f8d94ab",
+      "sourceMetadataSha256": "9e4a80e5356b49ce7fe3cd36ca088f0e9773c9bae4ea0b973bf3e30812dfbe92",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7fc43fd4bd75ab62e08c.png"
+    },
+    {
+      "id": "enemy-sarcophagus-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/hurt/west/Enemy_sarcophagus_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/hurt/west/Enemy_sarcophagus_hurt_West_sheet.json",
+      "sourceSheetSha256": "203581922086f1548a85dda0ae0faf4a30688738e10dcac798b6e849006fd6d1",
+      "sourceMetadataSha256": "71b13652f0a901777fa9465e1d07d9967380362ef3aff81f4b309ce47f647ad7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_203581922086f1548a85.png"
+    },
+    {
+      "id": "enemy-sarcophagus-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/attack/east/Enemy_sarcophagus_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/attack/east/Enemy_sarcophagus_attack_East_sheet.json",
+      "sourceSheetSha256": "f7ac34884c3b6a8a108bc95484e5edcec5e49b6a4d161627c68a75634b02acfc",
+      "sourceMetadataSha256": "ab4a63a4bff47f5b68494f739348aca795e5d09fc1314ebf84459ec3e7c26d98",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f7ac34884c3b6a8a108b.png"
+    },
+    {
+      "id": "enemy-sarcophagus-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/attack/west/Enemy_sarcophagus_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/attack/west/Enemy_sarcophagus_attack_West_sheet.json",
+      "sourceSheetSha256": "fc6e2f2cb66a51c14ca4d66a5ea0d32b20ae2c8156f4b959b4d296ed0c51cdcd",
+      "sourceMetadataSha256": "1698d064b94d276b6d99f5e03f878b18e9ca97b60b4bc9955be46e801c561607",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_fc6e2f2cb66a51c14ca4.png"
+    },
+    {
+      "id": "enemy-sarcophagus-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/death/east/Enemy_sarcophagus_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/death/east/Enemy_sarcophagus_death_East_sheet.json",
+      "sourceSheetSha256": "7cc51a448a3a3761bb4a40de92892513e8b181646ffab12648a6afb06075e5c7",
+      "sourceMetadataSha256": "bf4f850467ad1b8d50e5f4107dc2647e5cb69905752c1feaa832619c2cafabaa",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7cc51a448a3a3761bb4a.png"
+    },
+    {
+      "id": "enemy-sarcophagus-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/sarcophagus/death/west/Enemy_sarcophagus_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/sarcophagus/death/west/Enemy_sarcophagus_death_West_sheet.json",
+      "sourceSheetSha256": "db2894756b994d987aa5a72d4a4cef0c02b266bf1348867a3f3583c39be59ded",
+      "sourceMetadataSha256": "ce053a46612b92459db24d92c3a7a5f6b5d190bf1b1ff43c73fb5b9efe304068",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_db2894756b994d987aa5.png"
+    },
+    {
+      "id": "enemy-trex-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/walk/east/Enemy_trex_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/walk/east/Enemy_trex_walk_East_sheet.json",
+      "sourceSheetSha256": "2da820d761d8994c23fa978d6ecca1caf1882d388b75170251b7f9bd016e764d",
+      "sourceMetadataSha256": "4be04c01dc1a1ae7bfe313c92074905857e2ec5678b7d9b49a29ab99c7f707b9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2da820d761d8994c23fa.png"
+    },
+    {
+      "id": "enemy-trex-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/walk/west/Enemy_trex_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/walk/west/Enemy_trex_walk_West_sheet.json",
+      "sourceSheetSha256": "bc3472072c8efd0315d5cbd7b455e8d7eac47f4e9724094f85d2b639a6405910",
+      "sourceMetadataSha256": "412c24ecd5c0df2a85297bd1608b18f29d7e593596670beb2a68359dbe0a408e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_bc3472072c8efd0315d5.png"
+    },
+    {
+      "id": "enemy-trex-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/hurt/east/Enemy_trex_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/hurt/east/Enemy_trex_hurt_East_sheet.json",
+      "sourceSheetSha256": "91c44011c99e387b4b0da135b2b233cb8443c9e6e4336942a706d8467c1fa128",
+      "sourceMetadataSha256": "1b0fe6a75be61c189dcb8dc153b1e7392979f393b5ce244a895548a35396ec94",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_91c44011c99e387b4b0d.png"
+    },
+    {
+      "id": "enemy-trex-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/hurt/west/Enemy_trex_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/hurt/west/Enemy_trex_hurt_West_sheet.json",
+      "sourceSheetSha256": "c46471ad8aaa3575c71f83db13363a8d7ff8eaf3bb9facbb8354fa30bd3a98d3",
+      "sourceMetadataSha256": "a22771c570a2af7160683d91beba49b850388cdc73cecb6190a5f816fea8ab01",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c46471ad8aaa3575c71f.png"
+    },
+    {
+      "id": "enemy-trex-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/death/east/Enemy_trex_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/death/east/Enemy_trex_death_East_sheet.json",
+      "sourceSheetSha256": "e631c79a7278509e22cc3709d9b631f7bafa05dc987d79df4c45e9e449441862",
+      "sourceMetadataSha256": "0c3f844916e745a7e3178cc0bc49f63152e9f3cc75aabd971eb56bc1294aec28",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_e631c79a7278509e22cc.png"
+    },
+    {
+      "id": "enemy-trex-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/death/west/Enemy_trex_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/death/west/Enemy_trex_death_West_sheet.json",
+      "sourceSheetSha256": "d6a39848638b435b8f56be0253cf399d2b54df8b1d11a4b0f0b825465383bddc",
+      "sourceMetadataSha256": "8639f61169ec309d739e5d9c8f61296456eec9d278742e56bd7fdccef41cbde7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d6a39848638b435b8f56.png"
+    },
+    {
+      "id": "enemy-knight-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/walk/east/Enemy_knight_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/walk/east/Enemy_knight_walk_East_sheet.json",
+      "sourceSheetSha256": "60ffa6abb6635332937dfac626b605ac76499e8dd4f130e3f639215c1fe83852",
+      "sourceMetadataSha256": "2f633df0a32bec1a5fb1e013a202bbeada1befa895b6dec0c73fe0563f0f545e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_60ffa6abb6635332937d.png"
+    },
+    {
+      "id": "enemy-knight-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/walk/west/Enemy_knight_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/walk/west/Enemy_knight_walk_West_sheet.json",
+      "sourceSheetSha256": "1469ca06fc85f33566cd1f0c1e48a6327069de8ed2d3f143f8aebf63b70727fa",
+      "sourceMetadataSha256": "623a73e3925465656b62227b9f3d42c9a77db3f68d3a3245aa92f8734ac7d5bb",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1469ca06fc85f33566cd.png"
+    },
+    {
+      "id": "enemy-knight-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/death/east/Enemy_knight_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/death/east/Enemy_knight_death_East_sheet.json",
+      "sourceSheetSha256": "b67f8ebd7cbefe03b9b6c8df3b4781a9b6e0021151697826c9340d264b38393a",
+      "sourceMetadataSha256": "a17ed6ab9988ffde39452c3db293d0d302a8f32cb45d6827ad1dc675954e4181",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b67f8ebd7cbefe03b9b6.png"
+    },
+    {
+      "id": "enemy-knight-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/death/west/Enemy_knight_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/death/west/Enemy_knight_death_West_sheet.json",
+      "sourceSheetSha256": "db2d80bac59e674caeed8d0fa6a889f7742a45f791a036ab4b3be68b3af53eae",
+      "sourceMetadataSha256": "44948fd5901690be63c985174936c7c44bc06d8e4dd2a0b738a19831d2473339",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_db2d80bac59e674caeed.png"
+    },
+    {
+      "id": "enemy-warlock-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/walk/east/Enemy_warlock_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/walk/east/Enemy_warlock_walk_East_sheet.json",
+      "sourceSheetSha256": "7b66fec576f35e77a6e39e387505e5977ffa47fb4a05d62ba470aba5ec9c060b",
+      "sourceMetadataSha256": "e845c692b54d24db30dda6dc2d4c13ef3681f5959bce4152f0434bfb091dc2a8",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7b66fec576f35e77a6e3.png"
+    },
+    {
+      "id": "enemy-warlock-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/walk/west/Enemy_warlock_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/walk/west/Enemy_warlock_walk_West_sheet.json",
+      "sourceSheetSha256": "607f7f0ea632cc1c4000511c230d3e136885339f12e00791ee1285ef1ebaee03",
+      "sourceMetadataSha256": "df4ed2f760dcb3000277ea859cf1027b8475038dc88bc09dfc11768657b75cf2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_607f7f0ea632cc1c4000.png"
+    },
+    {
+      "id": "enemy-warlock-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/attack/east/Enemy_warlock_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/attack/east/Enemy_warlock_attack_East_sheet.json",
+      "sourceSheetSha256": "f84354384bd96823af98fa04b6dbc4094b1be8e933e48beaa6b6c373128113e7",
+      "sourceMetadataSha256": "b2c1e7c86c7dab7c595aaff0af1fedf7dd48574e20d62c4d5e21c87cd6bb71b4",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f84354384bd96823af98.png"
+    },
+    {
+      "id": "enemy-warlock-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/attack/west/Enemy_warlock_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/attack/west/Enemy_warlock_attack_West_sheet.json",
+      "sourceSheetSha256": "b29fc03d9657973e8ad501637e52051cc1b19c5fed64e6c8014858fe4a8aa751",
+      "sourceMetadataSha256": "bf7f4a4fcc931f1a75d85139d99bf08a57e1fdde0c1920ee833a5f2091d72a8b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b29fc03d9657973e8ad5.png"
+    },
+    {
+      "id": "enemy-warlock-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/hurt/east/Enemy_warlock_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/hurt/east/Enemy_warlock_hurt_East_sheet.json",
+      "sourceSheetSha256": "5561475c1914160df60080aa43aa3109a234d007ed3d990f9e777270f1368fe7",
+      "sourceMetadataSha256": "310ac4039e4fd1235a4b8b56420f5d077d8b08ad83996d87d5c6e8ade76417b2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_5561475c1914160df600.png"
+    },
+    {
+      "id": "enemy-warlock-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/hurt/west/Enemy_warlock_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/hurt/west/Enemy_warlock_hurt_West_sheet.json",
+      "sourceSheetSha256": "2c077c8ce1d172dd125c8da8dd2a62779c1ddd3dc287e87ba7dbef554410301a",
+      "sourceMetadataSha256": "70a2650914fa8a0baa586304dee017e26cc17ec9498cf9b63f69d2857a1280b0",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_2c077c8ce1d172dd125c.png"
+    },
+    {
+      "id": "enemy-warlock-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/death/east/Enemy_warlock_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/death/east/Enemy_warlock_death_East_sheet.json",
+      "sourceSheetSha256": "42879378efe366a32a69115348d7c51af8fa150b84ed98f7777433f06e2cea95",
+      "sourceMetadataSha256": "54ddd3edbab0e00f435995bd102b37c4fd3cdbe6ea00fb2faeac14811e5d5073",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_42879378efe366a32a69.png"
+    },
+    {
+      "id": "enemy-warlock-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/death/west/Enemy_warlock_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/death/west/Enemy_warlock_death_West_sheet.json",
+      "sourceSheetSha256": "e11c21b0261809c561aab3072281525cbf89a1259dd3597adcb6a8874cad3a7f",
+      "sourceMetadataSha256": "720fe92223a3f91dcec814d4335e8bbe08ee1a556024593e707273813b8afe6c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_e11c21b0261809c561aa.png"
+    },
+    {
+      "id": "enemy-mad-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/walk/east/Enemy_mad_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/walk/east/Enemy_mad_walk_East_sheet.json",
+      "sourceSheetSha256": "ca4a3296c4ef76a9c6f782b3ed7194d1348802340b36c482d0733cb85418f376",
+      "sourceMetadataSha256": "652a5c51863fc966c100e38a2192e23b6be4ea5629166c1d3ea141ce4fe452fd",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ca4a3296c4ef76a9c6f7.png"
+    },
+    {
+      "id": "enemy-mad-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/walk/west/Enemy_mad_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/walk/west/Enemy_mad_walk_West_sheet.json",
+      "sourceSheetSha256": "c7bbcdaf4985f485e259b5f725a9fc33538cf0335a128bcbf1d7e46d76245364",
+      "sourceMetadataSha256": "9eab16ec262946af34e20d9aea746f049a33353a0aedde22a5d74050c860ca9d",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c7bbcdaf4985f485e259.png"
+    },
+    {
+      "id": "enemy-mad-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/hurt/east/Enemy_mad_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/hurt/east/Enemy_mad_hurt_East_sheet.json",
+      "sourceSheetSha256": "7f769a73cadd309acf5d3c6eb5329db10926653adee8d1086f751a0f162d3623",
+      "sourceMetadataSha256": "251f99268587cbd97fede5e0ba1ac69ca1d16103d92783758cc8da7acde3b85d",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7f769a73cadd309acf5d.png"
+    },
+    {
+      "id": "enemy-mad-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/hurt/west/Enemy_mad_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/hurt/west/Enemy_mad_hurt_West_sheet.json",
+      "sourceSheetSha256": "17db5b8978b0f290dadca98a12a7c4af590ec789ff40c6dded66b8e9e1e44bd5",
+      "sourceMetadataSha256": "843c1e701c91bc10ca9452cb8fd65aab4394cf1bd0503f18ecc576b64998fbab",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_17db5b8978b0f290dadc.png"
+    },
+    {
+      "id": "enemy-boxer-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/hurt/east/Enemy_boxer_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/hurt/east/Enemy_boxer_hurt_East_sheet.json",
+      "sourceSheetSha256": "86f88d7e31043675c169a083c386d34e84ed98b8a48b353c00634dae3c0f8375",
+      "sourceMetadataSha256": "a77fd5de411b4ed7700b4ccbe042309cac2c132cfc5f3d4c3fec66b009f68363",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_86f88d7e31043675c169.png"
+    },
+    {
+      "id": "enemy-boxer-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/hurt/west/Enemy_boxer_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/hurt/west/Enemy_boxer_hurt_West_sheet.json",
+      "sourceSheetSha256": "bed6d3d759a640447049061cbcd4369f2e8ba4f49661d2a73725636cbc2bf8b6",
+      "sourceMetadataSha256": "509b42c04222a94c2c8b0da71bfaa824d32929f59b9fd793dba7726934b362ad",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_bed6d3d759a640447049.png"
+    },
+    {
+      "id": "enemy-mad-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/death/east/Enemy_mad_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/death/east/Enemy_mad_death_East_sheet.json",
+      "sourceSheetSha256": "6fd2a8386e70be153799451163bacdbbf5fcc226dd0fafaa97042ef4490a28ec",
+      "sourceMetadataSha256": "e0f2ea9b30c35d5627101f820489516df5988487d9ed621fd24c64bd6d71df79",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6fd2a8386e70be153799.png"
+    },
+    {
+      "id": "enemy-mad-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/death/west/Enemy_mad_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/death/west/Enemy_mad_death_West_sheet.json",
+      "sourceSheetSha256": "7cceba60ada1a4b79d4e655ea0dcfe8f83483ebe55f44b35618beaad9fcdcaa7",
+      "sourceMetadataSha256": "cf18740f3881ced53f667f9e0d90a6936f251bf667764472aa07a7046fa729a2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7cceba60ada1a4b79d4e.png"
+    },
+    {
+      "id": "enemy-boxer-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/walk/east/Enemy_boxer_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/walk/east/Enemy_boxer_walk_East_sheet.json",
+      "sourceSheetSha256": "768bf8ebc4d7b4e54c9b4499e9770908069702d8e4dd09a542e4f7d84b2c70a4",
+      "sourceMetadataSha256": "2646744490615460e54358bf53b3993c3927c637da68174ec1adfc6b0d44cad7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_768bf8ebc4d7b4e54c9b.png"
+    },
+    {
+      "id": "enemy-boxer-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/walk/west/Enemy_boxer_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/walk/west/Enemy_boxer_walk_West_sheet.json",
+      "sourceSheetSha256": "52c4632433da705d90c4e0b71e2dd34b3dfb682ac6e3f731cd70878626bc52ae",
+      "sourceMetadataSha256": "6ac8eb1ea2e5c264f3b6a184041bcd2c0be5929a72e97da571ba47ae928c89ff",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_52c4632433da705d90c4.png"
+    },
+    {
+      "id": "enemy-boxer-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/attack/east/Enemy_boxer_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/attack/east/Enemy_boxer_attack_East_sheet.json",
+      "sourceSheetSha256": "56730f061539252f312e0aa375341e195a7eb4f470de700742d6ececa7a82505",
+      "sourceMetadataSha256": "11a705487206c51c6888bc23c004bd151c3d8d0800b831e54208bc240b05cbe3",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_56730f061539252f312e.png"
+    },
+    {
+      "id": "enemy-boxer-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/attack/west/Enemy_boxer_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/attack/west/Enemy_boxer_attack_West_sheet.json",
+      "sourceSheetSha256": "0a0af0e783f80a11290daccdaf93d7403cfdfc826ccfde44a196bb14b1951cb0",
+      "sourceMetadataSha256": "f9f7898c69096db51f3be5af1205b067a9cde3ee8966a7e3786bea29facb5f5b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_0a0af0e783f80a11290d.png"
+    },
+    {
+      "id": "enemy-boxer-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/death/east/Enemy_boxer_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/death/east/Enemy_boxer_death_East_sheet.json",
+      "sourceSheetSha256": "63210313de3aacc3df0082400346cd3dc338d16592adce7fd3803d6b902ab2bf",
+      "sourceMetadataSha256": "98af221e56c3a1696bedef2368605bb173109003a7292ca7b04a4da627ab4c3e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_63210313de3aacc3df00.png"
+    },
+    {
+      "id": "enemy-boxer-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boxer/death/west/Enemy_boxer_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boxer/death/west/Enemy_boxer_death_West_sheet.json",
+      "sourceSheetSha256": "ee4c8263aecd893e6fff53527eaf5c3df0b35823a4aeea80bd8e8a545c3eb113",
+      "sourceMetadataSha256": "aa66fbd29cf6e0f33a0c45266783f8dd7d7796c18a3d0197bee6803db92b6039",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ee4c8263aecd893e6fff.png"
+    },
+    {
+      "id": "enemy-mini_mummy-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/walk/east/Enemy_mini_mummy_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/walk/east/Enemy_mini_mummy_walk_East_sheet.json",
+      "sourceSheetSha256": "a6dd252d0e105a6738bda70dd5d76f05370ee0be46ef8c74c03ee6c192d02c3a",
+      "sourceMetadataSha256": "8823f9461de588e073d9e1bc6b7f0da4e7a9a085284ef340d7bf76f6085f6993",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a6dd252d0e105a6738bd.png"
+    },
+    {
+      "id": "enemy-mini_mummy-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/walk/west/Enemy_mini_mummy_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/walk/west/Enemy_mini_mummy_walk_West_sheet.json",
+      "sourceSheetSha256": "d6dc8df30164f69359ca312813504e9a1629b343631c0d1032f2eee909f045a3",
+      "sourceMetadataSha256": "c5b8f94d7df3e9c29f674e4031e93b8a463fb899cc3907d7b8212603c117b89a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d6dc8df30164f69359ca.png"
+    },
+    {
+      "id": "enemy-mini_mummy-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/death/east/Enemy_mini_mummy_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/death/east/Enemy_mini_mummy_death_East_sheet.json",
+      "sourceSheetSha256": "a2debcc150a3e6f5dfa974eb15343efbd1d3cfadb16727f4e8df884b295d35c0",
+      "sourceMetadataSha256": "43b7c64b26737adb31d7e38cb1edea0fe0136591fdca516981c842940b6bd5e2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_a2debcc150a3e6f5dfa9.png"
+    },
+    {
+      "id": "enemy-mini_mummy-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/death/west/Enemy_mini_mummy_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/death/west/Enemy_mini_mummy_death_West_sheet.json",
+      "sourceSheetSha256": "c850105b9c310f170186200f469809409007f9525418ca731eeae5bdbe6c72c1",
+      "sourceMetadataSha256": "1006811f07995524a7ba4072952d266c7752ab8e4149647d9c00c0191a927897",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c850105b9c310f170186.png"
+    },
+    {
+      "id": "enemy-boss-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/walk/east/Enemy_boss_walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/walk/east/Enemy_boss_walk_East_sheet.json",
+      "sourceSheetSha256": "6bcaa3b2ec2090098562c0381ee949484ac080f26f58eef653f5665820391cd3",
+      "sourceMetadataSha256": "b2a2dd32f0cc68bdf1f080b092c679eb8cfb866be2e12f6e84fb2049aaf3cb40",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6bcaa3b2ec2090098562.png"
+    },
+    {
+      "id": "enemy-boss-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/walk/west/Enemy_boss_walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/walk/west/Enemy_boss_walk_West_sheet.json",
+      "sourceSheetSha256": "8b14ff2db13c4fff0b57f102d67168fe1a7453bd9245128cc99aac605aef276e",
+      "sourceMetadataSha256": "0a372316806c894571f49ab46bd99fd1226308868ad176038efc1111709c91b5",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8b14ff2db13c4fff0b57.png"
+    },
+    {
+      "id": "enemy-boss-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/hurt/east/Enemy_boss_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/hurt/east/Enemy_boss_hurt_East_sheet.json",
+      "sourceSheetSha256": "b62a73414451980a8d327e2b2b7482a026132093f1ff258fce3a3f79461ef0e4",
+      "sourceMetadataSha256": "998278ab190e6cd37658b3a3168fa76f03a6db1303bac8cf55958be25e2ef47f",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b62a73414451980a8d32.png"
+    },
+    {
+      "id": "enemy-boss-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/hurt/west/Enemy_boss_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/hurt/west/Enemy_boss_hurt_West_sheet.json",
+      "sourceSheetSha256": "4f02197d3264c71347c1d4dc086b283aab1757c86f620a618cee4da472f63218",
+      "sourceMetadataSha256": "7f3976cf22fd7c45c967aad7f7eac8e7f1cefb00633cc09ca4497f69ba3e8fbe",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_4f02197d3264c71347c1.png"
+    },
+    {
+      "id": "enemy-boss-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/attack/east/Enemy_boss_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/attack/east/Enemy_boss_attack_East_sheet.json",
+      "sourceSheetSha256": "d64d2a8f7b855b91a86d20702457dab32c609c7d48c83299e961cf135a7f702c",
+      "sourceMetadataSha256": "db70994216b8ca7fdbd0063f4f2de82fc5719b0f72727c4ff3fc7475cceec48a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d64d2a8f7b855b91a86d.png"
+    },
+    {
+      "id": "enemy-boss-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/attack/west/Enemy_boss_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/attack/west/Enemy_boss_attack_West_sheet.json",
+      "sourceSheetSha256": "04c2cc7eb9b117ea08db848f4a3ec8abc2fb72a38ec1be537a41327a79832868",
+      "sourceMetadataSha256": "ea562d667df72f9d125c4f29ae9103617e0fbfb97d3d7ec95202aaff723be584",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_04c2cc7eb9b117ea08db.png"
+    },
+    {
+      "id": "enemy-boss-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/death/east/Enemy_boss_death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/death/east/Enemy_boss_death_East_sheet.json",
+      "sourceSheetSha256": "eae8876687ffdf2920185ad10893419c1de263f1274f0728ab313cbdfeb251af",
+      "sourceMetadataSha256": "be0bb72ed6d3bc7be66fedd8c65b553526052edde6c6786f150ecef764a114da",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_eae8876687ffdf292018.png"
+    },
+    {
+      "id": "enemy-boss-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/boss/death/west/Enemy_boss_death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/boss/death/west/Enemy_boss_death_West_sheet.json",
+      "sourceSheetSha256": "8be8a7e2dc3fa502b40522a04f1300e1c176f52f23e92d1ee3dfbbe49042eb36",
+      "sourceMetadataSha256": "bd7610a6e36059dbf74ebe3002b345b780a6fe71bbc100956b31ba33f9d04660",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8be8a7e2dc3fa502b405.png"
+    },
+    {
+      "id": "enemy-blue_frog-transform-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/transform/east/Enemy_blue_frog_transform_East_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/transform/east/Enemy_blue_frog_transform_East_sheet.json",
+      "sourceSheetSha256": "1c38ec48413356a3f6364ad480e8b1a00746e50f1c9e093014a717643d4051da",
+      "sourceMetadataSha256": "7effd4c39dcbadfd010f745caf51634c3c2fdb23b3cf55836324933c2786a246",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1c38ec48413356a3f636.png"
+    },
+    {
+      "id": "enemy-blue_frog-transform-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/transform/west/Enemy_blue_frog_transform_West_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/transform/west/Enemy_blue_frog_transform_West_sheet.json",
+      "sourceSheetSha256": "b77e789f425698e48ea8cbdcd7037af877b01c6b16559df979b46008f6c8787f",
+      "sourceMetadataSha256": "84e63e1cd6b3d5b5db26eaf6996bd3782681bf722f65fddbf98bd065b9bde5b9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b77e789f425698e48ea8.png"
+    },
+    {
+      "id": "enemy-blue_frog-dissolve-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/dissolve/east/Enemy_blue_frog_dissolve_East_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/dissolve/east/Enemy_blue_frog_dissolve_East_sheet.json",
+      "sourceSheetSha256": "5f4665d917048ed6f9abf86f0789811bae31e971e6b7cc7f18dbd890c264f432",
+      "sourceMetadataSha256": "7a7ca6cbcb0eca1b1ce67cb08a437b9aac208511bdc45c7efd7cb83a01677a8f",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_5f4665d917048ed6f9ab.png"
+    },
+    {
+      "id": "enemy-blue_frog-dissolve-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/dissolve/west/Enemy_blue_frog_dissolve_West_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/dissolve/west/Enemy_blue_frog_dissolve_West_sheet.json",
+      "sourceSheetSha256": "c13986011ddb6596b52c30fd81f0dee4f083ac27a759984b886eb4b4448c4957",
+      "sourceMetadataSha256": "5d51b0a21311b8701e928974f05d4af137a8ad90ce8cc884415589d9e88e502a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c13986011ddb6596b52c.png"
+    },
+    {
+      "id": "enemy-crawler-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/attack/east/Enemy_crawler_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/attack/east/Enemy_crawler_attack_East_sheet.json",
+      "sourceSheetSha256": "f2d3a5e9d334b6e02c48966eee98d9c1e184124a4e09df6bef1c3830667e175a",
+      "sourceMetadataSha256": "39b603547f5090e7379bd325cddb98122825734fef0ef273a73243ea202a862c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f2d3a5e9d334b6e02c48.png"
+    },
+    {
+      "id": "enemy-crawler-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/crawler/attack/west/Enemy_crawler_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/crawler/attack/west/Enemy_crawler_attack_West_sheet.json",
+      "sourceSheetSha256": "6eeb0d79754be8e524a4596de682750ed453d2f5860e894dd155078e187fc6aa",
+      "sourceMetadataSha256": "fba80719fc945d9aa48eddab62f4e041bc9c5d4b06d252e785e962cec06d2f1b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6eeb0d79754be8e524a4.png"
+    },
+    {
+      "id": "enemy-samurai-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/attack/east/Enemy_samurai_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/attack/east/Enemy_samurai_attack_East_sheet.json",
+      "sourceSheetSha256": "af6063dbe841c3dad673d1fd7b456ed17205d118f97abde9b645739fa70edb17",
+      "sourceMetadataSha256": "064efc7949f703e9aa4f9f4d4d7cc61ffb2f1bc12b1c84ea87d20d5af4612d7c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_af6063dbe841c3dad673.png"
+    },
+    {
+      "id": "enemy-samurai-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/attack/west/Enemy_samurai_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/attack/west/Enemy_samurai_attack_West_sheet.json",
+      "sourceSheetSha256": "3f5a044ea06f0f09941fbcfb5b52884dcedac5f1ae357299415a1a1f93551d83",
+      "sourceMetadataSha256": "69cba2ad566501de821aabe57284cb46f817cf01d01de004006032a09fba1489",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_3f5a044ea06f0f09941f.png"
+    },
+    {
+      "id": "enemy-samurai-execution-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/execution/east/Enemy_samurai_execution_East_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/execution/east/Enemy_samurai_execution_East_sheet.json",
+      "sourceSheetSha256": "6ac3b5af1275bd1bd4969e0dd655d5726ca5168d95cf0a36b44846d866d8596d",
+      "sourceMetadataSha256": "df6848e010985fceaedb86cd68ca0ccf2bf0ed3e0f727c49b5dc18a2d2aa9956",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6ac3b5af1275bd1bd496.png"
+    },
+    {
+      "id": "enemy-samurai-execution-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/samurai/execution/west/Enemy_samurai_execution_West_sheet.png",
+      "sourceMetadata": "animations/enemies/samurai/execution/west/Enemy_samurai_execution_West_sheet.json",
+      "sourceSheetSha256": "5fcbd9104f7d5d44c7a80bc9be68aa3cf6c845cf6627b4613dd62a2c01eb61e4",
+      "sourceMetadataSha256": "aac45c8b4586caa26533e4085b8f1dab59b12ebc8214edc7cc3090d1a7990614",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_5fcbd9104f7d5d44c7a8.png"
+    },
+    {
+      "id": "enemy-blue_frog-hop-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/hop/east/Enemy_blue_frog_hop_East_sheet.json",
+      "sourceSheetSha256": "8eaca8d5acd4aac746f5966abc70f850f9cef69946f746eaaeceda3a642490b8",
+      "sourceMetadataSha256": "b90222b0fd1020675ad9dafcb77c2f654a8804ada3784d7b8b607274b098a7ae",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8eaca8d5acd4aac746f5.png"
+    },
+    {
+      "id": "enemy-blue_frog-hop-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/blue_frog/hop/west/Enemy_blue_frog_hop_West_sheet.png",
+      "sourceMetadata": "animations/enemies/blue_frog/hop/west/Enemy_blue_frog_hop_West_sheet.json",
+      "sourceSheetSha256": "ef82fff9068d619b23ea5799beb6b1e22ec0819323fedfb4f351830d85e5403a",
+      "sourceMetadataSha256": "80e5eb27bbfa25d9e5c0a37ba238b4bf9dc030b7bc14c2fe8d31b72c26e57f80",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ef82fff9068d619b23ea.png"
+    },
+    {
+      "id": "enemy-fx-pirate_bullet",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_pirate_bullet_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_pirate_bullet_sheet.json",
+      "sourceSheetSha256": "05f5619566598d491aa75456bc3c7dbd6b1e9b6b80db71637f95b67eabd68f98",
+      "sourceMetadataSha256": "dbd7afe97b54bd7b1b285a2973d44381d8a4e81ff43deb554eadf9e3d7c02fd0",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_05f5619566598d491aa7.png"
+    },
+    {
+      "id": "enemy-fx-pirate_muzzle_flash",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_sheet.json",
+      "sourceSheetSha256": "eee23c595ae73c202a13e4737e1063b4f77389e2b7b3f3ec0f7de19f90104512",
+      "sourceMetadataSha256": "26c127c633323bd874476c7802cfea0098d0bf60b486d4e12ca4dc8310feea80",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_eee23c595ae73c202a13.png"
+    },
+    {
+      "id": "enemy-fx-enemy_summon_ground",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_enemy_summon_ground_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_enemy_summon_ground_sheet.json",
+      "sourceSheetSha256": "0e37b899a147ec85360686a922c299311e9d00046d10e720cad1973e7e7d224a",
+      "sourceMetadataSha256": "1780b2d50660093843d9c9fb40f99f2cb2d994089462140b213829fbd2bd31bf",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_0e37b899a147ec853606.png"
+    },
+    {
+      "id": "enemy-fx-sarcophagus_rebirth",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_sarcophagus_rebirth_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_sarcophagus_rebirth_sheet.json",
+      "sourceSheetSha256": "e59bf60f4c51ad741eea45c0cf736679946b65356bc6e9d68e87015921211e57",
+      "sourceMetadataSha256": "b8655f3242f4eaf7656934943066df38feac3e94a258e41eae6ec8f6fb48425b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_e59bf60f4c51ad741eea.png"
+    },
+    {
+      "id": "enemy-fx-warlock_fizzle_smoke",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_sheet.json",
+      "sourceSheetSha256": "68d0e379b3134aa516d24af606f21aec2ff3aca6ab90cf2ad66e268da8694dab",
+      "sourceMetadataSha256": "42d941200c59e1149155145089c2bf80e50ebab3932b42cd433f4bcd1afb4b3a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_68d0e379b3134aa516d2.png"
+    },
+    {
+      "id": "enemy-fx-ninja_dodge_accent",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_ninja_dodge_accent_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_ninja_dodge_accent_sheet.json",
+      "sourceSheetSha256": "c1d44e0f6c1be6ea989e12d032cb68706d4aca5f87c631c8f925880579751dec",
+      "sourceMetadataSha256": "844f58a47360fe5fe3456456ca501e6eacce81361cb97b740dd86af76adc9b27",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c1d44e0f6c1be6ea989e.png"
+    },
+    {
+      "id": "enemy-fx-execution_contact",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_execution_contact_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_execution_contact_sheet.json",
+      "sourceSheetSha256": "fcd60ed8d42eaa6cb62c8869b9f00948a71c4d72cf9c45e55aa0a35119c411e9",
+      "sourceMetadataSha256": "1dd1c50f350020222c262a3c21fa9ebf5e41b39f14e9b4dd8f17c5e4c37c31b7",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_fcd60ed8d42eaa6cb62c.png"
+    },
+    {
+      "id": "enemy-fx-boxing_contact",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/effects/VFX_Enemy_boxing_contact_sheet.png",
+      "sourceMetadata": "animations/enemies/effects/VFX_Enemy_boxing_contact_sheet.json",
+      "sourceSheetSha256": "ef14ac03db313aec3931e5cf1d27e1c21ce22e9523f948ed6c855de5ab7e3800",
+      "sourceMetadataSha256": "9689bf570ac9457503ee52f18c8c82aa54060bc039dc43caf2d345d654d48305",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ef14ac03db313aec3931.png"
+    },
+    {
+      "id": "enemy-fx-enemy_lightning_targeted",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/circe/effects/VFX_Circe_Lightning_Segment_sheet.png",
+      "sourceMetadata": "animations/circe/effects/VFX_Circe_Lightning_Segment_sheet.json",
+      "sourceSheetSha256": "f8dbd05bda01d6b005b0c52b9d429d2df040b9576d7f147c85effca3c8ee77c9",
+      "sourceMetadataSha256": "7cbc43925b9f739c40880bfc86a541c29169acb1887fcc88e79dfc77f4fbd770",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f8dbd05bda01d6b005b0.png"
+    },
+    {
+      "id": "enemy-knight-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/hurt/east/Enemy_knight_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/hurt/east/Enemy_knight_hurt_East_sheet.json",
+      "sourceSheetSha256": "6911bd1aea8849bb5b0ba3ab9eb6a9326351d52f48338c2eed165b42baf4a58a",
+      "sourceMetadataSha256": "57d14dfc16b69461bbe5e4c4dea50e129b101c03a986835381a337fec8ce72ea",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6911bd1aea8849bb5b0b.png"
+    },
+    {
+      "id": "enemy-knight-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/hurt/west/Enemy_knight_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/hurt/west/Enemy_knight_hurt_West_sheet.json",
+      "sourceSheetSha256": "34b32150a558feb6cac40448508fac35291b2616442c8905196ff40832a34465",
+      "sourceMetadataSha256": "523019aaff0251e6d0c8a18a95cd541faed6e8c9ec1c2c7421343c0279e3b410",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_34b32150a558feb6cac4.png"
+    },
+    {
+      "id": "enemy-knight-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/attack/east/Enemy_knight_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/attack/east/Enemy_knight_attack_East_sheet.json",
+      "sourceSheetSha256": "74a9750f411244ade015fcef76ab954faf20648d5e2a13a80ad1b080a56a0be4",
+      "sourceMetadataSha256": "0e23adda13b2407f36a5abc1e02969efbe606759a35ec969879c97f1dcf1d748",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_74a9750f411244ade015.png"
+    },
+    {
+      "id": "enemy-knight-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/knight/attack/west/Enemy_knight_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/knight/attack/west/Enemy_knight_attack_West_sheet.json",
+      "sourceSheetSha256": "b9829d454ed17885c53d49f68e266acd59ccdea601d6817425f0cbe0a0d0d21d",
+      "sourceMetadataSha256": "8a7d9e02c26b3cb2de8aed9e08901dfc6859890037a82fd74c301a6ddeae8b99",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b9829d454ed17885c53d.png"
+    },
+    {
+      "id": "enemy-mad-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/attack/east/Enemy_mad_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/attack/east/Enemy_mad_attack_East_sheet.json",
+      "sourceSheetSha256": "cb09c6a9047ab3354468628959b69fa4faa03319435b7f167d9313134201225c",
+      "sourceMetadataSha256": "858cd707287a0232e480176943eb32bc276a46f10630e746a5dfbfcd13bec922",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_cb09c6a9047ab3354468.png"
+    },
+    {
+      "id": "enemy-mad-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mad/attack/west/Enemy_mad_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mad/attack/west/Enemy_mad_attack_West_sheet.json",
+      "sourceSheetSha256": "eff2597877a303221069c835e452793292daf777670353c18287bcae410d6484",
+      "sourceMetadataSha256": "2bc37659ca5adcdee04c3d6d661c7aae89c147f90e31d8253dec332403a7ecdc",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_eff2597877a303221069.png"
+    },
+    {
+      "id": "enemy-mini_mummy-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_sheet.json",
+      "sourceSheetSha256": "7626645e47f09d80886824d960ad2199fbdeee404a117399e4d6be52148b15b4",
+      "sourceMetadataSha256": "956f21a946442ace6e91be991aeed5a9c3ee776d3c95a816e3a97fb92e5ea1f2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7626645e47f09d808868.png"
+    },
+    {
+      "id": "enemy-mini_mummy-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/attack/west/Enemy_mini_mummy_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/attack/west/Enemy_mini_mummy_attack_West_sheet.json",
+      "sourceSheetSha256": "fc4e097fc2cf1eb33222e7bfb1483fff15f1dd6ba51194b6dc8925e503278077",
+      "sourceMetadataSha256": "359d5571694f34e7ccb3649da46fb80ae0700731b9ab7de4a5ed381f3b1813a5",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_fc4e097fc2cf1eb33222.png"
+    },
+    {
+      "id": "enemy-mini_mummy-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/hurt/east/Enemy_mini_mummy_hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/hurt/east/Enemy_mini_mummy_hurt_East_sheet.json",
+      "sourceSheetSha256": "c88e9a71b22e703d60bcda7c7a79a9964416cccca265898b52c48d0a9f3343f6",
+      "sourceMetadataSha256": "b2c37a6c7d10d2bb18d0e23edd5c9b83f66cb25ad1cce0790b520729a892e78b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c88e9a71b22e703d60bc.png"
+    },
+    {
+      "id": "enemy-mini_mummy-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/mini_mummy/hurt/west/Enemy_mini_mummy_hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/mini_mummy/hurt/west/Enemy_mini_mummy_hurt_West_sheet.json",
+      "sourceSheetSha256": "1fa85f235790b29384353b88467343afe334223c86d28a88f1bbd87f1145e3a4",
+      "sourceMetadataSha256": "f9715d7207ddec015b5e41d82d3938207d59858abe5e2b8a920911c28ca477f3",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1fa85f235790b2938435.png"
+    },
+    {
+      "id": "enemy-normal-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.json",
+      "sourceSheetSha256": "17cadcd26c5d8bf928481a3a7bca1a9af2266334e12bff53f7c9f09c27326377",
+      "sourceMetadataSha256": "c9e3d6ff7d353f275fcc6c0a31f82dbcdc721eaa1be5cc278dd3fed0c5023eeb",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_17cadcd26c5d8bf92848.png"
+    },
+    {
+      "id": "enemy-normal-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/attack/west/Skeleton_Normal_Attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/attack/west/Skeleton_Normal_Attack_West_sheet.json",
+      "sourceSheetSha256": "48f9bc6669e086c6130122e21220df65bd39f14ddf4356876cd76bebace8f34c",
+      "sourceMetadataSha256": "be5d494023082b75a286d6b68ddf98348eeb5b2843d08665776080f483c4bb9b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_48f9bc6669e086c61301.png"
+    },
+    {
+      "id": "enemy-ninja-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/walk/east/Skeleton_Ninja_Walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/walk/east/Skeleton_Ninja_Walk_East_sheet.json",
+      "sourceSheetSha256": "6dceffa7e118baff4266b7d8c5db9ffe9c84fdf6162b6bf85e291ec0a9336a07",
+      "sourceMetadataSha256": "ffbf0b0921b4d549810922f44998f449a5c47b84b9ce868ff46db709ae32c032",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_6dceffa7e118baff4266.png"
+    },
+    {
+      "id": "enemy-ninja-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_sheet.json",
+      "sourceSheetSha256": "145a9a286eedc297f58dda2d152d3c78b985a65977064b96ecf40c1b4d261289",
+      "sourceMetadataSha256": "fe8d0050c3b1815c838b36f8e37ee3d43969380979c95c237848bb2c57a9f54c",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_145a9a286eedc297f58d.png"
+    },
+    {
+      "id": "enemy-ninja-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_sheet.json",
+      "sourceSheetSha256": "bce0f48f7f74426d236307af5ba5e055606c972b6ebfe95909fdec0fa034ef60",
+      "sourceMetadataSha256": "f7d730ef1162f594df01ba739bacd1421a32eae2489de02e871cb546f0c74c02",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_bce0f48f7f74426d2363.png"
+    },
+    {
+      "id": "enemy-ninja-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/hurt/west/Skeleton_Ninja_Hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/hurt/west/Skeleton_Ninja_Hurt_West_sheet.json",
+      "sourceSheetSha256": "067b6ee701cd019d370398170ab59c624df4a605083855ff3c7c588643a79506",
+      "sourceMetadataSha256": "eb3428d79918c41132677f68db9dd504bc3761c0c3f9b342de8748b65ac15237",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_067b6ee701cd019d3703.png"
+    },
+    {
+      "id": "enemy-ninja-dodge-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/dodge/east/Skeleton_Ninja_Dodge_East_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/dodge/east/Skeleton_Ninja_Dodge_East_sheet.json",
+      "sourceSheetSha256": "fde00b3617c71bd36d3103a7fe7d10117bb7d232c1730181dc1fa16544da71d2",
+      "sourceMetadataSha256": "097925a572de5cebc6b4b9a2d796d3a09e095c9719f36f60751805dd73a8c53e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_fde00b3617c71bd36d31.png"
+    },
+    {
+      "id": "enemy-ninja-dodge-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/dodge/west/Skeleton_Ninja_Dodge_West_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/dodge/west/Skeleton_Ninja_Dodge_West_sheet.json",
+      "sourceSheetSha256": "7ecd59c7567bdcb43dcbe372b92163a3e42c8d8eaf33a4eea0fdedabc2034ad1",
+      "sourceMetadataSha256": "89ba598bb9e680d286d38ebe6e71468f7b1b2dc10d143fc6aa4b4369b8d7b432",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7ecd59c7567bdcb43dcb.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-idle-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/idle/Enemy_normal_Idle_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/idle/Enemy_normal_Idle_sheet.json",
+      "sourceSheetSha256": "995f546e064fa37e8dda28d436d43d1b93ffe49deeb2bc721e02b647ba0f2d61",
+      "sourceMetadataSha256": "c7fdc4b837d6275dfd68c68f072f8a5c2915e7870481732350e4ec78be34f706",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_995f546e064fa37e8dda.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-walk-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/walk/east/Skeleton_Normal_Walk_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/walk/east/Skeleton_Normal_Walk_East_sheet.json",
+      "sourceSheetSha256": "caaf3c14cefbe7aa778f88502bf033047b8593b433e3184eae788a4406d3d1c0",
+      "sourceMetadataSha256": "dd9a4e7d4badbc777f0821666006f107a6ca7a189ab5d3b1695773106f6e12b2",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_caaf3c14cefbe7aa778f.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-walk-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/walk/west/Skeleton_Normal_Walk_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/walk/west/Skeleton_Normal_Walk_West_sheet.json",
+      "sourceSheetSha256": "c479fb342d0db99bee3293d69fa91400cef137ab4e6f436e3fb4bc6ca884f809",
+      "sourceMetadataSha256": "4e97b6cd846deb43d03c20478f2ab236e33d823455dfa3f9520bbffce15418d9",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c479fb342d0db99bee32.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-hurt-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/hurt/east/Skeleton_Normal_Hurt_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/hurt/east/Skeleton_Normal_Hurt_East_sheet.json",
+      "sourceSheetSha256": "d1fa6ee60db9e60c8c4d9f0ccfc849682c4fdeadacf755d997c7d537e921813e",
+      "sourceMetadataSha256": "9d448f18e6dafca6f0e2aa17299443480e8e2a3ba44df3d3857cbb0e258c6979",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_d1fa6ee60db9e60c8c4d.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-hurt-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/hurt/west/Skeleton_Normal_Hurt_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/hurt/west/Skeleton_Normal_Hurt_West_sheet.json",
+      "sourceSheetSha256": "93124390942f4651cc6949234d81eda960e86b73fd6c74da2de617666732d7d0",
+      "sourceMetadataSha256": "a226d0caf56cc75deeda622ca2ea7ac69f0db61e8dd2874e1a25b3414919ba0a",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_93124390942f4651cc69.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-death-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/death/east/Skeleton_Normal_Death_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/death/east/Skeleton_Normal_Death_East_sheet.json",
+      "sourceSheetSha256": "75eabfc8e6b67c4e0ac3102c7c0bde8a6ae649b664e79e768cce2da04bdfbd16",
+      "sourceMetadataSha256": "121068e07954cff0e847a1a2d35da8ea8b302803e3f23b771c5ac3674824be3e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_75eabfc8e6b67c4e0ac3.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-death-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/death/west/Skeleton_Normal_Death_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/death/west/Skeleton_Normal_Death_West_sheet.json",
+      "sourceSheetSha256": "ee9c8ba5ab3fee141062d66cde70eb492ae8a67ad5eb2bac517881f7b2cc865c",
+      "sourceMetadataSha256": "d82740e828163ed1d1b3f098cfe99fbf006c4edde45038c77a76c4475df69992",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ee9c8ba5ab3fee141062.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/attack/east/Skeleton_Normal_Attack_East_sheet.json",
+      "sourceSheetSha256": "17cadcd26c5d8bf928481a3a7bca1a9af2266334e12bff53f7c9f09c27326377",
+      "sourceMetadataSha256": "c9e3d6ff7d353f275fcc6c0a31f82dbcdc721eaa1be5cc278dd3fed0c5023eeb",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_17cadcd26c5d8bf92848.png"
+    },
+    {
+      "id": "enemy-sarcophagus_bare-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/normal/attack/west/Skeleton_Normal_Attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/normal/attack/west/Skeleton_Normal_Attack_West_sheet.json",
+      "sourceSheetSha256": "48f9bc6669e086c6130122e21220df65bd39f14ddf4356876cd76bebace8f34c",
+      "sourceMetadataSha256": "be5d494023082b75a286d6b68ddf98348eeb5b2843d08665776080f483c4bb9b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_48f9bc6669e086c61301.png"
+    },
+    {
+      "id": "enemy-warlock-lightning_cast-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_sheet.json",
+      "sourceSheetSha256": "3550ded89ba8a9a3b816ac6e8cb24cba1baa7bc9b8163f319847d265940b8dc6",
+      "sourceMetadataSha256": "ef5d1613ed9b7cd5f5cfd342497539f1ff6ae141389b2eaf48e2746a45b930ce",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_3550ded89ba8a9a3b816.png"
+    },
+    {
+      "id": "enemy-warlock-lightning_cast-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/lightning_cast/west/Enemy_warlock_lightning_cast_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/lightning_cast/west/Enemy_warlock_lightning_cast_West_sheet.json",
+      "sourceSheetSha256": "c12f872fbf0dcdab46625b3f6455541b4b3d0939de8ba0a6d8f4948b78a1ba1f",
+      "sourceMetadataSha256": "806573c14fd335d6cb3304863cf98a80ad4b9a8a5fc61cb66212f4f6592841ef",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_c12f872fbf0dcdab4662.png"
+    },
+    {
+      "id": "enemy-warlock-cast_fail-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/cast_fail/east/Enemy_warlock_cast_fail_East_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/cast_fail/east/Enemy_warlock_cast_fail_East_sheet.json",
+      "sourceSheetSha256": "ffc354801d0aeedab7a0ac412b6ab27a3bbb2ded6445cc98d02ad28dc1930f1f",
+      "sourceMetadataSha256": "dc7c16d4633007a54432ded66c3942dcd3171641c5788852cc5b00a9b041326b",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_ffc354801d0aeedab7a0.png"
+    },
+    {
+      "id": "enemy-warlock-cast_fail-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/warlock/cast_fail/west/Enemy_warlock_cast_fail_West_sheet.png",
+      "sourceMetadata": "animations/enemies/warlock/cast_fail/west/Enemy_warlock_cast_fail_West_sheet.json",
+      "sourceSheetSha256": "52aed2d73988764ef24a5234b54850db6f255d168426423b14396d4a256875b5",
+      "sourceMetadataSha256": "72feb32a478a8d77fa8d41ad43a43ee1e32caf5063a2dbb8de61b3c147416155",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_52aed2d73988764ef24a.png"
+    },
+    {
+      "id": "enemy-trex-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/attack/east/Enemy_trex_attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/attack/east/Enemy_trex_attack_East_sheet.json",
+      "sourceSheetSha256": "7130e8e23da09326ff463846c17bce21f1fd73395412808802459dc1f954a9ee",
+      "sourceMetadataSha256": "5dc175e5ed579682cd4922d3cc9fe99170d4f2a4f6b3aca8ad16d59e513eeb9e",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_7130e8e23da09326ff46.png"
+    },
+    {
+      "id": "enemy-trex-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/attack/west/Enemy_trex_attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/attack/west/Enemy_trex_attack_West_sheet.json",
+      "sourceSheetSha256": "85836788fdd02691fffc3d8b40d50f14a5ec018d09d1d646c9cd0171e4b71fcb",
+      "sourceMetadataSha256": "f5d7b90f189785c993580bbe6b4902970506a69e27a1e55906bf868be58676ab",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_85836788fdd02691fffc.png"
+    },
+    {
+      "id": "enemy-trex-execution_bite-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/execution_bite/east/Enemy_trex_execution_bite_East_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/execution_bite/east/Enemy_trex_execution_bite_East_sheet.json",
+      "sourceSheetSha256": "18b9d62391954f2e80429d0a5929e9fbfebf9c7cde3647c0afde2625c7cfa86c",
+      "sourceMetadataSha256": "4ef4032417aee0a9d6543d0ad9c852ec6b9940a5408a521c03d94ed3660d4e69",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_18b9d62391954f2e8042.png"
+    },
+    {
+      "id": "enemy-trex-execution_bite-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/trex/execution_bite/west/Enemy_trex_execution_bite_West_sheet.png",
+      "sourceMetadata": "animations/enemies/trex/execution_bite/west/Enemy_trex_execution_bite_West_sheet.json",
+      "sourceSheetSha256": "f9b2545aef04eabc9821a9bb809b7519427746fb7612845b73a51c2cd854231b",
+      "sourceMetadataSha256": "a64529ec743e497013bbca5c1961ddd37207d543a9cb3f82e94c17abd57d9b58",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_f9b2545aef04eabc9821.png"
+    },
+    {
+      "id": "enemy-ninja-attack-east",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_sheet.json",
+      "sourceSheetSha256": "464ca1f24514d97feb79353e1ce6190431c55a6d78b96cfcdca34f909cacfa85",
+      "sourceMetadataSha256": "2ca9e22bafd49ac84ff2223e4318f8b997f9a97c1b0e26a327f4dbe12db63d75",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_464ca1f24514d97feb79.png"
+    },
+    {
+      "id": "enemy-ninja-attack-west",
+      "approvalSource": "animations/enemies/delivery-approved.json",
+      "sourceSheet": "animations/enemies/ninja/attack/west/Skeleton_Ninja_Attack_West_sheet.png",
+      "sourceMetadata": "animations/enemies/ninja/attack/west/Skeleton_Ninja_Attack_West_sheet.json",
+      "sourceSheetSha256": "b844b47fd0393691b3a779ce20409967be7d7911f86a7c6d5655f4fc78c2d291",
+      "sourceMetadataSha256": "afd6dd253c9a8afc6f78b7cdb3a03a17682909ef201bceff89eb57a1581a5077",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_b844b47fd0393691b3a7.png"
+    },
+    {
+      "id": "achilles-fx-divine_spear_projectile",
+      "approvalSource": "native-component-metadata",
+      "sourceSheet": "animations/effects/VFX_Divine_Spear_Projectile_sheet.png",
+      "sourceMetadata": "animations/effects/VFX_Divine_Spear_Projectile_sheet.json",
+      "sourceSheetSha256": "1905b2d66af4aecfaaac2fa8eada94366bb9815d3dbf7432f2ec0ca5e9f39dbe",
+      "sourceMetadataSha256": "7e1cd024049d8ade8486903524fdb1533ac462f70da957bc19d1ade7a4cb9cea",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1905b2d66af4aecfaaac.png"
+    },
+    {
+      "id": "achilles-fx-ordinary_arrow_projectile",
+      "approvalSource": "native-component-metadata",
+      "sourceSheet": "animations/effects/VFX_Ordinary_Arrow_Projectile_sheet.png",
+      "sourceMetadata": "animations/effects/VFX_Ordinary_Arrow_Projectile_sheet.json",
+      "sourceSheetSha256": "8a4bc8168d4c52ff8540743fdf94044fe2a7f29b2b45a4eb656758694d352bea",
+      "sourceMetadataSha256": "cac9fac0be27f80249aeebc72eb68065fda08dc6d423f13c6d0d599cd8ff71a4",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_8a4bc8168d4c52ff8540.png"
+    },
+    {
+      "id": "achilles-fx-blue_heel_arrow_rise_burst",
+      "approvalSource": "native-component-metadata",
+      "sourceSheet": "animations/effects/VFX_Blue_Heel_Arrow_Rise_Burst_sheet.png",
+      "sourceMetadata": "animations/effects/VFX_Blue_Heel_Arrow_Rise_Burst_sheet.json",
+      "sourceSheetSha256": "1d6ccd8937a27cc501942e4edc274b430cd97464ca2c1b361973888ee88d92cd",
+      "sourceMetadataSha256": "10caa76d689f52d09fc3f4631ffd60421ec87469221b771b854168c47632bc23",
+      "runtimeTexture": "Assets/Resources/AnimationPack/Textures/atlas_1d6ccd8937a27cc50194.png"
+    }
+  ],
+  "anchorEvidence": {
+    "achilles": {
+      "ground": {
+        "x": 64.0,
+        "y": 100.0
+      },
+      "hit": {
+        "x": 64.0,
+        "y": 71
+      },
+      "reference": "achilles-walk-east",
+      "bounds": [
+        53,
+        27,
+        87,
+        100
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "circe": {
+      "ground": {
+        "x": 64.0,
+        "y": 100.0
+      },
+      "hit": {
+        "x": 64.0,
+        "y": 73
+      },
+      "reference": "circe-idle-east",
+      "bounds": [
+        51,
+        32,
+        92,
+        101
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "circe_deer": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 83
+      },
+      "reference": "circe-circe_deer-run-east",
+      "bounds": [
+        41,
+        16,
+        123,
+        130
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "normal": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80,
+        "y": 95
+      },
+      "reference": "enemy-normal-idle-east",
+      "bounds": [
+        59,
+        43,
+        100,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "ninja": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-ninja-idle-east",
+      "bounds": [
+        64,
+        43,
+        95,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "tutankhamun": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 92
+      },
+      "reference": "enemy-tutankhamun-idle-east",
+      "bounds": [
+        52,
+        37,
+        108,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "crawler": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 106
+      },
+      "reference": "enemy-crawler-idle-east",
+      "bounds": [
+        23,
+        72,
+        136,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "pirate": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 90
+      },
+      "reference": "enemy-pirate-idle-west",
+      "bounds": [
+        52,
+        34,
+        108,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "samurai": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 92
+      },
+      "reference": "enemy-samurai-idle-east",
+      "bounds": [
+        48,
+        39,
+        112,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "sarcophagus": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-sarcophagus-idle-east",
+      "bounds": [
+        47,
+        42,
+        113,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "trex": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 92
+      },
+      "reference": "enemy-trex-idle-east",
+      "bounds": [
+        20,
+        38,
+        140,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "knight": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 93
+      },
+      "reference": "enemy-knight-idle-west",
+      "bounds": [
+        54,
+        41,
+        105,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "warlock": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 93
+      },
+      "reference": "enemy-warlock-idle-east",
+      "bounds": [
+        40,
+        41,
+        120,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "mad": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-mad-idle-east",
+      "bounds": [
+        53,
+        43,
+        106,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "boxer": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-boxer-idle-east",
+      "bounds": [
+        53,
+        43,
+        106,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "boss": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 89
+      },
+      "reference": "enemy-boss-idle-west",
+      "bounds": [
+        57,
+        31,
+        102,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "mini_mummy": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-mini_mummy-idle-east",
+      "bounds": [
+        59,
+        43,
+        101,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "blue_frog": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 115
+      },
+      "reference": "enemy-blue_frog-idle-east",
+      "bounds": [
+        58,
+        95,
+        101,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "giant": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80.0,
+        "y": 94
+      },
+      "reference": "enemy-giant-walk-east",
+      "bounds": [
+        60,
+        43,
+        99,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    },
+    "sarcophagus_bare": {
+      "ground": {
+        "x": 80.0,
+        "y": 128.0
+      },
+      "hit": {
+        "x": 80,
+        "y": 95
+      },
+      "reference": "enemy-sarcophagus_bare-idle-east",
+      "bounds": [
+        59,
+        43,
+        100,
+        129
+      ],
+      "evidence": "authored shared ground anchor; constant across all actions"
+    }
+  },
+  "excludedDemos": [
+    "circe-storm-map-demo",
+    "circe-deer-road-demo",
+    "circe-targeting-right-demo",
+    "circe-targeting-left-demo",
+    "circe-targeting-above-demo",
+    "circe-targeting-below-demo"
+  ]
+}

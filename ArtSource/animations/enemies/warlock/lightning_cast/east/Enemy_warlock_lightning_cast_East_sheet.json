@@ -1,0 +1,293 @@
+{
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 90,
+      "phase": "RAISE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "WINDUP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RELEASE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 80,
+      "phase": "HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 100,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 160,
+      "filename": "Enemy_warlock_lightning_cast_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 760,
+      "phase": "REST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "lightning_cast",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "warlock",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 382,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 1,
+    "durationMs": 760,
+    "events": [
+      {
+        "frameIndex": 3,
+        "kind": "art cue; bind to existing gameplay action without altering balance",
+        "name": "lightning_release",
+        "socket": {
+          "x": 126,
+          "y": 76
+        },
+        "timeMs": 290
+      }
+    ],
+    "facingNormalizedBeforeExport": false,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/warlock/lightning_cast/east/Enemy_warlock_lightning_cast_East_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "lightning_cast",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1360,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_warlock_lightning_cast_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Selected only intact forward-crystal poses. RAW003..008 backwards staff swing and RAW010..013 missing/discolored crystal rejected. RAW009 is held through the release. Independent lightning segment/impact bind to current targets.",
+      "Staff crystal at release source pixel126,76. No bolt, target or damage baked into the actor sheet."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 600,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab enemy_warlock_lightning_cast_v2; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      0,
+      1,
+      2,
+      9,
+      9,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "enemy_warlock_lightning_cast_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 320,
+      "w": 640
+    },
+    "sourceFacing": "east",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_warlock_lightning_cast_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

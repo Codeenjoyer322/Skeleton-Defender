@@ -1,0 +1,62 @@
+{
+  "approvedClipCount": 28,
+  "uniqueTextures": 28,
+  "coverage": {
+    "circe": {
+      "walk": [
+        "south-east",
+        "east",
+        "north-west",
+        "west"
+      ],
+      "deer_run": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "tower_elf": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    }
+  },
+  "visiblePixelFramesVerified": 216,
+  "textureRgbaBytes": 3874864,
+  "trueEightDirections": [
+    {
+      "role": "circe",
+      "action": "deer_run"
+    },
+    {
+      "role": "tower_elf",
+      "action": "idle"
+    },
+    {
+      "role": "tower_elf",
+      "action": "attack"
+    }
+  ]
+}

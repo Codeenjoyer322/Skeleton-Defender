@@ -164,6 +164,7 @@ namespace SkeletonDefender
         public float rangePerLevel;
         public float baseInterval;
         public float attackRatePerAdditionalLevel;
+        public int[] projectilesPerAttack;
         public int upgradeCostPerLevel;
         public float splashRadiusBase;
         public float splashRadiusPerLevel;

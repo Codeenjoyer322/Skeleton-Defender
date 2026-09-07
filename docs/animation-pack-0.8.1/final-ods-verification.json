@@ -1,0 +1,22 @@
+{
+  "Тайминги анимаций": {
+    "status": "passed",
+    "checkedValues": 7374,
+    "formulas": 185,
+    "nativeLibreOfficeRecalculation": true,
+    "outputs": [
+      "C:\\Users\\Life\\Documents\\ChatGPT\\Skeleton Defender\\outputs\\Тайминги анимаций.xlsx",
+      "C:\\Users\\Life\\Documents\\ChatGPT\\Skeleton Defender\\outputs\\Тайминги анимаций.ods"
+    ]
+  },
+  "Баланс Skeleton Defender": {
+    "status": "passed",
+    "checkedValues": 2973,
+    "formulas": 772,
+    "nativeLibreOfficeRecalculation": true,
+    "outputs": [
+      "C:\\Users\\Life\\Documents\\ChatGPT\\Skeleton Defender\\outputs\\01a073ab-e45b-7f41-9fda-1b7538ae0af7\\Баланс Skeleton Defender.xlsx",
+      "C:\\Users\\Life\\Documents\\ChatGPT\\Skeleton Defender\\outputs\\01a073ab-e45b-7f41-9fda-1b7538ae0af7\\Баланс Skeleton Defender.ods"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+# Preserve exact bytes and SHA-256 values of approved editable art and metadata.
+ArtSource/** -text

@@ -1,0 +1,437 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "WEAKEN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "SINK",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FALTER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "BUCKLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "GIVE WAY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Death_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "TIP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Death_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "FALL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Death_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "AIRBORNE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Skeleton_Ninja_Death_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 80,
+      "phase": "GROUND CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Skeleton_Ninja_Death_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 100,
+      "phase": "SETTLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 160,
+      "filename": "Skeleton_Ninja_Death_East_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 160,
+      "phase": "REST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 400,
+      "filename": "Skeleton_Ninja_Death_East_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 400,
+      "phase": "HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "death",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artAccepted": false,
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "ninja",
+    "cleanupPixels": [],
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "east",
+    "durationMs": 1240,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/death/east/Skeleton_Ninja_Death_East_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "death_east",
+        "to": 11
+      }
+    ],
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1240,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Skeleton_Ninja_Death_East_sheet.png",
+    "loop": false,
+    "mirrored": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Standing repeats raw005..006 and009 removed; generated descent retained",
+      "Raw014 is the settled closed-eye pose; held 560ms instead of reopening/flickering eyes in raw015..016",
+      "Raw012 onward translated upward exactly2px to align settled body with floor y=128; no scaling or warping",
+      "1240ms once; final body stays down"
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Inspected enemy_ninja_death_v1; native Aseprite finishing; RAW unchanged",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      14
+    ],
+    "rawJob": "enemy_ninja_death_v1",
+    "rawTransforms": [
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 1
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 2
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 3
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 4
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 7
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 8
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 10
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 11
+      },
+      {
+        "dx": 0,
+        "dy": -2,
+        "rawIndex": 12
+      },
+      {
+        "dx": 0,
+        "dy": -2,
+        "rawIndex": 13
+      },
+      {
+        "dx": 0,
+        "dy": -2,
+        "rawIndex": 14
+      },
+      {
+        "dx": 0,
+        "dy": -2,
+        "rawIndex": 14
+      }
+    ],
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\normal_ninja_candidates\\ninja\\death\\Skeleton_Ninja_Death_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

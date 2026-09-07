@@ -1,0 +1,228 @@
+{
+  "frames": [
+    {
+      "duration": 40,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/01.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 40,
+      "phase": "IGNITE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/02.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 40,
+        "y": 0
+      },
+      "gifDuration": 40,
+      "phase": "FLASH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/03.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 80,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "BREAK",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/04.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 120,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "SPARKS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/05.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 24
+      },
+      "gifDuration": 70,
+      "phase": "LAST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "VFX_Enemy_pirate_muzzle_flash_frames/06.png",
+      "frame": {
+        "h": 24,
+        "w": 40,
+        "x": 40,
+        "y": 24
+      },
+      "gifDuration": 80,
+      "phase": "CLEAR",
+      "rotated": false,
+      "sourceSize": {
+        "h": 24,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 24,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "pistol_muzzle",
+      "x": 5,
+      "y": 12
+    },
+    "anchors": {
+      "direction": "east",
+      "origin": {
+        "type": "pistol_muzzle",
+        "x": 5,
+        "y": 12
+      },
+      "rotationAxis": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 24,
+      "w": 40
+    },
+    "columns": 4,
+    "componentNameRu": "Пират · вспышка у дула",
+    "componentOnly": true,
+    "contact": {
+      "h": 110,
+      "w": 560
+    },
+    "durationMs": 340,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_muzzle_flash_sheet.png"
+    },
+    "frameCount": 6,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "pirate_muzzle_flash",
+        "to": 5
+      }
+    ],
+    "gameplayModified": false,
+    "gifDurationMs": 340,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Enemy_pirate_muzzle_flash_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Attach muzzle anchor (5,12) to the measured barrel axis only at muzzle_release. The flying bullet is separate. Play once; final frame transparent."
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Original independent pixel VFX authored in native Aseprite Lua; no generated actor edits.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "review_label": "Подготовлено для просмотра",
+    "size": {
+      "h": 48,
+      "w": 160
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\effects\\_build_sources\\VFX_Enemy_pirate_muzzle_flash.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "rootApproved": true,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "method": "Aseprite native palette replacement",
+  "sourceArtModified": false,
+  "variants": [
+    {
+      "variant": "Circe_Magic_Ball",
+      "source": "Assets/Resources/AnimationPack/Textures/atlas_60823c2175d70fc39277.png",
+      "sourceSha256": "60823c2175d70fc392770b65b26a4c53c3d4410f7c0c3caae08dcdc9b7ecd37e",
+      "output": "Assets/Resources/AnimationOverrides/Circe_Magic_Ball.png",
+      "outputSha256": "84dba60490511c5a364a26d659960bae33dbb4dfdedd2d7c5a0a8c7ba4403ec3",
+      "alphaExact": true,
+      "geometryExact": true,
+      "opaqueColors": 6
+    },
+    {
+      "variant": "Circe_Magic_Impact",
+      "source": "Assets/Resources/AnimationPack/Textures/atlas_eb0b3579907153b6cf33.png",
+      "sourceSha256": "eb0b3579907153b6cf33c99463fc29eff0067ec8a18af35c8744ead53c9c9014",
+      "output": "Assets/Resources/AnimationOverrides/Circe_Magic_Impact.png",
+      "outputSha256": "be68f6d68d78f19d7e7d113eb05b484429eda69ca821d41e568421abb184df8f",
+      "alphaExact": true,
+      "geometryExact": true,
+      "opaqueColors": 5
+    }
+  ]
+}

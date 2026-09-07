@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 2,
+  "root": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081",
+  "towers": [
+    {
+      "kind": 0,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_archer_i_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "ff48c326f3f8522ea423d476f3f7514729a522b5291aca419f089701388df2ac",
+      "offsetY": 16,
+      "sockets": [],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 62,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 27,
+      "opaqueWidth": 82,
+      "opaqueHeight": 155,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_archer_2_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "30497772b9831df3054cbc7200401aea67ec18da4727ee5781cb8114ed8ac276",
+      "offsetY": 16,
+      "sockets": [],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 62,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 21,
+      "opaqueY": 39,
+      "opaqueWidth": 102,
+      "opaqueHeight": 143,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_archer_3_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "2cd7f19fa5f064faa4357ffd16f7c7e512b60ad812cfa139b6108193e1b3fe5b",
+      "offsetY": 16,
+      "sockets": [],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 54,
+          "pixelY": 64,
+          "scale": 0.7
+        },
+        {
+          "index": 1,
+          "pixelX": 90,
+          "pixelY": 64,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_ember_1_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "4ced7d7918d1301dd11cefda08457725bfbeace3634c36c88e9124d89bffd5f6",
+      "offsetY": 16,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 55
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 1,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_ember_2_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "3fe14070f20f6aede56d132278c305c3d9e4483d9ba3c7c21e9881aac2550523",
+      "offsetY": 16,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 55
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 1,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 31,
+      "opaqueWidth": 82,
+      "opaqueHeight": 151,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_ember_3_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "2b4e66634cf23d97170580340ebdd0f4ca98a6a9b52eb8c969aa4e4e1c3cfd7e",
+      "offsetY": 16,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 51
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 38,
+      "opaqueWidth": 82,
+      "opaqueHeight": 144,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_frost_1_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "b97717d2f2f3fa559bb4d8e649109da9ce02726a70bedfbd5f9f06dfd2d12cd2",
+      "offsetY": 16,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 52
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 31,
+      "opaqueWidth": 82,
+      "opaqueHeight": 151,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_frost_2_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "7ee3bb9288ab109240347a39799e154d50f988f17e9eadc2b48023afc7756440",
+      "offsetY": 16,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 43
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 2,
+      "opaqueWidth": 82,
+      "opaqueHeight": 180,
+      "source": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\tower_frost_3_architecture_v1\\job_00\\frames\\000.png",
+      "sourceSha256": "8cb3ff368bde5d9969684e698f66484872749ffed767ad74423c14f943a90eb5",
+      "offsetY": -5,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 15
+        }
+      ],
+      "archers": []
+    }
+  ]
+}

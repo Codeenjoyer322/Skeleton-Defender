@@ -1,0 +1,184 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_pirate_bullet_frames/01.png",
+      "frame": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 16,
+        "w": 24
+      },
+      "spriteSourceSize": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_pirate_bullet_frames/02.png",
+      "frame": {
+        "h": 16,
+        "w": 24,
+        "x": 24,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 16,
+        "w": 24
+      },
+      "spriteSourceSize": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_pirate_bullet_frames/03.png",
+      "frame": {
+        "h": 16,
+        "w": 24,
+        "x": 48,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 16,
+        "w": 24
+      },
+      "spriteSourceSize": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_pirate_bullet_frames/04.png",
+      "frame": {
+        "h": 16,
+        "w": 24,
+        "x": 72,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 16,
+        "w": 24
+      },
+      "spriteSourceSize": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "leading_tip",
+      "x": 18,
+      "y": 8
+    },
+    "anchors": {
+      "bodyCenter": {
+        "x": 15,
+        "y": 8
+      },
+      "direction": "east",
+      "origin": {
+        "type": "leading_tip",
+        "x": 18,
+        "y": 8
+      },
+      "rotationAxis": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 16,
+      "w": 24
+    },
+    "columns": 4,
+    "componentNameRu": "Пират · отдельная пуля",
+    "componentOnly": true,
+    "contact": {
+      "h": 47,
+      "w": 560
+    },
+    "durationMs": 240,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_pirate_bullet_sheet.png"
+    },
+    "frameCount": 4,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "pirate_bullet",
+        "to": 3
+      }
+    ],
+    "gameplayModified": false,
+    "gifDurationMs": 240,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Enemy_pirate_bullet_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Leading tip (18,8) follows the current valid target hurt point. Rotate the independent bullet by velocity; flight and hit are runtime events. Loop animates only a short flight mark; no travel or target is baked in."
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Original independent pixel VFX authored in native Aseprite Lua; no generated actor edits.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "review_label": "Подготовлено для просмотра",
+    "size": {
+      "h": 16,
+      "w": 96
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\effects\\_build_sources\\VFX_Enemy_pirate_bullet.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "rootApproved": true,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

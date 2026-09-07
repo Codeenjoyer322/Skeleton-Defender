@@ -1,0 +1,22 @@
+{
+  "portraits": [
+    {
+      "hero": "achilles",
+      "bounds": {
+        "x": 30,
+        "y": 9,
+        "width": 30,
+        "height": 72
+      }
+    },
+    {
+      "hero": "circe",
+      "bounds": {
+        "x": 32,
+        "y": 10,
+        "width": 37,
+        "height": 71
+      }
+    }
+  ]
+}

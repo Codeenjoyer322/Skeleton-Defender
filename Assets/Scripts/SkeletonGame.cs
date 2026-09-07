@@ -32,8 +32,8 @@ namespace SkeletonDefender
         private float soundCooldown;
         private Vector2 mouse;
         private readonly Rect mapRect = new Rect(24, 124, 1056, 640);
-        private static readonly Color Ink = PixelArt.C("101b22"), Panel = PixelArt.C("192a2e"), Edge = PixelArt.C("3d514a"),
-            Text = PixelArt.C("e5e4cd"), Dim = PixelArt.C("9eafa3"), Gold = PixelArt.C("ddbb73"), Green = PixelArt.C("81b69a"), Red = PixelArt.C("df8b75");
+        private static readonly Color Ink = PixelArt.C("0b1020"), Panel = PixelArt.C("151e33"), Edge = PixelArt.C("394a67"),
+            Text = PixelArt.C("e0eaf2"), Dim = PixelArt.C("99abc3"), Gold = PixelArt.C("e8b979"), Green = PixelArt.C("53ded5"), Red = PixelArt.C("ed829e");
 
         private void Awake()
         {
@@ -42,8 +42,12 @@ namespace SkeletonDefender
             // Bundle Cyrillic glyphs: WebGL cannot use the operating system's fallback fonts.
             font = Resources.Load<Font>("Fonts/Ubuntu-R");
             boldFont = Resources.Load<Font>("Fonts/Ubuntu-B");
-            map = PixelArt.Map(); menu = PixelArt.Menu(); pad = PixelArt.Pad(); range = PixelArt.Ring();
-            for (int k = 0; k < 3; k++) for (int l = 0; l < 3; l++) towers[k, l] = PixelArt.Tower((TowerKind)k, l + 1);
+            map = Resources.Load<Texture2D>("NeonGothic/cemetery_battlefield") ?? PixelArt.Map();
+            menu = Resources.Load<Texture2D>("NeonGothic/moonlit_courtyard_menu") ?? PixelArt.Menu();
+            pad = Resources.Load<Texture2D>("NeonGothic/building_pad") ?? PixelArt.Pad();
+            range = Resources.Load<Texture2D>("NeonGothic/range_ring") ?? PixelArt.Ring();
+            for (int k = 0; k < 3; k++) for (int l = 0; l < 3; l++)
+                towers[k, l] = Resources.Load<Texture2D>("NeonGothic/tower_" + k + "_" + (l + 1)) ?? PixelArt.Tower((TowerKind)k, l + 1);
             for (int k = 0; k < 3; k++) for (int f = 0; f < 2; f++) enemies[k, f] = PixelArt.Enemy((EnemyKind)k, f);
             for (int k = 0; k < 14; k++) for (int f = 0; f < 2; f++) skeletons[k, f] = PixelArt.Skeleton((SkeletonKind)k, f);
             for (int k = 0; k < 2; k++) heroArt[k] = PixelArt.Hero((HeroKind)k);
@@ -76,7 +80,8 @@ namespace SkeletonDefender
                 else if (screen == ScreenMode.Credits || screen == ScreenMode.Exit || screen == ScreenMode.Selection || screen == ScreenMode.Inventory) screen = ScreenMode.Menu;
                 else if (screen == ScreenMode.Game && !Finished) SetPaused(!paused);
             }
-            if (screen != ScreenMode.Game || paused || Finished) { CancelSkillAim(); return; }
+            if (screen != ScreenMode.Game || paused) { CancelSkillAim(); return; }
+            if (Finished) { CancelSkillAim(); game.Step(Mathf.Min(Time.unscaledDeltaTime, .15f)); return; }
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)) SelectBattleHero();
             HandleManualKeys();
             if (Input.GetKeyDown(KeyCode.U)) Upgrade();
@@ -186,30 +191,43 @@ namespace SkeletonDefender
         private bool Button(Rect r, string text, bool primary = false, bool enabled = true, int size = 19)
         {
             bool hover = r.Contains(mouse) && enabled;
-            Color bg = primary ? (hover ? PixelArt.C("ecd092") : Gold) : (hover ? PixelArt.C("2c4641") : Panel);
-            if (!enabled) bg = PixelArt.C("253633");
-            Fill(new Rect(r.x, r.y + 4, r.width, r.height), PixelArt.C("0a151b")); Fill(r, bg);
-            Outline(r, enabled ? (primary ? PixelArt.C("f4dc9e") : (hover ? Green : Edge)) : Edge);
-            Fill(new Rect(r.x + 2, r.y + 2, r.width - 4, 1), new Color(1, 1, 1, primary ? .3f : .05f));
+            Color bg = primary ? (hover ? PixelArt.C("91fff0") : PixelArt.C("4bd5cf"))
+                : (hover ? PixelArt.C("26344f") : Panel);
+            if (!enabled) bg = PixelArt.C("161c2d");
+            Fill(new Rect(r.x, r.y + 4, r.width, r.height), PixelArt.C("070c18")); Fill(r, bg);
+            Outline(r, enabled ? (primary ? PixelArt.C("b7fff3") : (hover ? Green : Edge)) : Edge);
+            Fill(new Rect(r.x + 3, r.y + 3, r.width - 6, 1), new Color(1, 1, 1, primary ? .25f : .08f));
+            if (enabled && !primary) Fill(new Rect(r.x + 1, r.y + 10, 2, Mathf.Max(2, r.height - 20)), hover ? Green : PixelArt.C("786193"));
+            // Stepped corner cuts keep the metalwork on the same pixel grid as the art.
+            Fill(new Rect(r.x, r.y, 2, 2), Ink); Fill(new Rect(r.xMax - 2, r.yMax - 2, 2, 2), Ink);
             Txt(text, r.x + 8, r.y, r.width - 16, r.height, size, !enabled ? Dim * .7f : primary ? Ink : Text, FontStyle.Bold, TextAnchor.MiddleCenter);
             bool clicked = enabled && GUI.Button(r, GUIContent.none, GUIStyle.none);
             if (clicked) { GUI.FocusControl(null); Sound(clickSound); }
             return clicked;
         }
-        private void Box(Rect r) { Fill(r, Panel); Outline(r, Edge); }
+        private void Box(Rect r)
+        {
+            Fill(new Rect(r.x + 3, r.y + 5, r.width, r.height), PixelArt.C("080d1b"));
+            Fill(r, Panel); Outline(r, Edge);
+            Fill(new Rect(r.x + 5, r.y + 3, r.width - 10, 1), PixelArt.C("2d3c55"));
+            Fill(new Rect(r.x, r.y, 16, 2), Green * .65f);
+            Fill(new Rect(r.xMax - 16, r.yMax - 2, 16, 2), PixelArt.C("98588c"));
+        }
         private void DrawMenuBackground()
         {
             Texture(new Rect(0, 0, 1440, 900), menu);
+            DrawGothicMenuLights();
             // A stepped scrim preserves a crisp pixel edge and keeps type readable.
-            for (int i = 0; i < 12; i++) Fill(new Rect(i * 60, 0, 60, 900), new Color(.035f, .06f, .08f, .86f - i * .065f));
+            for (int i = 0; i < 16; i++) Fill(new Rect(i * 48, 0, 48, 900), new Color(.025f, .035f, .075f, Mathf.Max(0, .69f - i * .046f)));
             float t = Time.unscaledTime;
             for (int i = 0; i < 19; i++)
             {
                 float x = 775 + Mathf.Repeat(i * 47 + t * (3 + i % 3), 600);
                 float y = 520 + Mathf.Sin(t * .45f + i * 2) * 80 + (i % 4) * 48;
-                Fill(new Rect(x, y, 3, 3), new Color(.77f, .78f, .45f, .25f + .2f * Mathf.Sin(t + i)));
+                Fill(new Rect(x, y, 2, 2), i % 3 == 0 ? new Color(.94f, .3f, .65f, .35f + .15f * Mathf.Sin(t + i)) : new Color(.27f, .96f, .91f, .3f + .15f * Mathf.Sin(t + i)));
             }
-            Fill(new Rect(0, 856, 1440, 44), new Color(.025f, .05f, .07f, .8f));
+            Fill(new Rect(0, 856, 1440, 44), new Color(.025f, .035f, .075f, .92f));
+            Fill(new Rect(40, 855, 1360, 1), Edge);
         }
         private void DrawMenu()
         {
@@ -217,7 +235,7 @@ namespace SkeletonDefender
             Fill(new Rect(112, 139, 30, 3), Gold);
             Txt("TOWER DEFENCE   /   ГЛАВА I", 158, 127, 500, 28, 15, Gold, FontStyle.Bold);
             Txt("SKELETON", 108, 184, 700, 91, 78, Text, FontStyle.Bold);
-            Txt("DEFENDER", 109, 272, 690, 82, 70, Gold, FontStyle.Bold);
+            Txt("DEFENDER", 109, 272, 690, 82, 70, Green, FontStyle.Bold);
             Txt("Удержи последний рубеж.", 114, 376, 540, 36, 25, Text);
             Txt("Строй башни. Останови орду. Встреть рассвет.", 115, 418, 540, 48, 18, Dim);
             if (Button(new Rect(112, 491, 368, 62), "НАЧАТЬ", true, size: 23)) screen = ScreenMode.Selection;
@@ -261,33 +279,16 @@ namespace SkeletonDefender
                 Fill(new Rect(p.x - 9, p.y - 2, 18, 4), color); Fill(new Rect(p.x - 2, p.y - 9, 4, 18), color);
                 if (i == selected) Outline(new Rect(p.x - 36, p.y - 24, 72, 53), Gold, 2);
             }
-            foreach (Enemy e in game.Enemies)
-            {
-                Vector2 p = game.Position(e.Distance); int frame = (int)(game.Elapsed * (e.Slow > 0 ? 3 : 6) + e.Id) % 2;
-                float s = e.Variant.visualScale * (e.IsSummoned && e.Skeleton == SkeletonKind.Normal ? .75f : 1f);
-                Color tint = e.HitFlash > 0 ? new Color(1, .65f, .52f) : Color.white;
-                if (e.IsFrog) Texture(new Rect(p.x - 14 * s, p.y - 18 * s - Mathf.Abs(Mathf.Sin(game.Elapsed * 7 + e.Id)) * 7, 28 * s, 23 * s), frogArt);
-                else Texture(new Rect(p.x - 12 * s, p.y - 24 * s + Mathf.Sin(game.Elapsed * 8 + e.Id) * 1.5f, 24 * s, 29 * s), skeletons[(int)(e.Skeleton == SkeletonKind.Sarcophagus && !e.HasSarcophagus ? SkeletonKind.Normal : e.Skeleton), frame], tint);
-                float bar = e.IsBoss ? 68 : 34, by = p.y - 27 * s - 5;
-                Fill(new Rect(p.x - bar / 2, by, bar, 6), Ink);
-                Fill(new Rect(p.x - bar / 2 + 1, by + 1, (bar - 2) * Mathf.Clamp01(e.Hp / e.MaxHp), 4), e.IsBoss ? Red : e.Slow > 0 ? PixelArt.C("8eced3") : Green);
-                if (e.IsBoss) Txt("БОСС", p.x - 40, by - 19, 80, 18, 11, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
-                if (e.Slow > 0) Fill(new Rect(p.x - 11, p.y + 6, 22, 2), PixelArt.C("8eced3"));
-            }
-            foreach (Tower tower in game.Towers)
-            {
-                Vector2 p = GameModel.Sites[tower.Site];
-                if (tower.Site == selected) Outline(new Rect(p.x - 37, p.y - 33, 74, 64), Gold, 2);
-                Texture(new Rect(p.x - 36, p.y - 67, 72, 96), towers[(int)tower.Kind, tower.Level - 1]);
-                if (tower.Flash > 0) Fill(new Rect(p.x - 3, p.y - 46, 6, 6), Gold);
-            }
-            DrawBattleHero();
+            DrawBattleLayers();
             DrawEnemyEffects();
             DrawTravelingProjectiles();
             DrawAbilityEffects();
+            DrawProjectileImpacts();
             foreach (Shot shot in game.Shots)
             {
-                Vector2 a = shot.Start + new Vector2(0, -38), b = shot.End + new Vector2(0, -13);
+                if (TryDrawAnimatedShot(shot)) continue;
+                Vector2 a = shot.UsesVisualAnchors ? shot.Start : shot.Start + new Vector2(0, -38);
+                Vector2 b = shot.UsesVisualAnchors ? shot.End : shot.End + new Vector2(0, -13);
                 if (!string.IsNullOrEmpty(shot.Skill))
                 {
                     Color effect = shot.Skill == "sun" ? Gold : shot.Skill == "frog" ? PixelArt.C("79c7e2") : shot.Skill == "decapitate" ? Red : Text;
@@ -308,9 +309,15 @@ namespace SkeletonDefender
             foreach (HeroProjectile projectile in game.Projectiles)
             {
                 if (projectile.Delay > 0) continue;
-                Vector2 p = projectile.Position + new Vector2(0, -18);
-                Color c = projectile.Kind == ProjectileKind.Fireball ? PixelArt.C("ef9d59") : projectile.Kind == ProjectileKind.Knife ? Text : PixelArt.C("b5a0eb");
+                if (!projectile.Visual.Initialized) continue;
+                if (TryDrawHeroAnimationProjectile(projectile)) continue;
+                Vector2 p = projectile.Visual.Tip;
+                Vector2 direction = projectile.Visual.Direction;
+                Color c = projectile.Kind == ProjectileKind.Knife ? Text : PixelArt.C("ef9d59");
                 float size = projectile.Kind == ProjectileKind.Fireball ? 9 : 6;
+                if (projectile.Kind == ProjectileKind.Knife)
+                { DrawArrow(p, direction, 13, c, 3); continue; }
+                DrawLine(p - direction * 15, p, size * .7f, new Color(c.r, c.g, c.b, .45f));
                 Fill(new Rect(p.x - size / 2, p.y - size / 2, size, size), c);
                 Fill(new Rect(p.x - 1, p.y - 1, 3, 3), Text);
             }
@@ -318,46 +325,88 @@ namespace SkeletonDefender
                 Txt(popup.Text, popup.Position.x - 30, popup.Position.y - 65 - (1.2f - popup.Life) * 23, 70, 30, 18, popup.Damage ? Red : Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
             DrawEnemyTooltip();
             DrawAimMarker();
-            Fill(new Rect(14, 15, 402, 31), new Color(.04f, .09f, .10f, .86f));
+            Fill(new Rect(14, 15, 402, 31), new Color(.025f, .035f, .075f, .86f));
             Txt(BalanceData.Current.mapName.ToUpperInvariant(), 27, 23, 390, 25, 13, Text, FontStyle.Bold);
             if (bannerLife > 0)
             {
-                Fill(new Rect(230, 580, 625, 42), new Color(.04f, .09f, .10f, .94f));
+                Fill(new Rect(230, 580, 625, 42), new Color(.025f, .035f, .075f, .94f));
                 Outline(new Rect(230, 580, 625, 42), Edge);
                 Txt(banner, 240, 580, 605, 42, 17, Gold, align: TextAnchor.MiddleCenter);
             }
             GUI.EndGroup();
             HandleSites(); DrawSidebar(); DrawBottom(); DrawSkillsBar();
+            DrawStormScreenEffects();
             if (paused) DrawPause();
             else if (Finished) DrawResult();
         }
         private static void DrawLine(Vector2 a, Vector2 b, float width, Color color)
         {
             Matrix4x4 before = GUI.matrix; Vector2 delta = b - a;
-            GUIUtility.RotateAroundPivot(Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg, a);
+            RotateGuiLocal(Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg, a);
             Fill(new Rect(a.x, a.y - width / 2, delta.magnitude, width), color); GUI.matrix = before;
         }
+
+        // Unity's helper returns R * M, where its un-clipped pivot was obtained with
+        // M temporarily set to identity. Our canvas already has letterboxing/scale,
+        // so that local rotation must instead be applied before the canvas: M * R.
+        // Keep Unity's native un-clipping, and change only the multiplication order.
+        private static void RotateGuiLocal(float angle, Vector2 pivot)
+        {
+            Matrix4x4 canvas = GUI.matrix;
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            Vector2 beforePoint = GUIUtility.GUIToScreenPoint(pivot);
+            Vector2 beforeX = GUIUtility.GUIToScreenPoint(pivot + Vector2.right) - beforePoint;
+            Vector2 beforeY = GUIUtility.GUIToScreenPoint(pivot + Vector2.up) - beforePoint;
+#endif
+            GUIUtility.RotateAroundPivot(angle, pivot);
+            GUI.matrix = canvas * GUI.matrix * canvas.inverse;
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            if (!guiRotationChecked && Event.current.type == EventType.Repaint && Mathf.Abs(angle) > 1)
+            {
+                guiRotationChecked = true;
+                Vector2 afterPoint = GUIUtility.GUIToScreenPoint(pivot);
+                Vector2 afterX = GUIUtility.GUIToScreenPoint(pivot + Vector2.right) - afterPoint;
+                float radians = angle * Mathf.Deg2Rad;
+                Vector2 expectedX = beforeX * Mathf.Cos(radians) + beforeY * Mathf.Sin(radians);
+                Debug.Assert(Vector2.Distance(beforePoint, afterPoint) < .05f && Vector2.Distance(afterX, expectedX) < .05f,
+                    "GUI rotation moved its actual screen pivot or changed the local axis inside the map group.");
+            }
+#endif
+        }
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        private static bool guiRotationChecked;
+#endif
         private void DrawRange()
         {
             if (selected < 0) return;
             Vector2 p = GameModel.Sites[selected]; Tower tower = game.At(selected);
             float r = tower?.Range ?? 174;
-            Texture(new Rect(p.x - r, p.y - r, 2 * r, 2 * r), range);
+            Texture(new Rect(p.x - r, p.y - r, 2 * r, 2 * r), range,
+                tower != null && tower.Kind == TowerKind.Ember ? Gold : Green);
         }
         private void HandleSites()
         {
             if (paused || Finished || Event.current.type != EventType.MouseDown || Event.current.button != 0 || !mapRect.Contains(mouse)) return;
             if (HandleAimClick() || SkillBarContains(mouse)) return;
             Vector2 local = mouse - mapRect.position;
-            if (game.Clone != null && game.Clone.Alive && Vector2.Distance(local, game.Clone.Position + new Vector2(0, -20)) < 33)
+            if (game.Clone != null && game.Clone.Alive && AnimatedActors.HeroBounds(game.Clone).Contains(AnimatedActors.HeroPose(game.Clone).inverse.MultiplyPoint3x4(local)))
             { SelectBattleHero(true); Event.current.Use(); return; }
-            if (game.Hero.Alive && Vector2.Distance(local, game.Hero.Position + new Vector2(0, -20)) < 33)
+            if (game.Hero.Alive && AnimatedActors.HeroBounds(game.Hero).Contains(AnimatedActors.HeroPose(game.Hero).inverse.MultiplyPoint3x4(local)))
             { SelectBattleHero(); Event.current.Use(); return; }
             int nearest = -1; float best = 47;
+            float frontTowerY = float.NegativeInfinity;
             for (int i = 0; i < GameModel.Sites.Length; i++)
             {
-                Vector2 p = GameModel.Sites[i]; if (game.At(i) != null) p.y -= 20;
-                float d = Vector2.Distance(local, p); if (d < best) { best = d; nearest = i; }
+                Vector2 p = GameModel.Sites[i];
+                Tower tower = game.At(i);
+                if (tower != null)
+                {
+                    if (ProjectileVisuals.TowerSelectionBounds(p, tower.Kind, tower.Level).Contains(local) && p.y >= frontTowerY)
+                    { frontTowerY = p.y; nearest = i; }
+                    continue;
+                }
+                float d = Vector2.Distance(local, p);
+                if (float.IsNegativeInfinity(frontTowerY) && d < best) { best = d; nearest = i; }
             }
             if (nearest >= 0) { selected = nearest; heroSelected = false; }
             else if (heroSelected) game.MoveHero(local, cloneSelected);
@@ -392,9 +441,11 @@ namespace SkeletonDefender
                 Txt(GameModel.TowerName(selectedTower.Kind), 1123, 355, 274, 55, 20, Text, FontStyle.Bold, TextAnchor.MiddleCenter);
                 Txt("УРОВЕНЬ " + selectedTower.Level + " / 3", 1126, 416, 266, 25, 14, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
                 Fill(new Rect(1125, 458, 270, 1), Edge);
-                Stat("Урон", selectedTower.Damage.ToString("0.##"), 480);
+                Stat("Урон", (selectedTower.ProjectileCount > 1 ? selectedTower.ProjectileCount + " × " : "") + selectedTower.Damage.ToString("0.##"), 480);
                 Stat("Дальность", selectedTower.Range.ToString("0"), 515);
                 Stat("Выстрел", selectedTower.Interval.ToString("0.00") + " сек.", 550);
+                if (selectedTower.Kind == TowerKind.Archer && selectedTower.ProjectileCount > 1)
+                    Txt("2 лучника · 2 стрелы за атаку", 1125, 582, 270, 18, 12, Gold, align: TextAnchor.MiddleCenter);
                 string up = selectedTower.Level >= 3 ? "МАКСИМАЛЬНЫЙ УРОВЕНЬ" : "УЛУЧШИТЬ  ·  " + selectedTower.UpgradeCost;
                 if (Button(new Rect(1124, 603, 272, 55), up, true, active && selectedTower.Level < 3 && game.Gold >= selectedTower.UpgradeCost, 15)) Upgrade();
                 if (Button(new Rect(1124, 677, 272, 44), "ПРОДАТЬ  ·  +" + selectedTower.SellValue, enabled: active, size: 15))
@@ -414,7 +465,7 @@ namespace SkeletonDefender
         { Txt(title, 1127, y, 135, 27, 17, Dim); Txt(value, 1263, y, 128, 27, 18, Text, FontStyle.Bold, TextAnchor.UpperRight); }
         private void BuildCard(TowerKind kind, float y, string description, bool active)
         {
-            Fill(new Rect(1124, y, 272, 131), PixelArt.C("142327")); Outline(new Rect(1124, y, 272, 131), Edge);
+            Fill(new Rect(1124, y, 272, 131), PixelArt.C("111b2e")); Outline(new Rect(1124, y, 272, 131), Edge);
             Texture(new Rect(1130, y + 13, 54, 72), towers[(int)kind, 0]);
             string name = kind == TowerKind.Archer ? "СТРЕЛКОВАЯ" : kind == TowerKind.Ember ? "ОГНЕННАЯ" : "ЛЕДЯНАЯ";
             Txt(name, 1194, y + 11, 192, 24, 15, Text, FontStyle.Bold);
@@ -460,7 +511,7 @@ namespace SkeletonDefender
             Rect r = new Rect(1104, 788, 312, 62);
             bool hover = r.Contains(mouse);
             Fill(new Rect(r.x, r.y + 4, r.width, r.height), PixelArt.C("0a151b"));
-            Fill(r, hover ? PixelArt.C("31594b") : PixelArt.C("24483e"));
+            Fill(r, hover ? PixelArt.C("264858") : PixelArt.C("1b3449"));
             Outline(r, Gold, 2);
             float pulse = .55f + .15f * Mathf.Sin(game.Elapsed * 3);
             Fill(new Rect(r.x + 3, r.y + 3, r.width - 6, 2), new Color(Gold.r, Gold.g, Gold.b, pulse));

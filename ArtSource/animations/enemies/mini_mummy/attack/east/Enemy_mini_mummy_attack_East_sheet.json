@@ -1,0 +1,342 @@
+{
+  "frames": [
+    {
+      "duration": 70,
+      "filename": "Enemy_mini_mummy_attack_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mini_mummy_attack_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_mini_mummy_attack_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_mini_mummy_attack_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_mini_mummy_attack_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "DRIVE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_mini_mummy_attack_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 80,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mini_mummy_attack_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "RETRACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_mini_mummy_attack_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "RETRACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Enemy_mini_mummy_attack_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 90,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 120,
+      "filename": "Enemy_mini_mummy_attack_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 720,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "mini_mummy",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 0.75,
+    "durationMs": 690,
+    "events": [
+      {
+        "frameIndex": 5,
+        "kind": "art cue; bind to existing gameplay action without altering balance",
+        "name": "palm_contact",
+        "socket": {
+          "x": 116,
+          "y": 70
+        },
+        "timeMs": 280
+      }
+    ],
+    "facingNormalizedBeforeExport": false,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mini_mummy/attack/east/Enemy_mini_mummy_attack_East_sheet.png"
+    },
+    "frameCount": 10,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack",
+        "to": 9
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1290,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_mini_mummy_attack_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Regenerated v2 provides a full straight arm and closed palm contact at RAW008. RAW009-012 are omitted: fingers point after contact and RAW011 overlays sparks. Shortened recovery remains continuous."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 600,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab enemy_mini_mummy_attack_v2; selected frames and timing reviewed by roster_asset_audit; root acceptance pending; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "enemy_mini_mummy_attack_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFacing": "east",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\roster_enemy_candidates\\Enemy_mini_mummy_attack_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

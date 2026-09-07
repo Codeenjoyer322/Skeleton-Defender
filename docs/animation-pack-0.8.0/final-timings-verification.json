@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "comparedCells": 7133,
+  "preservedFormulas": 182,
+  "catalogRecords": 721,
+  "sheets": [
+    "Бой",
+    "Каталог"
+  ],
+  "nativeEngine": "LibreOffice Calc",
+  "probe": {
+    "originalInput": 1,
+    "probeInput": 2,
+    "interval": 0.5,
+    "playback": 1.8,
+    "contact": 0.2777777777777778
+  },
+  "publishedInputUnchanged": true
+}

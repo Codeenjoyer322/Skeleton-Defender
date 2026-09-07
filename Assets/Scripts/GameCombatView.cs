@@ -33,45 +33,71 @@ namespace SkeletonDefender
         }
         private void DrawActor(HeroCombatState actor, bool selectedActor)
         {
-            if (!actor.Alive) return;
             Vector2 p = actor.Position;
-            Color accent = actor.IsClone ? ManaBlue : Gold;
+            Color accent = HeroAccent(actor.Kind);
+            AnimationClipData clip = AnimatedActors.HeroClip(actor);
+            if (!actor.Alive)
+            {
+                if (clip != null) DrawAnimationFrame(clip, p, clip.GroundPivot, actor.Animation.ClipAge,
+                    AnimatedActors.HeroPixelScale, new Color(1, 1, 1, .7f), false);
+                return;
+            }
+            Texture(new Rect(p.x - 20, p.y - 4, 40, 12), pad, new Color(0, 0, 0, .20f));
             if (selectedActor)
             {
-                Texture(new Rect(p.x - 28, p.y - 14, 56, 36), pad, accent);
+                DrawHeroSelectionRing(p + new Vector2(0, 2), accent);
                 if (Vector2.Distance(actor.Destination, p) > 6)
-                    Outline(new Rect(actor.Destination.x - 9, actor.Destination.y - 6, 18, 12), accent, 2);
+                    Outline(new Rect(actor.Destination.x - 7, actor.Destination.y - 4, 14, 8), accent, 1);
             }
             if (!actor.IsClone && game.RageRemaining > 0)
             {
                 float pulse = 54 + 4 * Mathf.Sin(game.Elapsed * 7);
                 Texture(new Rect(p.x - pulse / 2, p.y - 20, pulse, 40), range, PixelArt.C("ef9c49"));
-                Txt("ЯРОСТЬ", p.x - 44, p.y - 101, 88, 18, 11, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
             }
-            bool knockedDown = actor.KnockdownRemaining > 0;
+            Color tint = actor.Flash > 0 ? new Color(1, .91f, .85f)
+                : actor.IsClone ? new Color(.74f, .88f, 1, .88f) : Color.white;
             Matrix4x4 before = GUI.matrix;
-            bool arrowPose = actor.Kind == HeroKind.Achilles && actor.LastCastName == BalanceData.Current.heroSystems.Skill(actor.Kind, 1).name;
-            bool spearPose = actor.Kind == HeroKind.Achilles && actor.LastCastName == BalanceData.Current.heroSystems.Skill(actor.Kind, 0).name;
-            float rotation = knockedDown ? 75 : actor.CastPoseRemaining > 0 && arrowPose ? 28 : 0;
-            if (rotation != 0) GUIUtility.RotateAroundPivot(rotation, p + new Vector2(0, -20));
-            Texture(new Rect(p.x - 28, p.y - 61, 56, 73), heroArt[(int)actor.Kind],
-                actor.Flash > 0 ? new Color(1, .8f, .6f) : actor.IsClone ? new Color(.64f, .85f, 1, .86f) : Color.white);
+            if (actor.KnockdownRemaining > 0)
+                RotateGuiLocal(actor.FacingLeft ? -75 : 75, p + new Vector2(0, -20));
+            if (clip != null)
+                DrawAnimationFrame(clip, p, clip.GroundPivot, actor.Animation.ClipAge,
+                    AnimatedActors.HeroPixelScale, tint, clip.Loop);
+            else Texture(new Rect(p.x - 28, p.y - 61, 56, 73), heroArt[(int)actor.Kind], tint);
             GUI.matrix = before;
-            if (actor.CastPoseRemaining > 0 && spearPose)
-                DrawSpear(p + new Vector2(21, -96), Vector2.down, 50, Gold);
-            Fill(new Rect(p.x - 28, p.y - 76, 56, 7), Ink);
-            Fill(new Rect(p.x - 27, p.y - 75, 54 * Mathf.Clamp01(actor.Hp / actor.MaxHp), 5), actor.IsRegenerating ? Green : accent);
-            Fill(new Rect(p.x - 28, p.y - 66, 56, 4), Ink);
-            Fill(new Rect(p.x - 27, p.y - 65, 54 * Mathf.Clamp01(actor.Mana / actor.MaxMana), 2), ManaBlue);
-            if (actor.IsClone) Txt("КОПИЯ " + ClockText(game.CloneRemaining), p.x - 66, p.y - 95, 132, 18, 10, ManaBlue, FontStyle.Bold, TextAnchor.MiddleCenter);
+            var idle = AnimationLibrary.GetDirectional(CombatAnimationRoles.Hero(actor), "idle", actor.Animation.FacingDirection, actor.FacingLeft);
+            float barY = idle == null ? p.y - 76 : p.y + (idle.OpaqueBounds.yMin - idle.GroundPivot.y) * AnimatedActors.HeroPixelScale - 12;
+            Fill(new Rect(p.x - 28, barY, 56, 7), Ink);
+            Fill(new Rect(p.x - 27, barY + 1, 54 * Mathf.Clamp01(actor.Hp / actor.MaxHp), 5), actor.IsRegenerating ? Green : accent);
+            Fill(new Rect(p.x - 28, barY + 9, 56, 4), Ink);
+            Fill(new Rect(p.x - 27, barY + 10, 54 * Mathf.Clamp01(actor.Mana / actor.MaxMana), 2), ManaBlue);
+            if (actor.IsClone) Txt("КОПИЯ " + ClockText(game.CloneRemaining), p.x - 66, barY - 20, 132, 18, 10, ManaBlue, FontStyle.Bold, TextAnchor.MiddleCenter);
+            else if (game.RageRemaining > 0) Txt("ЯРОСТЬ", p.x - 44, barY - 20, 88, 18, 11, Gold, FontStyle.Bold, TextAnchor.MiddleCenter);
             if (actor.IsRegenerating)
             {
                 float rise = game.Elapsed % 1f * 16;
                 Fill(new Rect(p.x + 29, p.y - 44 - rise, 13, 4), Green);
                 Fill(new Rect(p.x + 34, p.y - 49 - rise, 4, 14), Green);
             }
-            if (knockedDown) Txt("НОКДАУН " + Mathf.CeilToInt(actor.KnockdownRemaining) + "с", p.x - 67, p.y - 115, 134, 23, 12, Red, FontStyle.Bold, TextAnchor.MiddleCenter);
+            if (actor.KnockdownRemaining > 0) Txt("НОКДАУН " + Mathf.CeilToInt(actor.KnockdownRemaining) + "с", p.x - 67, barY - 38, 134, 23, 12, Red, FontStyle.Bold, TextAnchor.MiddleCenter);
         }
+        private static Color HeroAccent(HeroKind kind) => kind == HeroKind.Achilles
+            ? PixelArt.C("e9c86c") : PixelArt.C("b39ce9");
+
+        private static void DrawHeroSelectionRing(Vector2 center, Color accent)
+        {
+            // A hollow ground ellipse leaves the boots and terrain readable.
+            const int segments = 48;
+            Vector2 previous = center + new Vector2(22, 0);
+            accent.a = .88f;
+            for (int i = 1; i <= segments; i++)
+            {
+                float angle = i * Mathf.PI * 2 / segments;
+                Vector2 point = center + new Vector2(Mathf.Cos(angle) * 22, Mathf.Sin(angle) * 8);
+                DrawLine(previous, point, 1.25f, accent);
+                previous = point;
+            }
+        }
+
         private void DrawHeroCard()
         {
             DrawActorCard(game.Hero, new Rect(24, 788, 198, 88), false);
@@ -89,7 +115,7 @@ namespace SkeletonDefender
             Box(r);
             bool chosen = cloneSelected == clone;
             if (chosen) Outline(r, clone ? ManaBlue : Gold, 2);
-            Texture(new Rect(r.x + 7, r.y + 13, 36, 47), heroArt[(int)actor.Kind], actor.Alive ? clone ? ManaBlue : Color.white : Dim);
+            DrawHeroPortrait(new Rect(r.x + 7, r.y + 13, 36, 47), actor.Kind, actor.Alive ? clone ? ManaBlue : Color.white : Dim);
             Txt((clone ? "3 · КОПИЯ" : "2 · " + HeroName(actor.Kind)), r.x + 50, r.y + 7, 143, 19, 12, clone ? ManaBlue : Gold, FontStyle.Bold);
             Txt(actor.Alive ? actor.Hp.ToString("0") + "/" + actor.MaxHp.ToString("0") + " HP" : clone ? "Копия погибла" : "Возрождение " + Mathf.CeilToInt(actor.RespawnRemaining) + "с", r.x + 50, r.y + 29, 143, 20, 12, actor.Alive ? Text : Red);
             Fill(new Rect(r.x + 50, r.y + 52, 137, 5), Ink);
@@ -102,7 +128,7 @@ namespace SkeletonDefender
             HeroCombatState hero = SelectedActor;
             var definition = BalanceData.Current.Hero((int)hero.Kind);
             Txt(cloneSelected ? "УПРАВЛЕНИЕ КОПИЕЙ · 3" : "УПРАВЛЕНИЕ ГЕРОЕМ · 2", 1125, 148, 270, 25, 12, cloneSelected ? ManaBlue : Gold, FontStyle.Bold);
-            Texture(new Rect(1133, 187, 57, 74), heroArt[(int)hero.Kind], hero.IsClone ? ManaBlue : Color.white);
+            DrawHeroPortrait(new Rect(1133, 187, 57, 74), hero.Kind, hero.IsClone ? ManaBlue : Color.white);
             Txt(HeroName(hero.Kind), 1203, 192, 187, 31, 22, Gold, FontStyle.Bold);
             Txt(hero.IsClone ? "Осталось " + ClockText(game.CloneRemaining) : game.RageRemaining > 0 ? "Ярость " + ClockText(game.RageRemaining) : "ЛКМ по карте — движение", 1203, 230, 187, 43, 12, Dim);
             Stat("Здоровье", hero.Hp.ToString("0") + "/" + hero.MaxHp.ToString("0"), 283);
@@ -136,13 +162,10 @@ namespace SkeletonDefender
         }
         private void DrawEnemyEffects()
         {
-            foreach (var projectile in game.EnemyProjectiles)
-            {
-                Vector2 p = projectile.Position + new Vector2(0, -18);
-                Fill(new Rect(p.x - 3, p.y - 2, 8, 4), Gold);
-            }
+            DrawAnimatedEnemyProjectiles();
             foreach (var effect in game.EnemyEffects)
             {
+                if (TryDrawEnemyAnimationEffect(effect)) continue;
                 Vector2 p = effect.Position;
                 Color c = effect.Kind == "smoke" ? Dim : effect.Kind == "lightning" ? PixelArt.C("bd9bef") : Gold;
                 if (effect.Kind == "lightning")
@@ -174,8 +197,8 @@ namespace SkeletonDefender
             float nearest = 28;
             foreach (Enemy enemy in game.Enemies)
             {
-                float distance = Vector2.Distance(local, game.Position(enemy.Distance) + new Vector2(0, -18));
-                if (!enemy.Dead && distance < nearest) { nearest = distance; hovered = enemy; }
+                float distance = Vector2.Distance(local, ProjectileVisuals.EnemyHitPoint(enemy, game.Position(enemy.Distance)));
+                if (!enemy.Dead && enemy.AppearanceDelay <= 0 && distance < nearest) { nearest = distance; hovered = enemy; }
             }
             if (hovered == null) return;
             bool summoner = hovered.Skeleton == SkeletonKind.Tutankhamun;

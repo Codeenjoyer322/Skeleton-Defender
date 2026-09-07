@@ -1,0 +1,310 @@
+{
+  "version": "0.8.1",
+  "directionalCatalogSha256": "ecd4532d71ed0af229ecf4d056f77ee81f928614c67bcd234b0b2cabac41e9cb",
+  "requiredViews": 368,
+  "totalCatalogRecords": 745,
+  "directionalRecords": 512,
+  "appendedRows": 0,
+  "combatReferences": [
+    {
+      "cell": "C7",
+      "formula": "='Каталог'!D240",
+      "clip": "neongothic-achilles-attack-east"
+    },
+    {
+      "cell": "D7",
+      "formula": "='Каталог'!E240",
+      "clip": "neongothic-achilles-attack-east"
+    },
+    {
+      "cell": "C8",
+      "formula": "='Каталог'!D12",
+      "clip": "achilles-spear-east"
+    },
+    {
+      "cell": "D8",
+      "formula": "='Каталог'!E12",
+      "clip": "achilles-spear-east"
+    },
+    {
+      "cell": "C9",
+      "formula": "='Каталог'!D15",
+      "clip": "achilles-heel-east"
+    },
+    {
+      "cell": "D9",
+      "formula": "='Каталог'!E15",
+      "clip": "achilles-heel-east"
+    },
+    {
+      "cell": "C10",
+      "formula": "='Каталог'!D26",
+      "clip": "circe-deer_cast-east"
+    },
+    {
+      "cell": "D10",
+      "formula": "='Каталог'!E26",
+      "clip": "circe-deer_cast-east"
+    },
+    {
+      "cell": "C11",
+      "formula": "='Каталог'!D32",
+      "clip": "circe-hex_cast-east"
+    },
+    {
+      "cell": "D11",
+      "formula": "='Каталог'!E32",
+      "clip": "circe-hex_cast-east"
+    },
+    {
+      "cell": "C12",
+      "formula": "='Каталог'!D343",
+      "clip": "neongothic-circe-staff_attack-east"
+    },
+    {
+      "cell": "D12",
+      "formula": "='Каталог'!E343",
+      "clip": "neongothic-circe-staff_attack-east"
+    },
+    {
+      "cell": "C13",
+      "formula": "='Каталог'!D43",
+      "clip": "circe-storm_cast-east"
+    },
+    {
+      "cell": "D13",
+      "formula": "='Каталог'!E43",
+      "clip": "circe-storm_cast-east"
+    },
+    {
+      "cell": "C14",
+      "formula": "='Каталог'!D504",
+      "clip": "neongothic-normal-attack-east"
+    },
+    {
+      "cell": "D14",
+      "formula": "='Каталог'!E504",
+      "clip": "neongothic-normal-attack-east"
+    },
+    {
+      "cell": "C15",
+      "formula": "='Каталог'!D472",
+      "clip": "neongothic-ninja-attack-east"
+    },
+    {
+      "cell": "D15",
+      "formula": "='Каталог'!E472",
+      "clip": "neongothic-ninja-attack-east"
+    },
+    {
+      "cell": "C16",
+      "formula": "='Каталог'!D664",
+      "clip": "neongothic-tutankhamun-attack-east"
+    },
+    {
+      "cell": "D16",
+      "formula": "='Каталог'!E664",
+      "clip": "neongothic-tutankhamun-attack-east"
+    },
+    {
+      "cell": "C17",
+      "formula": "='Каталог'!D682",
+      "clip": "neongothic-tutankhamun-summon-east"
+    },
+    {
+      "cell": "D17",
+      "formula": "='Каталог'!E682",
+      "clip": "neongothic-tutankhamun-summon-east"
+    },
+    {
+      "cell": "C18",
+      "formula": "='Каталог'!D376",
+      "clip": "neongothic-giant-attack-east"
+    },
+    {
+      "cell": "D18",
+      "formula": "='Каталог'!E376",
+      "clip": "neongothic-giant-attack-east"
+    },
+    {
+      "cell": "C19",
+      "formula": "='Каталог'!D352",
+      "clip": "neongothic-crawler-attack-east"
+    },
+    {
+      "cell": "D19",
+      "formula": "='Каталог'!E352",
+      "clip": "neongothic-crawler-attack-east"
+    },
+    {
+      "cell": "C20",
+      "formula": "='Каталог'!D538",
+      "clip": "neongothic-pirate-attack-east"
+    },
+    {
+      "cell": "D20",
+      "formula": "='Каталог'!E538",
+      "clip": "neongothic-pirate-attack-east"
+    },
+    {
+      "cell": "C21",
+      "formula": "='Каталог'!D552",
+      "clip": "neongothic-pirate-pistol_shot-east"
+    },
+    {
+      "cell": "D21",
+      "formula": "='Каталог'!E552",
+      "clip": "neongothic-pirate-pistol_shot-east"
+    },
+    {
+      "cell": "C22",
+      "formula": "='Каталог'!D578",
+      "clip": "neongothic-samurai-attack-east"
+    },
+    {
+      "cell": "D22",
+      "formula": "='Каталог'!E578",
+      "clip": "neongothic-samurai-attack-east"
+    },
+    {
+      "cell": "C23",
+      "formula": "='Каталог'!D579",
+      "clip": "neongothic-samurai-execution-east"
+    },
+    {
+      "cell": "D23",
+      "formula": "='Каталог'!E579",
+      "clip": "neongothic-samurai-execution-east"
+    },
+    {
+      "cell": "C24",
+      "formula": "='Каталог'!D608",
+      "clip": "neongothic-sarcophagus-attack-east"
+    },
+    {
+      "cell": "D24",
+      "formula": "='Каталог'!E608",
+      "clip": "neongothic-sarcophagus-attack-east"
+    },
+    {
+      "cell": "C25",
+      "formula": "='Каталог'!D505",
+      "clip": "neongothic-sarcophagus_bare-attack-east"
+    },
+    {
+      "cell": "D25",
+      "formula": "='Каталог'!E505",
+      "clip": "neongothic-sarcophagus_bare-attack-east"
+    },
+    {
+      "cell": "C26",
+      "formula": "='Каталог'!D632",
+      "clip": "neongothic-trex-attack-east"
+    },
+    {
+      "cell": "D26",
+      "formula": "='Каталог'!E632",
+      "clip": "neongothic-trex-attack-east"
+    },
+    {
+      "cell": "C27",
+      "formula": "='Каталог'!D650",
+      "clip": "neongothic-trex-execution_bite-east"
+    },
+    {
+      "cell": "D27",
+      "formula": "='Каталог'!E650",
+      "clip": "neongothic-trex-execution_bite-east"
+    },
+    {
+      "cell": "C28",
+      "formula": "='Каталог'!D400",
+      "clip": "neongothic-knight-attack-east"
+    },
+    {
+      "cell": "D28",
+      "formula": "='Каталог'!E400",
+      "clip": "neongothic-knight-attack-east"
+    },
+    {
+      "cell": "C29",
+      "formula": "='Каталог'!D706",
+      "clip": "neongothic-warlock-attack-east"
+    },
+    {
+      "cell": "D29",
+      "formula": "='Каталог'!E706",
+      "clip": "neongothic-warlock-attack-east"
+    },
+    {
+      "cell": "C30",
+      "formula": "='Каталог'!D717",
+      "clip": "neongothic-warlock-cast_fail-east"
+    },
+    {
+      "cell": "D30",
+      "formula": "='Каталог'!E717",
+      "clip": "neongothic-warlock-cast_fail-east"
+    },
+    {
+      "cell": "C31",
+      "formula": "='Каталог'!D716",
+      "clip": "neongothic-warlock-lightning_cast-east"
+    },
+    {
+      "cell": "D31",
+      "formula": "='Каталог'!E716",
+      "clip": "neongothic-warlock-lightning_cast-east"
+    },
+    {
+      "cell": "C32",
+      "formula": "='Каталог'!D424",
+      "clip": "neongothic-mad-attack-east"
+    },
+    {
+      "cell": "D32",
+      "formula": "='Каталог'!E424",
+      "clip": "neongothic-mad-attack-east"
+    },
+    {
+      "cell": "C33",
+      "formula": "='Каталог'!D304",
+      "clip": "neongothic-boxer-attack-east"
+    },
+    {
+      "cell": "D33",
+      "formula": "='Каталог'!E304",
+      "clip": "neongothic-boxer-attack-east"
+    },
+    {
+      "cell": "C34",
+      "formula": "='Каталог'!D280",
+      "clip": "neongothic-boss-attack-east"
+    },
+    {
+      "cell": "D34",
+      "formula": "='Каталог'!E280",
+      "clip": "neongothic-boss-attack-east"
+    },
+    {
+      "cell": "C35",
+      "formula": "='Каталог'!D448",
+      "clip": "neongothic-mini_mummy-attack-east"
+    },
+    {
+      "cell": "D35",
+      "formula": "='Каталог'!E448",
+      "clip": "neongothic-mini_mummy-attack-east"
+    },
+    {
+      "cell": "C36",
+      "formula": "='Каталог'!D133",
+      "clip": "enemy-sarcophagus-death-east"
+    }
+  ],
+  "atlasCount": 665,
+  "decodedRgbaBytes": 237321632,
+  "preserveBalanceWorkbook": true,
+  "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "preservedInputs": true
+}

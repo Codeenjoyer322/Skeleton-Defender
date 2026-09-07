@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "canvas": [
+    48,
+    48
+  ],
+  "count": 24,
+  "tool": "Native Aseprite Lua",
+  "source": "source/icons/*.aseprite",
+  "preview": "review/inventory-icons-contact.png",
+  "runtime": "Assets/Resources/NeonGothic/Icons",
+  "icons": [
+    {
+      "name": "artifact_aegis_of_dawn",
+      "sha256": "d5ebec4ddeaa375595014771185605db0ed3e0ea8d3949f03b558285db4f95fb"
+    },
+    {
+      "name": "artifact_athena_mirror",
+      "sha256": "556cf2a9f72073bdce2245719e2b52337aeaab3d6b7158a520ea29b7c4be7dc1"
+    },
+    {
+      "name": "artifact_zeus_nail",
+      "sha256": "95e8a5c9909e4210cd36b100cda71f692cd777d6942330ab8386dc2a034e9332"
+    },
+    {
+      "name": "chainmail_belt",
+      "sha256": "04228ce9c115feafb6ef7f3cab9644f9a2cf6160a12136ff991ed6dd0f00053b"
+    },
+    {
+      "name": "chainmail_boots",
+      "sha256": "71a31ade888e7f5e0c4616f2fbb20828869b311cbc71a9c70716a6b6cb024b25"
+    },
+    {
+      "name": "chainmail_chest",
+      "sha256": "61136a2ac6552456308d6fc8493452622fc6c775e4453b1a88cb9baf679b8d9e"
+    },
+    {
+      "name": "chainmail_gloves",
+      "sha256": "dfc6b80055d61f86542f0fda20a9a78105104899f32c17b2516e1aeb28623e58"
+    },
+    {
+      "name": "chainmail_helmet",
+      "sha256": "2f52d5cfa53a8589e189accd1c85e7467cee6bbebdebd24208e89a37b5982d43"
+    },
+    {
+      "name": "chainmail_trousers",
+      "sha256": "f1b37ac86e3bd0271163c55093fb3aca7d098bcba78692afad821715d0226e2c"
+    },
+    {
+      "name": "leather_belt",
+      "sha256": "6bb9aecd1e0d690fd3395a3309fd86747a9f8dc2ab946a30451d3b9bc745b786"
+    },
+    {
+      "name": "leather_boots",
+      "sha256": "45729a387731277bd6601c360963b4f497dd118d9731cc94b7471d6d45ed3567"
+    },
+    {
+      "name": "leather_chest",
+      "sha256": "afe0ddf17063b4a6b870768d8ba8309871850a1fd2b9ed6ee5821396e8c949d3"
+    },
+    {
+      "name": "leather_gloves",
+      "sha256": "b2aa6ebef9531bd3f8cbc69c383d4bea7f8cee5b1e01326c698a7c91969d710e"
+    },
+    {
+      "name": "leather_helmet",
+      "sha256": "7bdf797aa92e54873f7d2ce345b7161c4c4085337fb61a6c781791d853c2108d"
+    },
+    {
+      "name": "leather_trousers",
+      "sha256": "04ada20a84f31afc83fc0732c517a8ffff708d476460a62aa25ec257387adc51"
+    },
+    {
+      "name": "silk_belt",
+      "sha256": "6a95cf95b8e6694c32b0efcf2a0dd82cfafc23550c879a1bfbb26edd7d0af937"
+    },
+    {
+      "name": "silk_boots",
+      "sha256": "e2484c27a4be3ee7e90e3d832286b53bae7c5ab1600b5ed9ecda3d3d67dcf204"
+    },
+    {
+      "name": "silk_chest",
+      "sha256": "2104d3bcdb39e9537bf1af4cf658ba3360db0104a28de7a30b42363f729ed52a"
+    },
+    {
+      "name": "silk_gloves",
+      "sha256": "b5dcf9c8c01990cb7a30ad540f23d781b36445f34ff733e56c75d0604cd2e534"
+    },
+    {
+      "name": "silk_helmet",
+      "sha256": "51f5e047316f8b23bdfc2fb2abddfed5f0354eb6e8448166fb64642af1bed98f"
+    },
+    {
+      "name": "silk_trousers",
+      "sha256": "08c8a8b0788446e236e141bfd6313d53ecc72b03e80c94799778036c08b80ee6"
+    },
+    {
+      "name": "weapon_dagger",
+      "sha256": "2afad0aa078ba15057c929477b0b5ca4e8bfff0cc8589b1afa2df4f0416766b8"
+    },
+    {
+      "name": "weapon_staff",
+      "sha256": "daf6712f68129effafc3c2513f5e274b2877327fec76392e2ceb72294e398feb"
+    },
+    {
+      "name": "weapon_sword",
+      "sha256": "6879d9e17699a1c3484364970d254ddd4238afd55cbadfa81228decd4c2bbaf5"
+    }
+  ]
+}

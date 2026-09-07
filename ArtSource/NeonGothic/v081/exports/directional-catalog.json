@@ -1,0 +1,4270 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "canvas pixels, origin top-left",
+  "clips": [
+    {
+      "id": "neongothic-circe-walk-south-east",
+      "character": "circe",
+      "action": "walk",
+      "category": "heroes",
+      "direction": "south-east",
+      "resourcePath": "AnimationPack/Textures/directional_7c5579486b47c668cca1",
+      "aliasOf": "",
+      "sourceSheetSha256": "7c5579486b47c668cca1b9e6f0404e699efa3741405e9092fae10b1b1354cfb6",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 60,
+      "height": 72,
+      "sheetWidth": 240,
+      "sheetHeight": 72,
+      "opaqueX": 2,
+      "opaqueY": 0,
+      "opaqueWidth": 37,
+      "opaqueHeight": 70,
+      "duration": 0.6,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 18.0,
+        "y": 70.0
+      },
+      "hitPoint": {
+        "x": 18.0,
+        "y": 43.0
+      },
+      "origin": {
+        "x": 18.0,
+        "y": 43.0
+      },
+      "endPoint": {
+        "x": 18.0,
+        "y": 43.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 60,
+          "h": 72,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 60,
+          "y": 0,
+          "w": 60,
+          "h": 72,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 120,
+          "y": 0,
+          "w": 60,
+          "h": 72,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 180,
+          "y": 0,
+          "w": 60,
+          "h": 72,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        }
+      ],
+      "events": [],
+      "sockets": [
+        {
+          "name": "staffTip",
+          "frameIndex": 0,
+          "position": {
+            "x": 33.0,
+            "y": 21.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 0,
+          "position": {
+            "x": 33.0,
+            "y": 21.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 0,
+          "position": {
+            "x": 13.0,
+            "y": 49.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 1,
+          "position": {
+            "x": 36.0,
+            "y": 21.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 1,
+          "position": {
+            "x": 36.0,
+            "y": 21.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 1,
+          "position": {
+            "x": 16.0,
+            "y": 49.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 2,
+          "position": {
+            "x": 30.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 2,
+          "position": {
+            "x": 30.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 2,
+          "position": {
+            "x": 10.0,
+            "y": 50.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 3,
+          "position": {
+            "x": 54.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 3,
+          "position": {
+            "x": 54.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 3,
+          "position": {
+            "x": 34.0,
+            "y": 45.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-circe-walk-east",
+      "character": "circe",
+      "action": "walk",
+      "category": "heroes",
+      "direction": "east",
+      "resourcePath": "AnimationPack/Textures/directional_7467676b59ded0377cf7",
+      "aliasOf": "",
+      "sourceSheetSha256": "7467676b59ded0377cf77bfdea52594e96872b5e13ff149e0cb73a44bf2bf9df",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 49,
+      "height": 71,
+      "sheetWidth": 196,
+      "sheetHeight": 71,
+      "opaqueX": 2,
+      "opaqueY": 0,
+      "opaqueWidth": 37,
+      "opaqueHeight": 71,
+      "duration": 0.6,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 16.0,
+        "y": 70.0
+      },
+      "hitPoint": {
+        "x": 16.0,
+        "y": 43.0
+      },
+      "origin": {
+        "x": 16.0,
+        "y": 43.0
+      },
+      "endPoint": {
+        "x": 16.0,
+        "y": 43.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 49,
+          "h": 71,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 49,
+          "y": 0,
+          "w": 49,
+          "h": 71,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 98,
+          "y": 0,
+          "w": 49,
+          "h": 71,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 147,
+          "y": 0,
+          "w": 49,
+          "h": 71,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        }
+      ],
+      "events": [],
+      "sockets": [
+        {
+          "name": "staffTip",
+          "frameIndex": 0,
+          "position": {
+            "x": 33.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 0,
+          "position": {
+            "x": 33.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 0,
+          "position": {
+            "x": 18.0,
+            "y": 50.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 1,
+          "position": {
+            "x": 37.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 1,
+          "position": {
+            "x": 37.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 1,
+          "position": {
+            "x": 22.0,
+            "y": 48.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 2,
+          "position": {
+            "x": 30.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 2,
+          "position": {
+            "x": 30.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 2,
+          "position": {
+            "x": 15.0,
+            "y": 50.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 3,
+          "position": {
+            "x": 43.0,
+            "y": 12.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 3,
+          "position": {
+            "x": 43.0,
+            "y": 12.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 3,
+          "position": {
+            "x": 28.0,
+            "y": 40.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-circe-walk-north-west",
+      "character": "circe",
+      "action": "walk",
+      "category": "heroes",
+      "direction": "north-west",
+      "resourcePath": "AnimationPack/Textures/directional_a2c198c82f6220963d65",
+      "aliasOf": "",
+      "sourceSheetSha256": "a2c198c82f6220963d659b1860d7d2b783f9289b2a6273ca9ecde782799e0751",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 52,
+      "height": 75,
+      "sheetWidth": 208,
+      "sheetHeight": 75,
+      "opaqueX": 8,
+      "opaqueY": 0,
+      "opaqueWidth": 39,
+      "opaqueHeight": 75,
+      "duration": 0.6,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 35.0,
+        "y": 71.0
+      },
+      "hitPoint": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "origin": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "endPoint": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 52,
+          "h": 75,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 52,
+          "y": 0,
+          "w": 52,
+          "h": 75,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 104,
+          "y": 0,
+          "w": 52,
+          "h": 75,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 156,
+          "y": 0,
+          "w": 52,
+          "h": 75,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        }
+      ],
+      "events": [],
+      "sockets": [
+        {
+          "name": "staffTip",
+          "frameIndex": 0,
+          "position": {
+            "x": 13.0,
+            "y": 26.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 0,
+          "position": {
+            "x": 13.0,
+            "y": 26.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 0,
+          "position": {
+            "x": 28.0,
+            "y": 54.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 1,
+          "position": {
+            "x": 19.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 1,
+          "position": {
+            "x": 19.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 1,
+          "position": {
+            "x": 34.0,
+            "y": 53.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 2,
+          "position": {
+            "x": 12.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 2,
+          "position": {
+            "x": 12.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 2,
+          "position": {
+            "x": 27.0,
+            "y": 53.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 3,
+          "position": {
+            "x": 5.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 3,
+          "position": {
+            "x": 5.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 3,
+          "position": {
+            "x": 20.0,
+            "y": 45.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-circe-walk-west",
+      "character": "circe",
+      "action": "walk",
+      "category": "heroes",
+      "direction": "west",
+      "resourcePath": "AnimationPack/Textures/directional_ae4598737d5f94708934",
+      "aliasOf": "",
+      "sourceSheetSha256": "ae4598737d5f94708934448e7e49010bb18320ee937824fe7c76183119e744bd",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 55,
+      "height": 73,
+      "sheetWidth": 220,
+      "sheetHeight": 73,
+      "opaqueX": 9,
+      "opaqueY": 0,
+      "opaqueWidth": 40,
+      "opaqueHeight": 72,
+      "duration": 0.6,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 35.0,
+        "y": 71.0
+      },
+      "hitPoint": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "origin": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "endPoint": {
+        "x": 35.0,
+        "y": 44.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 55,
+          "h": 73,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 55,
+          "y": 0,
+          "w": 55,
+          "h": 73,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 110,
+          "y": 0,
+          "w": 55,
+          "h": 73,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        },
+        {
+          "x": 165,
+          "y": 0,
+          "w": 55,
+          "h": 73,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.15
+        }
+      ],
+      "events": [],
+      "sockets": [
+        {
+          "name": "staffTip",
+          "frameIndex": 0,
+          "position": {
+            "x": 14.0,
+            "y": 23.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 0,
+          "position": {
+            "x": 14.0,
+            "y": 23.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 0,
+          "position": {
+            "x": 34.0,
+            "y": 51.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 1,
+          "position": {
+            "x": 23.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 1,
+          "position": {
+            "x": 23.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 1,
+          "position": {
+            "x": 43.0,
+            "y": 50.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 2,
+          "position": {
+            "x": 14.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 2,
+          "position": {
+            "x": 14.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 2,
+          "position": {
+            "x": 34.0,
+            "y": 52.0
+          }
+        },
+        {
+          "name": "staffTip",
+          "frameIndex": 3,
+          "position": {
+            "x": 5.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "staff_head",
+          "frameIndex": 3,
+          "position": {
+            "x": 5.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "weapon_hand",
+          "frameIndex": 3,
+          "position": {
+            "x": 25.0,
+            "y": 48.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-circe-deer_run-south",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "south",
+      "resourcePath": "AnimationPack/Textures/directional_2e45c2f3a96e60aa2972",
+      "aliasOf": "",
+      "sourceSheetSha256": "2e45c2f3a96e60aa297295f547c55e42f9f01722c292b6eb7ba703d56caf8490",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 58,
+      "height": 102,
+      "sheetWidth": 232,
+      "sheetHeight": 408,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 58,
+      "opaqueHeight": 102,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 29.0,
+        "y": 102.0
+      },
+      "hitPoint": {
+        "x": 29.0,
+        "y": 67.0
+      },
+      "origin": {
+        "x": 29.0,
+        "y": 67.0
+      },
+      "endPoint": {
+        "x": 29.0,
+        "y": 67.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 58,
+          "y": 0,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 116,
+          "y": 0,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 174,
+          "y": 0,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 102,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 58,
+          "y": 102,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 116,
+          "y": 102,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 174,
+          "y": 102,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 204,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 58,
+          "y": 204,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 116,
+          "y": 204,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 174,
+          "y": 204,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 306,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 58,
+          "y": 306,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 116,
+          "y": 306,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 174,
+          "y": 306,
+          "w": 58,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-south-east",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "south-east",
+      "resourcePath": "AnimationPack/Textures/directional_729f634f6dac542600c7",
+      "aliasOf": "",
+      "sourceSheetSha256": "729f634f6dac542600c768ba2f99cd0592e0c0befb96751385ad9673a48aadfb",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 50,
+      "height": 102,
+      "sheetWidth": 200,
+      "sheetHeight": 408,
+      "opaqueX": 2,
+      "opaqueY": 0,
+      "opaqueWidth": 46,
+      "opaqueHeight": 102,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 26.0,
+        "y": 102.0
+      },
+      "hitPoint": {
+        "x": 26.0,
+        "y": 66.0
+      },
+      "origin": {
+        "x": 26.0,
+        "y": 66.0
+      },
+      "endPoint": {
+        "x": 26.0,
+        "y": 66.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 50,
+          "y": 0,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 100,
+          "y": 0,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 150,
+          "y": 0,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 102,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 50,
+          "y": 102,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 100,
+          "y": 102,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 150,
+          "y": 102,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 204,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 50,
+          "y": 204,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 100,
+          "y": 204,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 150,
+          "y": 204,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 306,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 50,
+          "y": 306,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 100,
+          "y": 306,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 150,
+          "y": 306,
+          "w": 50,
+          "h": 102,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-east",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "east",
+      "resourcePath": "AnimationPack/Textures/directional_3faa8e0ba1d16811d7ac",
+      "aliasOf": "",
+      "sourceSheetSha256": "3faa8e0ba1d16811d7acaa32615aa1b81953249e4c27b8637fcf1b76359f886c",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 71,
+      "height": 103,
+      "sheetWidth": 284,
+      "sheetHeight": 412,
+      "opaqueX": 2,
+      "opaqueY": 2,
+      "opaqueWidth": 66,
+      "opaqueHeight": 101,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 36.0,
+        "y": 103.0
+      },
+      "hitPoint": {
+        "x": 36.0,
+        "y": 68.0
+      },
+      "origin": {
+        "x": 36.0,
+        "y": 68.0
+      },
+      "endPoint": {
+        "x": 36.0,
+        "y": 68.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 71,
+          "y": 0,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 142,
+          "y": 0,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 213,
+          "y": 0,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 103,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 71,
+          "y": 103,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 142,
+          "y": 103,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 213,
+          "y": 103,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 206,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 71,
+          "y": 206,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 142,
+          "y": 206,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 213,
+          "y": 206,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 309,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 71,
+          "y": 309,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 142,
+          "y": 309,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 213,
+          "y": 309,
+          "w": 71,
+          "h": 103,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-north-east",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "north-east",
+      "resourcePath": "AnimationPack/Textures/directional_5b52e7cadcc0bbc3c92b",
+      "aliasOf": "",
+      "sourceSheetSha256": "5b52e7cadcc0bbc3c92bf22da7321a0fad0c196f386cddef17158ce4e932448b",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 49,
+      "height": 104,
+      "sheetWidth": 196,
+      "sheetHeight": 416,
+      "opaqueX": 0,
+      "opaqueY": 1,
+      "opaqueWidth": 49,
+      "opaqueHeight": 103,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 23.0,
+        "y": 104.0
+      },
+      "hitPoint": {
+        "x": 23.0,
+        "y": 68.0
+      },
+      "origin": {
+        "x": 23.0,
+        "y": 68.0
+      },
+      "endPoint": {
+        "x": 23.0,
+        "y": 68.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 49,
+          "y": 0,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 98,
+          "y": 0,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 147,
+          "y": 0,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 104,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 49,
+          "y": 104,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 98,
+          "y": 104,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 147,
+          "y": 104,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 208,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 49,
+          "y": 208,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 98,
+          "y": 208,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 147,
+          "y": 208,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 312,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 49,
+          "y": 312,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 98,
+          "y": 312,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 147,
+          "y": 312,
+          "w": 49,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-north",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "north",
+      "resourcePath": "AnimationPack/Textures/directional_9e944b347dfa02a8f937",
+      "aliasOf": "",
+      "sourceSheetSha256": "9e944b347dfa02a8f937752ab00a76982583272a4d5c9336a3df59a9b019a6a9",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 60,
+      "height": 104,
+      "sheetWidth": 240,
+      "sheetHeight": 416,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 60,
+      "opaqueHeight": 103,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 30.0,
+        "y": 104.0
+      },
+      "hitPoint": {
+        "x": 30.0,
+        "y": 68.0
+      },
+      "origin": {
+        "x": 30.0,
+        "y": 68.0
+      },
+      "endPoint": {
+        "x": 30.0,
+        "y": 68.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 60,
+          "y": 0,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 120,
+          "y": 0,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 180,
+          "y": 0,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 104,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 60,
+          "y": 104,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 120,
+          "y": 104,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 180,
+          "y": 104,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 208,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 60,
+          "y": 208,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 120,
+          "y": 208,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 180,
+          "y": 208,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 312,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 60,
+          "y": 312,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 120,
+          "y": 312,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 180,
+          "y": 312,
+          "w": 60,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-north-west",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "north-west",
+      "resourcePath": "AnimationPack/Textures/directional_e10a8eb81cdd3e01ea77",
+      "aliasOf": "",
+      "sourceSheetSha256": "e10a8eb81cdd3e01ea7716d33e20f0aefb1ae4b9cb45e705a8de7c62c99b2141",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 54,
+      "height": 104,
+      "sheetWidth": 216,
+      "sheetHeight": 416,
+      "opaqueX": 2,
+      "opaqueY": 0,
+      "opaqueWidth": 47,
+      "opaqueHeight": 104,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 25.0,
+        "y": 104.0
+      },
+      "hitPoint": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "origin": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "endPoint": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 54,
+          "y": 0,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 108,
+          "y": 0,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 162,
+          "y": 0,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 104,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 54,
+          "y": 104,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 108,
+          "y": 104,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 162,
+          "y": 104,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 208,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 54,
+          "y": 208,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 108,
+          "y": 208,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 162,
+          "y": 208,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 312,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 54,
+          "y": 312,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 108,
+          "y": 312,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 162,
+          "y": 312,
+          "w": 54,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-west",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "west",
+      "resourcePath": "AnimationPack/Textures/directional_494437f35cdd5d43ef7e",
+      "aliasOf": "",
+      "sourceSheetSha256": "494437f35cdd5d43ef7e83a6aa7d3083a24e7d79c38bb62f75e52d16951fc29c",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 80,
+      "height": 100,
+      "sheetWidth": 320,
+      "sheetHeight": 400,
+      "opaqueX": 6,
+      "opaqueY": 0,
+      "opaqueWidth": 65,
+      "opaqueHeight": 100,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 37.0,
+        "y": 100.0
+      },
+      "hitPoint": {
+        "x": 37.0,
+        "y": 65.0
+      },
+      "origin": {
+        "x": 37.0,
+        "y": 65.0
+      },
+      "endPoint": {
+        "x": 37.0,
+        "y": 65.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 80,
+          "y": 0,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 160,
+          "y": 0,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 240,
+          "y": 0,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 100,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 80,
+          "y": 100,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 160,
+          "y": 100,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 240,
+          "y": 100,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 200,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 80,
+          "y": 200,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 160,
+          "y": 200,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 240,
+          "y": 200,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 300,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 80,
+          "y": 300,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 160,
+          "y": 300,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 240,
+          "y": 300,
+          "w": 80,
+          "h": 100,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-circe-deer_run-south-west",
+      "character": "circe",
+      "action": "deer_run",
+      "category": "summons",
+      "direction": "south-west",
+      "resourcePath": "AnimationPack/Textures/directional_c55fdabd37aebf9820cd",
+      "aliasOf": "",
+      "sourceSheetSha256": "c55fdabd37aebf9820cd96d7f3e8769ba51335d3025357ce13330ba3a2c6c0c9",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 51,
+      "height": 104,
+      "sheetWidth": 204,
+      "sheetHeight": 416,
+      "opaqueX": 0,
+      "opaqueY": 2,
+      "opaqueWidth": 48,
+      "opaqueHeight": 101,
+      "duration": 0.8,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 25.0,
+        "y": 104.0
+      },
+      "hitPoint": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "origin": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "endPoint": {
+        "x": 25.0,
+        "y": 68.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 51,
+          "y": 0,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 102,
+          "y": 0,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 153,
+          "y": 0,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 104,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 51,
+          "y": 104,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 102,
+          "y": 104,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 153,
+          "y": 104,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 208,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 51,
+          "y": 208,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 102,
+          "y": 208,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 153,
+          "y": 208,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 0,
+          "y": 312,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 51,
+          "y": 312,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 102,
+          "y": 312,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 153,
+          "y": 312,
+          "w": 51,
+          "h": 104,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-idle-south",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "south",
+      "resourcePath": "AnimationPack/Textures/directional_a5d29db8ad325bf73350",
+      "aliasOf": "",
+      "sourceSheetSha256": "a5d29db8ad325bf733502f3d035e57aff2712b604487e775027bf1da9ec21fb4",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 36,
+      "height": 50,
+      "sheetWidth": 36,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 36,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 16.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 16.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 16.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 16.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-south",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "south",
+      "resourcePath": "AnimationPack/Textures/directional_0b2e2eb2789f40699791",
+      "aliasOf": "",
+      "sourceSheetSha256": "0b2e2eb2789f4069979125da4e87983843e25f96ccba788ee1889bd2604add14",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 41,
+      "height": 50,
+      "sheetWidth": 164,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 41,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 19.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 41,
+          "y": 0,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 82,
+          "y": 0,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 123,
+          "y": 0,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 41,
+          "y": 50,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 82,
+          "y": 50,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 123,
+          "y": 50,
+          "w": 41,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 33.0,
+            "y": 20.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 30.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 31.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 32.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 33.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 28.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 29.0,
+            "y": 23.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 31.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 33.0,
+            "y": 34.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-south-east",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "south-east",
+      "resourcePath": "AnimationPack/Textures/directional_f12bb1dfcfee0cafdf06",
+      "aliasOf": "",
+      "sourceSheetSha256": "f12bb1dfcfee0cafdf062e63848a7af65fecd68ebe243ed15b3623d4b76788be",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 35,
+      "height": 50,
+      "sheetWidth": 35,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 35,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 15.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 15.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 15.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 15.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-south-east",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "south-east",
+      "resourcePath": "AnimationPack/Textures/directional_500fd9df163c0ac04601",
+      "aliasOf": "",
+      "sourceSheetSha256": "500fd9df163c0ac04601e1ae66c3a3917fdd01115e0e21b1d77ceb9341740760",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 40,
+      "height": 50,
+      "sheetWidth": 160,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 40,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 19.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 80,
+          "y": 0,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 120,
+          "y": 0,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 40,
+          "y": 50,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 120,
+          "y": 50,
+          "w": 40,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 34.0,
+            "y": 18.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 28.0,
+            "y": 31.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 32.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 32.0,
+            "y": 19.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 34.0,
+            "y": 18.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 29.0,
+            "y": 18.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 30.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 28.0,
+            "y": 31.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 28.0,
+            "y": 32.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-east",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "east",
+      "resourcePath": "AnimationPack/Textures/directional_5b7b528b8c99b162821b",
+      "aliasOf": "",
+      "sourceSheetSha256": "5b7b528b8c99b162821bd736d209fb8aeb170d305ab7a6617e4783f795a15081",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 28,
+      "height": 50,
+      "sheetWidth": 28,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 28,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 13.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 13.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 13.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 13.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 28,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-east",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "east",
+      "resourcePath": "AnimationPack/Textures/directional_25c01c120bddc24cd5ed",
+      "aliasOf": "",
+      "sourceSheetSha256": "25c01c120bddc24cd5ed03fa319df63f6c8d76358a202ffd13e436cf959e46d4",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 36,
+      "height": 50,
+      "sheetWidth": 144,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 36,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 17.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 17.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 17.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 17.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 36,
+          "y": 0,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 72,
+          "y": 0,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 108,
+          "y": 0,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 36,
+          "y": 50,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 72,
+          "y": 50,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 108,
+          "y": 50,
+          "w": 36,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 30.0,
+            "y": 21.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 24.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 25.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 29.0,
+            "y": 19.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 30.0,
+            "y": 21.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 26.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 27.0,
+            "y": 23.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 24.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 25.0,
+            "y": 33.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-north-east",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "north-east",
+      "resourcePath": "AnimationPack/Textures/directional_f7b4ea9979d6acf617d2",
+      "aliasOf": "",
+      "sourceSheetSha256": "f7b4ea9979d6acf617d22183bd228daeee401adfb7d3d9ef12318a91d25b58cc",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 24,
+      "height": 50,
+      "sheetWidth": 24,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 24,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 14.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 14.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 14.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 14.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 24,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-north-east",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "north-east",
+      "resourcePath": "AnimationPack/Textures/directional_5c637de542cf1ce59ea9",
+      "aliasOf": "",
+      "sourceSheetSha256": "5c637de542cf1ce59ea9197c590aa1a94a45732039b8402c88fd98ce9e059ca3",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 35,
+      "height": 50,
+      "sheetWidth": 140,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 35,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 18.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 35,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 70,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 105,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 35,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 70,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 105,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 31.0,
+            "y": 18.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 24.0,
+            "y": 29.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 25.0,
+            "y": 26.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 28.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 31.0,
+            "y": 18.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 31.0,
+            "y": 18.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 30.0,
+            "y": 19.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 24.0,
+            "y": 29.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 24.0,
+            "y": 31.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-north",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "north",
+      "resourcePath": "AnimationPack/Textures/directional_f783eef2c17cff2e6084",
+      "aliasOf": "",
+      "sourceSheetSha256": "f783eef2c17cff2e608432f8b944d48b5417fbc7105ffb01b397eab1b684ffe3",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 35,
+      "height": 50,
+      "sheetWidth": 35,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 35,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 20.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-north",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "north",
+      "resourcePath": "AnimationPack/Textures/directional_7617f8282e150df9a23e",
+      "aliasOf": "",
+      "sourceSheetSha256": "7617f8282e150df9a23e4d4c4aed1acedc8c939a257d9ba9341a8c1155c89416",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 39,
+      "height": 50,
+      "sheetWidth": 156,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 39,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 20.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 39,
+          "y": 0,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 78,
+          "y": 0,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 117,
+          "y": 0,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 39,
+          "y": 50,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 78,
+          "y": 50,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 117,
+          "y": 50,
+          "w": 39,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 31.0,
+            "y": 20.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 9.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 30.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 31.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 31.0,
+            "y": 20.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 29.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 29.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 9.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 11.0,
+            "y": 34.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-north-west",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "north-west",
+      "resourcePath": "AnimationPack/Textures/directional_305db9e0f7b6af5cecc8",
+      "aliasOf": "",
+      "sourceSheetSha256": "305db9e0f7b6af5cecc88d333a6541e7993e9a966db363a1c918cf2a29d887d5",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 33,
+      "height": 50,
+      "sheetWidth": 33,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 33,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 20.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-north-west",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "north-west",
+      "resourcePath": "AnimationPack/Textures/directional_41396d4e7fdc0e90e452",
+      "aliasOf": "",
+      "sourceSheetSha256": "41396d4e7fdc0e90e452f0d8f043a019d0c58b55886f48e579bedd05f5a8843b",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 35,
+      "height": 50,
+      "sheetWidth": 140,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 35,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 20.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 20.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 35,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 70,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 105,
+          "y": 0,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 35,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 70,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 105,
+          "y": 50,
+          "w": 35,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 7.0,
+            "y": 17.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 10.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 9.0,
+            "y": 28.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 8.0,
+            "y": 18.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 7.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 7.0,
+            "y": 17.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 8.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 9.0,
+            "y": 31.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 10.0,
+            "y": 32.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-west",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "west",
+      "resourcePath": "AnimationPack/Textures/directional_b83141ce1953ff80c07c",
+      "aliasOf": "",
+      "sourceSheetSha256": "b83141ce1953ff80c07c393292c2955381f7d8bf8347f5945fc72d4d86b37a5c",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 25,
+      "height": 50,
+      "sheetWidth": 25,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 25,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 11.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 11.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 11.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 11.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 25,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-west",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "west",
+      "resourcePath": "AnimationPack/Textures/directional_b0e34ac58f7d53801684",
+      "aliasOf": "",
+      "sourceSheetSha256": "b0e34ac58f7d53801684f658d9bc6da50b08317656c84293f26be41701794b13",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 33,
+      "height": 50,
+      "sheetWidth": 132,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 33,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 19.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 19.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 33,
+          "y": 0,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 66,
+          "y": 0,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 99,
+          "y": 0,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 33,
+          "y": 50,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 66,
+          "y": 50,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 99,
+          "y": 50,
+          "w": 33,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 6.0,
+            "y": 24.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 11.0,
+            "y": 33.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 10.0,
+            "y": 29.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 7.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 6.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 6.0,
+            "y": 24.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 9.0,
+            "y": 28.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 10.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 11.0,
+            "y": 32.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "neongothic-tower_elf-idle-south-west",
+      "character": "tower_elf",
+      "action": "idle",
+      "category": "tower_units",
+      "direction": "south-west",
+      "resourcePath": "AnimationPack/Textures/directional_508f92a8b9950630a9b2",
+      "aliasOf": "",
+      "sourceSheetSha256": "508f92a8b9950630a9b2fb44843bcf10d0d6f718e071aa0c0d30f1af81aaf4bc",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 26,
+      "height": 50,
+      "sheetWidth": 26,
+      "sheetHeight": 50,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 26,
+      "opaqueHeight": 50,
+      "duration": 1.0,
+      "displayScale": 1,
+      "loop": true,
+      "flipX": false,
+      "groundPivot": {
+        "x": 12.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 12.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 12.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 12.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 26,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 1.0
+        }
+      ],
+      "events": [],
+      "sockets": []
+    },
+    {
+      "id": "neongothic-tower_elf-attack-south-west",
+      "character": "tower_elf",
+      "action": "attack",
+      "category": "tower_units",
+      "direction": "south-west",
+      "resourcePath": "AnimationPack/Textures/directional_ed252bdc771b0a2c4066",
+      "aliasOf": "",
+      "sourceSheetSha256": "ed252bdc771b0a2c40668989b9b88870958564d4da347d71ea529834b58970a7",
+      "sourceMetadata": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\review\\accepted-manifest.json",
+      "width": 32,
+      "height": 50,
+      "sheetWidth": 128,
+      "sheetHeight": 100,
+      "opaqueX": 0,
+      "opaqueY": 0,
+      "opaqueWidth": 32,
+      "opaqueHeight": 50,
+      "duration": 0.5,
+      "displayScale": 1,
+      "loop": false,
+      "flipX": false,
+      "groundPivot": {
+        "x": 18.0,
+        "y": 49.0
+      },
+      "hitPoint": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "origin": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "endPoint": {
+        "x": 18.0,
+        "y": 26.0
+      },
+      "rotationAxis": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.05
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.07
+        },
+        {
+          "x": 64,
+          "y": 0,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.08
+        },
+        {
+          "x": 96,
+          "y": 0,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 32,
+          "y": 50,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 64,
+          "y": 50,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        },
+        {
+          "x": 96,
+          "y": 50,
+          "w": 32,
+          "h": 50,
+          "sourceX": 0,
+          "sourceY": 0,
+          "durationSeconds": 0.06
+        }
+      ],
+      "events": [
+        {
+          "name": "release_projectile",
+          "frameIndex": 3,
+          "timeSeconds": 0.2,
+          "hasPosition": true,
+          "position": {
+            "x": 8.0,
+            "y": 19.0
+          },
+          "socketName": "bow_muzzle"
+        }
+      ],
+      "sockets": [
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 0,
+          "position": {
+            "x": 12.0,
+            "y": 33.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 1,
+          "position": {
+            "x": 13.0,
+            "y": 25.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 2,
+          "position": {
+            "x": 13.0,
+            "y": 22.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 3,
+          "position": {
+            "x": 8.0,
+            "y": 19.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 4,
+          "position": {
+            "x": 8.0,
+            "y": 19.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 5,
+          "position": {
+            "x": 14.0,
+            "y": 26.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 6,
+          "position": {
+            "x": 14.0,
+            "y": 32.0
+          }
+        },
+        {
+          "name": "bow_muzzle",
+          "frameIndex": 7,
+          "position": {
+            "x": 14.0,
+            "y": 34.0
+          }
+        }
+      ]
+    }
+  ]
+}

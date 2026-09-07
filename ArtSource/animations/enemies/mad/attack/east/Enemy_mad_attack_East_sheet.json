@@ -1,0 +1,467 @@
+{
+  "frames": [
+    {
+      "duration": 70,
+      "filename": "Enemy_mad_attack_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mad_attack_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mad_attack_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mad_attack_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_mad_attack_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "COIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_mad_attack_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "LOAD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_mad_attack_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 30,
+      "phase": "DRIVE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_mad_attack_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_mad_attack_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 30,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_mad_attack_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 30,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_mad_attack_East_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 40,
+      "phase": "FOLLOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Enemy_mad_attack_East_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "RETRACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_mad_attack_East_frames/13.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 480
+      },
+      "gifDuration": 60,
+      "phase": "GUARD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_mad_attack_East_frames/14.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 480
+      },
+      "gifDuration": 80,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_mad_attack_East_frames/15.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 480
+      },
+      "gifDuration": 700,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "mad",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 764,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 1,
+    "durationMs": 760,
+    "events": [
+      {
+        "frameIndex": 7,
+        "kind": "art cue; bind to existing gameplay action without altering balance",
+        "name": "hand_contact",
+        "socket": {
+          "x": 119,
+          "y": 68
+        },
+        "timeMs": 330
+      }
+    ],
+    "facingNormalizedBeforeExport": false,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/mad/attack/east/Enemy_mad_attack_East_sheet.png"
+    },
+    "frameCount": 15,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack",
+        "to": 14
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1360,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_mad_attack_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Regenerated v2 has a clear unarmed straight punch. RAW011 alone is omitted because it overlays a white impact cross; adjacent RAW010/012 preserve the held extension."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 600,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab enemy_mad_attack_v2; selected frames and timing reviewed by roster_asset_audit; root acceptance pending; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "enemy_mad_attack_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 640,
+      "w": 640
+    },
+    "sourceFacing": "east",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\roster_enemy_candidates\\Enemy_mad_attack_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

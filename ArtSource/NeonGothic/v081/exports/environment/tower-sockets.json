@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 2,
+  "coordinateSystem": "native PNG pixels from top-left; ground and archer anchors are feet",
+  "towers": [
+    {
+      "kind": 0,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 81.1,
+          "pixelY": 42.400000000000006
+        }
+      ],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 62,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 27,
+      "opaqueWidth": 82,
+      "opaqueHeight": 155,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 81.1,
+          "pixelY": 42.400000000000006
+        }
+      ],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 62,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 21,
+      "opaqueY": 39,
+      "opaqueWidth": 102,
+      "opaqueHeight": 143,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 63.1,
+          "pixelY": 44.400000000000006
+        },
+        {
+          "index": 1,
+          "pixelX": 99.1,
+          "pixelY": 44.400000000000006
+        }
+      ],
+      "archers": [
+        {
+          "index": 0,
+          "pixelX": 54,
+          "pixelY": 64,
+          "scale": 0.7
+        },
+        {
+          "index": 1,
+          "pixelX": 90,
+          "pixelY": 64,
+          "scale": 0.7
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 55
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 1,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 39,
+      "opaqueWidth": 82,
+      "opaqueHeight": 143,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 55
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 1,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 31,
+      "opaqueWidth": 82,
+      "opaqueHeight": 151,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 51
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 1,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 38,
+      "opaqueWidth": 82,
+      "opaqueHeight": 144,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 52
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 2,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 31,
+      "opaqueWidth": 82,
+      "opaqueHeight": 151,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 72,
+          "pixelY": 43
+        }
+      ],
+      "archers": []
+    },
+    {
+      "kind": 2,
+      "level": 3,
+      "width": 144,
+      "height": 192,
+      "groundPivotX": 72,
+      "groundPivotY": 182,
+      "drawWidth": 144,
+      "drawHeight": 192,
+      "opaqueX": 31,
+      "opaqueY": 2,
+      "opaqueWidth": 82,
+      "opaqueHeight": 180,
+      "sockets": [
+        {
+          "index": 0,
+          "pixelX": 71,
+          "pixelY": 15
+        }
+      ],
+      "archers": []
+    }
+  ]
+}

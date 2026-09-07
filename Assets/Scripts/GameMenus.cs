@@ -39,7 +39,7 @@ namespace SkeletonDefender
         }
         private void MenuPage(string title, string subtitle)
         {
-            DrawMenuBackground(); Fill(new Rect(0, 0, 1440, 900), new Color(.025f, .05f, .065f, .87f));
+            DrawMenuBackground(); Fill(new Rect(0, 0, 1440, 900), new Color(.025f, .035f, .075f, .74f));
             Txt(title, 60, 35, 1050, 55, 34, Text, FontStyle.Bold);
             Txt(subtitle, 62, 94, 1130, 32, 17, Dim);
             if (Button(new Rect(1170, 45, 210, 46), "В ГЛАВНОЕ МЕНЮ", size: 14)) screen = ScreenMode.Menu;
@@ -55,14 +55,14 @@ namespace SkeletonDefender
                 float x = 60 + i * 448; Rect card = new Rect(x, 154, 420, 484); Box(card);
                 if (i == 2)
                 {
-                    Texture(new Rect(x + 135, 198, 150, 195), heroArt[1], new Color(.16f, .21f, .23f));
+                    DrawHeroPortrait(new Rect(x + 135, 198, 150, 195), HeroKind.Achilles, new Color(.16f, .21f, .23f));
                     Txt("СКОРО", x + 30, 442, 360, 46, 28, Dim, FontStyle.Bold, TextAnchor.MiddleCenter);
                     Txt("COMING SOON", x + 30, 494, 360, 30, 15, Dim, align: TextAnchor.MiddleCenter);
                     Button(new Rect(x + 28, 573, 364, 43), "НЕДОСТУПНО", enabled: false, size: 16); continue;
                 }
                 HeroKind kind = (HeroKind)i; HeroCombatState hero = PreviewHero(kind); bool chosen = kind == profile.SelectedHero;
                 if (chosen) Outline(card, Gold, 2);
-                Texture(new Rect(x + 163, 176, 92, 120), heroArt[i]);
+                DrawHeroPortrait(new Rect(x + 140, 168, 140, 130), kind, Color.white);
                 Txt(HeroName(kind), x + 22, 303, 376, 38, 27, chosen ? Gold : Text, FontStyle.Bold, TextAnchor.MiddleCenter);
                 Txt(HeroDescription(kind), x + 28, 347, 364, 51, 15, Dim, align: TextAnchor.MiddleCenter);
                 Txt("HP " + hero.MaxHp.ToString("0") + "   УРОН " + hero.Damage.ToString("0.###"), x + 25, 407, 370, 29, 20, Text, FontStyle.Bold, TextAnchor.MiddleCenter);
@@ -130,20 +130,26 @@ namespace SkeletonDefender
         {
             Box(new Rect(60, 218, 436, 592));
             HeroCombatState hero = PreviewHero(profile.SelectedHero);
-            Texture(new Rect(81, 236, 66, 86), heroArt[(int)hero.Kind]);
-            Txt(HeroName(hero.Kind), 165, 243, 305, 31, 23, Gold, FontStyle.Bold);
-            Txt("HP " + hero.MaxHp.ToString("0") + "  ·  Урон " + hero.Damage.ToString("0.###"), 165, 282, 305, 27, 17, Text);
-            Txt("Броня " + hero.PhysicalArmor.ToString("0.#%") + "   Уклонение " + hero.DodgeChance.ToString("0.#%"), 83, 332, 390, 25, 15, Dim);
-            Txt("Мана " + hero.MaxMana.ToString("0.#") + "   Восстановление +" + hero.ManaRegen.ToString("0.###") + "/с", 83, 365, 390, 25, 15, PixelArt.C("91c5e6"));
-            Txt("Атак/с " + (1f / hero.AttackInterval).ToString("0.###") + "   Передвижение " + hero.WalkSpeed.ToString("0.##"), 83, 398, 390, 25, 15, Dim);
-            Txt("СНАРЯЖЕНИЕ · 8 СЛОТОВ", 83, 449, 390, 24, 13, Gold, FontStyle.Bold);
+            DrawGothicPortraitAlcove(new Rect(78, 235, 154, 198));
+            DrawInventoryHeroPortrait(new Rect(102, 251, 106, 169), hero.Kind);
+            Txt(HeroName(hero.Kind), 249, 240, 225, 31, 23, HeroAccent(hero.Kind), FontStyle.Bold);
+            Txt("ЗДОРОВЬЕ", 250, 285, 215, 18, 11, Dim);
+            Txt(hero.MaxHp.ToString("0") + " HP", 250, 305, 215, 27, 21, Text, FontStyle.Bold);
+            Txt("УРОН     /     БРОНЯ", 250, 342, 218, 18, 11, Dim);
+            Txt(hero.Damage.ToString("0.###") + "      " + hero.PhysicalArmor.ToString("0.#%"), 250, 362, 220, 26, 19, Text);
+            Txt("МАНА " + hero.MaxMana.ToString("0.#") + "  ·  +" + hero.ManaRegen.ToString("0.###") + "/с", 250, 406, 225, 23, 14, Green);
+            Txt("Атак/с " + (1f / hero.AttackInterval).ToString("0.###") + "   ·   Ход " + hero.WalkSpeed.ToString("0.##") + "   ·   Уворот " + hero.DodgeChance.ToString("0.#%"), 82, 438, 393, 24, 12, Dim);
+            Txt("СНАРЯЖЕНИЕ · 8 СЛОТОВ", 83, 464, 390, 20, 11, Gold, FontStyle.Bold);
             for (int slot = 0; slot < 8; slot++)
             {
                 Rect r = new Rect(78 + slot % 2 * 208, 484 + slot / 2 * 76, 198, 67);
-                Fill(r, PixelArt.C("122126")); Outline(r, Edge);
+                Fill(r, PixelArt.C("0e1629")); Outline(r, Edge);
                 InventoryItem item = profile.EquippedItem(profile.SelectedHero, slot);
-                Txt(EquipmentNames[slot], r.x + 9, r.y + 5, 180, 19, 12, Dim);
-                Txt(item == null ? "Пусто" : item.Name, r.x + 9, r.y + 26, 180, 37, 13, item == null ? Dim : ItemColor(item));
+                if (item != null && IconTexture(item) != null) Texture(new Rect(r.x + 7, r.y + 12, 40, 40), IconTexture(item));
+                float textX = item == null ? r.x + 9 : r.x + 54;
+                float textWidth = item == null ? 180 : 136;
+                Txt(EquipmentNames[slot], textX, r.y + 5, textWidth, 19, 11, Dim);
+                Txt(item == null ? "Пусто" : item.Name, textX, r.y + 26, textWidth, 37, 11, item == null ? Dim : ItemColor(item));
                 if (item == null) continue;
                 if (r.Contains(mouse)) { hoveredItem = item; hoveredFromEquipment = true; }
                 if (GUI.Button(r, GUIContent.none, GUIStyle.none))
@@ -152,17 +158,20 @@ namespace SkeletonDefender
         }
         private void DrawInventoryRow(InventoryItem item, float y)
         {
-            Rect r = new Rect(0, y, 790, 86); Fill(r, PixelArt.C("122126")); Outline(r, Edge);
+            Rect r = new Rect(0, y, 790, 86); Fill(r, PixelArt.C("0e1629")); Outline(r, Edge);
             Fill(new Rect(1, y + 1, 4, 84), ItemColor(item));
             bool compatible = item.CanEquip(profile.SelectedHero);
             bool equipped = profile.EquippedItem(profile.SelectedHero, (int)item.Slot)?.Id == item.Id;
             HeroKind other = profile.SelectedHero == HeroKind.Circe ? HeroKind.Achilles : HeroKind.Circe;
             bool onOther = profile.EquippedItem(other, (int)item.Slot)?.Id == item.Id;
-            Txt(item.Name, 18, y + 10, 540, 29, 18, ItemColor(item), FontStyle.Bold);
+            Rect iconBox = new Rect(15, y + 14, 58, 58);
+            Fill(iconBox, Ink); Outline(iconBox, ItemColor(item) * .7f);
+            if (IconTexture(item) != null) Texture(new Rect(20, y + 19, 48, 48), IconTexture(item));
+            Txt(item.Name, 90, y + 10, 468, 29, 17, ItemColor(item), FontStyle.Bold);
             string detail = EquipmentNames[(int)item.Slot] + (item.Category == ItemCategory.Weapon ? "  ·  Урон +" + item.DamageBonus.ToString("0.###") : "");
             if (profile.SelectedHero == HeroKind.Achilles && item.Category == ItemCategory.Weapon && item.Weapon == WeaponKind.Staff)
                 detail = "Расход маны −" + item.ManaCostReduction.ToString("0.#%") + " · без бонуса урона";
-            Txt(detail, 18, y + 45, 540, 24, 14, Dim);
+            Txt(detail, 90, y + 45, 468, 24, 14, Dim);
             string owner = onOther ? other == HeroKind.Circe ? "НА ЦИРЦЕЕ" : "НА АХИЛЛЕ" : equipped ? "СНЯТЬ" : compatible ? "НАДЕТЬ" : "ДРУГОЙ ГЕРОЙ";
             if (Button(new Rect(575, y + 20, 198, 45), owner, equipped, (compatible || equipped) && !onOther, 12))
             {
@@ -185,11 +194,11 @@ namespace SkeletonDefender
             if (hoveredItem == null) return;
             // Show details in the opposite column; bag action buttons begin at x=1121.
             float x = hoveredFromEquipment ? 546 : 72, y = hoveredFromEquipment ? 324 : 236;
-            Rect r = new Rect(x, y, 414, 384); Fill(r, PixelArt.C("0e1c23")); Outline(r, ItemColor(hoveredItem), 2);
+            Rect r = new Rect(x, y, 414, 384); Fill(r, PixelArt.C("0c1326")); Outline(r, ItemColor(hoveredItem), 2);
             Txt(hoveredItem.Name, x + 16, y + 13, 382, 51, 19, ItemColor(hoveredItem), FontStyle.Bold);
             string description = hoveredItem.Description;
             string warning = hoveredItem.EquipWarning(profile.SelectedHero);
-            if (!string.IsNullOrEmpty(warning)) description += "\n" + warning;
+            if (!string.IsNullOrEmpty(warning) && !description.Contains(warning)) description += "\n" + warning;
             Txt(description, x + 16, y + 70, 382, 272, 14, Text);
             string eligibility = hoveredItem.CanEquip(HeroKind.Circe) && hoveredItem.CanEquip(HeroKind.Achilles) ? "Обоим героям" : hoveredItem.CanEquip(HeroKind.Circe) ? "Для Цирцеи" : "Для Ахилла";
             Txt(eligibility + " · " + EquipmentNames[(int)hoveredItem.Slot], x + 16, y + 351, 382, 22, 13, Dim);

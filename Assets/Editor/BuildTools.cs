@@ -24,7 +24,7 @@ namespace SkeletonDefender.Editor
         {
             PlayerSettings.companyName = "Skeleton Defender";
             PlayerSettings.productName = "Skeleton Defender";
-            PlayerSettings.bundleVersion = "0.6.2";
+            PlayerSettings.bundleVersion = "0.8.1";
             PlayerSettings.defaultScreenWidth = 1280;
             PlayerSettings.defaultScreenHeight = 800;
             PlayerSettings.fullScreenMode = FullScreenMode.Windowed;

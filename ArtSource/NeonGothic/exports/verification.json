@@ -1,0 +1,902 @@
+{
+  "approvedClipCount": 488,
+  "uniqueTextures": 440,
+  "coverage": {
+    "achilles": {
+      "attack": [
+        "east",
+        "south",
+        "south-east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "blue_frog": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "boss": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "boxer": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "circe": {
+      "staff_attack": [
+        "south",
+        "south-east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west",
+        "east"
+      ],
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "crawler": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "giant": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "knight": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "mad": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "mini_mummy": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "ninja": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "normal": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "sarcophagus_bare": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "pirate": {
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "pistol_shot": [
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west",
+        "south",
+        "south-east"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "samurai": {
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "execution": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "sarcophagus": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "trex": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "execution_bite": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "tutankhamun": {
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "summon": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    },
+    "warlock": {
+      "idle": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "walk": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "attack": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "lightning_cast": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ],
+      "cast_fail": [
+        "south",
+        "south-east",
+        "east",
+        "north-east",
+        "north",
+        "north-west",
+        "west",
+        "south-west"
+      ]
+    }
+  },
+  "visiblePixelFramesVerified": 2851,
+  "textureRgbaBytes": 61279680,
+  "trueEightDirections": [
+    {
+      "role": "achilles",
+      "action": "attack"
+    },
+    {
+      "role": "achilles",
+      "action": "idle"
+    },
+    {
+      "role": "achilles",
+      "action": "walk"
+    },
+    {
+      "role": "blue_frog",
+      "action": "idle"
+    },
+    {
+      "role": "boss",
+      "action": "idle"
+    },
+    {
+      "role": "boss",
+      "action": "walk"
+    },
+    {
+      "role": "boss",
+      "action": "attack"
+    },
+    {
+      "role": "boxer",
+      "action": "idle"
+    },
+    {
+      "role": "boxer",
+      "action": "walk"
+    },
+    {
+      "role": "boxer",
+      "action": "attack"
+    },
+    {
+      "role": "circe",
+      "action": "staff_attack"
+    },
+    {
+      "role": "circe",
+      "action": "idle"
+    },
+    {
+      "role": "circe",
+      "action": "walk"
+    },
+    {
+      "role": "crawler",
+      "action": "idle"
+    },
+    {
+      "role": "crawler",
+      "action": "walk"
+    },
+    {
+      "role": "crawler",
+      "action": "attack"
+    },
+    {
+      "role": "giant",
+      "action": "idle"
+    },
+    {
+      "role": "giant",
+      "action": "walk"
+    },
+    {
+      "role": "giant",
+      "action": "attack"
+    },
+    {
+      "role": "knight",
+      "action": "idle"
+    },
+    {
+      "role": "knight",
+      "action": "walk"
+    },
+    {
+      "role": "knight",
+      "action": "attack"
+    },
+    {
+      "role": "mad",
+      "action": "idle"
+    },
+    {
+      "role": "mad",
+      "action": "walk"
+    },
+    {
+      "role": "mad",
+      "action": "attack"
+    },
+    {
+      "role": "mini_mummy",
+      "action": "idle"
+    },
+    {
+      "role": "mini_mummy",
+      "action": "walk"
+    },
+    {
+      "role": "mini_mummy",
+      "action": "attack"
+    },
+    {
+      "role": "ninja",
+      "action": "idle"
+    },
+    {
+      "role": "ninja",
+      "action": "walk"
+    },
+    {
+      "role": "ninja",
+      "action": "attack"
+    },
+    {
+      "role": "normal",
+      "action": "idle"
+    },
+    {
+      "role": "normal",
+      "action": "walk"
+    },
+    {
+      "role": "normal",
+      "action": "attack"
+    },
+    {
+      "role": "sarcophagus_bare",
+      "action": "idle"
+    },
+    {
+      "role": "sarcophagus_bare",
+      "action": "walk"
+    },
+    {
+      "role": "sarcophagus_bare",
+      "action": "attack"
+    },
+    {
+      "role": "pirate",
+      "action": "attack"
+    },
+    {
+      "role": "pirate",
+      "action": "idle"
+    },
+    {
+      "role": "pirate",
+      "action": "pistol_shot"
+    },
+    {
+      "role": "pirate",
+      "action": "walk"
+    },
+    {
+      "role": "samurai",
+      "action": "walk"
+    },
+    {
+      "role": "samurai",
+      "action": "idle"
+    },
+    {
+      "role": "samurai",
+      "action": "attack"
+    },
+    {
+      "role": "samurai",
+      "action": "execution"
+    },
+    {
+      "role": "sarcophagus",
+      "action": "idle"
+    },
+    {
+      "role": "sarcophagus",
+      "action": "walk"
+    },
+    {
+      "role": "sarcophagus",
+      "action": "attack"
+    },
+    {
+      "role": "trex",
+      "action": "idle"
+    },
+    {
+      "role": "trex",
+      "action": "walk"
+    },
+    {
+      "role": "trex",
+      "action": "attack"
+    },
+    {
+      "role": "trex",
+      "action": "execution_bite"
+    },
+    {
+      "role": "tutankhamun",
+      "action": "walk"
+    },
+    {
+      "role": "tutankhamun",
+      "action": "idle"
+    },
+    {
+      "role": "tutankhamun",
+      "action": "attack"
+    },
+    {
+      "role": "tutankhamun",
+      "action": "summon"
+    },
+    {
+      "role": "warlock",
+      "action": "idle"
+    },
+    {
+      "role": "warlock",
+      "action": "walk"
+    },
+    {
+      "role": "warlock",
+      "action": "attack"
+    },
+    {
+      "role": "warlock",
+      "action": "lightning_cast"
+    },
+    {
+      "role": "warlock",
+      "action": "cast_fail"
+    }
+  ]
+}

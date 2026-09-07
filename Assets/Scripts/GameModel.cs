@@ -13,6 +13,7 @@ namespace SkeletonDefender
     [Serializable]
     public sealed class Tower
     {
+        public readonly TowerArcherState[] Archers = { new TowerArcherState { Index = 0 }, new TowerArcherState { Index = 1 } };
         public int Site;
         public TowerKind Kind;
         public int Level = 1;
@@ -23,12 +24,19 @@ namespace SkeletonDefender
         public float Range => Definition.rangeBase + Level * Definition.rangePerLevel;
         public float Damage => Definition.baseDamage * (1 + (Level - 1) * Definition.damagePerAdditionalLevel);
         public float Interval => Definition.baseInterval / (1 + (Level - 1) * Definition.attackRatePerAdditionalLevel);
+        public int ProjectileCount => Definition.projectilesPerAttack != null && Level > 0 && Level <= Definition.projectilesPerAttack.Length
+            ? Mathf.Max(1, Definition.projectilesPerAttack[Level - 1]) : 1;
         public int UpgradeCost => Level >= Definition.maxLevel ? 0 : GameModel.Cost(Kind) + Level * Definition.upgradeCostPerLevel;
         public int SellValue => Mathf.FloorToInt(Invested * BalanceData.Current.economy.towerSellFraction);
     }
 
     public sealed class Enemy
     {
+        public readonly CombatAnimationState Animation = new CombatAnimationState();
+        internal HeroCombatState AnimationTarget;
+        internal int AnimationTargetLifeSerial;
+        public string AnimationRole;
+        public float AppearanceDelay;
         public int Id;
         public EnemyKind Kind;
         public SkeletonKind Skeleton;
@@ -55,7 +63,7 @@ namespace SkeletonDefender
         public bool DodgeReady;
         public bool Dead;
         public bool IsFrog => FrogRemaining > 0;
-        public bool Targetable => !Dead && (!IsFrog || IsBoss);
+        public bool Targetable => !Dead && AppearanceDelay <= 0 && (!IsFrog || IsBoss);
         public EnemyRankDefinition Definition => IsBoss ? BalanceData.Current.boss : BalanceData.Current.Rank(Rank);
         public EnemyFamilyDefinition Family => BalanceData.Current.Family((int)Kind);
         public SkeletonDefinition Variant => BalanceData.Current.Skeleton(IsBoss ? (int)SkeletonKind.Boss : (int)Skeleton);
@@ -70,6 +78,7 @@ namespace SkeletonDefender
 
     public sealed class HeroCombatState
     {
+        public readonly CombatAnimationState Animation = new CombatAnimationState();
         public HeroKind Kind;
         public float Hp;
         public float MaxHp;
@@ -88,6 +97,7 @@ namespace SkeletonDefender
         internal bool ActivityPending;
         public Vector2 Position;
         public Vector2 Destination;
+        public bool FacingLeft;
         public float RespawnRemaining;
         public float AttackCooldown;
         public float FrogCooldown;
@@ -100,6 +110,7 @@ namespace SkeletonDefender
         public float IdleSeconds => Regeneration.IdleSeconds;
         public bool IsRegenerating => Regeneration.IsRegenerating;
         public bool Alive => Hp > 0;
+        public bool HasMoveOrder => (Position - Destination).sqrMagnitude > .0001f;
         public HeroDefinition Definition => BalanceData.Current.Hero((int)Kind);
         public float Range => Kind == HeroKind.Circe ? BalanceData.Current.heroRules.circeRange : BalanceData.Current.heroRules.achillesRange;
         public float DamageMultiplier => RageRemaining > 0 ? BalanceData.Current.heroSystems.rageDamageMultiplier : 1;
@@ -149,6 +160,10 @@ namespace SkeletonDefender
 
     public sealed class HeroProjectile
     {
+        internal float InitialAdvance = -1;
+        public float Age;
+        public int SourceLifeSerial;
+        public readonly ProjectileVisualState Visual = new ProjectileVisualState();
         public Vector2 Start;
         public Vector2 Position;
         public int TargetId;
@@ -175,6 +190,9 @@ namespace SkeletonDefender
 
     public sealed class EnemyProjectile
     {
+        internal float InitialAdvance = -1;
+        public float Age;
+        public readonly ProjectileVisualState Visual = new ProjectileVisualState();
         public Vector2 Position;
         public Vector2 Start;
         public float Damage;
@@ -186,6 +204,10 @@ namespace SkeletonDefender
 
     public sealed class EnemyEffect
     {
+        public bool UsesVisualAnchors;
+        public float Age;
+        public Enemy Source;
+        public bool FacingLeft;
         public Vector2 Position;
         public Vector2 Target;
         public string Kind;
@@ -194,6 +216,8 @@ namespace SkeletonDefender
 
     public sealed class Shot
     {
+        public float Age;
+        public bool UsesVisualAnchors;
         public Vector2 Start;
         public Vector2 End;
         public TowerKind Kind;
@@ -214,21 +238,14 @@ namespace SkeletonDefender
     {
         public static int TotalWaves => BalanceData.Current.wavesPerMap;
         public const float Tick = 1f / 60f;
-        public static readonly Vector2[] Path = {
-            new Vector2(-32, 154), new Vector2(150, 154), new Vector2(150, 330),
-            new Vector2(370, 330), new Vector2(370, 130), new Vector2(585, 130),
-            new Vector2(585, 450), new Vector2(800, 450), new Vector2(800, 280), new Vector2(991, 280)
-        };
-        public static readonly Vector2[] Sites = {
-            new Vector2(74, 244), new Vector2(252, 219), new Vector2(264, 415),
-            new Vector2(471, 245), new Vector2(475, 54), new Vector2(690, 217),
-            new Vector2(499, 535), new Vector2(710, 535), new Vector2(899, 372), new Vector2(881, 181)
-        };
+        public static readonly Vector2[] Path = BattlefieldLayout.Path;
+        public static readonly Vector2[] Sites = BattlefieldLayout.Sites;
         public static int[] WaveCounts => Array.ConvertAll(BalanceData.Current.waves, wave => wave.count);
         public readonly List<Enemy> Enemies = new List<Enemy>();
         public readonly List<Tower> Towers = new List<Tower>();
         public readonly List<Shot> Shots = new List<Shot>();
         public readonly List<HeroProjectile> Projectiles = new List<HeroProjectile>();
+        public readonly List<ProjectileImpact> ProjectileImpacts = new List<ProjectileImpact>();
         public readonly List<EnemyProjectile> EnemyProjectiles = new List<EnemyProjectile>();
         public readonly List<EnemyEffect> EnemyEffects = new List<EnemyEffect>();
         public readonly List<Popup> Popups = new List<Popup>();
@@ -325,6 +342,7 @@ namespace SkeletonDefender
         public float PathLength { get; }
         private int nextId;
         private readonly float[] lengths;
+        private readonly float[] segmentEnds;
         private readonly System.Random random;
         private readonly Vector2 heroSpawn;
         private readonly List<Enemy> pendingSpawns = new List<Enemy>();
@@ -353,7 +371,13 @@ namespace SkeletonDefender
             Map = map; random = new System.Random(seed);
             Gold = data.economy.startingGold; Lives = data.economy.startingLives;
             lengths = new float[Path.Length - 1];
-            for (int i = 0; i < lengths.Length; i++) { lengths[i] = Vector2.Distance(Path[i], Path[i + 1]); PathLength += lengths[i]; }
+            segmentEnds = new float[lengths.Length];
+            for (int i = 0; i < lengths.Length; i++)
+            {
+                lengths[i] = Vector2.Distance(Path[i], Path[i + 1]);
+                PathLength += lengths[i];
+                segmentEnds[i] = PathLength;
+            }
             heroSpawn = Position(PathLength - data.heroRules.spawnDistanceFromExit);
             Hero = CreateActor(hero, equipment, false, heroSpawn);
         }
@@ -420,12 +444,18 @@ namespace SkeletonDefender
 
         public Vector2 Position(float distance)
         {
-            for (int i = 0; i < lengths.Length; i++)
+            if (distance <= 0) return Path[0];
+            if (distance >= PathLength || float.IsNaN(distance)) return Path[Path.Length - 1];
+            // Rounded bends have many short segments. Locate them logarithmically,
+            // since every target search asks for multiple positions each simulation tick.
+            int lo = 0, hi = segmentEnds.Length - 1;
+            while (lo < hi)
             {
-                if (distance <= lengths[i]) return Vector2.Lerp(Path[i], Path[i + 1], distance / lengths[i]);
-                distance -= lengths[i];
+                int mid = (lo + hi) / 2;
+                if (distance <= segmentEnds[mid]) hi = mid; else lo = mid + 1;
             }
-            return Path[Path.Length - 1];
+            float start = lo == 0 ? 0 : segmentEnds[lo - 1];
+            return Vector2.Lerp(Path[lo], Path[lo + 1], (distance - start) / lengths[lo]);
         }
 
         public bool MoveHero(Vector2 destination, bool clone = false)
@@ -433,6 +463,7 @@ namespace SkeletonDefender
             HeroCombatState actor = GetControlledHero(clone);
             if (Finished || IsPaused || actor == null || !actor.Alive || actor.KnockdownRemaining > 0 || !Finite(destination.x) || !Finite(destination.y)) return false;
             actor.Destination = new Vector2(Mathf.Clamp(destination.x, 12, 1044), Mathf.Clamp(destination.y, 12, 628));
+            if (actor.HasMoveOrder) { CancelAutomaticAction(actor); ActorActivity(actor, true); }
             return true;
         }
         private static bool Finite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
@@ -539,11 +570,15 @@ namespace SkeletonDefender
 
         public void Step(float dt)
         {
-            if (Finished || IsPaused || !Finite(dt) || dt <= 0) return;
+            if (IsPaused || !Finite(dt) || dt <= 0) return;
+            AdvanceAnimations(dt);
+            if (Finished) return;
             BeginActorTick(Hero); BeginActorTick(Clone);
-            for (int i = Shots.Count - 1; i >= 0; i--) { Shots[i].Life -= dt; if (Shots[i].Life <= 0) Shots.RemoveAt(i); }
+            for (int i = ProjectileImpacts.Count - 1; i >= 0; i--)
+            { ProjectileImpacts[i].Age += dt; ProjectileImpacts[i].Life -= dt; if (ProjectileImpacts[i].Life <= 0) ProjectileImpacts.RemoveAt(i); }
+            for (int i = Shots.Count - 1; i >= 0; i--) { Shots[i].Age += dt; Shots[i].Life -= dt; if (Shots[i].Life <= 0) Shots.RemoveAt(i); }
             for (int i = Popups.Count - 1; i >= 0; i--) { Popups[i].Life -= dt; if (Popups[i].Life <= 0) Popups.RemoveAt(i); }
-            for (int i = EnemyEffects.Count - 1; i >= 0; i--) { EnemyEffects[i].Life -= dt; if (EnemyEffects[i].Life <= 0) EnemyEffects.RemoveAt(i); }
+            for (int i = EnemyEffects.Count - 1; i >= 0; i--) { EnemyEffects[i].Age += dt; EnemyEffects[i].Life -= dt; if (EnemyEffects[i].Life <= 0) EnemyEffects.RemoveAt(i); }
             foreach (Tower tower in Towers) tower.Flash = Mathf.Max(0, tower.Flash - dt);
             UpdateHeroMovementAndRespawn(dt);
             if (!HasStarted) { UpdateHeroRegeneration(dt); return; }
@@ -553,10 +588,12 @@ namespace SkeletonDefender
             foreach (WaveRun run in WaveRuns)
                 while (!run.Completed && run.Spawned < run.Plan.Count && run.Plan[run.Spawned].Time <= run.Elapsed + .00001f)
                     Spawn(run, run.Plan[run.Spawned]);
+            if (State == RunState.Wave) { AdvanceActorCombatTimers(Hero, dt); AdvanceActorCombatTimers(Clone, dt); }
             UpdateEnemies(dt);
             FlushSpawns();
             Enemies.RemoveAll(enemy => enemy.Dead);
             if (Lives <= 0) { State = RunState.Defeat; FinishCombat(); return; }
+            UpdateAnimationContacts(dt);
             UpdateEnemyProjectiles(dt);
             UpdateAbilityEffects(dt);
             if (State == RunState.Wave) { UpdateHeroCombat(dt); if (Clone != null) UpdateActorCombat(Clone, dt); }
@@ -639,16 +676,21 @@ namespace SkeletonDefender
                 if (actor.RespawnRemaining <= 0)
                 {
                     actor.Hp = actor.MaxHp; actor.Position = heroSpawn; actor.Destination = heroSpawn;
-                    actor.KnockdownRemaining = 0; actor.LifeSerial++;
+                    actor.KnockdownRemaining = 0; actor.LifeSerial++; actor.Animation.Reset();
                     Popups.Add(new Popup { Position = actor.Position, Text = "Герой вернулся" });
                 }
                 return;
             }
+            if (actor.HasMoveOrder) CancelAutomaticAction(actor);
+            if (actor.Animation.LocksMovement || HasPendingContact(actor)) { actor.Animation.Moving = false; ActorActivity(actor); return; }
             if (actor.KnockdownRemaining <= 0)
             {
                 Vector2 before = actor.Position;
+                ProjectileVisuals.Face(actor, actor.Destination);
                 actor.Position = Vector2.MoveTowards(actor.Position, actor.Destination, actor.WalkSpeed * dt);
-                if ((before - actor.Position).sqrMagnitude > .000001f) ActorActivity(actor);
+                bool moving = (before - actor.Position).sqrMagnitude > .000001f;
+                if (moving) ActorActivity(actor);
+                actor.Animation.Locomotion(moving, actor.FacingLeft);
             }
         }
 
@@ -657,6 +699,7 @@ namespace SkeletonDefender
             foreach (Enemy enemy in Enemies)
             {
                 if (enemy.Dead) continue;
+                if (enemy.AppearanceDelay > 0) { enemy.AppearanceDelay = Mathf.Max(0, enemy.AppearanceDelay - dt); continue; }
                 enemy.HitFlash = Mathf.Max(0, enemy.HitFlash - dt);
                 enemy.Slow = Mathf.Max(0, enemy.Slow - dt);
                 enemy.SkillSlowRemaining = Mathf.Max(0, enemy.SkillSlowRemaining - dt);
@@ -665,7 +708,8 @@ namespace SkeletonDefender
                 if (enemy.IsFrog)
                 {
                     enemy.FrogRemaining = Mathf.Max(0, enemy.FrogRemaining - dt);
-                    if (!enemy.IsFrog && !enemy.IsBoss) Kill(enemy);
+                    if (!enemy.IsFrog && !enemy.IsBoss) KillWithCorpse(enemy, "blue_frog");
+                    else enemy.Animation.Locomotion(false, enemy.Animation.FacingLeft, enemy.IsFrog);
                     continue;
                 }
                 if (enemy.Variant.evadeInterval > 0 && !enemy.DodgeReady)
@@ -674,21 +718,30 @@ namespace SkeletonDefender
                     if (enemy.DodgeCooldown <= .00001f) enemy.DodgeReady = true;
                 }
                 UpdateEnemyAbility(enemy, dt);
+                bool animationLocksFacing = enemy.Animation.LocksMovement || HasPendingContact(enemy);
+                FollowEnemyAnimationTarget(enemy, animationLocksFacing);
                 HeroCombatState defender = NearestActor(Position(enemy.Distance), BalanceData.Current.heroRules.enemyMeleeRange);
                 if (defender != null)
                 {
-                    if (enemy.AttackCooldown <= 0)
+                    if (!animationLocksFacing) FaceEnemy(enemy, defender.Position);
+                    enemy.Animation.Moving = false;
+                    if (enemy.AttackCooldown <= 0 && !HasPendingContact(enemy) && !(enemy.Animation.IsBusy && enemy.Animation.Protected))
                     {
                         enemy.AttackCooldown = enemy.AttackInterval;
-                        AttackActor(enemy, defender);
+                        BeginEnemyAttack(enemy, defender);
                     }
+                    else if (!HasPendingContact(enemy)) enemy.Animation.Locomotion(false, enemy.Animation.FacingLeft);
                 }
-                else
+                else if (!enemy.Animation.LocksMovement && !HasPendingContact(enemy))
                 {
                     float multiplier = enemy.Slow > 0 ? BalanceData.Current.Tower((int)TowerKind.Frost).slowSpeedMultiplier : 1f;
                     if (enemy.SkillSlowRemaining > 0) multiplier = Mathf.Min(multiplier, enemy.SkillSlowMultiplier);
                     float before = enemy.Distance;
                     enemy.Distance += enemy.Speed * multiplier * dt;
+                    Vector2 movement = Position(enemy.Distance) - Position(before);
+                    enemy.Animation.FacingDirection = AnimatedActors.DirectionFor(movement, enemy.Animation.FacingDirection);
+                    if (Mathf.Abs(movement.x) > .001f) enemy.Animation.FacingLeft = movement.x < 0;
+                    enemy.Animation.Locomotion(enemy.Distance > before, enemy.Animation.FacingLeft);
                     RecordForwardMovement(enemy, before, dt);
                 }
                 if (enemy.Distance >= PathLength)
@@ -716,25 +769,41 @@ namespace SkeletonDefender
             SkeletonDefinition variant = enemy.Variant;
             if (variant.summonInterval <= 0 && variant.projectileInterval <= 0 && variant.lightningInterval <= 0) return;
             enemy.SpecialCooldown = Mathf.Max(0, enemy.SpecialCooldown - dt);
-            if (enemy.SpecialCooldown > .00001f) return;
+            if (enemy.SpecialCooldown > .00001f || HasPendingContact(enemy) || (enemy.Animation.IsBusy && enemy.Animation.Protected)) return;
             Vector2 origin = Position(enemy.Distance);
             if (variant.summonInterval > 0)
             {
                 enemy.SpecialCooldown = variant.summonInterval;
                 if (variant.summonLimit > 0 && enemy.SummonsCreated >= variant.summonLimit) return;
                 if (variant.summonMaxAlive > 0 && LivingSummons(enemy.Id) >= variant.summonMaxAlive) return;
-                pendingSpawns.Add(CreateSummonedEnemy(enemy, SkeletonKind.Normal, true));
-                enemy.SummonsCreated++;
-                EnemyEffects.Add(new EnemyEffect { Kind = "summon", Position = origin, Target = origin });
+                float contact = AnimateEnemy(enemy, "summon", 1.1f, .5f);
+                QueueContact(enemy, contact, () => {
+                    pendingSpawns.Add(CreateSummonedEnemy(enemy, SkeletonKind.Normal, true));
+                    enemy.SummonsCreated++;
+                    Vector2 point = Position(enemy.Distance);
+                    EnemyEffects.Add(new EnemyEffect { Kind = "summon", Position = point, Target = point, Source = enemy, FacingLeft = enemy.Animation.FacingLeft });
+                });
             }
             else if (variant.projectileInterval > 0)
             {
                 HeroCombatState target = NearestActor(origin, variant.projectileRange);
                 if (target == null) return;
+                int targetLife = target.LifeSerial;
                 enemy.SpecialCooldown = variant.projectileInterval;
-                EnemyProjectiles.Add(new EnemyProjectile {
-                    Start = origin, Position = origin, SourceId = enemy.Id, Target = target, TargetLifeSerial = target.LifeSerial,
-                    Damage = variant.projectileDamage, Speed = variant.projectileSpeed
+                float contact = AnimateEnemy(enemy, "pistol_shot", 1, .45f, 0, target);
+                QueueContact(enemy, contact, () => {
+                    if (!target.Alive || target.LifeSerial != targetLife) return;
+                    Vector2 point = Position(enemy.Distance);
+                    FaceEnemy(enemy, target.Position);
+                    var bullet = new EnemyProjectile {
+                        Start = point, Position = point, SourceId = enemy.Id, Target = target, TargetLifeSerial = targetLife,
+                        Damage = variant.projectileDamage, Speed = variant.projectileSpeed
+                    };
+                    Vector2 socket = ProjectileVisuals.PirateSocket(enemy, point);
+                    bullet.Visual.Begin(point, socket, ProjectileVisuals.HeroHitPoint(target));
+                    EnemyProjectiles.Add(bullet);
+                    EnemyEffects.Add(new EnemyEffect { Kind = "muzzle", Position = socket, Target = ProjectileVisuals.HeroHitPoint(target), UsesVisualAnchors = true, Source = enemy,
+                        FacingLeft = enemy.Animation.FacingLeft, Life = .18f });
                 });
             }
             else
@@ -742,25 +811,48 @@ namespace SkeletonDefender
                 enemy.SpecialCooldown = variant.lightningInterval;
                 HeroCombatState target = Hero.Alive ? Hero : (Clone != null && Clone.Alive ? Clone : null);
                 if (target == null) return;
-                if (!Roll(variant.lightningChance))
-                {
-                    EnemyEffects.Add(new EnemyEffect { Kind = "smoke", Position = origin, Target = origin });
-                    return;
-                }
-                if (Hero.Alive && Clone != null && Clone.Alive && random.Next(2) == 1) target = Clone;
-                EnemyEffects.Add(new EnemyEffect { Kind = "lightning", Position = origin, Target = target.Position, Life = .8f });
-                if (!ActorDodges(target)) DamageActor(target, Mathf.Max(0, target.Hp - 1), false, true);
+                bool success = Roll(variant.lightningChance);
+                if (success && Hero.Alive && Clone != null && Clone.Alive && random.Next(2) == 1) target = Clone;
+                int targetLife = target.LifeSerial;
+                float contact = AnimateEnemy(enemy, success ? "lightning_cast" : "cast_fail", .9f, success ? .29f : .44f, 0, target);
+                QueueContact(enemy, contact, () => {
+                    Vector2 point = Position(enemy.Distance);
+                    if (!success)
+                    {
+                        EnemyEffects.Add(new EnemyEffect { Kind = "smoke",
+                            Position = ProjectileVisuals.EnemySkillReleasePoint(enemy, point, "cast_fail", "fizzle_release"),
+                            Target = point, UsesVisualAnchors = true, Source = enemy, FacingLeft = enemy.Animation.FacingLeft });
+                        return;
+                    }
+                    if (!target.Alive || target.LifeSerial != targetLife) return;
+                    EnemyEffects.Add(new EnemyEffect { Kind = "lightning", Position = point, Target = ProjectileVisuals.HeroHitPoint(target), UsesVisualAnchors = true, Source = enemy, FacingLeft = enemy.Animation.FacingLeft, Life = .8f });
+                    if (!ActorDodges(target)) DamageActor(target, Mathf.Max(0, target.Hp - 1), false, true);
+                });
             }
         }
 
+        private void BeginEnemyAttack(Enemy enemy, HeroCombatState actor)
+        {
+            int life = actor.LifeSerial;
+            bool execution = enemy.Variant.instantKillChance > 0 && Roll(enemy.Variant.instantKillChance);
+            float contact = AnimateEnemy(enemy, execution ? (enemy.Skeleton == SkeletonKind.TRex ? "execution_bite" : "execution") : "attack", 1, .4f, enemy.AttackInterval, actor);
+            QueueContact(enemy, contact, () => {
+                if (!actor.Alive || actor.LifeSerial != life || Vector2.Distance(Position(enemy.Distance), actor.Position) > BalanceData.Current.heroRules.enemyMeleeRange) return;
+                FaceEnemy(enemy, actor.Position);
+                ResolveEnemyAttack(enemy, actor, execution);
+            });
+        }
+        // Kept as a direct resolver for isolated model checks and non-animated callers.
         private void EnemyMeleeAttack(Enemy enemy) => AttackActor(enemy, Hero);
         private void AttackActor(Enemy enemy, HeroCombatState actor)
+            => ResolveEnemyAttack(enemy, actor, enemy.Variant.instantKillChance > 0 && Roll(enemy.Variant.instantKillChance));
+        private void ResolveEnemyAttack(Enemy enemy, HeroCombatState actor, bool execution)
         {
             if (!actor.Alive || ActorDodges(actor)) return;
             SkeletonDefinition variant = enemy.Variant;
-            if (variant.instantKillChance > 0 && Roll(variant.instantKillChance))
+            if (execution)
             {
-                EnemyEffects.Add(new EnemyEffect { Kind = "execution", Position = Position(enemy.Distance), Target = actor.Position });
+                EnemyEffects.Add(new EnemyEffect { Kind = "execution", Position = Position(enemy.Distance), Target = ProjectileVisuals.HeroHitPoint(actor), UsesVisualAnchors = true, Source = enemy });
                 DamageActor(actor, actor.Hp, false, true); return;
             }
             if (variant.knockdownDuration > 0)
@@ -769,7 +861,8 @@ namespace SkeletonDefender
                 if (actor.Alive)
                 {
                     actor.KnockdownRemaining = variant.knockdownDuration; actor.Destination = actor.Position;
-                    EnemyEffects.Add(new EnemyEffect { Kind = "knockdown", Position = actor.Position, Target = actor.Position });
+                    actor.Animation.Play("hurt", ClipDuration(CombatAnimationRoles.Hero(actor), "hurt", actor.Animation, .16f)); actor.CastPoseRemaining = 0;
+                    EnemyEffects.Add(new EnemyEffect { Kind = "knockdown", Position = actor.Position, Target = ProjectileVisuals.HeroHitPoint(actor), UsesVisualAnchors = true, Source = enemy });
                 }
             }
             else DamageActor(actor, enemy.AttackDamage, true);
@@ -794,9 +887,11 @@ namespace SkeletonDefender
                 if (actor.IsClone) damage *= Systems.cloneIncomingDamageMultiplier;
                 if (actor.RageRemaining > 0) damage *= Systems.rageIncomingDamageMultiplier;
             }
-            actor.Hp = Mathf.Max(0, actor.Hp - damage); actor.Flash = .18f;
+            actor.Hp = Mathf.Max(0, actor.Hp - damage); actor.Flash = .12f;
+            if (actor.Alive) HeroHurtAnimation(actor);
             if (!actor.Alive)
             {
+                HeroDeathAnimation(actor);
                 actor.KnockdownRemaining = 0; actor.Destination = actor.Position;
                 actor.CastPoseRemaining = 0; actor.LifeSerial++;
                 if (actor.IsClone) RemoveClone();
@@ -810,15 +905,28 @@ namespace SkeletonDefender
             for (int i = EnemyProjectiles.Count - 1; i >= 0; i--)
             {
                 EnemyProjectile projectile = EnemyProjectiles[i];
+                float step = projectile.InitialAdvance >= 0 ? Mathf.Min(dt, projectile.InitialAdvance) : dt; projectile.InitialAdvance = -1;
+                projectile.Age += step;
                 HeroCombatState target = projectile.Target ?? Hero;
                 if (!target.Alive || projectile.TargetLifeSerial != target.LifeSerial) { EnemyProjectiles.RemoveAt(i); continue; }
-                float travel = projectile.Speed * dt;
+                Vector2 hitPoint = ProjectileVisuals.HeroHitPoint(target);
+                if (!projectile.Visual.Initialized)
+                    projectile.Visual.Begin(projectile.Position, projectile.Position + new Vector2(0, -18), hitPoint);
+                float travel = projectile.Speed * step;
                 if (Vector2.Distance(projectile.Position, target.Position) <= travel)
                 {
-                    if (!ActorDodges(target)) DamageActor(target, projectile.Damage, true);
+                    projectile.Visual.Advance(projectile.Position, target.Position, target.Position, hitPoint, true);
+                    bool landed = !ActorDodges(target);
+                    if (landed) DamageActor(target, projectile.Damage, true);
+                    ProjectileImpacts.Add(new ProjectileImpact { Position = hitPoint, Direction = projectile.Visual.Direction, Kind = "bullet", Landed = landed });
                     EnemyProjectiles.RemoveAt(i);
                 }
-                else projectile.Position = Vector2.MoveTowards(projectile.Position, target.Position, travel);
+                else
+                {
+                    Vector2 previous = projectile.Position;
+                    projectile.Position = Vector2.MoveTowards(previous, target.Position, travel);
+                    projectile.Visual.Advance(previous, projectile.Position, target.Position, hitPoint, false);
+                }
             }
         }
 
@@ -826,8 +934,9 @@ namespace SkeletonDefender
         {
             if (!enemy.DodgeReady || enemy.Variant.evadeInterval <= 0) return false;
             enemy.DodgeReady = false; enemy.DodgeCooldown = enemy.Variant.evadeInterval;
+            AnimateEnemy(enemy, "dodge", .65f, .15f);
             Vector2 point = Position(enemy.Distance);
-            EnemyEffects.Add(new EnemyEffect { Kind = "dodge", Position = point, Target = point });
+            EnemyEffects.Add(new EnemyEffect { Kind = "dodge", Position = point, Target = point, Source = enemy, FacingLeft = enemy.Animation.FacingLeft });
             return true;
         }
 
@@ -845,112 +954,180 @@ namespace SkeletonDefender
 
         private void UpdateHeroCombat(float dt) => UpdateActorCombat(Hero, dt);
 
+        private void AdvanceActorCombatTimers(HeroCombatState actor, float dt)
+        {
+            if (actor == null || !actor.Alive) return;
+            actor.AttackCooldown = Mathf.Max(0, actor.AttackCooldown - dt);
+            actor.FrogCooldown = Mathf.Max(0, actor.FrogCooldown - dt);
+            actor.SunCooldown = Mathf.Max(0, actor.SunCooldown - dt);
+            actor.DecapitateCooldown = Mathf.Max(0, actor.DecapitateCooldown - dt);
+        }
         private void UpdateActorCombat(HeroCombatState actor, float dt)
         {
             if (!actor.Alive) return;
-            if (actor.KnockdownRemaining > 0)
-            {
-                actor.AttackCooldown = Mathf.Max(0, actor.AttackCooldown - dt);
-                actor.FrogCooldown = Mathf.Max(0, actor.FrogCooldown - dt);
-                actor.SunCooldown = Mathf.Max(0, actor.SunCooldown - dt);
-                actor.DecapitateCooldown = Mathf.Max(0, actor.DecapitateCooldown - dt);
-                return;
-            }
-            actor.AttackCooldown = Mathf.Max(0, actor.AttackCooldown - dt);
+            if (actor.HasMoveOrder || actor.KnockdownRemaining > 0 || HasPendingContact(actor) || (actor.Animation.IsBusy && actor.Animation.Protected)) return;
             if (actor.Kind == HeroKind.Circe)
             {
-                actor.FrogCooldown = Mathf.Max(0, actor.FrogCooldown - dt);
-                actor.SunCooldown = Mathf.Max(0, actor.SunCooldown - dt);
                 if (actor.Definition.skills[0].trigger == "cooldown" && actor.FrogCooldown <= 0)
                 {
                     Enemy target = Nearest(actor.Position, actor.Range, true, false, true);
-                    if (target != null) ActorTryHex(actor, target);
+                    if (target != null && ActorTryHex(actor, target)) return;
                 }
                 if (actor.SunCooldown <= 0)
                 {
                     Enemy target = Nearest(actor.Position, actor.Range, false, true, true);
-                    if (target != null) { ActorSkillShot(actor, target, "sun", TowerKind.Ember); TryInstantKill(target, true); actor.SunCooldown = actor.Definition.skills[1].cooldown; }
+                    if (target != null)
+                    {
+                        ProjectileVisuals.Face(actor, Position(target.Distance));
+                        float contact = AnimateHero(actor, "staff_attack", 1.16f, .55f, actor.AttackInterval);
+                        actor.SunCooldown = actor.Definition.skills[1].cooldown;
+                        QueueContact(actor, contact, () => {
+                            if (!target.Targetable || target.MagicalImmune) return;
+                            ActorSkillShot(actor, target, "sun", TowerKind.Ember); TryInstantKill(target, true);
+                        }, () => actor.SunCooldown = 0);
+                        return;
+                    }
                 }
             }
-            else
+            else if (actor.DecapitateCooldown <= 0)
             {
-                actor.DecapitateCooldown = Mathf.Max(0, actor.DecapitateCooldown - dt);
-                if (actor.DecapitateCooldown <= 0)
+                Enemy target = Nearest(actor.Position, actor.Range, false);
+                if (target != null)
                 {
-                    Enemy target = Nearest(actor.Position, actor.Range, false);
-                    if (target != null) { ActorSkillShot(actor, target, "decapitate", TowerKind.Archer); TryInstantKill(target); actor.DecapitateCooldown = actor.Definition.skills[0].cooldown; }
+                    ProjectileVisuals.Face(actor, Position(target.Distance));
+                    float contact = AnimateHero(actor, "attack", .8f, .35f, actor.AttackInterval);
+                    actor.DecapitateCooldown = actor.Definition.skills[0].cooldown;
+                    QueueContact(actor, contact, () => {
+                        if (!target.Targetable || Vector2.Distance(actor.Position, Position(target.Distance)) > actor.Range) return;
+                        ActorSkillShot(actor, target, "decapitate", TowerKind.Archer); TryInstantKill(target);
+                    }, () => actor.DecapitateCooldown = 0);
+                    return;
                 }
             }
             if (actor.AttackCooldown > 0) return;
             Enemy victim = Nearest(actor.Position, actor.Range, true, true, actor.Kind == HeroKind.Circe);
             if (victim == null) return;
-            actor.AttackCooldown = actor.AttackInterval; actor.Flash = .18f;
+            ProjectileVisuals.Face(actor, Position(victim.Distance));
+            actor.AttackCooldown = actor.AttackInterval;
             float basicDamage = actor.Damage;
             if (actor.Equipment.CritChance > 0 && Roll(actor.Equipment.CritChance)) basicDamage *= Mathf.Max(1, actor.Equipment.CritMultiplier);
-            if (actor.Kind == HeroKind.Circe)
-            {
-                ActorLaunch(actor, victim, ProjectileKind.Arcane, basicDamage, false, 0);
-                SkillDefinition fire = actor.Definition.skills[2];
-                if (Roll(fire.chance))
-                    for (int i = 0; i < fire.projectiles; i++) ActorLaunch(actor, victim, ProjectileKind.Fireball, fire.damagePerProjectile * actor.MagicDamageMultiplier, false, i * .1f);
-                SkillDefinition hex = actor.Definition.skills[0];
-                if (hex.trigger == "basic_attack" && actor.FrogCooldown <= 0 && Roll(hex.chance)) ActorTryHex(actor, victim);
-            }
-            else
-            {
-                ActorSkillShot(actor, victim, "sword", TowerKind.Archer);
-                bool landed = Hit(victim, basicDamage, false);
-                if (landed) ApplyBasicSplash(victim, basicDamage, false, actor.Equipment.SplashRadius, actor.Equipment.SplashFraction);
-                if (landed && Roll(actor.Definition.skills[2].chance))
+            bool circe = actor.Kind == HeroKind.Circe;
+            float release = AnimateHero(actor, circe ? "staff_attack" : "attack", circe ? 1.16f : .8f, circe ? .55f : .35f, actor.AttackInterval);
+            QueueContact(actor, release, () => {
+                if (!victim.Targetable) return;
+                if (circe)
                 {
-                    Enemy knifeTarget = Nearest(actor.Position, BalanceData.Current.heroRules.knifeRange, false);
-                    if (knifeTarget != null) ActorLaunch(actor, knifeTarget, ProjectileKind.Knife, 0, true, 0);
+                    ActorLaunch(actor, victim, ProjectileKind.Arcane, basicDamage, false, 0);
+                    SkillDefinition fire = actor.Definition.skills[2];
+                    if (Roll(fire.chance))
+                        for (int i = 0; i < fire.projectiles; i++) ActorLaunch(actor, victim, ProjectileKind.Fireball, fire.damagePerProjectile * actor.MagicDamageMultiplier, false, i * .1f);
+                    SkillDefinition hex = actor.Definition.skills[0];
+                    if (hex.trigger == "basic_attack" && actor.FrogCooldown <= 0 && Roll(hex.chance))
+                    {
+                        // Finish the visible staff release and its staggered fireballs before
+                        // changing to a different casting pose. The proc is rolled only once.
+                        QueueContact(actor, Mathf.Max(0, actor.Animation.Duration - actor.Animation.Age),
+                            () => ActorTryHex(actor, victim));
+                    }
                 }
-            }
+                else
+                {
+                    if (Vector2.Distance(actor.Position, Position(victim.Distance)) > actor.Range) return;
+                    ActorSkillShot(actor, victim, "sword", TowerKind.Archer);
+                    bool landed = Hit(victim, basicDamage, false);
+                    if (landed) ApplyBasicSplash(victim, basicDamage, false, actor.Equipment.SplashRadius, actor.Equipment.SplashFraction);
+                    if (landed && Roll(actor.Definition.skills[2].chance))
+                    {
+                        Enemy knifeTarget = Nearest(actor.Position, BalanceData.Current.heroRules.knifeRange, false);
+                        if (knifeTarget != null) ActorLaunch(actor, knifeTarget, ProjectileKind.Knife, 0, true, 0);
+                    }
+                }
+            });
         }
 
         private bool Roll(float chance) => random.NextDouble() < chance;
         private bool TryHex(Enemy target) => ActorTryHex(Hero, target);
         private bool ActorTryHex(HeroCombatState actor, Enemy target)
         {
-            if (!target.Targetable || target.IsFrog || target.MagicalImmune || (target.IsBoss && !actor.Definition.skills[0].transformsBoss)) return false;
-            ActorSkillShot(actor, target, "frog", TowerKind.Frost);
-            target.FrogRemaining = actor.Definition.skills[0].duration;
-            actor.FrogCooldown = actor.Definition.skills[0].cooldown;
+            if (actor.HasMoveOrder || !target.Targetable || target.IsFrog || target.MagicalImmune || (target.IsBoss && !actor.Definition.skills[0].transformsBoss)) return false;
+            ProjectileVisuals.Face(actor, Position(target.Distance));
+            float contact = AnimateHero(actor, "hex_cast", .6f, .14f);
+            QueueContact(actor, contact, () => {
+                if (!target.Targetable || target.IsFrog || target.MagicalImmune) return;
+                ActorSkillShot(actor, target, "frog", TowerKind.Frost);
+                string originalRole = CombatAnimationRoles.Enemy(target);
+                target.FrogRemaining = actor.Definition.skills[0].duration;
+                actor.FrogCooldown = actor.Definition.skills[0].cooldown;
+                bool normalBody = originalRole == "normal" || originalRole == "sarcophagus_bare";
+                string action = normalBody ? "transform" : "hop";
+                target.Animation.Play(action, ClipDuration("blue_frog", action, target.Animation, .7f), 0, normalBody);
+            });
             return true;
         }
         private void SkillShot(Enemy target, string skill, TowerKind kind) => ActorSkillShot(Hero, target, skill, kind);
         private void ActorSkillShot(HeroCombatState actor, Enemy target, string skill, TowerKind kind)
         {
             ActorActivity(actor);
-            Shots.Add(new Shot { Start = actor.Position, End = Position(target.Distance), Kind = kind, Skill = skill, Life = skill == "sun" ? .55f : .23f });
+            ProjectileVisuals.Face(actor, Position(target.Distance));
+            Shots.Add(new Shot { Start = ProjectileVisuals.HeroSocket(actor, actor.Kind == HeroKind.Circe),
+                End = ProjectileVisuals.EnemyHitPoint(target, Position(target.Distance)), UsesVisualAnchors = true,
+                Kind = kind, Skill = skill, Life = skill == "sun" ? .55f : .23f });
         }
         private void Launch(Enemy target, ProjectileKind kind, float damage, bool instantKill, float delay) => ActorLaunch(Hero, target, kind, damage, instantKill, delay);
         private void ActorLaunch(HeroCombatState actor, Enemy target, ProjectileKind kind, float damage, bool instantKill, float delay)
         {
             ActorActivity(actor);
-            Projectiles.Add(new HeroProjectile { Start = actor.Position, Position = actor.Position, TargetId = target.Id, Kind = kind, Damage = damage, InstantKill = instantKill, Delay = delay, Source = actor,
+            var projectile = new HeroProjectile { Start = actor.Position, Position = actor.Position, TargetId = target.Id, Kind = kind, Damage = damage, InstantKill = instantKill, Delay = delay, Source = actor,
+                SourceLifeSerial = actor.LifeSerial,
                 SplashRadius = kind == ProjectileKind.Arcane ? actor.Equipment.SplashRadius : 0,
-                SplashFraction = kind == ProjectileKind.Arcane ? actor.Equipment.SplashFraction : 0 });
+                SplashFraction = kind == ProjectileKind.Arcane ? actor.Equipment.SplashFraction : 0 };
+            if (delay <= 0) projectile.Visual.Begin(actor.Position, ProjectileVisuals.HeroSocket(actor, kind != ProjectileKind.Knife), ProjectileVisuals.EnemyHitPoint(target, Position(target.Distance)));
+            Projectiles.Add(projectile);
         }
         private void UpdateProjectiles(float dt)
         {
             for (int i = Projectiles.Count - 1; i >= 0; i--)
             {
                 HeroProjectile projectile = Projectiles[i];
+                float step = projectile.InitialAdvance >= 0 ? Mathf.Min(dt, projectile.InitialAdvance) : dt; projectile.InitialAdvance = -1;
                 Enemy target = Enemies.Find(enemy => enemy.Id == projectile.TargetId && enemy.Targetable);
                 if (target == null) { Projectiles.RemoveAt(i); continue; }
-                if (projectile.Delay > 0) { projectile.Delay -= dt; continue; }
+                if (projectile.Delay > 0)
+                {
+                    if (projectile.Source != null && (!projectile.Source.Alive || projectile.Source.LifeSerial != projectile.SourceLifeSerial)) { Projectiles.RemoveAt(i); continue; }
+                    float previousDelay = projectile.Delay;
+                    projectile.Delay = Mathf.Max(0, projectile.Delay - step);
+                    if (projectile.Delay > .00001f) continue;
+                    step = Mathf.Max(0, step - previousDelay);
+                    if (projectile.Source != null) projectile.Start = projectile.Position = projectile.Source.Position;
+                }
+                projectile.Age += step;
                 Vector2 destination = Position(target.Distance);
-                float travel = BalanceData.Current.heroRules.projectileSpeed * dt;
+                Vector2 hitPoint = ProjectileVisuals.EnemyHitPoint(target, destination);
+                if (!projectile.Visual.Initialized)
+                {
+                    if (projectile.Source != null) ProjectileVisuals.Face(projectile.Source, destination);
+                    Vector2 socket = projectile.Source == null ? projectile.Position + new Vector2(0, -18)
+                        : ProjectileVisuals.HeroSocket(projectile.Source, projectile.Kind != ProjectileKind.Knife);
+                    projectile.Visual.Begin(projectile.Position, socket, hitPoint);
+                }
+                float travel = BalanceData.Current.heroRules.projectileSpeed * step;
                 if (Vector2.Distance(projectile.Position, destination) <= travel)
                 {
-                    if (projectile.InstantKill) TryInstantKill(target);
-                    else if (Hit(target, projectile.Damage, true))
+                    projectile.Visual.Advance(projectile.Position, destination, destination, hitPoint, true);
+                    bool landed = projectile.InstantKill ? TryInstantKill(target) : Hit(target, projectile.Damage, true);
+                    if (landed && !projectile.InstantKill)
                         ApplyBasicSplash(target, projectile.Damage, true, projectile.SplashRadius, projectile.SplashFraction);
+                    ProjectileImpacts.Add(new ProjectileImpact { Position = hitPoint, Direction = projectile.Visual.Direction,
+                        Kind = projectile.Kind == ProjectileKind.Knife ? "knife" : projectile.Source?.Kind == HeroKind.Circe ? "circe_magic" : "fireball", Landed = landed });
                     Projectiles.RemoveAt(i);
                 }
-                else projectile.Position = Vector2.MoveTowards(projectile.Position, destination, travel);
+                else
+                {
+                    Vector2 previous = projectile.Position;
+                    projectile.Position = Vector2.MoveTowards(previous, destination, travel);
+                    projectile.Visual.Advance(previous, projectile.Position, destination, hitPoint, false);
+                }
             }
         }
 
@@ -958,6 +1135,14 @@ namespace SkeletonDefender
         {
             foreach (Tower tower in Towers)
             {
+                if (tower.Kind == TowerKind.Archer)
+                    for (int i = 0; i < tower.ProjectileCount; i++)
+                    {
+                        TowerArcherState archer = tower.Archers[i];
+                        Enemy aimed = Enemies.Find(enemy => enemy.Id == archer.TargetId && enemy.Targetable);
+                        if (aimed != null && archer.Animation.IsBusy) FaceTowerArcher(tower, archer, aimed);
+                        if (!archer.Animation.IsBusy) archer.Animation.Locomotion(false, archer.Animation.FacingLeft);
+                    }
                 tower.Cooldown -= dt;
                 if (tower.Cooldown > 0) continue;
                 Enemy target = null; Vector2 origin = Sites[tower.Site];
@@ -965,17 +1150,49 @@ namespace SkeletonDefender
                     if (enemy.Targetable && !(tower.Kind != TowerKind.Archer && enemy.MagicalImmune) && Vector2.Distance(Position(enemy.Distance), origin) <= tower.Range && (target == null || enemy.Distance > target.Distance)) target = enemy;
                 if (target == null) { tower.Cooldown = 0; continue; }
                 Vector2 impact = Position(target.Distance);
-                tower.Cooldown = tower.Interval; tower.Flash = .18f;
-                if (tower.Kind != TowerKind.Frost)
+                tower.Cooldown = tower.Interval;
+                if (tower.Kind == TowerKind.Archer)
                 {
-                    TowerProjectiles.Add(new TowerProjectile {
-                        Start = origin, Position = origin, Impact = impact, TargetId = target.Id, Kind = tower.Kind,
-                        Damage = tower.Damage, SplashRadius = tower.Definition.splashRadiusBase + tower.Level * tower.Definition.splashRadiusPerLevel
-                    });
+                    for (int i = 0; i < tower.ProjectileCount; i++)
+                    {
+                        int archerIndex = i, level = tower.Level;
+                        float damage = tower.Damage;
+                        TowerArcherState archer = tower.Archers[i];
+                        archer.TargetId = target.Id; FaceTowerArcher(tower, archer, target);
+                        var clip = AnimationLibrary.GetDirectional("tower_elf", "attack", archer.Animation.FacingDirection, archer.Animation.FacingLeft);
+                        float rate = archer.Animation.Play("attack", clip?.Duration ?? .5f, tower.Interval, true);
+                        float contact = (clip != null && clip.ContactTime > 0 ? clip.ContactTime : .2f) / rate;
+                        QueueContact(tower, archer, level, contact, () => {
+                            if (!target.Targetable || !Enemies.Contains(target)) return;
+                            FaceTowerArcher(tower, archer, target);
+                            Vector2 destination = Position(target.Distance), hitPoint = ProjectileVisuals.EnemyHitPoint(target, destination);
+                            var projectile = new TowerProjectile { Start = origin, Position = origin, Impact = destination, TargetId = target.Id,
+                                Kind = TowerKind.Archer, Level = level, VisualSocketIndex = archerIndex, Damage = damage };
+                            projectile.Visual.Begin(origin, ProjectileVisuals.TowerSocket(origin, TowerKind.Archer, level, archerIndex, hitPoint), hitPoint);
+                            TowerProjectiles.Add(projectile); tower.Flash = .18f;
+                        });
+                    }
+                }
+                else if (tower.Kind == TowerKind.Ember)
+                {
+                    tower.Flash = .18f;
+                    for (int archerIndex = 0; archerIndex < tower.ProjectileCount; archerIndex++)
+                    {
+                        var projectile = new TowerProjectile {
+                            Start = origin, Position = origin, Impact = impact, TargetId = target.Id, Kind = tower.Kind, Level = tower.Level,
+                            VisualSocketIndex = archerIndex,
+                            Damage = tower.Damage, SplashRadius = tower.Definition.splashRadiusBase + tower.Level * tower.Definition.splashRadiusPerLevel
+                        };
+                        projectile.Visual.Begin(origin, ProjectileVisuals.TowerSocket(origin, tower.Kind, tower.Level, archerIndex),
+                            ProjectileVisuals.EnemyHitPoint(target, impact));
+                        TowerProjectiles.Add(projectile);
+                    }
                 }
                 else
                 {
-                    Shots.Add(new Shot { Start = origin, End = impact, Kind = tower.Kind });
+                    tower.Flash = .18f;
+                    Shots.Add(new Shot { Start = ProjectileVisuals.TowerSocket(origin, tower.Kind, tower.Level),
+                        End = ProjectileVisuals.EnemyHitPoint(target, impact), UsesVisualAnchors = true, Kind = tower.Kind });
                     bool landed = Hit(target, tower.Damage, true);
                     if (landed && !target.Dead && !target.IsBoss) target.Slow = tower.Definition.slowDurationBase + tower.Level * tower.Definition.slowDurationPerLevel;
                 }
@@ -991,7 +1208,8 @@ namespace SkeletonDefender
         {
             if (!enemy.Targetable || damage <= 0 || (magical && enemy.MagicalImmune) || (canEvade && TryEvade(enemy))) return false;
             float armor = magical ? 0 : enemy.PhysicalArmor;
-            enemy.Hp -= damage * (1 - Mathf.Clamp01(armor)); enemy.HitFlash = .12f;
+            enemy.Hp -= damage * (1 - Mathf.Clamp01(armor)); enemy.HitFlash = .08f;
+            if (enemy.Hp > 0) EnemyHurtAnimation(enemy);
             if (enemy.Hp <= 0) Kill(enemy);
             return true;
         }
@@ -1009,17 +1227,22 @@ namespace SkeletonDefender
             Kill(enemy); return true;
         }
         private static bool InstantKillProtected(Enemy enemy) => enemy.IsBoss && BalanceData.Current.heroRules.bossesImmuneToInstantKill;
-        private void Kill(Enemy enemy)
+        private void Kill(Enemy enemy) => KillWithCorpse(enemy, null);
+        private void KillWithCorpse(Enemy enemy, string corpseRole)
         {
             if (enemy.Dead) return;
+            AddEnemyCorpse(enemy, corpseRole);
             ResolveOriginal(enemy, true);
             enemy.Hp = 0; enemy.Dead = true; Gold += enemy.Reward; Kills++;
             if (enemy.Reward > 0) Popups.Add(new Popup { Position = Position(enemy.Distance), Text = "+" + enemy.Reward });
             if (enemy.HasSarcophagus && enemy.Variant.rebirth)
             {
                 enemy.HasSarcophagus = false;
-                pendingSpawns.Add(CreateSummonedEnemy(enemy, enemy.Skeleton));
-                EnemyEffects.Add(new EnemyEffect { Kind = "rebirth", Position = Position(enemy.Distance), Target = Position(enemy.Distance), Life = .9f });
+                Enemy reborn = CreateSummonedEnemy(enemy, enemy.Skeleton);
+                var deathClip = AnimationLibrary.GetDirectional("sarcophagus", "death", enemy.Animation.FacingDirection, enemy.Animation.FacingLeft);
+                reborn.AppearanceDelay = deathClip?.FindEvent("phase_two_ready")?.TimeSeconds ?? 1.21f;
+                pendingSpawns.Add(reborn);
+                EnemyEffects.Add(new EnemyEffect { Kind = "rebirth", Position = Position(enemy.Distance), Target = Position(enemy.Distance), Source = enemy, FacingLeft = enemy.Animation.FacingLeft, Life = .9f });
             }
         }
         private void ResolveOriginal(Enemy enemy, bool killed)
@@ -1042,7 +1265,7 @@ namespace SkeletonDefender
             Enemy summoned = CreateEnemy(kind, owner.Distance, true, false);
             summoned.WaveNumber = owner.WaveNumber; summoned.SummonerId = owner.Id;
             if (timedSummon && owner.Variant.summonedHp > 0)
-                summoned.Hp = summoned.MaxHp = owner.Variant.summonedHp;
+                { summoned.Hp = summoned.MaxHp = owner.Variant.summonedHp; summoned.AnimationRole = "mini_mummy"; }
             return summoned;
         }
     }

@@ -1,0 +1,304 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/01.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RAY 0",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/02.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 32,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RAY 1",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/03.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 64,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RAY 2",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/04.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 96,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RAY 3",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/05.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 64
+      },
+      "gifDuration": 60,
+      "phase": "RAY 4",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/06.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 32,
+        "y": 64
+      },
+      "gifDuration": 60,
+      "phase": "RAY 5",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/07.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 64,
+        "y": 64
+      },
+      "gifDuration": 60,
+      "phase": "RAY 6",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Sun_Segment_frames/08.png",
+      "frame": {
+        "h": 64,
+        "w": 32,
+        "x": 96,
+        "y": 64
+      },
+      "gifDuration": 60,
+      "phase": "RAY 7",
+      "phaseRu": "Непрерывный золотой луч и бегущие блики",
+      "rotated": false,
+      "sourceSize": {
+        "h": 64,
+        "w": 32
+      },
+      "spriteSourceSize": {
+        "h": 64,
+        "w": 32,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "segment_start",
+      "x": 16,
+      "y": 0
+    },
+    "anchors": {
+      "direction": "south",
+      "endPoint": {
+        "x": 16,
+        "y": 63
+      },
+      "frameCenter": {
+        "x": 16,
+        "y": 32
+      },
+      "origin": {
+        "type": "segment_start",
+        "x": 16,
+        "y": 0
+      },
+      "rotationAxis": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 64,
+      "w": 32
+    },
+    "columns": 4,
+    "componentNameRu": "Луч солнца — короткий составной сегмент",
+    "componentOnly": true,
+    "contact": {
+      "h": 190,
+      "w": 560
+    },
+    "durationMs": 480,
+    "facing": "south",
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Sun_Segment_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "VFX_Circe_Sun_Segment",
+        "to": 7
+      }
+    ],
+    "gifDurationMs": 480,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Circe_Sun_Segment_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Short vertical beam segment, endpoints (16,0) and (16,63). Tile/fit independent pieces between actual world endpoints.",
+      "The white core stays continuous across all frames; do not spawn a new hit for each looping frame.",
+      "Sunlight descends above the selected target; use separate impact at the actual hurt point."
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Original standalone pixel VFX drawn through native Aseprite Lua; separate named layers; no generated hero edit.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "size": {
+      "h": 128,
+      "w": 128
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\circe\\effects\\_build_sources\\VFX_Circe_Sun_Segment.aseprite",
+    "sourceSpriteModified": false,
+    "status": "contact_reviewed_export_verified",
+    "version": 1,
+    "review": {
+      "id": "VFX_Circe_Sun_Segment",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "opaquePaletteColors": 4,
+      "lastFrameTransparent": false,
+      "endpointConnectivityErrors": [],
+      "contactSheetReviewed": true,
+      "actualUIPlaybackReviewed": false,
+      "exportValidation": true
+    },
+    "rootApproved": true,
+    "stage": "prepared_for_user_review",
+    "integratedIntoGame": false
+  }
+}

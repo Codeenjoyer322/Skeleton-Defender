@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "version": "0.8.1",
+  "runtimeCatalogSha256": "ecd4532d71ed0af229ecf4d056f77ee81f928614c67bcd234b0b2cabac41e9cb",
+  "towerSocketsSha256": "d6bf934ea35793ce3cce90436c150c4db5a131275f4a19bb79d05f15ac4937d3",
+  "runtimeClips": 512,
+  "overlayUniqueTextures": 464,
+  "overlayFrames": 3051,
+  "basePlusOverlayUniqueTextures": 665,
+  "basePlusOverlayUncompressedRgbaBytes": 237321632,
+  "newVisiblePixelFramesVerified": 216,
+  "newClips": 24,
+  "replacedCirceWalkClips": 4,
+  "towerBases": 9,
+  "towerDimensions": [
+    144,
+    192
+  ],
+  "towerGroundPivot": [
+    72,
+    182
+  ],
+  "galleryActorLinks": 2048,
+  "galleryFilterCombinations": 2079,
+  "prunedOnlyUnreferencedOldDirectionalTextures": [
+    "AnimationPack/Textures/directional_1e91a5ae8aceb2aad814",
+    "AnimationPack/Textures/directional_826ebda35ec75f36b429",
+    "AnimationPack/Textures/directional_906838786287908f111f",
+    "AnimationPack/Textures/directional_fb70c639c5a8eb95f708"
+  ],
+  "chargedGenerations": 448.1,
+  "remainingGenerations": 2735.8,
+  "unityTests": "performed separately by the integration agent; not claimed by this image/import check"
+}

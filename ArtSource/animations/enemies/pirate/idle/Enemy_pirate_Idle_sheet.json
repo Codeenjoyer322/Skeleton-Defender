@@ -1,0 +1,87 @@
+{
+  "frames": [
+    {
+      "duration": 1000,
+      "filename": "Enemy_pirate_Idle_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 1000,
+      "phase": "IDLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "columns": 1,
+    "contact": {
+      "h": 191,
+      "w": 172
+    },
+    "durationMs": 1000,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/pirate/idle/Enemy_pirate_Idle_sheet.png"
+    },
+    "frameCount": 1,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "idle",
+        "to": 0
+      }
+    ],
+    "gifDurationMs": 1000,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_pirate_Idle_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Static ready stance; not an animated walk cycle."
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "PixelLab reference selected and visually reviewed by root; native Aseprite centering/candidate cleanup.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "size": {
+      "h": 160,
+      "w": 160
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\pirate\\idle\\Enemy_pirate_Idle.aseprite",
+    "sourceSpriteModified": false,
+    "version": 1,
+    "rootApproved": true,
+    "stage": "prepared_for_user_review",
+    "integratedIntoGame": false,
+    "displayScale": 1,
+    "direction": "west"
+  }
+}

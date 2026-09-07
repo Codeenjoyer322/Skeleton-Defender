@@ -19,6 +19,13 @@ namespace SkeletonDefender.Editor
             }
         }
 
+        // Wait only for already accepted contacts; never skip startup in the live model.
+        private static void StepAtContact(GameModel model)
+        {
+            model.Step(GameModel.Tick);
+            for (int i = 0; i < 180 && model.PendingAnimationContacts > 0; i++) model.Step(GameModel.Tick);
+        }
+
         [MenuItem("Skeleton Defender/Run gameplay checks")]
         public static void Run()
         {
@@ -262,8 +269,16 @@ namespace SkeletonDefender.Editor
             var damaged = CombatFixture(HeroKind.Circe); damaged.Hero.Hp = 100;
             Advance(damaged, 4.2f, true); float beforeDamage = damaged.Hero.Hp;
             Enemy attacker = AddTarget(damaged); attacker.AttackCooldown = 0;
-            damaged.Step(GameModel.Tick);
-            Check(Near(damaged.Hero.Hp, beforeDamage - 5) && damaged.Hero.IdleSeconds < .02f,
+            bool contactObserved = false;
+            for (int tick = 0; tick < 120 && !contactObserved; tick++)
+            {
+                // AFK healing may continue during the enemy's anticipation. The actual
+                // contact tick must apply all five damage and reset regeneration.
+                beforeDamage = damaged.Hero.Hp;
+                damaged.Step(GameModel.Tick);
+                contactObserved = damaged.Hero.Hp < beforeDamage;
+            }
+            Check(contactObserved && Near(damaged.Hero.Hp, beforeDamage - 5) && damaged.Hero.IdleSeconds < .02f,
                 "Incoming damage failed to interrupt regeneration or was healed in the same tick");
 
             var stunned = new GameModel(); stunned.Hero.Hp = 100;
@@ -384,7 +399,7 @@ namespace SkeletonDefender.Editor
                 Enemy owner = AddSkeleton(ownership, kind, 200, false);
                 Check(ownership.TryCallNextWave(), "Offspring fixture could not begin overlapping wave");
                 if (kind == SkeletonKind.Tutankhamun)
-                { owner.SpecialCooldown = 0; ownership.Step(GameModel.Tick); owner.SpecialCooldown = 999; }
+                { owner.SpecialCooldown = 0; StepAtContact(ownership); owner.SpecialCooldown = 999; }
                 else ProjectileHit(ownership, owner, 1000);
                 Enemy child = ownership.Enemies.Find(enemy => enemy.IsSummoned);
                 Check(child != null && child.WaveNumber == 1 && child.SpawnOrdinal == 0 && child.IsSummoned,
@@ -441,7 +456,7 @@ namespace SkeletonDefender.Editor
             var archer = CombatFixture(HeroKind.Circe);
             Enemy magicTarget = AddTarget(archer, -120, 10);
             archer.Hero.AttackCooldown = 0;
-            archer.Step(GameModel.Tick);
+            StepAtContact(archer);
             Check(Near(magicTarget.Hp, 10) && archer.Projectiles.Count > 0, "Ranged attack dealt damage before projectile impact");
             Advance(archer, .8f);
             Check(Near(magicTarget.Hp, 5), "Circe basic projectile did not deal five damage");
@@ -449,19 +464,19 @@ namespace SkeletonDefender.Editor
             var swordsman = CombatFixture(HeroKind.Achilles);
             Enemy meleeTarget = AddTarget(swordsman, -20, 10);
             swordsman.Hero.AttackCooldown = 0;
-            swordsman.Step(GameModel.Tick);
+            StepAtContact(swordsman);
             Check(Near(meleeTarget.Hp, 7.5f), "Achilles fractional 2.5 damage was rounded");
 
             var physical = CombatFixture(HeroKind.Achilles); Enemy armored = AddSkeleton(physical, SkeletonKind.Knight, -20);
-            physical.Hero.AttackCooldown = 0; physical.Step(GameModel.Tick);
+            physical.Hero.AttackCooldown = 0; StepAtContact(physical);
             Check(Near(armored.Hp, armored.MaxHp - 1.25f), "Knight armor did not absorb fifty percent of physical damage");
             var magical = CombatFixture(HeroKind.Circe); Enemy armoredMagic = AddSkeleton(magical, SkeletonKind.Knight, -120);
-            magical.Hero.AttackCooldown = 0; Advance(magical, .8f);
+            magical.Hero.AttackCooldown = 0; Advance(magical, 1.1f);
             Check(Near(armoredMagic.Hp, armoredMagic.MaxHp - 5), "Knight physical armor incorrectly absorbed magical damage");
 
             var attacked = CombatFixture(HeroKind.Circe);
             Enemy attacker = AddTarget(attacked); attacker.AttackCooldown = 0;
-            attacked.Step(GameModel.Tick);
+            StepAtContact(attacked);
             Check(Near(attacked.Hero.Hp, 245), "Enemy basic attack did not damage hero");
             Advance(attacked, .5f);
             Check(Near(attacked.Hero.Hp, 245), "Enemy attacked before its cooldown elapsed");
@@ -473,7 +488,7 @@ namespace SkeletonDefender.Editor
             Enemy fragile = sharedTarget.CreateEnemy(SkeletonKind.Normal, 247);
             fragile.Hp = 3; fragile.AttackCooldown = 999;
             sharedTarget.Enemies.Add(fragile); int initialGold = sharedTarget.Gold;
-            sharedTarget.Step(GameModel.Tick);
+            StepAtContact(sharedTarget);
             Advance(sharedTarget, .5f);
             Check(sharedTarget.Kills == 1 && sharedTarget.Gold == initialGold + fragile.Reward, "Two attackers granted duplicate kill rewards");
         }
@@ -483,8 +498,8 @@ namespace SkeletonDefender.Editor
             var model = CombatFixture(HeroKind.Circe);
             Enemy boss = AddTarget(model, 0, 1000, true); boss.AttackCooldown = 0;
             model.Hero.Hp = 1;
-            model.Step(GameModel.Tick);
-            Check(!model.Hero.Alive && Near(model.Hero.RespawnRemaining, 60), "Hero death did not start a sixty-second respawn");
+            StepAtContact(model);
+            Check(!model.Hero.Alive && Near(model.Hero.RespawnRemaining, 60, GameModel.Tick + .001f), "Hero death did not start a sixty-second respawn");
             Vector2 position = model.Hero.Position;
             Check(!model.MoveHero(new Vector2(250, 500)), "Dead hero accepted a movement order");
             Advance(model, 59.8f, true);
@@ -498,12 +513,12 @@ namespace SkeletonDefender.Editor
             var magical = CombatFixture(HeroKind.Circe, SeedFor(.05f, true, 2));
             Enemy boss = AddTarget(magical, -120, 10000, true);
             magical.Hero.FrogCooldown = 0; magical.Hero.AttackCooldown = 0;
-            Advance(magical, .8f);
+            Advance(magical, 1.1f);
             Check(!boss.IsFrog && Near(boss.Hp, 10000), "Boss took Circe magic damage or was transformed by hex");
             foreach (ProjectileKind kind in new[] { ProjectileKind.Arcane, ProjectileKind.Fireball })
             {
                 magical.Projectiles.Add(new HeroProjectile { Kind = kind, Damage = 200, TargetId = boss.Id, Position = magical.Position(boss.Distance) });
-                magical.Step(GameModel.Tick);
+                StepAtContact(magical);
                 Check(Near(boss.Hp, 10000) && !boss.IsFrog, "Boss accepted a magical projectile: " + kind);
             }
             var magicTowers = CombatFixture(HeroKind.Circe);
@@ -513,17 +528,23 @@ namespace SkeletonDefender.Editor
             Check(Near(towerBoss.Hp, 10000) && Near(towerBoss.Slow, 0), "Ember or Frost bypassed complete boss magic immunity");
             var physical = CombatFixture(HeroKind.Achilles);
             Enemy physicalBoss = AddTarget(physical, -20, 10000, true);
-            physical.Hero.AttackCooldown = 0; physical.Step(GameModel.Tick);
+            physical.Hero.AttackCooldown = 0; StepAtContact(physical);
             Check(Near(physicalBoss.Hp, 9997.5f), "Boss was incorrectly immune to physical melee damage");
             var arrows = CombatFixture(HeroKind.Circe);
             Check(arrows.Build(0, TowerKind.Archer), "Physical immunity fixture could not build");
-            Enemy arrowBoss = arrows.CreateEnemy(SkeletonKind.Boss, 247); arrows.Enemies.Add(arrowBoss);
-            Advance(arrows, .45f);
-            Check(Near(arrowBoss.Hp, 9996.1089975f), "Archer physical damage did not damage the boss");
+            float arrowDistance=0,nearest=float.MaxValue;
+            for(float distance=0;distance<=arrows.PathLength;distance++)
+            {
+                float separation=(arrows.Position(distance)-GameModel.Sites[0]).sqrMagnitude;
+                if(separation<nearest){nearest=separation;arrowDistance=distance;}
+            }
+            Enemy arrowBoss = arrows.CreateEnemy(SkeletonKind.Boss, arrowDistance); arrows.Enemies.Add(arrowBoss);
+            for(int tick=0;tick<90 && Near(arrowBoss.Hp,10000);tick++) arrows.Step(GameModel.Tick);
+            Check(Near(arrowBoss.Hp, 10000 - 3.8910025f * 1.05f), "Archer physical damage did not damage the boss");
 
             var ordinary = CombatFixture(HeroKind.Circe, SeedFor(.05f, true, 2));
             Enemy target = AddTarget(ordinary, -120, 1000); int gold = ordinary.Gold;
-            ordinary.Hero.FrogCooldown = 0; ordinary.Hero.AttackCooldown = 0; ordinary.Step(GameModel.Tick);
+            ordinary.Hero.FrogCooldown = 0; ordinary.Hero.AttackCooldown = 0; StepAtContact(ordinary);
             Check(target.IsFrog && Near(ordinary.Hero.FrogCooldown, 30), "Successful five-percent attack hex did not start thirty-second cooldown");
             ordinary.Hero.AttackCooldown = 999;
             Advance(ordinary, 2.8f);
@@ -535,15 +556,15 @@ namespace SkeletonDefender.Editor
 
             var missed = CombatFixture(HeroKind.Circe, SeedFor(.05f, false, 2));
             Enemy missedTarget = AddTarget(missed, -120, 1000);
-            missed.Hero.FrogCooldown = 0; missed.Hero.AttackCooldown = 0; missed.Step(GameModel.Tick);
+            missed.Hero.FrogCooldown = 0; missed.Hero.AttackCooldown = 0; StepAtContact(missed);
             Check(!missedTarget.IsFrog && Near(missed.Hero.FrogCooldown, 0), "Missed five-percent hex rolled into a guaranteed transformation or started cooldown");
             var cooling = CombatFixture(HeroKind.Circe, SeedFor(.05f, true, 2));
             Enemy coolingTarget = AddTarget(cooling, -120, 1000);
-            cooling.Hero.FrogCooldown = 10; cooling.Hero.AttackCooldown = 0; cooling.Step(GameModel.Tick);
+            cooling.Hero.FrogCooldown = 10; cooling.Hero.AttackCooldown = 0; StepAtContact(cooling);
             Check(!coolingTarget.IsFrog && cooling.Hero.FrogCooldown > 9, "Hex ignored its successful-cast cooldown");
             var idleHex = CombatFixture(HeroKind.Circe, SeedFor(.05f, true));
             Enemy idleTarget = AddTarget(idleHex, -120, 1000);
-            idleHex.Hero.FrogCooldown = 0; idleHex.Step(GameModel.Tick);
+            idleHex.Hero.FrogCooldown = 0; StepAtContact(idleHex);
             Check(!idleTarget.IsFrog, "Hex proc happened without a basic attack");
 
             foreach (HeroKind hero in new[] { HeroKind.Circe, HeroKind.Achilles })
@@ -551,17 +572,17 @@ namespace SkeletonDefender.Editor
                 var immune = CombatFixture(hero); Enemy immuneBoss = AddTarget(immune, 0, 777, true);
                 if (hero == HeroKind.Circe) immune.Hero.SunCooldown = 0;
                 else immune.Hero.DecapitateCooldown = 0;
-                immune.Step(GameModel.Tick);
+                StepAtContact(immune);
                 Check(!immuneBoss.Dead && Near(immuneBoss.Hp, 777), "Boss died to sunbeam or decapitation");
                 var normal = CombatFixture(hero); Enemy normalTarget = AddTarget(normal, 0, 777);
                 if (hero == HeroKind.Circe) normal.Hero.SunCooldown = 0;
                 else normal.Hero.DecapitateCooldown = 0;
-                normal.Step(GameModel.Tick);
+                StepAtContact(normal);
                 Check(normalTarget.Dead && normal.Kills == 1, "Instant-kill skill failed against ordinary enemy");
             }
             var knife = CombatFixture(HeroKind.Achilles); Enemy knifeBoss = AddTarget(knife, 0, 777, true);
             knife.Projectiles.Add(new HeroProjectile { Kind = ProjectileKind.Knife, InstantKill = true, TargetId = knifeBoss.Id, Position = knife.Position(knifeBoss.Distance) });
-            knife.Step(GameModel.Tick);
+            StepAtContact(knife);
             Check(!knifeBoss.Dead && Near(knifeBoss.Hp, 777), "Knife ignored boss instant-kill immunity");
         }
 
@@ -584,7 +605,7 @@ namespace SkeletonDefender.Editor
                 Damage = damage, InstantKill = instantKill, TargetId = target.Id,
                 Position = model.Position(target.Distance)
             });
-            model.Step(GameModel.Tick);
+            StepAtContact(model);
         }
 
         private static void CheckSkeletonAbilities()
@@ -613,9 +634,10 @@ namespace SkeletonDefender.Editor
 
             var ninjaHexFight = CombatFixture(HeroKind.Circe, SeedFor(.05f, true, 2));
             Enemy hexNinja = AddSkeleton(ninjaHexFight, SkeletonKind.Ninja, -120);
+            hexNinja.Hp = hexNinja.MaxHp = 1000; // Isolate hex from a simultaneous fireball proc before its deferred cast.
             Advance(ninjaHexFight, 4.1f);
             ninjaHexFight.Hero.FrogCooldown = 0; ninjaHexFight.Hero.AttackCooldown = 0;
-            ninjaHexFight.Step(GameModel.Tick);
+            StepAtContact(ninjaHexFight);
             Check(hexNinja.IsFrog && hexNinja.DodgeReady && Near(ninjaHexFight.Hero.FrogCooldown, 30),
                 "Successful hex was dodged, consumed the physical dodge charge or failed to start its cooldown");
 
@@ -623,7 +645,7 @@ namespace SkeletonDefender.Editor
             Enemy pharaoh = AddSkeleton(summoning, SkeletonKind.Tutankhamun, 200, false);
             Advance(summoning, 7.8f);
             Check(!summoning.Enemies.Exists(enemy => enemy.IsSummoned), "Pharaoh summoned before eight seconds");
-            Advance(summoning, .3f);
+            Advance(summoning, .65f);
             Enemy mummy = summoning.Enemies.Find(enemy => enemy.IsSummoned);
             Check(mummy != null && mummy.Skeleton == SkeletonKind.Normal && Near(mummy.MaxHp, 12) && Near(mummy.AttackDamage, 5) && mummy.Reward == 1,
                 "Pharaoh summon did not have twelve HP, five damage and one gold");
@@ -644,20 +666,21 @@ namespace SkeletonDefender.Editor
             Enemy returned = rebirth.Enemies.Find(enemy => enemy.Skeleton == SkeletonKind.Sarcophagus && !enemy.Dead);
             Check(bearer.Dead && returned != null && !returned.HasSarcophagus && returned.IsSummoned && returned.Reward == 1 && Near(returned.MaxHp, 75),
                 "Sarcophagus did not release exactly one coffin-free copy");
+            Advance(rebirth, 1.22f);
             ProjectileHit(rebirth, returned, 1000);
             Check(rebirth.Kills == 2 && rebirth.Gold == rebirthGold + 4 && !rebirth.Enemies.Exists(enemy => enemy.Skeleton == SkeletonKind.Sarcophagus && !enemy.Dead),
                 "Sarcophagus copy repeated its rebirth or the original and copy did not award four gold total");
 
             var crawlerFight = CombatFixture(HeroKind.Circe);
             Enemy crawler = AddSkeleton(crawlerFight, SkeletonKind.Crawler); crawler.AttackCooldown = 0;
-            crawlerFight.Step(GameModel.Tick);
+            StepAtContact(crawlerFight);
             Check(Near(crawlerFight.Hero.Hp, 200), "Crawler bite did not deal tenfold ordinary damage");
 
             var pirateFight = CombatFixture(HeroKind.Circe);
             Enemy pirate = AddSkeleton(pirateFight, SkeletonKind.Pirate, -120);
             Advance(pirateFight, 4.9f);
             Check(pirateFight.EnemyProjectiles.Count == 0 && Near(pirateFight.Hero.Hp, 250), "Pirate fired before its five-second interval");
-            Advance(pirateFight, .15f);
+            Advance(pirateFight, .56f);
             Check(pirateFight.EnemyProjectiles.Count == 1 && Near(pirateFight.Hero.Hp, 250), "Pirate gun hit before its projectile arrived");
             Advance(pirateFight, .3f);
             Check(Near(pirateFight.Hero.Hp, 210), "Pirate projectile did not deal eightfold ordinary damage");
@@ -665,7 +688,7 @@ namespace SkeletonDefender.Editor
                 Position = pirateFight.Hero.Position, Damage = 40, Speed = 300,
                 TargetLifeSerial = pirateFight.Hero.LifeSerial - 1
             });
-            pirateFight.Step(GameModel.Tick);
+            StepAtContact(pirateFight);
             Check(Near(pirateFight.Hero.Hp, 210), "Projectile from an earlier hero life damaged the current life");
 
             foreach (SkeletonKind kind in new[] { SkeletonKind.Samurai, SkeletonKind.TRex })
@@ -674,10 +697,10 @@ namespace SkeletonDefender.Editor
                     float chance = kind == SkeletonKind.Samurai ? .2f : .5f;
                     var execution = CombatFixture(HeroKind.Circe, SeedFor(chance, succeeds));
                     Enemy attacker = AddSkeleton(execution, kind); attacker.AttackCooldown = 0;
-                    execution.Step(GameModel.Tick);
+                    StepAtContact(execution);
                     Check(Near(execution.Hero.Hp, succeeds ? 0 : 245) && execution.Hero.Alive != succeeds,
                         "Seeded skeleton execution chance or fallback melee damage is incorrect: " + kind);
-                    if (succeeds) Check(Near(execution.Hero.RespawnRemaining, 60), "Skeleton execution bypassed normal hero resurrection");
+                    if (succeeds) Check(Near(execution.Hero.RespawnRemaining, 60, GameModel.Tick + .001f), "Skeleton execution bypassed normal hero resurrection");
                 }
 
             foreach (bool succeeds in new[] { false, true })
@@ -686,14 +709,14 @@ namespace SkeletonDefender.Editor
                 AddSkeleton(lightning, SkeletonKind.Warlock, 100, false);
                 Advance(lightning, 3.8f);
                 Check(Near(lightning.Hero.Hp, 250), "Warlock rolled lightning before four seconds");
-                Advance(lightning, .3f);
+                Advance(lightning, .68f);
                 Check(lightning.Hero.Alive && Near(lightning.Hero.Hp, succeeds ? 1 : 250), "Seeded warlock lightning did not leave the hero at one HP or produce a miss");
                 Check(lightning.EnemyEffects.Exists(effect => effect.Kind == (succeeds ? "lightning" : "smoke")), "Warlock success/failure effect is missing");
             }
 
             var boxing = CombatFixture(HeroKind.Circe);
             Enemy boxer = AddSkeleton(boxing, SkeletonKind.Boxer); boxer.AttackCooldown = 0;
-            boxing.Hero.AttackCooldown = 0; boxing.Step(GameModel.Tick);
+            boxing.Hero.AttackCooldown = 0; StepAtContact(boxing);
             Check(Near(boxing.Hero.Hp, 200) && Near(boxing.Hero.KnockdownRemaining, 10) && boxing.Projectiles.Count == 0,
                 "Boxer did not replace melee damage with twenty percent max HP and prevent hero attacks");
             Vector2 knockedPosition = boxing.Hero.Position;
@@ -716,7 +739,7 @@ namespace SkeletonDefender.Editor
                 var first = CombatFixture(HeroKind.Circe, seed); Enemy a = AddTarget(first, -120);
                 var second = CombatFixture(HeroKind.Circe, seed); Enemy b = AddTarget(second, -120);
                 first.Hero.AttackCooldown = 0; second.Hero.AttackCooldown = 0;
-                first.Step(GameModel.Tick); second.Step(GameModel.Tick);
+                StepAtContact(first); StepAtContact(second);
                 int fireballs = first.Projectiles.FindAll(projectile => projectile.Kind == ProjectileKind.Fireball).Count;
                 Check(fireballs == (succeeds ? 3 : 0), "Seeded fireball attack did not produce the expected volley");
                 foreach (HeroProjectile projectile in first.Projectiles)
@@ -730,7 +753,7 @@ namespace SkeletonDefender.Editor
             {
                 var knife = CombatFixture(HeroKind.Achilles, SeedFor(knifeChance, succeeds));
                 Enemy target = AddTarget(knife, -40); int gold = knife.Gold;
-                knife.Hero.AttackCooldown = 0; knife.Step(GameModel.Tick);
+                knife.Hero.AttackCooldown = 0; StepAtContact(knife);
                 Check(knife.Projectiles.Exists(projectile => projectile.Kind == ProjectileKind.Knife) == succeeds, "Knife did not roll on the seeded melee hit");
                 Advance(knife, .5f);
                 Check(target.Dead == succeeds && knife.Kills == (succeeds ? 1 : 0), "Knife did not instantly kill its ordinary target");
@@ -741,7 +764,7 @@ namespace SkeletonDefender.Editor
             {
                 var dodge = CombatFixture(HeroKind.Achilles, SeedFor(dodgeChance, succeeds));
                 Enemy attacker = AddTarget(dodge); attacker.AttackCooldown = 0;
-                dodge.Step(GameModel.Tick);
+                StepAtContact(dodge);
                 Check(Near(dodge.Hero.Hp, succeeds ? 350 : 345), "Seeded dodge did not apply to incoming damage");
             }
         }
@@ -778,6 +801,7 @@ namespace SkeletonDefender.Editor
             Check(victory.Build(0, TowerKind.Archer), "Final victory fixture could not build a physical tower");
             finalBoss.Hp = .1f;
             victory.Step(GameModel.Tick);
+            for (int tick = 0; tick < 180 && !finalBoss.Dead; tick++) victory.Step(GameModel.Tick);
             Check(victory.State == RunState.Victory && finalBoss.Dead && victory.Elapsed < 1800,
                 "Killing the final boss did not immediately complete the map or introduced a mandatory thirty-minute wait");
             int victoryGold = victory.Gold; victory.Hero.Hp = 100; float finalHp = victory.Hero.Hp;
@@ -798,7 +822,7 @@ namespace SkeletonDefender.Editor
             Check(overlapBoss != null, "Overlapping final wave did not spawn its boss");
             overlapBoss.Distance = overlap.PathLength - BalanceData.Current.heroRules.spawnDistanceFromExit;
             overlapBoss.Hp = .1f; overlapBoss.AttackCooldown = 999;
-            overlap.Hero.AttackCooldown = 0; overlap.Step(GameModel.Tick);
+            overlap.Hero.AttackCooldown = 0; StepAtContact(overlap);
             Check(overlapBoss.Dead && overlap.State != RunState.Victory && overlap.WavesCompleted < 20,
                 "Killing the final boss completed the map while earlier waves still had pending enemies");
             overlap.Hero.AttackCooldown = 999;

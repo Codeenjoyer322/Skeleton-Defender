@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "approvedRuntimeClips": 211,
+  "clipsIncludingAliases": 233,
+  "uniqueTextures": 201,
+  "frameEntries": 1970,
+  "sourceHashesVerified": 211,
+  "excludedDemoCount": 6,
+  "bytes": 7006171,
+  "errors": [],
+  "notes": [
+    "Original PNG bytes copied exactly; no image editing.",
+    "Achilles idle/hurt and giant idle reuse existing ready poses.",
+    "Sarcophagus bare aliases and opposite idle directions share atlases."
+  ]
+}

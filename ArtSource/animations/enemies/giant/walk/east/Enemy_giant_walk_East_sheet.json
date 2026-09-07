@@ -1,0 +1,279 @@
+{
+  "frames": [
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 150,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 150,
+      "phase": "PASS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 150,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 150,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 150,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 150,
+      "phase": "PASS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 150,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 150,
+      "filename": "Enemy_giant_walk_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 150,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "walk",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "giant",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 382,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 1.85,
+    "durationMs": 1200,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/walk/east/Enemy_giant_walk_East_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "walk",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 1200,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_giant_walk_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "loop",
+    "notes": [
+      "Unique heavier gait; display at 1.85 times ordinary skeleton scale, not a new miniature enemy."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "previewOnlyLoop": false,
+    "provenance": "PixelLab enemy_giant_walk_v1; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rawJob": "enemy_giant_walk_v1",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 320,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_giant_walk_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

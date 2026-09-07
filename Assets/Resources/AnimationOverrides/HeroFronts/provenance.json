@@ -1,0 +1,73 @@
+{
+  "version": "0.7.1",
+  "date": "2026-09-07",
+  "purpose": "Inventory and main menu front-facing full-body portraits",
+  "authoring": "Existing PixelLab south views; native Aseprite local white-eye layer for Achilles",
+  "newGeneration": false,
+  "sourceImagesUnchanged": true,
+  "portraits": [
+    {
+      "edited": true,
+      "eyeMask": [
+        [
+          42,
+          24
+        ],
+        [
+          43,
+          24
+        ],
+        [
+          43,
+          25
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          49,
+          24
+        ],
+        [
+          48,
+          25
+        ]
+      ],
+      "hero": "achilles",
+      "native": "C:/Users/Life/Desktop/Testnew2/portraits/achilles-front.aseprite",
+      "runtime": "C:/Users/Life/Documents/ChatGPT/Skeleton Defender/Assets/Resources/AnimationOverrides/HeroFronts/achilles.png",
+      "source": "C:/Users/Life/Desktop/Asstets Review GPT6 Astra/PixelLab_Heroes_v2/01_RAW/Achilles/Sword_Ready/south.png",
+      "sourceSha256": "27806aa6939714e406705a9a37f9e2004753ecab2b0c42a2e215c2b749d870d7",
+      "runtimeSha256": "bc0af0b2855f4dc9061984fd6b37ea791395b6b31d8f561376b09f21791e6286",
+      "changedPixels": 30,
+      "alphaUnchanged": true,
+      "outsideEyeRegionUnchanged": true,
+      "bounds": {
+        "x": 30,
+        "y": 9,
+        "width": 30,
+        "height": 72
+      }
+    },
+    {
+      "edited": false,
+      "eyeMask": [],
+      "hero": "circe",
+      "native": "C:/Users/Life/Desktop/Testnew2/portraits/circe-front.aseprite",
+      "runtime": "C:/Users/Life/Documents/ChatGPT/Skeleton Defender/Assets/Resources/AnimationOverrides/HeroFronts/circe.png",
+      "source": "C:/Users/Life/Desktop/Asstets Review GPT6 Astra/PixelLab_Heroes_v2/01_RAW/Circe/Idle/south.png",
+      "sourceSha256": "072fc4c7556039e1ecdb1d661e30b742caa41a053c97313a60dd975aab5308db",
+      "runtimeSha256": "bfff23a9ca34e41f62b5b8ae2981a05edc5f469ac01f50a273eb5b79bf09e451",
+      "changedPixels": 0,
+      "alphaUnchanged": true,
+      "outsideEyeRegionUnchanged": true,
+      "bounds": {
+        "x": 32,
+        "y": 10,
+        "width": 37,
+        "height": 71
+      }
+    }
+  ]
+}

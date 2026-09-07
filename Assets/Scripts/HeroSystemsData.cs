@@ -43,5 +43,8 @@ namespace SkeletonDefender
         public float slowDuration;
         public float areaRadius;
         public float visualDelay;
+        public float animationSpeed = 1;
+        public int damageTicks = 1;
+        public float knockbackDistance;
     }
 }

@@ -1,0 +1,766 @@
+{
+  "frames": [
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "SUPPORT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "GATHER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "COMPRESS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "PUSH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "LIFT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "RECOVER HIND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "REACH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 50,
+      "phase": "EXTEND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "SUSPENSION",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "LAND FORE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "WEIGHT FORWARD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "TRANSFER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/13.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 480
+      },
+      "gifDuration": 50,
+      "phase": "HIND CATCH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/14.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 480
+      },
+      "gifDuration": 50,
+      "phase": "LOWER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/15.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 480
+      },
+      "gifDuration": 50,
+      "phase": "SUPPORT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Deer_Run_East_frames/16.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 480
+      },
+      "gifDuration": 50,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "run",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "circe_deer",
+    "columns": 4,
+    "contact": {
+      "h": 764,
+      "w": 688
+    },
+    "direction": "east",
+    "durationMs": 800,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/run/east/Circe_Deer_Run_East_sheet.png"
+    },
+    "frameCount": 16,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "run_east",
+        "to": 15
+      }
+    ],
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 800,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "groundAnchor": {
+      "x": 80,
+      "y": 128
+    },
+    "image": "Circe_Deer_Run_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "All16 genuinely generated gallop poses retained, four legs with compression/suspension/landing",
+      "Rigid antler crown uses canonical master upper region(50,13)..(124,49), tracking the observed head translation; body/legs are untouched",
+      "Antler offsets inspected against raw003 and010 at3x; canonical region includes its tiny root/ear junction to avoid a seam",
+      "800ms loop; ground anchor(80,128) is a logical road anchor, suspension frames intentionally lift the hooves"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Visually inspected circe_deer_run_v2; Aseprite native finishing, RAW unchanged",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "circe_deer_run_v2",
+    "rawTransforms": [
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 1
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 1
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 3
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 2
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 5
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 3
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 5
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 4
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 2
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 5
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 2,
+            "y": 0
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 6
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 4,
+            "y": 0
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 7
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 7,
+            "y": 3
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 8
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 8,
+            "y": 7
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 9
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 8,
+            "y": 10
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 10
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 8,
+            "y": 8
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 11
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 6,
+            "y": 7
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 12
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 5,
+            "y": 5
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 13
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 3,
+            "y": 3
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 14
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 1,
+            "y": 1
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 15
+      },
+      {
+        "canonicalPatch": {
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "source": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer/reference/Circe_Deer_Master.png",
+          "sourceRect": {
+            "h": 37,
+            "w": 75,
+            "x": 50,
+            "y": 13
+          }
+        },
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 16
+      }
+    ],
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 640,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\normal_ninja_deer_v2_candidates\\circe_deer\\run\\Circe_Deer_Run_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

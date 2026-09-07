@@ -1,0 +1,272 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/01.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "SEED",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/02.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 64,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "OPEN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/03.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "SAND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/04.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 192,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "LIFT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/05.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 48
+      },
+      "gifDuration": 80,
+      "phase": "RING",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/06.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 64,
+        "y": 48
+      },
+      "gifDuration": 80,
+      "phase": "DUST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/07.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 128,
+        "y": 48
+      },
+      "gifDuration": 90,
+      "phase": "LAST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "VFX_Enemy_enemy_summon_ground_frames/08.png",
+      "frame": {
+        "h": 48,
+        "w": 64,
+        "x": 192,
+        "y": 48
+      },
+      "gifDuration": 100,
+      "phase": "CLEAR",
+      "rotated": false,
+      "sourceSize": {
+        "h": 48,
+        "w": 64
+      },
+      "spriteSourceSize": {
+        "h": 48,
+        "w": 64,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "spawn_ground_point",
+      "x": 32,
+      "y": 36
+    },
+    "anchors": {
+      "direction": "none",
+      "origin": {
+        "type": "spawn_ground_point",
+        "x": 32,
+        "y": 36
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 48,
+      "w": 64
+    },
+    "columns": 4,
+    "componentNameRu": "Призыв · песок и кольцо у земли",
+    "componentOnly": true,
+    "contact": {
+      "h": 158,
+      "w": 560
+    },
+    "durationMs": 610,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_enemy_summon_ground_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "enemy_summon_ground",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gifDurationMs": 610,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Enemy_enemy_summon_ground_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Spawn at the actual runtime creature ground point, not at a fixed position beside the caster. Contains no summoned body. Play once, no extra spawn/damage."
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Original independent pixel VFX authored in native Aseprite Lua; no generated actor edits.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "review_label": "Подготовлено для просмотра",
+    "size": {
+      "h": 96,
+      "w": 256
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\effects\\_build_sources\\VFX_Enemy_enemy_summon_ground.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "rootApproved": true,
+    "integratedIntoGame": false,
+    "displayScale": 1.1
+  }
+}

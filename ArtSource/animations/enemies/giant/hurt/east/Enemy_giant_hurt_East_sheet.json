@@ -1,0 +1,177 @@
+{
+  "frames": [
+    {
+      "duration": 30,
+      "filename": "Enemy_giant_hurt_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "RECOIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_giant_hurt_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "RECOIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_giant_hurt_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "SETTLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Enemy_giant_hurt_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 630,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "hurt",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "giant",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 191,
+      "w": 688
+    },
+    "direction": "east",
+    "displayScale": 1.85,
+    "durationMs": 120,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/giant/hurt/east/Enemy_giant_hurt_East_sheet.png"
+    },
+    "frameCount": 4,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "hurt",
+        "to": 3
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 720,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_giant_hurt_East_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 80,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 600,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab enemy_giant_hurt_v1; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rawJob": "enemy_giant_hurt_v1",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 160,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_giant_hurt_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "version": "0.8.1",
+  "authorizationMaximum": 3184,
+  "balanceBefore": 3183.9,
+  "chargedGenerations": 448.1,
+  "balanceAfter": 2735.8,
+  "remainingAuthorized": 2735.8,
+  "purchases": 0,
+  "byRole": {
+    "deer": 35.0,
+    "tower": 180.0,
+    "elf": 13.0,
+    "environment": 220.1
+  },
+  "jobsCompleted": 40,
+  "validationRejectedNoCharge": 4,
+  "checkedAt": "2026-09-07T15:01:29.527034+00:00",
+  "ledger": "v081-ledger.json"
+}

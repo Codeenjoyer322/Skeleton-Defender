@@ -1,0 +1,2130 @@
+[
+  {
+    "id": "neongothic-circe-walk-south-east",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "south-east",
+    "qa": "",
+    "sourceDirectionLabel": "south-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\south-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\south-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\south-east\\animation.png",
+    "sheetSha256": "7c5579486b47c668cca1b9e6f0404e699efa3741405e9092fae10b1b1354cfb6",
+    "runtimeUniformCrop": {
+      "height": 72,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 60,
+      "x": 46,
+      "y": 30
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/south-east/frames/frame_000.png",
+        "sha256": "9e422819f88c6fb87ec1695e8dd131304134b23f0bcdb789a1f3ccba824ceca0",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/south-east/frames/frame_001.png",
+        "sha256": "068ae159ac9baff223e68449798329eaa5cd393431b5ea1fd380864d7138770e",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/south-east/frames/frame_002.png",
+        "sha256": "d2d95c048a9877a5802c1f543a7275ef2c155bfe65e0df06ff1721427f183f48",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/south-east/frames/frame_003.png",
+        "sha256": "c1838f5f2ee8b29ea7c5b28e06cc8e16215a91d5917dfef20f2569fbb663b747",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-walk-east",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "east",
+    "qa": "",
+    "sourceDirectionLabel": "east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\east\\animation.png",
+    "sheetSha256": "7467676b59ded0377cf77bfdea52594e96872b5e13ff149e0cb73a44bf2bf9df",
+    "runtimeUniformCrop": {
+      "height": 71,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 49,
+      "x": 48,
+      "y": 30
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/east/frames/frame_000.png",
+        "sha256": "d09c9776ac2c3234df32b5c43de9583a6ef93ef90f960acc1a6b69fb87356879",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/east/frames/frame_001.png",
+        "sha256": "1f788e2cd737e2c73399a1d2221b4ff65434d8bf5526d54f3d82a81dc0ea23a8",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/east/frames/frame_002.png",
+        "sha256": "b79a9154bf22b38a188e13864a89e3e6e01e99fd135254e09f00058d32972327",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/east/frames/frame_003.png",
+        "sha256": "2ac6757b98b17dd7e2760bfa1afa662f5333bb0e6f72fd3920e0d7c5df722b3f",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-walk-north-west",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "north-west",
+    "qa": "",
+    "sourceDirectionLabel": "north-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\north-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\north-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\north-west\\animation.png",
+    "sheetSha256": "a2c198c82f6220963d659b1860d7d2b783f9289b2a6273ca9ecde782799e0751",
+    "runtimeUniformCrop": {
+      "height": 75,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 52,
+      "x": 29,
+      "y": 29
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/north-west/frames/frame_000.png",
+        "sha256": "5b563efba55f7fa262ced22c7b93e5a58753c1191a7b607ad74be4f34532c5d4",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/north-west/frames/frame_001.png",
+        "sha256": "f902b83b01cb1eb5573746be779ddf0dc53053abc7155f7c622aa8171cabf06d",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/north-west/frames/frame_002.png",
+        "sha256": "4385fa93554fb815f1df94b493163f5d0298134e9008f99f6ab8418db09fe2e8",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/north-west/frames/frame_003.png",
+        "sha256": "974ee86b1eb5d70aeca77ae77028315b56177ae782d27394abe687cd0e8e1982",
+        "offsetX": 18,
+        "offsetY": 19,
+        "durationMs": 150
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-walk-west",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "west",
+    "qa": "",
+    "sourceDirectionLabel": "west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\walk\\west\\animation.png",
+    "sheetSha256": "ae4598737d5f94708934448e7e49010bb18320ee937824fe7c76183119e744bd",
+    "runtimeUniformCrop": {
+      "height": 73,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 55,
+      "x": 29,
+      "y": 29
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/west/frames/frame_000.png",
+        "sha256": "c9e22a5ab9c3518cd92a24597f5c20c359b6b304ec8ef7e11ac11538b4a1752c",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/west/frames/frame_001.png",
+        "sha256": "d0c274519016e09033fc28954f0b85d294011b79c9b3453fd974bcb8f4576981",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/west/frames/frame_002.png",
+        "sha256": "6ad329cca234d77b35376d2673966c1cf1da3837e2210891ad8a1c80154313f6",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/circe-walk-grip/west/frames/frame_003.png",
+        "sha256": "46b0955ac04b7a317f4d0e4ced30f51dae191493f0d7ebc88302807ec80336a3",
+        "offsetX": 18,
+        "offsetY": 18,
+        "durationMs": 150
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-south",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "south",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south\\animation.png",
+    "sheetSha256": "2e45c2f3a96e60aa297295f547c55e42f9f01722c292b6eb7ba703d56caf8490",
+    "runtimeUniformCrop": {
+      "height": 102,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 58,
+      "x": 35,
+      "y": 13
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\001.png",
+        "sha256": "c5c72e13c8747b44bbd324651c83a500ad0e7f24774251190b3af7de7819bd10",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\002.png",
+        "sha256": "9795203439fbeb7b910d5944fb61d98bd6df04e9ba199b0828b5e25cc0db1785",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\003.png",
+        "sha256": "c85832703b609f3a68360f5331cc3963dcce2f8d0fd1671bf40434d6a41f23e8",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\004.png",
+        "sha256": "064ea2ea1b0589af9a6961aac19bb05f3cb22a5f3a29de101537dbe86208d666",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\005.png",
+        "sha256": "a03d1deee5bf524da4f6394bff03770e331bab2063a6fa1a5f68bf9f4ca3eb6d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\006.png",
+        "sha256": "785c55ed09761cbad00177e4b5ef1c4d6aadcde3b73277d39f4a6b7b8d9d32f7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\007.png",
+        "sha256": "60f6d22a7c48137ff62ddfc33907059110b63b9fd6f68bfec5b2fb0670c34b2b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\008.png",
+        "sha256": "d249e28e16bb1a29f462f7962f471eb883e77eb28b7421a9b16db70e4383da21",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\009.png",
+        "sha256": "aa553f5b164266f4957ce6ee5510efb889aff9acf1e414cd07d22a7140179ffa",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\010.png",
+        "sha256": "9849f6ee74a9dd863484ef67491d3da59bf7cf947bf014fa7682ec645a803ce2",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\011.png",
+        "sha256": "9e4fea484e98691ae0dbb78bc6d9b492d9b4e3c836f08939f41af17d91b9404b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\012.png",
+        "sha256": "ae23d7474730ab7d26016e6963e3d458057b5bd3f07514722dd0a17129977133",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\013.png",
+        "sha256": "8f7d8f3e66bb5a7216c08c3cd17fc075a3d89def94c89b9891c4e931b6432a70",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\014.png",
+        "sha256": "9600463a7e06fab04c1559a8a38dce1c8c5991e376db888c2c7806bbf688ebb1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\015.png",
+        "sha256": "534484aec447dea2c1bce6949e1d79a812a14016eddf894d8fc38243db452d9f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_v1\\job_00\\frames\\016.png",
+        "sha256": "cf82bf1e66162a7ee83579f3a969c9c89a307aa9f8d62a922c7851c329cc8b0b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-south-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south-east",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "south-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-east\\animation.png",
+    "sheetSha256": "729f634f6dac542600c768ba2f99cd0592e0c0befb96751385ad9673a48aadfb",
+    "runtimeUniformCrop": {
+      "height": 102,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 50,
+      "x": 38,
+      "y": 14
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\001.png",
+        "sha256": "b0b8ed5faaabddd4c6500a1669d7910a9dd552f5bfee5b9ca48227575266b651",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\002.png",
+        "sha256": "fab03f0b311a4ac31e05b6f46e591288b8360417eccfda469dbdf68447ff0f5b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\003.png",
+        "sha256": "893e3a73bb8b7c8a44492a1fb6575e12ef37c2b317272561c94bf4bc1126eefd",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\004.png",
+        "sha256": "59eb290a87cf58308e259e91db64a4b2dcfefefa8746238de6712befb7457e39",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\005.png",
+        "sha256": "9b18199fb0bfdeae5ec3b6c08dd233db8401fa2959f2a268f05e5f090234640d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\006.png",
+        "sha256": "daef123f9ed36554bf2591d4a2335b19a2e873da7460f96700e3825059d8862b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\007.png",
+        "sha256": "763fa98f6e6979200575b806a021b34c9debe7f5bf497ef26db63a1e8cc8c27e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\008.png",
+        "sha256": "0e80a8e2846f8c878ccbd0c53b4f2036b8a06d2408e902bc2ad37094862bca0a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\009.png",
+        "sha256": "005946f6de4510ade1ca33141e2b15440c944ac3f1d3001774fd96b36247ead4",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\010.png",
+        "sha256": "7c3e4c8658985ce87f552a9bbd4d13f667b489df98e81ea70b636f810f16b3f7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\011.png",
+        "sha256": "35c9273bbe0ce36daa3629e8dbcdcc7b2d65b9789c4035b3e465543f847c7a63",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\012.png",
+        "sha256": "2a24a0c49cada653631f13103245c4c0975df69e5c944505c63c23df9c62398f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\013.png",
+        "sha256": "a37f75c0d975e771b9c9e94eb4b536c626edab4ac3332706f1f9340e48504428",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\014.png",
+        "sha256": "4164e0c4595e863800d850e27761f12fac2908ade7402d88ed17d16fbb859fae",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\015.png",
+        "sha256": "50e28c9e450733b3912fd74c97ecdfd65c51578faae70eb1ee7ece2aeef9f58e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_east_v1\\job_00\\frames\\016.png",
+        "sha256": "e4ca07683d89c30f6bf923a39f0a8d7607e867e4350911f47fca17ba93ddaeaa",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "east",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\east\\animation.png",
+    "sheetSha256": "3faa8e0ba1d16811d7acaa32615aa1b81953249e4c27b8637fcf1b76359f886c",
+    "runtimeUniformCrop": {
+      "height": 103,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 71,
+      "x": 28,
+      "y": 12
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\001.png",
+        "sha256": "cc2c054600fa3966b586ce729702d6789ed277fb5da8922956360a100e2e7a8a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\002.png",
+        "sha256": "08c20131671a3660fef29d84cf6f787ebd1d73fe1cf70035c7da4eaf2cc8c9ab",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\003.png",
+        "sha256": "2431b3444e133341bbcfcea836d8fb6ff6f074521603450a4cd814089e7a21fc",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\004.png",
+        "sha256": "58a4d721b67ce6cf1238a9d50becf06174effdc0b9d524c4765fa39a66db84a6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\005.png",
+        "sha256": "3f3fd100a9b203eb945c91494844a6542f83ec45feb252ae06876af361549a47",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\006.png",
+        "sha256": "a86c8966c9fb7db0b0b814a54d366d7ce447cedf8b4f7438faefd5dd6e19d9ae",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\007.png",
+        "sha256": "dfdc49e4511eb521dadf9cfbcb2b12e2b589e0e3e49cdd41c659bef04bd2a287",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\008.png",
+        "sha256": "d91724317f0a7d8f6f3d789da7d21e0d51cf1809b8829b8f58a3487775aaf81b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\009.png",
+        "sha256": "39ec43a04ad867fb36461eb6ebde18b157c2652fcb1142ee02d6d16a988af575",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\010.png",
+        "sha256": "eb96c52979e757470c7168553ed6d818084d06aa3c9c15df899b2b7a779dfc23",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\011.png",
+        "sha256": "acf0b6af9436f5b55193aa884fa92abcf94ef438123e305ff0b59a2e4b43ef25",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\012.png",
+        "sha256": "d0a4685bcb29a3f4ab8867500e690f96e506d1db737c178dead70d6df18fdd66",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\013.png",
+        "sha256": "a53a4c34b59a5436f80c4992201fb47a28bb4a2f97525a60612aebf326d98ac2",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\014.png",
+        "sha256": "0f280483188fcbba77aa88f7b1b38438b21efb8ede2ed4dee5b52cf785364822",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\015.png",
+        "sha256": "1688bcf6e735f005558e3ec8baba4511ad41db92ae8b15c50fc174eeafc5f762",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_east_v1\\job_00\\frames\\016.png",
+        "sha256": "5c7f97a549af526fd155223e6e98822c313e027b3eb517f01cd8312579dd9fd7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-north-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north-east",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "north-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-east\\animation.png",
+    "sheetSha256": "5b52e7cadcc0bbc3c92bf22da7321a0fad0c196f386cddef17158ce4e932448b",
+    "runtimeUniformCrop": {
+      "height": 104,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 49,
+      "x": 41,
+      "y": 12
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\001.png",
+        "sha256": "382d78d2ca108a662fde4104521b5cbdd311a8fda01cb60d0090dc242a903c01",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\002.png",
+        "sha256": "668280afb3badbb85dd6ad822b1b268acefb9769eeebf6c61541ed4103a26a1b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\003.png",
+        "sha256": "27798911f3e3b45f07ebb27df0cfb2246add806ef6412d228a1c108b63143ee1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\004.png",
+        "sha256": "b6d2d90b2803b7809fbf93c51a9a4b9cab0c769d9e966ad94090219a8862bf1b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\005.png",
+        "sha256": "3b5f839e04bd6cb47f07850926f3598250b627c03d3cd8cd3371ec754b7a77dc",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\006.png",
+        "sha256": "33798d5090ac943394fff0e030606bc4204eb546a036cf79e5f0e9204a4a44f2",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\007.png",
+        "sha256": "b41d4d9d78af21e3744b7744bc57a1e8e4ba5ef89c94d786092b3d3422253329",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\008.png",
+        "sha256": "c0a979f9fae6dc6e0fb24290875a00a03e96ff5adf9687e59abe796845175f7b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\009.png",
+        "sha256": "f4b5a1b1a4fced362437e716c15a518c5bc0391f579baac84309b19238293a6f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\010.png",
+        "sha256": "489baf9ba013cb2d01e6c0e4b2a3aef9ae66b023d34f74154a470902b0ab9daa",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\011.png",
+        "sha256": "d2a291d3c0eb5d80657dfc85ddc3ec08e1ee33e27d6fb005f65be4abc9778d8c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\012.png",
+        "sha256": "c1cc9d8958ad65d6525a60f62676b34c1ef25341c46f938aafd4bfa66e22ee0e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\013.png",
+        "sha256": "16395fd24880c5c3d0074dee9979d0d5a14c249686ac2c2d38ed5f0d4897773e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\014.png",
+        "sha256": "6716059239f0414161908cf11a69da6bc2421a5888c4f53b5e5780dff43cdd9a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\015.png",
+        "sha256": "998840fbbb4f9278f56f998465136d75f902ae7d417f3eb4f2f21f4fcf91ecb6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_east_v1\\job_00\\frames\\016.png",
+        "sha256": "71a4a4ee0468c0830040c9d9a3b01a47cf9645c896cab77cbf224811670b4ec0",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-north",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "north",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north\\animation.png",
+    "sheetSha256": "9e944b347dfa02a8f937752ab00a76982583272a4d5c9336a3df59a9b019a6a9",
+    "runtimeUniformCrop": {
+      "height": 104,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 60,
+      "x": 34,
+      "y": 12
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\001.png",
+        "sha256": "931b7ea8ced96edf9fc1d521953b0ec518f22253e9366ff65aea8f11d8a2ec1f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\002.png",
+        "sha256": "fa8d4e4d5d5d518b707300b11fbb0ae3cea6ed03fe16670869c329bc452b4331",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\003.png",
+        "sha256": "e33d9eaedbc5e2b53dcfccd4c5f19a4bcfc16ff6e12b546cc0047c890b7c3a5f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\004.png",
+        "sha256": "f4ffaa467567ec41d83e47555c27a171c8e20c5ed8021d726fc90ca985d3e5b3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\005.png",
+        "sha256": "1871d391d7fa2c2a9365a2c6c4f563fb144dc6e870dd2777fe3ef7acecd183b6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\006.png",
+        "sha256": "3f7a320b570736de80bd231a2434e95674a1929c556cd3a2feb74bb40d95dd1a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\007.png",
+        "sha256": "dc218dabceeb7ad6276ec1804bca3b956f53640ec8bef054dda603b17b2668a4",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\008.png",
+        "sha256": "f2c3d130d8a71840beb053f75739bd64d934167ada48a701e5c102e6ae3c24bb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\009.png",
+        "sha256": "4ccd2b7854a9dccbaa885ac9e34df90259f9de091855b6aa41926d7c15717c1b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\010.png",
+        "sha256": "6876c329eca0ecd4aca6f22e1accfa29f3269cd4e001ec4a315149a58d81a09a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\011.png",
+        "sha256": "04080f661151ff111c664d464900224d8d8b1da73c6c12f9f22bfa0dd2167393",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\012.png",
+        "sha256": "33d967f4526cfdfed63f1338770dcc7d6915e3c28e705000ef02ca7832ebc6fd",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\013.png",
+        "sha256": "bf4a8a969cdcd00ada8573f69b3066674c39a23708032f59c53e2596684960bb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\014.png",
+        "sha256": "9431909221377beea66dfe0f7ef658a9e234487aeb7dbf4e19bada3d1e46defe",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\015.png",
+        "sha256": "ad868bdf6b81c2cd5ce123bba00f1a79a6110ea9742658c30a39d31db93be0d6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_v1\\job_00\\frames\\016.png",
+        "sha256": "e18c0e92b9a668d3b32745408eded10b23a1c0a451a3a2a6571249f730014086",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-north-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north-west",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "north-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\north-west\\animation.png",
+    "sheetSha256": "e10a8eb81cdd3e01ea7716d33e20f0aefb1ae4b9cb45e705a8de7c62c99b2141",
+    "runtimeUniformCrop": {
+      "height": 104,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 54,
+      "x": 39,
+      "y": 12
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\001.png",
+        "sha256": "54ab463a559de10a7f5ebe49b83507aa3f3cb0d0cd80b7845e1d1334c4d899c3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\002.png",
+        "sha256": "8f4f2ae49fc017bfbb8891437ac94bcc7af8f525daded24d263f5f1d664d318c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\003.png",
+        "sha256": "ec3ecbe8786422124fdf3e37807d310bdb4e81303cb1ba3facf08636b2835309",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\004.png",
+        "sha256": "2455b8ad9a77d3be8db6119922d1d7cd804ad06da6e2dbac6c514153aea45db4",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\005.png",
+        "sha256": "f3348c60b764e888dcab74500e764e02c3f35a4d004841b735fbab1992d277a5",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\006.png",
+        "sha256": "f0164b2006eda9c8cf11f5564da87ddd58b32da3a955e351796367b98b2deee6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\007.png",
+        "sha256": "2cf943a68110ad9e714a9a2548eec75d984ddf01d5c93db78643e9a899ad8498",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\008.png",
+        "sha256": "a1cbf65ce2587c7c0af0b55e45dfb13ace50fcaf51287578dd57b5d767a878f9",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\009.png",
+        "sha256": "7a143d9037761c29ae671f82e0d479a343cbbc7de8d67cd05b1a718d20f8602d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\010.png",
+        "sha256": "31abab8bb0d8ab57b0697b33d37d1cd92471fee17b2d7f03a22452cd71100c12",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\011.png",
+        "sha256": "c46a61a904af4ce66a8f709a2fa04f8b9aa63d7d5b54dad28fae8a355f131639",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\012.png",
+        "sha256": "8084e39c5a3c3255467229ebee9cad0b2891cf0e00d983d4f8a237165484b04b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\013.png",
+        "sha256": "dfdd365870213cd1c6152bc2ac6b1bfa275eb93894ce412fedb3fb9271b5cc0e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\014.png",
+        "sha256": "052b55d713ba340d647c697b6fce5fc6efb4031740a42d66420c7ac49e918cbb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\015.png",
+        "sha256": "9e1b7e7698648e090f5afdb0986ccf2192926263a25fcacd9e1496482a719461",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_north_west_v1\\job_00\\frames\\016.png",
+        "sha256": "a1b7e217188386183832be0700785181db9c8ead6799d4211c73c8fecd4eaba3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "west",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\west\\animation.png",
+    "sheetSha256": "494437f35cdd5d43ef7e83a6aa7d3083a24e7d79c38bb62f75e52d16951fc29c",
+    "runtimeUniformCrop": {
+      "height": 100,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 80,
+      "x": 27,
+      "y": 15
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\001.png",
+        "sha256": "be7fd98c9fca5fcc093fb72af15d4d5f4224852395bc12169b2bec25d6361490",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\002.png",
+        "sha256": "da5f90783b290f4a1daee6c7ef984e13644d1ce2c03acb842e704c7454b47216",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\003.png",
+        "sha256": "f563bee040b1d688f1541125e69037b040301e60aee1ae10801aa55fbdc3658e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\004.png",
+        "sha256": "5b7f4753d4d75d9204fbb2aead6d7114e8fa5114df8f9dbc1fe952bbcae2fb80",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\005.png",
+        "sha256": "b79c1d6b34c3e4d4b3a4a37d6c158b8af7cd22ea73cb0c8239f199574f1f2b2c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\006.png",
+        "sha256": "10b58c9464fa81151d930514c016e53a4ec4b2035241899e4e801ed782e053b8",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\007.png",
+        "sha256": "8c4a8946f8450c10891a53cbdcc88a044b6de9f83a1798e5360916ec427ec173",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\008.png",
+        "sha256": "968fa33425f5c992e8a54095123cb004cf48b169ca45fbf4bb50b5a88f0d8d18",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\009.png",
+        "sha256": "ee267d3e8ce8286c12f60ea96e300164d7a729151bd105d84d03819a849a0139",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\010.png",
+        "sha256": "01c838c9fab07baeb9439211fcc596c0a493f69d8ecd46f43c8a2e8069091a59",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\011.png",
+        "sha256": "52de65e6ee31faef746104c9e17c5dda6c69bc1971d7dfdd880a1ca0c0e20572",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\012.png",
+        "sha256": "9ec9bf71795dc066f0158e19c9d16589ebcec81fdbd76170ecd94a6466e06b08",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\013.png",
+        "sha256": "edf0f68d753345ee15195b97f0756d6e5406f4e0a12f23251e4a7196181aaf1a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\014.png",
+        "sha256": "1640c56ca6caed5483f7b3c1b1d2b59a3c85a5fab8578068ead8f6794954983f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\015.png",
+        "sha256": "b16f8b24354bd9fd5e93985ad253e6a043e2935d205e7d47f3cf28069e947786",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_west_v1\\job_00\\frames\\016.png",
+        "sha256": "76648dec57fe6a603581d147d036d1af7c107b0402737d25afb9390004f5d926",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-circe-deer_run-south-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south-west",
+    "qa": "All16 frames visually reviewed in Aseprite contacts: genuine direction, coordinated four-leg stride, rigid branching gold antlers and slender hooves retained; no mirrored body, no clipped anatomy. E/NE additionally checked independently. Base cycle.80s, runtime multiplies playback by.70 independently of route travel duration.",
+    "sourceDirectionLabel": "south-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\circe\\deer_run\\south-west\\animation.png",
+    "sheetSha256": "c55fdabd37aebf9820cd96d7f3e8769ba51335d3025357ce13330ba3a2c6c0c9",
+    "runtimeUniformCrop": {
+      "height": 104,
+      "originalHeight": 128,
+      "originalWidth": 128,
+      "width": 51,
+      "x": 39,
+      "y": 12
+    },
+    "inputs": [
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\001.png",
+        "sha256": "05b3e8a20d877ce4da72ed5f863dc3e437e98760408f18a554b58770d0292cfb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\002.png",
+        "sha256": "532e37a6263e1cf2631a92ccc36f64ff1dd3f849233754ff28e70deb3f11c28d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\003.png",
+        "sha256": "16bf4fc958952e5ecde11d043fac210fc29cb30a918b2cb62d9d9c82198deaa2",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\004.png",
+        "sha256": "6273a8578d83e92c2474e7197eb5ced1c1c815354d22c76a3ec0b3edbc52e72c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\005.png",
+        "sha256": "2cf148512072ecb4197d90376b9f9a2753fce173f53479cd9c1121afbdaa0f7e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\006.png",
+        "sha256": "216e9add5bd1113b3ad96871aa4fe7c9a181ded1a6471ea4a2b8e04f19586af1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\007.png",
+        "sha256": "eddf9ddfa87788b6068c994844cb20dd81dbc9268171d3485f8388feffa956c7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\008.png",
+        "sha256": "c1930ac9fd33607bee5f4e88f41dad9b2adecd81a8c2ea553c33d995ce904c68",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\009.png",
+        "sha256": "d09baf82c741a4b6b6769361fd19ace337846c3aaa952d08c551daafed506eb9",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\010.png",
+        "sha256": "78b780cd1b929220a8d9e31e8dde48c550737e01e8f28f439338759d060f1c76",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\011.png",
+        "sha256": "3b42fea74b70b1b925e0cbad252ca4db186ad7bb24b756ebd8afa5ee1470361c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\012.png",
+        "sha256": "b6d46fe86a678273469e55e19b6ae56bca1aa24589a62d3c666856a76eaf7ce2",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\013.png",
+        "sha256": "443564db1921c5113c2880a514597d54e77fe9cb136506b0450b11f8ec83faa9",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\014.png",
+        "sha256": "073df4cca2db2aaaccc1c1f72e80ab19e4cfe9a73c5f83f3698b9cdbe0019899",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\015.png",
+        "sha256": "68717fc603462977dc99a496c66d06d28151857de9c9051633ef85f6f005d119",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\raw\\jobs\\sacred_deer_run_south_west_v1\\job_00\\frames\\016.png",
+        "sha256": "cd61a1b222f41baaaead75e7768942ac87fc02474b16e255ace86eedc06814a7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-south",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south",
+    "qa": "",
+    "sourceDirectionLabel": "south",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south\\animation.png",
+    "sheetSha256": "a5d29db8ad325bf733502f3d035e57aff2712b604487e775027bf1da9ec21fb4",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 36,
+      "x": 6,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/south/frames/frame_000.png",
+        "sha256": "6afc9eb7c1acf8421be7e0d1b16f583224a2e5d01bfc2a5ef7565e28dfc186a3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-south",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "south",
+    "qa": "",
+    "sourceDirectionLabel": "south",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south\\animation.png",
+    "sheetSha256": "0b2e2eb2789f4069979125da4e87983843e25f96ccba788ee1889bd2604add14",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 41,
+      "x": 3,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_000.png",
+        "sha256": "626c081bb65e0347e61b7afdc7cd93ab6ac85c980844499ad0ecb183d2cc67d6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_001.png",
+        "sha256": "a3f00b2b11763a72c79919d01e0d8f5138cb99cc9b48608fa967b832b4181237",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_002.png",
+        "sha256": "08369ae71f53eb24cbdf16cf34b47aaa95eb886e22e509a845501971d9f0a9db",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_003.png",
+        "sha256": "e2785aa27176ed1b684c7544f07d64e0a3e63d94de98c8f1236a89ca661a807a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_004.png",
+        "sha256": "fe8317456620d5ff5f341efd88ec22aa8ee2747e7ca5c22b8cd8b4c35b397ca8",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_005.png",
+        "sha256": "a20587ee1e25b0166b85f7a0fc7835fff979f64d4b276258b644579b48da99a3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_006.png",
+        "sha256": "234277b4c083f07a0e1b07983169a724a9e9ce992db9f75f1cadfce9de2c68f6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south/frames/frame_007.png",
+        "sha256": "6ed2d5eb05d1f457d166ac1a615a02392d0cd2eea1bca8203feb77468322adad",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-south-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south-east",
+    "qa": "",
+    "sourceDirectionLabel": "south-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-east\\animation.png",
+    "sheetSha256": "f12bb1dfcfee0cafdf062e63848a7af65fecd68ebe243ed15b3623d4b76788be",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 35,
+      "x": 7,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/south-east/frames/frame_000.png",
+        "sha256": "73989c150490a68393daabede10c0afb97762783d64b3ffc95e5ed9392fbfb45",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-south-east",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "south-east",
+    "qa": "",
+    "sourceDirectionLabel": "south-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-east\\animation.png",
+    "sheetSha256": "500fd9df163c0ac04601e1ae66c3a3917fdd01115e0e21b1d77ceb9341740760",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 40,
+      "x": 3,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_000.png",
+        "sha256": "d31136c897d83722a3808f489900b3f207e2ce06ed1f1a8b4c29fcbe4586a173",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_001.png",
+        "sha256": "59ba5ba944d9212fb088f8ac846d9d8a99cc88fb4bf4cfdb85eb55d353cda4ca",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_002.png",
+        "sha256": "33695b19394f2a4913138ee61a2f4632985143e9c9aca3449952cac18c58bbe7",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_003.png",
+        "sha256": "1c25a0f54a27ae9f58eeb3e6ca031f2240c90940227a6e642ef5d8706f7d91d3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_004.png",
+        "sha256": "a53a25283d93bda84fc5765ad571d6cf13fb2f7b493c48124adcab41148794d3",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_005.png",
+        "sha256": "6a733189cfe352e941262f7d2f80e65adc5d758bda87d0f861dfa9bafc3af385",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_006.png",
+        "sha256": "9912c8ffa6dc9a5d8a5537addb922d27e27a9a2f4e1110758206e9274390b37e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-east/frames/frame_007.png",
+        "sha256": "73989c150490a68393daabede10c0afb97762783d64b3ffc95e5ed9392fbfb45",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "east",
+    "qa": "",
+    "sourceDirectionLabel": "east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\east\\animation.png",
+    "sheetSha256": "5b7b528b8c99b162821bd736d209fb8aeb170d305ab7a6617e4783f795a15081",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 28,
+      "x": 9,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/east/frames/frame_000.png",
+        "sha256": "0f269e8c6032814edbaba9033cba170cf224fc2ac9abebd519b1805100d416a6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-east",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "east",
+    "qa": "",
+    "sourceDirectionLabel": "east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\east\\animation.png",
+    "sheetSha256": "25c01c120bddc24cd5ed03fa319df63f6c8d76358a202ffd13e436cf959e46d4",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 36,
+      "x": 5,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_000.png",
+        "sha256": "2f6b0bbc7dbb7c6bdd5ada4525c3f75380fc948341655e209e933d3953afa023",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_001.png",
+        "sha256": "27170f6a2fc005b00c2af463897fd05d5496106bf3d8515cbafd794cc3f93613",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_002.png",
+        "sha256": "dba8ea9fe87310243209ce37896d6753f9a3c8524c10bc16af4896eccb4587ab",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_003.png",
+        "sha256": "7695905df042b0c1767b3bd5ddd92bb5181f61cea84f5dcb5770d23f8b42e973",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_004.png",
+        "sha256": "bebacf7b0402fd8337b32da1bdc9c3d6920ebbef1dd12339c16b19b6e2720899",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_005.png",
+        "sha256": "717ad72c2f48932e57bdedee58e85fa1031eceb03dbc8c4292a2758896bccd0e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_006.png",
+        "sha256": "297c9184ffef4a2eba8a76e694beeb8fce7a006993c817c1302b8f22ffac0017",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/east/frames/frame_007.png",
+        "sha256": "0f269e8c6032814edbaba9033cba170cf224fc2ac9abebd519b1805100d416a6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-north-east",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north-east",
+    "qa": "",
+    "sourceDirectionLabel": "north-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-east\\animation.png",
+    "sheetSha256": "f7b4ea9979d6acf617d22183bd228daeee401adfb7d3d9ef12318a91d25b58cc",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 24,
+      "x": 8,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/north-east/frames/frame_000.png",
+        "sha256": "240a24f76dd5448df89aac394cf4a66be32b8a0b413b10c3871a4f6321ed879a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-north-east",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "north-east",
+    "qa": "",
+    "sourceDirectionLabel": "north-east",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-east\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-east\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-east\\animation.png",
+    "sheetSha256": "5c637de542cf1ce59ea9197c590aa1a94a45732039b8402c88fd98ce9e059ca3",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 35,
+      "x": 4,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_000.png",
+        "sha256": "963c370b14f1cdb341de0165c2f77b9d00aaf2411d654f95f3bbfe2353a8e023",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_001.png",
+        "sha256": "6aea1561c875cf3c5ee5646a7f0772efa127dc46a51d49d69798693f6fd4151a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_002.png",
+        "sha256": "895c264787518359fdf2364894786fb31b1bb04081c4c17f42230b04fa4e3be4",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_003.png",
+        "sha256": "cfb235333f570d783390c4a0546a643129d9c5d723c76ac30a706b4a0471ab5f",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_004.png",
+        "sha256": "c772683a7bb0215b732a42b2f79ca403f3125dff7dc69e4bbc30ef49932cafdb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_005.png",
+        "sha256": "43e3b42f157a826413d89cc9b4ce6d74f357c584b69471061fd111042fac57da",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_006.png",
+        "sha256": "8d0eaa6bdd170504cdbf1294c5ff23d968779b16023433b8f11865cb1e14a3d0",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-east/frames/frame_007.png",
+        "sha256": "c16a6a1e85a63281ea8599984aa9c023b2cc4b6278480c6b48d3f6de8cc6e8be",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-north",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north",
+    "qa": "",
+    "sourceDirectionLabel": "north",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north\\animation.png",
+    "sheetSha256": "f783eef2c17cff2e608432f8b944d48b5417fbc7105ffb01b397eab1b684ffe3",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 35,
+      "x": 2,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/north/frames/frame_000.png",
+        "sha256": "feab986e5bc841de86c57c850792407af731620ed243c4db4741fbc9f6532d3d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-north",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "north",
+    "qa": "",
+    "sourceDirectionLabel": "north",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north\\animation.png",
+    "sheetSha256": "7617f8282e150df9a23e4d4c4aed1acedc8c939a257d9ba9341a8c1155c89416",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 39,
+      "x": 2,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_000.png",
+        "sha256": "5a3fe082d5f1f6a121b7c228a2de5664fd1af0cce8b64adfa63e5f1b0075c7d5",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_001.png",
+        "sha256": "bbfa037711650be9fde7289d95363f15f2ea52a2c6f2f63fa31622433b1eb728",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_002.png",
+        "sha256": "0ace39885b84885d0a9831c4a9b38528b5560c4e5f3d21f5c14bdba6b62e60ae",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_003.png",
+        "sha256": "8d7c506986a18c1d34114d861e5b3568c61be451db031c696b62ec0949143db4",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_004.png",
+        "sha256": "4adc02e44c05aaf8a60ec2591283d87e444417ea8c59cc457f515b465992511b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_005.png",
+        "sha256": "fef9b627e426f18d420b159216e7caf0aa8def0eccdae8efa7d9d868182dabca",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_006.png",
+        "sha256": "093bc8bc1a68d2ce32661013767af2c4cf29d97ee07a213c87640d57b9855a60",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north/frames/frame_007.png",
+        "sha256": "b20a7a06b49c063a6e0fa1f607643f1ecdd239dc3d173a2b4b503f53325cc80c",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-north-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "north-west",
+    "qa": "",
+    "sourceDirectionLabel": "north-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\north-west\\animation.png",
+    "sheetSha256": "305db9e0f7b6af5cecc88d333a6541e7993e9a966db363a1c918cf2a29d887d5",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 33,
+      "x": 2,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/north-west/frames/frame_000.png",
+        "sha256": "308744a2b7602d46918539d5e3c321bd4f8fc902f9b0b123de1be8dedded4153",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-north-west",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "north-west",
+    "qa": "",
+    "sourceDirectionLabel": "north-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\north-west\\animation.png",
+    "sheetSha256": "41396d4e7fdc0e90e452f0d8f043a019d0c58b55886f48e579bedd05f5a8843b",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 35,
+      "x": 2,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_000.png",
+        "sha256": "9478fa71547862fd74d4c86a64daa7eb001b499e8dbe384c415556253f832262",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_001.png",
+        "sha256": "30ea9650c01fa82fad6d23eb89f4f9f83f893143dc37813a3f953af25864a733",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_002.png",
+        "sha256": "cb5efc749835c29d52907e39adf5b2328b0a0694438d01d5c578fa0481ad84f6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_003.png",
+        "sha256": "22251ba9cfc38a181764eeeb5ec1057afeea1504f31b170f12bbe79336a1404e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_004.png",
+        "sha256": "4608f053bbd9687ca95cc36a6654b2aa5e8efc68cd7f24f8fc3acc00bb8077b1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_005.png",
+        "sha256": "b9467d3b8df1f4f2f84a775832bd515c5e9d9791188cd3adc51e6efddc93129b",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_006.png",
+        "sha256": "a57223da6bb0db3434c9210f6c3418ec53387b4a53d67e1847595971adc939b5",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/north-west/frames/frame_007.png",
+        "sha256": "bd498bd58b77fd2a46e47648dad3b196292948db09f2de8784771fa17a69837a",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "west",
+    "qa": "",
+    "sourceDirectionLabel": "west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\west\\animation.png",
+    "sheetSha256": "b83141ce1953ff80c07c393292c2955381f7d8bf8347f5945fc72d4d86b37a5c",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 25,
+      "x": 11,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/west/frames/frame_000.png",
+        "sha256": "9c0857b3f7ab311dd687cc89d521d56c00d983b8c8027923a6812c0544e26b52",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-west",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "west",
+    "qa": "",
+    "sourceDirectionLabel": "west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\west\\animation.png",
+    "sheetSha256": "b0e34ac58f7d53801684f658d9bc6da50b08317656c84293f26be41701794b13",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 33,
+      "x": 3,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_000.png",
+        "sha256": "80540f8e548115709886174222567a5bc9718f4badeed2970a577677728856e8",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_001.png",
+        "sha256": "7a028e08f2554935bd44484a5e948ca4eb9d9a1219609ed91fe3251381e54ec6",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_002.png",
+        "sha256": "3905c1dbad64b82b92a017d6880dcc4cca52128dc845c901b5e3b72dbf9daed0",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_003.png",
+        "sha256": "b06e7363735e7a75fb62baf70d37633bc474dc0f5cb3b4d4e1e049b25add236e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_004.png",
+        "sha256": "8035efc13cfc0960b1640382d8be73eaa25453939745cf5c83f352f921bfe00d",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_005.png",
+        "sha256": "f225b04153306715a3cf280469136a3b0b6923a79644ca0af98a4357115824cb",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_006.png",
+        "sha256": "95301702a49c682de395235aa62c58a739d56d4e97ef47b28f1a8736eaaaa4db",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/west/frames/frame_007.png",
+        "sha256": "c32f438dd572490113bf047d11493b16c91c7699834d33b90598bd9a1ba4bdb1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-idle-south-west",
+    "sourceMode": "pixellab-v3",
+    "authoredDirection": "south-west",
+    "qa": "",
+    "sourceDirectionLabel": "south-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\idle\\south-west\\animation.png",
+    "sheetSha256": "508f92a8b9950630a9b2fb44843bcf10d0d6f718e071aa0c0d30f1af81aaf4bc",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 26,
+      "x": 10,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/idle/south-west/frames/frame_000.png",
+        "sha256": "723856cfe2fd338b553c42a0699ae5adc358608c76561df333d88cbc7b18c398",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 1000
+      }
+    ]
+  },
+  {
+    "id": "neongothic-tower_elf-attack-south-west",
+    "sourceMode": "aseprite-cleanup",
+    "authoredDirection": "south-west",
+    "qa": "",
+    "sourceDirectionLabel": "south-west",
+    "aliasOf": "",
+    "native": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-west\\animation.aseprite",
+    "gif": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-west\\animation.gif",
+    "sheet": "C:\\Users\\Life\\Desktop\\Testnew2\\NeonGothic\\v081\\exports\\actors\\tower_elf\\attack\\south-west\\animation.png",
+    "sheetSha256": "ed252bdc771b0a2c40668989b9b88870958564d4da347d71ea529834b58970a7",
+    "runtimeUniformCrop": {
+      "height": 50,
+      "originalHeight": 56,
+      "originalWidth": 44,
+      "width": 32,
+      "x": 4,
+      "y": 3
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_000.png",
+        "sha256": "8dee2e99108d6a950d4747f66734d3944587f6aa692c5b40909e869ab1ebe505",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 50
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_001.png",
+        "sha256": "d058411c3e03376601af47bab16ff206b9006ddd20d00a6cc5b02b21e9260298",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 70
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_002.png",
+        "sha256": "660dcdabc919380a633ccb8ad52bf8b15525951b7b79223755d45c4868feaee8",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 80
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_003.png",
+        "sha256": "53372e09bc2c63b0a6ed781c08c77d2d0e6f4ce5d2032ded4f0f80bba791927e",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_004.png",
+        "sha256": "ad7098ac50a4121ebc0c3784ddf5f5be0b23d024d80cb3e914389ee6ac6b11d0",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_005.png",
+        "sha256": "077d6a603d244bf9ffb712327647306ffdef61e13b7426daac29df8970677922",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_006.png",
+        "sha256": "bfd5d6cd6cd2e5d7d308e82197bdf62f1b1368f77c627ad877da5665870064c1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      },
+      {
+        "path": "C:/Users/Life/Desktop/Testnew2/NeonGothic/v081/source/tower_elf/attack/south-west/frames/frame_007.png",
+        "sha256": "723856cfe2fd338b553c42a0699ae5adc358608c76561df333d88cbc7b18c398",
+        "offsetX": 0,
+        "offsetY": 0,
+        "durationMs": 60
+      }
+    ]
+  }
+]

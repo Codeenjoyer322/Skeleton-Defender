@@ -1,0 +1,519 @@
+{
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "Enemy_trex_attack_West_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_trex_attack_West_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "PREPARE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_trex_attack_West_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "OPEN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_trex_attack_West_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "WINDUP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_trex_attack_West_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 80,
+      "phase": "OPEN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_trex_attack_West_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "SNAP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Enemy_trex_attack_West_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_trex_attack_West_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CLENCH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Enemy_trex_attack_West_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 60,
+      "phase": "RELEASE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Enemy_trex_attack_West_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Enemy_trex_attack_West_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 80,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Enemy_trex_attack_West_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 90,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 160,
+      "filename": "Enemy_trex_attack_West_frames/13.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 480
+      },
+      "gifDuration": 810,
+      "phase": "REST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "trex",
+    "columns": 4,
+    "contact": {
+      "h": 764,
+      "w": 688
+    },
+    "direction": "west",
+    "displayScale": 1.65,
+    "durationMs": 1020,
+    "events": [
+      {
+        "frameIndex": 6,
+        "kind": "art cue; bind once to existing gameplay action without altering balance",
+        "meaning": "mouth contact point near closed distal teeth",
+        "name": "bite_contact",
+        "once": true,
+        "socket": {
+          "x": 19,
+          "y": 51
+        },
+        "timeMs": 460
+      }
+    ],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/trex/attack/west/Enemy_trex_attack_West_sheet.png"
+    },
+    "frameCount": 13,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack",
+        "to": 12
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1670,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_trex_attack_West_sheet.png",
+    "loop": true,
+    "nativeEdits": {
+      "mask": [
+        [
+          108,
+          56
+        ],
+        [
+          114,
+          56
+        ],
+        [
+          120,
+          61
+        ],
+        [
+          128,
+          66
+        ],
+        [
+          141,
+          68
+        ],
+        [
+          142,
+          79
+        ],
+        [
+          124,
+          81
+        ],
+        [
+          114,
+          73
+        ],
+        [
+          108,
+          66
+        ]
+      ],
+      "method": "nearest pixel inverse rotation, unchanged body",
+      "pivot": [
+        109,
+        57
+      ],
+      "sourceFrameHistory": [
+        {
+          "rawFrame": 0,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 1,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 2,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 4,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 0,
+          "mandibleDegrees": 0,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 565,
+          "mandibleDegrees": -25,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 671,
+          "mandibleDegrees": -50,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 671,
+          "mandibleDegrees": -50,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 624,
+          "mandibleDegrees": -35,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "changedPixels": 483,
+          "mandibleDegrees": -15,
+          "rawFrame": 8,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 12,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 14,
+          "rawJob": "enemy_trex_attack_v2"
+        },
+        {
+          "rawFrame": 16,
+          "rawJob": "enemy_trex_attack_v2"
+        }
+      ],
+      "type": "local mandible rotation"
+    },
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Prepared for review. Artwork only; no gameplay, balance, saving or rewards changed.",
+      "Original generated attack/execution lacked a completed jaw closure. Selected original anticipation/recovery poses retained; contact repaired natively in Aseprite by rotating only the mandible around its anatomical hinge.",
+      "Head, torso, legs and tail stay unchanged during local jaw articulation. No translation of the entire actor to fake a bite.",
+      "The final closed-jaw art cue is once-only. A target/contact effect must remain separate from this body sheet.",
+      "East is the actual original facing; west is a pixel-exact horizontal reflection.",
+      "A single short jaw snap. Contact begins with the first closed mandible frame; the following hold does not repeat contact."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 79,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 650,
+    "previewOnlyLoop": true,
+    "provenance": "PixelLab v2 body poses; completed mandible snap authored natively in Aseprite, source/build_trex_bite_candidates.lua",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "review_label": "Подготовлено для просмотра",
+    "rootApproved": true,
+    "size": {
+      "h": 640,
+      "w": 640
+    },
+    "sourceFacing": "east",
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\targeting_trex_bite_sources\\Enemy_trex_attack_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

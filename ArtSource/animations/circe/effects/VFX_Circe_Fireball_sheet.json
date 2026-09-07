@@ -1,0 +1,308 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/01.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 0",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/02.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 48,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 1",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/03.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 96,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 2",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/04.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 144,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 3",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/05.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 32
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 4",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/06.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 48,
+        "y": 32
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 5",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/07.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 96,
+        "y": 32
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 6",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "VFX_Circe_Fireball_frames/08.png",
+      "frame": {
+        "h": 32,
+        "w": 48,
+        "x": 144,
+        "y": 32
+      },
+      "gifDuration": 60,
+      "phase": "FLIGHT 7",
+      "phaseRu": "Течение языков пламени и шлейфа",
+      "rotated": false,
+      "sourceSize": {
+        "h": 32,
+        "w": 48
+      },
+      "spriteSourceSize": {
+        "h": 32,
+        "w": 48,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "energy_core",
+      "x": 32,
+      "y": 16
+    },
+    "anchors": {
+      "direction": "east",
+      "frameCenter": {
+        "x": 24,
+        "y": 16
+      },
+      "origin": {
+        "type": "energy_core",
+        "x": 32,
+        "y": 16
+      },
+      "rotationAxis": {
+        "x": 1,
+        "y": 0
+      },
+      "tail": {
+        "x": 7,
+        "y": 16
+      },
+      "tip": {
+        "x": 43,
+        "y": 16
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 32,
+      "w": 48
+    },
+    "columns": 4,
+    "componentNameRu": "Огненный шар — отдельный снаряд",
+    "componentOnly": true,
+    "contact": {
+      "h": 126,
+      "w": 560
+    },
+    "durationMs": 480,
+    "facing": "east",
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/effects/VFX_Circe_Fireball_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "VFX_Circe_Fireball",
+        "to": 7
+      }
+    ],
+    "gifDurationMs": 480,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Circe_Fireball_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Loop animates shaped flame tongues and detached embers around fixed core (32,16); it contains no map movement.",
+      "Front tip is (43,16), tail stays left. Rotate around energy_core by actual velocity; frame center is recorded separately.",
+      "Spawn core at the current staff emitter plus any intentional local release offset. Impact is a separate asset."
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Original standalone pixel VFX drawn through native Aseprite Lua; separate named layers; no generated hero edit.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "size": {
+      "h": 64,
+      "w": 192
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\circe\\effects\\_build_sources\\VFX_Circe_Fireball.aseprite",
+    "sourceSpriteModified": false,
+    "status": "contact_reviewed_export_verified",
+    "version": 1,
+    "review": {
+      "id": "VFX_Circe_Fireball",
+      "frames": 8,
+      "uniquePixelFrames": 8,
+      "opaquePaletteColors": 6,
+      "lastFrameTransparent": false,
+      "endpointConnectivityErrors": [],
+      "contactSheetReviewed": true,
+      "actualUIPlaybackReviewed": false,
+      "exportValidation": true
+    },
+    "rootApproved": true,
+    "stage": "prepared_for_user_review",
+    "integratedIntoGame": false
+  }
+}

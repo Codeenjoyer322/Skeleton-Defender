@@ -1,0 +1,957 @@
+{
+  "frames": [
+    {
+      "duration": 80,
+      "filename": "Circe_Deer_Cast_West_frames/01.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Deer_Cast_West_frames/02.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "GATHER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Deer_Cast_West_frames/03.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "LOWER STAFF",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Circe_Deer_Cast_West_frames/04.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "gifDuration": 90,
+      "phase": "AIM GROUND",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Circe_Deer_Cast_West_frames/05.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "gifDuration": 90,
+      "phase": "RELEASE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Deer_Cast_West_frames/06.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "gifDuration": 70,
+      "phase": "CHANNEL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Deer_Cast_West_frames/07.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "gifDuration": 60,
+      "phase": "CHANNEL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Deer_Cast_West_frames/08.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "gifDuration": 70,
+      "phase": "FADE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Deer_Cast_West_frames/09.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 256
+      },
+      "gifDuration": 70,
+      "phase": "FADE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Deer_Cast_West_frames/10.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 256
+      },
+      "gifDuration": 70,
+      "phase": "CLOSE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Circe_Deer_Cast_West_frames/11.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 256
+      },
+      "gifDuration": 90,
+      "phase": "LIFT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Circe_Deer_Cast_West_frames/12.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 256
+      },
+      "gifDuration": 100,
+      "phase": "RAISE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 110,
+      "filename": "Circe_Deer_Cast_West_frames/13.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 384
+      },
+      "gifDuration": 110,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 110,
+      "filename": "Circe_Deer_Cast_West_frames/14.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 384
+      },
+      "gifDuration": 110,
+      "phase": "SETTLE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 120,
+      "filename": "Circe_Deer_Cast_West_frames/15.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 384
+      },
+      "gifDuration": 120,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 140,
+      "filename": "Circe_Deer_Cast_West_frames/16.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 384
+      },
+      "gifDuration": 840,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "deer_cast",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artAccepted": false,
+    "artworkModified": false,
+    "canvas": {
+      "h": 128,
+      "w": 128
+    },
+    "character": "Circe",
+    "cleanup": [
+      {
+        "frameIndex": 6,
+        "pixels": [
+          {
+            "rgba": [
+              232,
+              225,
+              236,
+              255
+            ],
+            "x": 89,
+            "y": 64
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 65
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 66
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 67
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 68
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 69
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 70
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 71
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 72
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 73
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 74
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 75
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 76
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 77
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 78
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 79
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 80
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 81
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 82
+          }
+        ],
+        "rawPngIndex": 7
+      },
+      {
+        "frameIndex": 10,
+        "pixels": [
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 91
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 92
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 93
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 94
+          },
+          {
+            "rgba": [
+              232,
+              225,
+              236,
+              255
+            ],
+            "x": 88,
+            "y": 95
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 95
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 88,
+            "y": 96
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 96
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 88,
+            "y": 97
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 97
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 88,
+            "y": 98
+          },
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 98
+          }
+        ],
+        "rawPngIndex": 11
+      },
+      {
+        "frameIndex": 11,
+        "pixels": [
+          {
+            "rgba": [
+              248,
+              246,
+              244,
+              255
+            ],
+            "x": 89,
+            "y": 100
+          }
+        ],
+        "rawPngIndex": 12
+      }
+    ],
+    "columns": 4,
+    "contact": {
+      "h": 636,
+      "w": 560
+    },
+    "coordinates": {
+      "indexBase": 0,
+      "mirrorX": "width - 1 - x",
+      "origin": "top-left pixel",
+      "xPositive": "right",
+      "yPositive": "down"
+    },
+    "direction": "west",
+    "durationMs": 1400,
+    "events": [
+      {
+        "frameIndex": 4,
+        "name": "release_deer_summon",
+        "originSpace": "road_ground",
+        "rawPngIndex": 5,
+        "spawnLocation": "resolve on road ground at cast time; no fixed actor-pixel spawn point",
+        "timeMs": 300,
+        "trigger": "on_frame_enter",
+        "usesActorSocket": false
+      }
+    ],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/deer_cast/west/Circe_Deer_Cast_West_sheet.png"
+    },
+    "frameCount": 16,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "deer_cast_west",
+        "to": 15
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 2100,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "gifPreviewPlayback": "loop",
+    "image": "Circe_Deer_Cast_West_sheet.png",
+    "loop": true,
+    "mirrored": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Release starts frameIndex4/raw005 at300ms; deer spawn on road ground, not from the staff socket",
+      "Only32 confirmed detached light pixels removed: raw007(19 including one pale cap), raw011(12 including one pale edge), raw012(1)",
+      "Existing small casting light and motes retained; deer running effects are separate"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 700,
+    "previewOnlyLoop": true,
+    "provenance": "Inspected circe_deer_cast_v2; Aseprite timing and explicitly journalled local pixel cleanup",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "rawJob": "circe_deer_cast_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 512,
+      "w": 512
+    },
+    "sockets": {
+      "staff_head": [
+        {
+          "frameIndex": 0,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 0,
+          "x": 37,
+          "y": 47
+        },
+        {
+          "frameIndex": 1,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 80,
+          "x": 33,
+          "y": 49
+        },
+        {
+          "frameIndex": 2,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 140,
+          "x": 28,
+          "y": 72
+        },
+        {
+          "frameIndex": 3,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 210,
+          "x": 37,
+          "y": 87
+        },
+        {
+          "frameIndex": 4,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 300,
+          "x": 39,
+          "y": 89
+        },
+        {
+          "frameIndex": 5,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 390,
+          "x": 39,
+          "y": 89
+        },
+        {
+          "frameIndex": 6,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 460,
+          "x": 39,
+          "y": 89
+        },
+        {
+          "frameIndex": 7,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 520,
+          "x": 38,
+          "y": 88
+        },
+        {
+          "frameIndex": 8,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 590,
+          "x": 38,
+          "y": 88
+        },
+        {
+          "frameIndex": 9,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 660,
+          "x": 38,
+          "y": 88
+        },
+        {
+          "frameIndex": 10,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 730,
+          "x": 29,
+          "y": 78
+        },
+        {
+          "frameIndex": 11,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 820,
+          "x": 27,
+          "y": 66
+        },
+        {
+          "frameIndex": 12,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 920,
+          "x": 29,
+          "y": 54
+        },
+        {
+          "frameIndex": 13,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 1030,
+          "x": 33,
+          "y": 48
+        },
+        {
+          "frameIndex": 14,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 1140,
+          "x": 37,
+          "y": 47
+        },
+        {
+          "frameIndex": 15,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 1260,
+          "x": 39,
+          "y": 47
+        }
+      ]
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\circe_cast_candidates\\deer_cast\\Circe_Deer_Cast_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "timing": {
+      "eventOrigin": "native timeline start",
+      "frameIndexBase": 0,
+      "previewHoldExcluded": true,
+      "unit": "millisecond"
+    },
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

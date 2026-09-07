@@ -1,0 +1,272 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/01.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "PUFF",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/02.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 40,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "SWELL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/03.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 80,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "SPLIT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/04.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 120,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "RISE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/05.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 40
+      },
+      "gifDuration": 90,
+      "phase": "THIN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/06.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 40,
+        "y": 40
+      },
+      "gifDuration": 90,
+      "phase": "WISPS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/07.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 80,
+        "y": 40
+      },
+      "gifDuration": 100,
+      "phase": "LAST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "VFX_Enemy_warlock_fizzle_smoke_frames/08.png",
+      "frame": {
+        "h": 40,
+        "w": 40,
+        "x": 120,
+        "y": 40
+      },
+      "gifDuration": 100,
+      "phase": "CLEAR",
+      "rotated": false,
+      "sourceSize": {
+        "h": 40,
+        "w": 40
+      },
+      "spriteSourceSize": {
+        "h": 40,
+        "w": 40,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "anchor": {
+      "type": "staff_crystal",
+      "x": 20,
+      "y": 31
+    },
+    "anchors": {
+      "direction": "none",
+      "origin": {
+        "type": "staff_crystal",
+        "x": 20,
+        "y": 31
+      }
+    },
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 40,
+      "w": 40
+    },
+    "columns": 4,
+    "componentNameRu": "Колдун · дым у кристалла",
+    "componentOnly": true,
+    "contact": {
+      "h": 142,
+      "w": 560
+    },
+    "durationMs": 660,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/effects/VFX_Enemy_warlock_fizzle_smoke_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "warlock_fizzle_smoke",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gifDurationMs": 660,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "VFX_Enemy_warlock_fizzle_smoke_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "A local smoke puff at the actual staff crystal on fizzle_release. Does not emerge from the mouth, fly to a target, deal damage or add a new failure rule."
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Original independent pixel VFX authored in native Aseprite Lua; no generated actor edits.",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "retargetable": true,
+    "review_label": "Подготовлено для просмотра",
+    "size": {
+      "h": 80,
+      "w": 160
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\animations\\enemies\\effects\\_build_sources\\VFX_Enemy_warlock_fizzle_smoke.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "rootApproved": true,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

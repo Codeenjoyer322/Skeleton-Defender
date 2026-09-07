@@ -1,0 +1,361 @@
+{
+  "frames": [
+    {
+      "duration": 80,
+      "filename": "Circe_Hex_Cast_West_frames/01.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Hex_Cast_West_frames/02.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "AIM",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Hex_Cast_West_frames/03.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "RELEASE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Circe_Hex_Cast_West_frames/04.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "PULSE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Circe_Hex_Cast_West_frames/05.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "gifDuration": 60,
+      "phase": "FADE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Circe_Hex_Cast_West_frames/06.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "gifDuration": 70,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Circe_Hex_Cast_West_frames/07.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "gifDuration": 90,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 130,
+      "filename": "Circe_Hex_Cast_West_frames/08.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "gifDuration": 830,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "hex_cast",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artAccepted": false,
+    "artworkModified": false,
+    "canvas": {
+      "h": 128,
+      "w": 128
+    },
+    "character": "Circe",
+    "cleanup": [],
+    "columns": 4,
+    "contact": {
+      "h": 318,
+      "w": 560
+    },
+    "coordinates": {
+      "indexBase": 0,
+      "mirrorX": "width - 1 - x",
+      "origin": "top-left pixel",
+      "xPositive": "right",
+      "yPositive": "down"
+    },
+    "direction": "west",
+    "durationMs": 600,
+    "events": [
+      {
+        "actorSocket": "staff_head",
+        "frameIndex": 2,
+        "name": "release_hex_pulse",
+        "originSpace": "target_effect",
+        "rawPngIndex": 3,
+        "timeMs": 140,
+        "trigger": "on_frame_enter",
+        "usesActorSocket": true
+      }
+    ],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/hex_cast/west/Circe_Hex_Cast_West_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "hex_cast_west",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "once",
+    "gifDurationMs": 1300,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "gifPreviewPlayback": "loop",
+    "image": "Circe_Hex_Cast_West_sheet.png",
+    "loop": true,
+    "mirrored": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "once",
+    "notes": [
+      "Release starts frameIndex2/raw003 at140ms; green pulse remains attached to the staff head",
+      "Existing green local cast visual retained; no travel effect or new gameplay hex rule added"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 700,
+    "previewOnlyLoop": true,
+    "provenance": "Inspected circe_hex_cast_v2; Aseprite timing and explicitly journalled local pixel cleanup",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rawJob": "circe_hex_cast_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 256,
+      "w": 512
+    },
+    "sockets": {
+      "staff_head": [
+        {
+          "frameIndex": 0,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 0,
+          "x": 39,
+          "y": 47
+        },
+        {
+          "frameIndex": 1,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 80,
+          "x": 35,
+          "y": 48
+        },
+        {
+          "frameIndex": 2,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 140,
+          "x": 32,
+          "y": 49
+        },
+        {
+          "frameIndex": 3,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 200,
+          "x": 31,
+          "y": 49
+        },
+        {
+          "frameIndex": 4,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 250,
+          "x": 31,
+          "y": 49
+        },
+        {
+          "frameIndex": 5,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 310,
+          "x": 35,
+          "y": 48
+        },
+        {
+          "frameIndex": 6,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 380,
+          "x": 37,
+          "y": 47
+        },
+        {
+          "frameIndex": 7,
+          "method": "confirmed white core bounding-box centre",
+          "timeMs": 470,
+          "x": 39,
+          "y": 47
+        }
+      ]
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\circe_cast_candidates\\hex_cast\\Circe_Hex_Cast_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "timing": {
+      "eventOrigin": "native timeline start",
+      "frameIndexBase": 0,
+      "previewHoldExcluded": true,
+      "unit": "millisecond"
+    },
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "frames": [
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Attack_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Ninja_Attack_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "PREPARE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Ninja_Attack_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 50,
+      "phase": "BRACE",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Attack_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 60,
+      "phase": "LOAD NEAR ARM",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Skeleton_Ninja_Attack_East_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "DRIVE SHOULDER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 40,
+      "filename": "Skeleton_Ninja_Attack_East_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 40,
+      "phase": "EXTEND ELBOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Attack_East_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 60,
+      "filename": "Skeleton_Ninja_Attack_East_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 60,
+      "phase": "CONTACT HOLD",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 50,
+      "filename": "Skeleton_Ninja_Attack_East_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 50,
+      "phase": "RECOIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Attack_East_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "RETRACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Attack_East_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 90,
+      "filename": "Skeleton_Ninja_Attack_East_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 90,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "attack",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "ninja",
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "east",
+    "durationMs": 700,
+    "events": [
+      {
+        "gameplayDamageNotAuthored": true,
+        "holdMs": 120,
+        "index": 6,
+        "name": "visual_contact",
+        "timeMs": 300
+      }
+    ],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/attack/east/Skeleton_Ninja_Attack_East_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "attack_east",
+        "to": 11
+      }
+    ],
+    "gameplayPlayback": "once",
+    "gifDurationMs": 700,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Skeleton_Ninja_Attack_East_sheet.png",
+    "loop": false,
+    "manualArticulation": [
+      {
+        "durationMs": 60,
+        "index": 0,
+        "rawIndex": 1,
+        "timeMs": 0
+      },
+      {
+        "durationMs": 50,
+        "index": 1,
+        "rawIndex": 3,
+        "timeMs": 60
+      },
+      {
+        "durationMs": 50,
+        "index": 2,
+        "rawIndex": 5,
+        "timeMs": 110
+      },
+      {
+        "durationMs": 60,
+        "elbow": [
+          62,
+          82
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 3,
+        "rawIndex": 12,
+        "shoulder": [
+          72,
+          75
+        ],
+        "timeMs": 160,
+        "wrist": [
+          78,
+          86
+        ]
+      },
+      {
+        "durationMs": 40,
+        "elbow": [
+          80,
+          81
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 4,
+        "rawIndex": 12,
+        "shoulder": [
+          72,
+          75
+        ],
+        "timeMs": 220,
+        "wrist": [
+          93,
+          77
+        ]
+      },
+      {
+        "durationMs": 40,
+        "elbow": [
+          86,
+          76
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 5,
+        "rawIndex": 12,
+        "shoulder": [
+          73,
+          75
+        ],
+        "timeMs": 260,
+        "wrist": [
+          104,
+          76
+        ]
+      },
+      {
+        "durationMs": 60,
+        "elbow": [
+          88,
+          75
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 6,
+        "rawIndex": 12,
+        "shoulder": [
+          73,
+          75
+        ],
+        "timeMs": 300,
+        "wrist": [
+          106,
+          75
+        ]
+      },
+      {
+        "durationMs": 60,
+        "elbow": [
+          88,
+          75
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 7,
+        "rawIndex": 12,
+        "shoulder": [
+          73,
+          75
+        ],
+        "timeMs": 360,
+        "wrist": [
+          106,
+          75
+        ]
+      },
+      {
+        "durationMs": 50,
+        "elbow": [
+          86,
+          77
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 8,
+        "rawIndex": 12,
+        "shoulder": [
+          73,
+          75
+        ],
+        "timeMs": 420,
+        "wrist": [
+          101,
+          78
+        ]
+      },
+      {
+        "durationMs": 70,
+        "elbow": [
+          64,
+          82
+        ],
+        "eraseRect": {
+          "h": 27,
+          "w": 20,
+          "x": 50,
+          "y": 74
+        },
+        "index": 9,
+        "rawIndex": 12,
+        "shoulder": [
+          72,
+          75
+        ],
+        "timeMs": 470,
+        "wrist": [
+          79,
+          85
+        ]
+      },
+      {
+        "durationMs": 70,
+        "index": 10,
+        "rawIndex": 14,
+        "timeMs": 540
+      },
+      {
+        "durationMs": 90,
+        "index": 11,
+        "rawIndex": 16,
+        "timeMs": 610
+      }
+    ],
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 3,
+    "notes": [
+      "Root requested native arm correction after two generated attacks lacked extension",
+      "Near arm only: shoulder drives, elbow opens, wrist reaches beyond face, contact held120ms, then arm retracts",
+      "Far guarding arm, head, outfit, legs and floor are preserved; original generated poses remain in hidden reference layer",
+      "Near-arm removal bounded to x50..69,y74..100; new limb uses four existing bone/outline palette colors and exact90-degree rotated source fist",
+      "700ms once, visual contact index6/time300ms; no new gameplay timing or damage rules"
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "PixelLab inspected body plus root-authorized native arm animation",
+    "rawJob": "enemy_ninja_attack_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\ninja_manual_attack\\Skeleton_Ninja_Attack_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "manualArticulationSourceDirection": "east",
+    "coordinateConvention": {
+      "frameIndexBase": 0,
+      "timeUnits": "milliseconds",
+      "origin": "top-left",
+      "mirrorX": "159 - x"
+    },
+    "contactPoint": {
+      "x": 112,
+      "y": 75,
+      "type": "fist_front",
+      "index": 6,
+      "timeMs": 300
+    },
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

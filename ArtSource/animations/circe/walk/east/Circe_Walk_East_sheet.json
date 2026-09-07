@@ -1,0 +1,373 @@
+{
+  "frames": [
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/01.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "SUPPORT A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/02.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "SWING A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/03.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "STRIDE A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/04.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "gifDuration": 80,
+      "phase": "CONTACT A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/05.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "gifDuration": 80,
+      "phase": "TRANSFER A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/06.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "gifDuration": 80,
+      "phase": "PASSING A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/07.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "gifDuration": 80,
+      "phase": "SUPPORT B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/08.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "gifDuration": 80,
+      "phase": "SWING B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/09.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 256
+      },
+      "gifDuration": 80,
+      "phase": "STRIDE B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/10.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 256
+      },
+      "gifDuration": 80,
+      "phase": "CONTACT B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/11.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 256
+      },
+      "gifDuration": 80,
+      "phase": "TRANSFER B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 80,
+      "filename": "Circe_Walk_East_frames/12.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 256
+      },
+      "gifDuration": 80,
+      "phase": "PASSING B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "walk",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artAccepted": false,
+    "artworkModified": false,
+    "canvas": {
+      "h": 128,
+      "w": 128
+    },
+    "character": "Circe",
+    "columns": 4,
+    "contact": {
+      "h": 477,
+      "w": 560
+    },
+    "costumeAndSourcePixelArtPreserved": true,
+    "direction": "east",
+    "durationMs": 960,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/walk/east/Circe_Walk_East_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "walk_east",
+        "to": 11
+      }
+    ],
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 960,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Circe_Walk_East_sheet.png",
+    "loop": true,
+    "mirrored": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Both support and staff stay on y=100; no global registration or body warping needed",
+      "All 12 genuine generated poses retained; exact frame pixels preserved",
+      "80ms per frame gives a 960ms loop"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Inspected PixelLab circe_walk_v2 plus Aseprite timing; no new poses",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rawJob": "circe_walk_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 384,
+      "w": 512
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\circe_motion_candidates\\walk\\Circe_Walk_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

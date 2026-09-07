@@ -1,0 +1,172 @@
+{
+  "frames": [
+    {
+      "duration": 300,
+      "filename": "Circe_Idle_West_frames/01.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 300,
+      "phase": "BREATHE LOW",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 300,
+      "filename": "Circe_Idle_West_frames/02.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "gifDuration": 300,
+      "phase": "REST",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 300,
+      "filename": "Circe_Idle_West_frames/03.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "gifDuration": 300,
+      "phase": "BREATHE HIGH",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 300,
+      "filename": "Circe_Idle_West_frames/04.png",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "gifDuration": 300,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 128,
+        "w": 128
+      },
+      "spriteSourceSize": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "idle",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artAccepted": false,
+    "artworkModified": false,
+    "canvas": {
+      "h": 128,
+      "w": 128
+    },
+    "character": "Circe",
+    "columns": 4,
+    "contact": {
+      "h": 159,
+      "w": 560
+    },
+    "costumeAndSourcePixelArtPreserved": true,
+    "direction": "west",
+    "durationMs": 1200,
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/circe/idle/west/Circe_Idle_West_sheet.png"
+    },
+    "frameCount": 4,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "idle_west",
+        "to": 3
+      }
+    ],
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 1200,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Circe_Idle_West_sheet.png",
+    "loop": true,
+    "mirrored": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Small existing breath and staff-light variation retained; no pose invention",
+      "4 frames over1200ms; exact source pixels; floor y=100"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Inspected PixelLab circe_idle_v2 plus Aseprite timing; no new poses",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "rawJob": "circe_idle_v2",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 128,
+      "w": 512
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\circe_motion_candidates\\idle\\Circe_Idle_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

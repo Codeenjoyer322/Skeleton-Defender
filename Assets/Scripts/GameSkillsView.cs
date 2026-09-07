@@ -12,7 +12,11 @@ namespace SkeletonDefender
         private static string ManualSkillName(HeroKind hero, int index) => hero == HeroKind.Circe
             ? index == 0 ? "ОЛЕНИ ЦИРЦЕИ" : "ГРОЗА"
             : index == 0 ? "БОЖЕСТВЕННОЕ КОПЬЁ" : "СТРЕЛА ИЗ ПЯТКИ";
-        private void CancelSkillAim() { aimingSkill = -1; }
+        private void CancelSkillAim()
+        {
+            aimingSkill = -1;
+            if (banner == "Укажи точку броска · ESC / правая кнопка — отмена") bannerLife = 0;
+        }
         private void RequestManualSkill(int index)
         {
             if (paused || Finished || !game.CanCastSkill(index, cloneSelected)) return;
@@ -55,7 +59,7 @@ namespace SkeletonDefender
                 Rect r = new Rect(438 + i * 209, 136, 201, 66);
                 bool enabled = !paused && !Finished && game.CanCastSkill(i, cloneSelected);
                 bool aiming = aimingSkill == i && aimingClone == cloneSelected;
-                Fill(r, aiming ? PixelArt.C("51452b") : PixelArt.C("10232c")); Outline(r, aiming ? Gold : enabled ? ManaBlue : Edge, aiming ? 2 : 1);
+                Fill(r, aiming ? PixelArt.C("483653") : PixelArt.C("111b2e")); Outline(r, aiming ? Gold : enabled ? ManaBlue : Edge, aiming ? 2 : 1);
                 Txt((i == 0 ? "Q  " : "E  ") + ManualSkillName(actor.Kind, i), r.x + 8, r.y + 8, 185, 22, 11, enabled || aiming ? Text : Dim, FontStyle.Bold);
                 float cd = game.SkillCooldownRemaining(i, cloneSelected), cost = game.SkillManaCost(i, cloneSelected);
                 string status = aiming ? "ВЫБЕРИ ТОЧКУ" : !actor.Alive ? "Герой пал" : actor.KnockdownRemaining > 0 ? "Нокдаун" : !game.HasStarted ? "Начни оборону" : cd > 0 ? "Откат " + ClockText(cd) : actor.Mana < cost ? "Маны не хватает" : "Готово";
@@ -74,9 +78,9 @@ namespace SkeletonDefender
             float damage = skill.damage * (actor.Kind == HeroKind.Circe ? actor.MagicDamageMultiplier : actor.DamageMultiplier);
             string text;
             if (actor.Kind == HeroKind.Circe && index == 0)
-                text = skill.projectiles + " оленя бегут " + skill.duration.ToString("0.#") + "с. Каждый наносит " + damage.ToString("0.###") + " магического урона один раз каждой цели. Замедление " + skill.slowFraction.ToString("0%") + " на " + skill.slowDuration.ToString("0.#") + "с.";
+                text = skill.projectiles + " оленя бегут от защищаемого замка по всей дороге к входу " + skill.duration.ToString("0.#") + "с. Каждый наносит " + damage.ToString("0.###") + " магического урона один раз каждой цели. Замедление " + skill.slowFraction.ToString("0%") + " на " + skill.slowDuration.ToString("0.#") + "с.";
             else if (actor.Kind == HeroKind.Circe)
-                text = "Гроза наносит " + damage.ToString("0.###") + " магического урона всем врагам на карте. Босс защищён от магии.";
+                text = "Гроза наносит суммарно " + damage.ToString("0.###") + " магического урона за 3с: четыре равных удара каждые 0,75с. Цели фиксируются при нажатии. Босс защищён от магии.";
             else if (index == 0)
                 text = "Укажи точку: " + damage.ToString("0.###") + " физического урона в радиусе " + skill.areaRadius.ToString("0.#") + ". Отбрасывает на половину пути за последние 2с. Босса не отбрасывает. ESC / ПКМ — отмена без расхода маны.";
             else text = damage.ToString("0.###") + " физического урона каждому врагу, который был на карте при нажатии. Замедление " + skill.slowFraction.ToString("0%") + " на " + skill.slowDuration.ToString("0.#") + "с. Босса не замедляет.";
@@ -91,7 +95,7 @@ namespace SkeletonDefender
             InventoryItem artifact = profile.EquippedItem(profile.SelectedHero, 7);
             bool passive = artifact != null && artifact.Artifact == ArtifactKind.AegisOfDawn;
             bool enabled = !paused && !Finished && !cloneSelected && game.CanUseArtifact;
-            Fill(r, PixelArt.C("2b2927")); Outline(r, enabled || game.RageRemaining > 0 ? Gold : Edge);
+            Fill(r, PixelArt.C("241c32")); Outline(r, enabled || game.RageRemaining > 0 ? Gold : Edge);
             string name = artifact == null ? "АРТЕФАКТ НЕ НАДЕТ" : artifact.Name;
             Txt((passive ? "" : "R  ") + name, r.x + 8, r.y + 7, r.width - 16, 28, 11, Gold, FontStyle.Bold);
             string state = artifact == null ? "Надень в главном меню" : passive ? "Пассивно · возрождение 3с" : game.RageRemaining > 0 ? "ЯРОСТЬ " + ClockText(game.RageRemaining)
@@ -106,7 +110,7 @@ namespace SkeletonDefender
             if (SkillBarContains(mouse)) return;
             HeroCombatState actor = game.GetControlledHero(aimingClone);
             if (actor == null) return;
-            Vector2 hand = actor.Position + new Vector2(20, -48);
+            Vector2 hand = ProjectileVisuals.SpearHand(actor.Position, p.x < actor.Position.x);
             DrawSpear(hand + Vector2.down * 40, Vector2.down, 55, Gold);
             DrawLine(actor.Position, p, 1, new Color(Gold.r, Gold.g, Gold.b, .55f));
             float radius = BalanceData.Current.heroSystems.Skill(actor.Kind, aimingSkill).areaRadius;
@@ -133,13 +137,18 @@ namespace SkeletonDefender
         {
             foreach (TowerProjectile projectile in game.TowerProjectiles)
             {
-                float total = Vector2.Distance(projectile.Start, projectile.Impact);
-                float progress = total < .01f ? 1 : Mathf.Clamp01(Vector2.Distance(projectile.Start, projectile.Position) / total);
-                Vector2 p = projectile.Position + new Vector2(0, Mathf.Lerp(-38, -14, progress));
-                Vector2 direction = projectile.Impact - projectile.Start;
-                if (projectile.Kind == TowerKind.Archer) DrawArrow(p, direction, 23, PixelArt.C("f2d9a0"), 3);
+                Vector2 p = projectile.Visual.Initialized ? projectile.Visual.Tip : ProjectileVisuals.TowerSocket(projectile.Start);
+                Vector2 direction = projectile.Visual.Initialized ? projectile.Visual.Direction
+                    : ProjectileVisuals.Direction(projectile.Impact - p);
+                if (projectile.Kind == TowerKind.Archer)
+                {
+                    if (!DrawEffectById(OrdinaryArrowFx, p, direction, projectile.Age, .5f, Color.white))
+                        DrawArrow(p, direction, 23, PixelArt.C("f2d9a0"), 3);
+                }
                 else
                 {
+                    Color tint = projectile.Kind == TowerKind.Ember ? Color.white : ManaBlue;
+                    if (DrawEffectById(CirceFireballFx, p, direction, projectile.Age, .55f, tint)) continue;
                     Color color = projectile.Kind == TowerKind.Ember ? PixelArt.C("ff9c42") : ManaBlue;
                     Vector2 tail = p - direction.normalized * 22;
                     DrawLine(tail, p, 9, new Color(color.r, color.g, color.b, .35f));
@@ -151,52 +160,68 @@ namespace SkeletonDefender
         }
         private void DrawAbilityEffects()
         {
-            var ascendingArrows = new System.Collections.Generic.HashSet<HeroCombatState>();
             foreach (AbilityEffect effect in game.AbilityEffects)
             {
                 float t = effect.Lifetime <= 0 ? 1 : Mathf.Clamp01(effect.Age / effect.Lifetime);
                 Vector2 start = effect.Start, end = effect.End;
                 if (effect.Kind == "deer")
                 {
-                    Vector2 direction = end - start;
+                    Vector2 direction = effect.Direction;
+                    // Keep the logical road position and the native four-leg gallop together;
+                    // an independent bob or rotation would move hooves away from the path.
+                    var deerClip = DeerAnimationClip(direction, effect.FacingLeft);
+                    if (deerClip != null && deerClip.Texture != null)
+                    {
+                        DrawAnimationFrame(deerClip, end, deerClip.GroundPivot,
+                            effect.Age * .7f + (effect.LaneOffset > 0 ? deerClip.Duration * .5f : 0),
+                            .6f, Color.white, true);
+                        continue;
+                    }
                     DrawLine(end - direction.normalized * 55, end, 12, new Color(.6f, .9f, .73f, .18f));
                     Matrix4x4 previous = GUI.matrix;
-                    if (direction.x < 0) GUIUtility.ScaleAroundPivot(new Vector2(-1, 1), end);
+                    if (effect.FacingLeft) GUIUtility.ScaleAroundPivot(new Vector2(-1, 1), end);
                     Texture(new Rect(end.x - 29, end.y - 42 - Mathf.Abs(Mathf.Sin(effect.Age * 16)) * 7, 58, 48), deerArt, PixelArt.C("b5d6af")); GUI.matrix = previous;
                 }
                 else if (effect.Kind == "storm")
                 {
-                    if (t < .3f) Fill(new Rect(0, 0, 1056, 640), new Color(.68f, .8f, 1, .16f * (1 - t / .3f)));
-                    for (int i = 0; i < 9; i++)
-                    {
-                        Vector2 p = new Vector2(100 + i * 103, 165 + i % 3 * 150);
-                        DrawLightning(p, ManaBlue, 1 - t);
-                    }
-                    if (effect.Targets != null) foreach (Vector2 target in effect.Targets) DrawLightning(target, ManaBlue, .65f * (1 - t));
+                    // DrawStormScreenEffects runs outside the map clip so its bolts can
+                    // start at the actual top edge and its soft flash includes the HUD.
+                    continue;
                 }
                 else if (effect.Kind == "spear")
                 {
-                    Vector2 hand = start + new Vector2(20, -55);
-                    if (t < .25f) DrawSpear(hand + Vector2.down * 40, Vector2.down, 60, Gold);
-                    else DrawSpear(Vector2.Lerp(hand, end, (t - .25f) / .75f), end - hand, 58, Gold);
+                    Vector2 hand = effect.HasLaunchPoint ? effect.LaunchPoint : ProjectileVisuals.SpearHand(start, effect.FacingLeft);
+                    Vector2 point = Vector2.Lerp(hand, end, t);
+                    Vector2 direction = ProjectileVisuals.Direction(end - hand);
+                    // Keep the golden trail behind the rigid shaft, so the actual spearhead
+                    // remains distinct instead of becoming a glowing line to the destination.
+                    Vector2 trailEnd = point - direction * 46;
+                    Vector2 trailStart = trailEnd - direction * Mathf.Min(38, Vector2.Distance(hand, point));
+                    DrawLine(trailStart, trailEnd, 3, new Color(1, .73f, .2f, .45f));
+                    if (!DrawEffectById(DivineSpearFx, point, direction, effect.Age, 1.15f, Color.white))
+                        DrawSpear(point, end - hand, 58, Gold);
+                }
+                else if (effect.Kind == "arrow_rise")
+                {
+                    Vector2 hand = effect.HasLaunchPoint ? effect.LaunchPoint : ProjectileVisuals.HeelArrowHand(start, effect.FacingLeft);
+                    Vector2 sky = ProjectileVisuals.ArrowSky(start);
+                    // The source enters its first BURST at 370ms. Fit that event to the
+                    // exact moment the per-target arrows begin, then let its sparks fade.
+                    float riseDuration = Mathf.Max(.01f,
+                        BalanceData.Current.heroSystems.Skill(HeroKind.Achilles, 1).visualDelay) * .38f /
+                        Mathf.Max(.01f, effect.VisualPlaybackRate);
+                    float sampleAge = HeelArrowSampleAge(effect.Age, riseDuration, effect.Lifetime);
+                    if (!DrawAnimationBeam(HeelArrowFx, hand, sky, sampleAge, .75f, Color.white))
+                        DrawArrow(Vector2.Lerp(hand, sky, Mathf.Clamp01(effect.Age / riseDuration)),
+                            ProjectileVisuals.Direction(sky - hand), 31, ManaBlue, 4);
                 }
                 else if (effect.Kind == "arrow_rain")
                 {
-                    Vector2 sky = start + new Vector2(0, -205);
-                    if (t < .38f)
-                    {
-                        if (ascendingArrows.Add(effect.Source))
-                        {
-                            Vector2 heel = start + new Vector2(0, -4);
-                            DrawArrow(Vector2.Lerp(heel, sky, t / .38f), Vector2.down, 31, ManaBlue, 4);
-                        }
-                    }
-                    else
-                    {
-                        float progress = (t - .38f) / .62f;
-                        if (progress < .25f) Outline(new Rect(sky.x - 18, sky.y - 18, 36, 36), ManaBlue, 3);
-                        DrawArrow(Vector2.Lerp(sky, end + Vector2.down * 15, progress), end - sky, 22, PixelArt.C("bea98a"), 3);
-                    }
+                    if (t < .38f) continue;
+                    float progress = (t - .38f) / .62f;
+                    Vector2 point = ProjectileVisuals.RainTip(start, effect.HitPoint, progress);
+                    if (!DrawEffectById(OrdinaryArrowFx, point, effect.Direction, effect.Age, .5f, Color.white))
+                        DrawArrow(point, effect.Direction, 22, PixelArt.C("bea98a"), 3);
                 }
                 else if (effect.Kind == "rage" || effect.Kind == "mirror")
                 {
@@ -204,6 +229,30 @@ namespace SkeletonDefender
                     Texture(new Rect(end.x - radius, end.y - radius, radius * 2, radius * 2), range,
                         effect.Kind == "rage" ? new Color(1, .65f, .25f, 1 - t) : new Color(.5f, .8f, 1, 1 - t));
                 }
+            }
+        }
+        private void DrawProjectileImpacts()
+        {
+            foreach (ProjectileImpact impact in game.ProjectileImpacts)
+            {
+                if (impact.Landed)
+                {
+                    if (impact.Kind == "deer") { DrawDeerContact(impact); continue; }
+                    if (impact.Kind == "circe_magic" && DrawCirceMagic(true, impact.Position, Vector2.right,
+                        FullEffectAge("circe-fx-Fire_Impact", impact.Age, impact.Lifetime), .65f)) continue;
+                    string id = impact.Kind == "fireball" ? "circe-fx-Fire_Impact" :
+                        impact.Kind == "spear" ? "circe-fx-Sun_Impact" : "enemy-fx-boxing_contact";
+                    if (DrawEffectById(id, impact.Position, Vector2.right,
+                        FullEffectAge(id, impact.Age, impact.Lifetime),
+                        impact.Kind == "spear" ? 1 : impact.Kind == "fireball" ? .65f : .35f, Color.white)) continue;
+                }
+                float opacity = Mathf.Clamp01(impact.Life / Mathf.Max(.001f, impact.Lifetime));
+                Color color = impact.Landed ? impact.Kind == "fireball" ? PixelArt.C("ffad51") : Gold : Dim;
+                color.a = opacity;
+                Vector2 p = impact.Position;
+                float radius = 3 + (1 - opacity) * 7;
+                DrawLine(p - impact.Direction * 5, p, 3, color);
+                Outline(new Rect(p.x - radius, p.y - radius, radius * 2, radius * 2), color, 2);
             }
         }
         private static void DrawLightning(Vector2 end, Color c, float opacity)

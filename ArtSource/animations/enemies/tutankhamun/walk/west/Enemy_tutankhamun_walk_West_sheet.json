@@ -1,0 +1,892 @@
+{
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "PASS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 100,
+      "phase": "CONTACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 100,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 100,
+      "phase": "PASS",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 100,
+      "phase": "STEP",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 100,
+      "filename": "Enemy_tutankhamun_walk_West_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 100,
+      "phase": "RETURN",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "walk",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "tutankhamun",
+    "cleanup": [
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4280758805,
+        "raw": 3,
+        "x": 64,
+        "y": 102
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4290692885,
+        "raw": 3,
+        "x": 60,
+        "y": 103
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 61,
+        "y": 103
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 62,
+        "y": 103
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 63,
+        "y": 103
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 60,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 61,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 62,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 63,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 60,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 61,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 62,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 63,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 61,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287664422,
+        "raw": 3,
+        "x": 62,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4280758805,
+        "raw": 3,
+        "x": 63,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283129124,
+        "raw": 4,
+        "x": 59,
+        "y": 103
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 55,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287931168,
+        "raw": 4,
+        "x": 56,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287931168,
+        "raw": 4,
+        "x": 57,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287931168,
+        "raw": 4,
+        "x": 58,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 4,
+        "x": 59,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 4,
+        "x": 55,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 56,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287931168,
+        "raw": 4,
+        "x": 57,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4287931168,
+        "raw": 4,
+        "x": 58,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 4,
+        "x": 59,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 4,
+        "x": 60,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 4,
+        "x": 55,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 56,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 57,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 4,
+        "x": 58,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 4,
+        "x": 59,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 56,
+        "y": 107
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4285559844,
+        "raw": 4,
+        "x": 57,
+        "y": 107
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 4,
+        "x": 58,
+        "y": 107
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 57,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 58,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4288589069,
+        "raw": 5,
+        "x": 59,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 60,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 5,
+        "x": 61,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 5,
+        "x": 62,
+        "y": 104
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 57,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 58,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 59,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 60,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 5,
+        "x": 61,
+        "y": 105
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4280892186,
+        "raw": 5,
+        "x": 57,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 58,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4284908336,
+        "raw": 5,
+        "x": 59,
+        "y": 106
+      },
+      {
+        "after": [
+          145,
+          105,
+          53,
+          255
+        ],
+        "before": 4283854641,
+        "raw": 5,
+        "x": 60,
+        "y": 106
+      }
+    ],
+    "columns": 4,
+    "contact": {
+      "h": 382,
+      "w": 688
+    },
+    "direction": "west",
+    "displayScale": 1.1,
+    "durationMs": 800,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/tutankhamun/walk/west/Enemy_tutankhamun_walk_West_sheet.png"
+    },
+    "frameCount": 8,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "walk",
+        "to": 7
+      }
+    ],
+    "gameplayModified": false,
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 800,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "image": "Enemy_tutankhamun_walk_West_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "nativePlayback": "loop",
+    "notes": [
+      "Removed accidental cyan colour on the lower wooden staff end in RAW003..005; geometry preserved."
+    ],
+    "pivot": {
+      "meaning": "ground; top-left pixel origin",
+      "x": 79,
+      "y": 128
+    },
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "previewOnlyLoop": false,
+    "provenance": "PixelLab enemy_tutankhamun_walk_v1; selected frames and timing reviewed by root; native Aseprite export",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rawJob": "enemy_tutankhamun_walk_v1",
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 320,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\root_enemy_candidates\\Enemy_tutankhamun_walk_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false
+  }
+}

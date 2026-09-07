@@ -1,0 +1,13 @@
+{
+    "status": "passed",
+    "completed": [
+        "animation-library",
+        "animation-effects",
+        "animation-combat",
+        "targeting-equipment-abilities",
+        "summon-balance-regression",
+        "gameplay-regression"
+    ],
+    "failures": [],
+    "playerSaveTouched": false
+}

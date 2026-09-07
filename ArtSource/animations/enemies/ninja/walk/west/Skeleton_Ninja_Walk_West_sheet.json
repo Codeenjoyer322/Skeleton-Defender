@@ -1,0 +1,438 @@
+{
+  "frames": [
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "CONTACT A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "STRIDE A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "TRANSFER A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 70,
+      "phase": "PASSING A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/05.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "PUSH A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/06.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "RETURN A",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/07.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "CONTACT B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/08.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 160
+      },
+      "gifDuration": 70,
+      "phase": "STRIDE B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/09.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "TRANSFER B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/10.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "PASSING B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/11.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "PUSH B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 70,
+      "filename": "Skeleton_Ninja_Walk_West_frames/12.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 320
+      },
+      "gifDuration": 70,
+      "phase": "RETURN B",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "walk",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "ninja",
+    "columns": 4,
+    "contact": {
+      "h": 573,
+      "w": 688
+    },
+    "direction": "west",
+    "durationMs": 840,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/walk/west/Skeleton_Ninja_Walk_West_sheet.png"
+    },
+    "frameCount": 12,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "walk_west",
+        "to": 11
+      }
+    ],
+    "gameplayPlayback": "loop",
+    "gifDurationMs": 840,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "groundAnchor": {
+      "x": 80,
+      "y": 128
+    },
+    "image": "Skeleton_Ninja_Walk_West_sheet.png",
+    "loop": true,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "Two genuine alternating steps, no hopping replacement",
+      "Four source frames move down1px to keep support on y128; no scale/pose warp",
+      "12 frames /840ms loop"
+    ],
+    "playback": "loop",
+    "previewHoldMs": 0,
+    "provenance": "Visually inspected enemy_ninja_walk_v2; Aseprite native finishing, RAW unchanged",
+    "rawFrameIndices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "rawJob": "enemy_ninja_walk_v2",
+    "rawTransforms": [
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 1
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 2
+      },
+      {
+        "dx": 0,
+        "dy": 1,
+        "rawIndex": 3
+      },
+      {
+        "dx": 0,
+        "dy": 1,
+        "rawIndex": 4
+      },
+      {
+        "dx": 0,
+        "dy": 1,
+        "rawIndex": 5
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 6
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 7
+      },
+      {
+        "dx": 0,
+        "dy": 1,
+        "rawIndex": 8
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 9
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 10
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 11
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 12
+      }
+    ],
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 480,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\normal_ninja_deer_v2_candidates\\ninja\\walk\\Skeleton_Ninja_Walk_West_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}

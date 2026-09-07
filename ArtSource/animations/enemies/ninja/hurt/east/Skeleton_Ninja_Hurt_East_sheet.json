@@ -1,0 +1,198 @@
+{
+  "frames": [
+    {
+      "duration": 30,
+      "filename": "Skeleton_Ninja_Hurt_East_frames/01.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "IMPACT",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Skeleton_Ninja_Hurt_East_frames/02.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 160,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "RECOIL",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Skeleton_Ninja_Hurt_East_frames/03.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 320,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "RECOVER",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "duration": 30,
+      "filename": "Skeleton_Ninja_Hurt_East_frames/04.png",
+      "frame": {
+        "h": 160,
+        "w": 160,
+        "x": 480,
+        "y": 0
+      },
+      "gifDuration": 30,
+      "phase": "READY",
+      "rotated": false,
+      "sourceSize": {
+        "h": 160,
+        "w": 160
+      },
+      "spriteSourceSize": {
+        "h": 160,
+        "w": 160,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "action": "hurt",
+    "app": "Aseprite Lua export_achilles_animation.lua",
+    "artworkModified": false,
+    "canvas": {
+      "h": 160,
+      "w": 160
+    },
+    "character": "ninja",
+    "columns": 4,
+    "contact": {
+      "h": 191,
+      "w": 688
+    },
+    "direction": "east",
+    "durationMs": 120,
+    "events": [],
+    "files": {
+      "contact": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_contact.png",
+      "contact2x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_contact_2x.png",
+      "frames": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_frames",
+      "gif": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East.gif",
+      "gif4x": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_4x.gif",
+      "metadata": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_sheet.json",
+      "native": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East.aseprite",
+      "sheet": "C:/Users/Life/Desktop/Testnew2/animations/enemies/ninja/hurt/east/Skeleton_Ninja_Hurt_East_sheet.png"
+    },
+    "frameCount": 4,
+    "frameTags": [
+      {
+        "direction": "forward",
+        "from": 0,
+        "name": "hurt_east",
+        "to": 3
+      }
+    ],
+    "gameplayPlayback": "once",
+    "gifDurationMs": 120,
+    "gifLimitations": "GIF has binary alpha and at most 256 colors per frame; PNG and native retain full RGBA",
+    "gifPlayback": "forward full timeline; frame tags are descriptive",
+    "groundAnchor": {
+      "x": 80,
+      "y": 128
+    },
+    "image": "Skeleton_Ninja_Hurt_East_sheet.png",
+    "loop": false,
+    "nativeFrameArtPreserved": true,
+    "nativeLayers": 1,
+    "notes": [
+      "120ms visual recoil without gameplay stun",
+      "Four distinct anatomical poses selected from8; raw003 decorative white star is excluded together with redundant inbetweens",
+      "Source body pixels and y128 support unchanged"
+    ],
+    "playback": "once_hold_last_pose",
+    "previewHoldMs": 0,
+    "provenance": "Visually inspected enemy_ninja_hurt_v2; Aseprite native finishing, RAW unchanged",
+    "rawFrameIndices": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "rawJob": "enemy_ninja_hurt_v2",
+    "rawTransforms": [
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 2
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 4
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 6
+      },
+      {
+        "dx": 0,
+        "dy": 0,
+        "rawIndex": 8
+      }
+    ],
+    "rendering": "Explicit drawImage of visible normal layers and groups; GIF uses the same flattened frames",
+    "rootApproved": true,
+    "size": {
+      "h": 160,
+      "w": 640
+    },
+    "sourceFile": "C:\\Users\\Life\\Desktop\\Testnew2\\source\\normal_ninja_deer_v2_candidates\\ninja\\hurt\\Skeleton_Ninja_Hurt_East_Source.aseprite",
+    "sourceSpriteModified": false,
+    "stage": "prepared_for_user_review",
+    "version": 1,
+    "integratedIntoGame": false,
+    "displayScale": 1
+  }
+}
